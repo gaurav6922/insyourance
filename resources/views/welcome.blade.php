@@ -491,7 +491,7 @@
     <link rel='stylesheet' id='contact-form-7-css' href='https://demo2.pavothemes.com/insul/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=6.0.1' media='all'/>
     <link rel='stylesheet' id='-css' href='https://demo2.pavothemes.com/insul/wp-content/plugins/pavo-demo/style.css?ver=6.7.1' media='all'/>
     <link rel='stylesheet' id='hfe-style-css' href='https://demo2.pavothemes.com/insul/wp-content/plugins/header-footer-elementor/assets/css/header-footer-elementor.css?ver=2.0.3' media='all'/>
-    <link rel='stylesheet' id='elementor-icons-css' href='https://demo2.pavothemes.com/insul/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.34.0' media='all'/>
+    <link rel='stylesheet' id='elementor-icons-css' href='/css/elementor-icons.min.css' media='all'/>
     <link rel='stylesheet' id='elementor-frontend-css' href='https://demo2.pavothemes.com/insul/wp-content/uploads/elementor/css/custom-frontend.min.css?ver=1733908100' media='all'/>
     <link rel='stylesheet' id='swiper-css' href='https://demo2.pavothemes.com/insul/wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css?ver=8.4.5' media='all'/>
     <link rel='stylesheet' id='e-swiper-css' href='https://demo2.pavothemes.com/insul/wp-content/plugins/elementor/assets/css/conditionals/e-swiper.min.css?ver=3.25.11' media='all'/>
@@ -509,7 +509,7 @@
     <link rel='stylesheet' id='elementor-post-144-css' href='https://demo2.pavothemes.com/insul/wp-content/uploads/elementor/css/post-144.css?ver=1733908101' media='all'/>
     <link rel='stylesheet' id='elementor-post-3494-css' href='https://demo2.pavothemes.com/insul/wp-content/uploads/elementor/css/post-3494.css?ver=1733908101' media='all'/>
     <link rel='stylesheet' id='insul-fonts-css' href='//fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&#038;family=Sora:wght@100..800&#038;subset=latin%2Clatin-ext&#038;display=swap' media='all'/>
-    <link rel='stylesheet' id='insul-icon-css' href='https://demo2.pavothemes.com/insul/wp-content/themes/insul/assets/css/icons.css?ver=1.0.4' media='all'/>
+    <link rel='stylesheet' id='insul-icon-css' href='/css/icons.css' media='all'/>
     <link rel='stylesheet' id='insul-style-css' href='https://demo2.pavothemes.com/insul/wp-content/themes/insul/style.css?ver=1.0.4' media='all'/>
     <style id='insul-style-inline-css'>
     .col-full {
@@ -527,14 +527,14 @@
     <link rel='stylesheet' id='insul-elementor-css' href='https://demo2.pavothemes.com/insul/wp-content/themes/insul/assets/css/elementor.css?ver=1.0.4' media='all'/>
     <link rel='stylesheet' id='hfe-icons-list-css' href='https://demo2.pavothemes.com/insul/wp-content/plugins/elementor/assets/css/widget-icon-list.min.css?ver=3.24.3' media='all'/>
     <link rel='stylesheet' id='hfe-social-icons-css' href='https://demo2.pavothemes.com/insul/wp-content/plugins/elementor/assets/css/widget-social-icons.min.css?ver=3.24.0' media='all'/>
-    <link rel='stylesheet' id='hfe-social-share-icons-brands-css' href='https://demo2.pavothemes.com/insul/wp-content/plugins/elementor/assets/lib/font-awesome/css/brands.css?ver=5.15.3' media='all'/>
-    <link rel='stylesheet' id='hfe-social-share-icons-fontawesome-css' href='https://demo2.pavothemes.com/insul/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.css?ver=5.15.3' media='all'/>
-    <link rel='stylesheet' id='hfe-nav-menu-icons-css' href='https://demo2.pavothemes.com/insul/wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.css?ver=5.15.3' media='all'/>
+    <link rel='stylesheet' id='hfe-social-share-icons-brands-css' href='/css/font-awesome-brands.min.css' media='all'/>
+    <link rel='stylesheet' id='hfe-social-share-icons-fontawesome-css' href='/css/font-awesome.min.css' media='all'/>
+    <link rel='stylesheet' id='hfe-nav-menu-icons-css' href='/css/font-awesome-solid.min.css' media='all'/>
     <link rel='stylesheet' id='insul-child-style-css' href='https://demo2.pavothemes.com/insul/wp-content/themes/demo-child/style.css?ver=1.0.0' media='all'/>
     <link rel='stylesheet' id='google-fonts-1-css' href='https://fonts.googleapis.com/css?family=DM+Sans%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CSora%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap&#038;ver=6.7.1' media='all'/>
-    <link rel='stylesheet' id='elementor-icons-shared-0-css' href='https://demo2.pavothemes.com/insul/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css?ver=5.15.3' media='all'/>
-    <link rel='stylesheet' id='elementor-icons-fa-solid-css' href='https://demo2.pavothemes.com/insul/wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min.css?ver=5.15.3' media='all'/>
-    <link rel='stylesheet' id='elementor-icons-fa-brands-css' href='https://demo2.pavothemes.com/insul/wp-content/plugins/elementor/assets/lib/font-awesome/css/brands.min.css?ver=5.15.3' media='all'/>
+    <link rel='stylesheet' id='elementor-icons-shared-0-css' href='/css/font-awesome.min.css' media='all'/>
+    <link rel='stylesheet' id='elementor-icons-fa-solid-css' href='/css/font-awesome-solid.min.css' media='all'/>
+    <link rel='stylesheet' id='elementor-icons-fa-brands-css' href='/css/font-awesome-brands.min.css' media='all'/>
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <script src="https://demo2.pavothemes.com/insul/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
     <script src="https://demo2.pavothemes.com/insul/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
