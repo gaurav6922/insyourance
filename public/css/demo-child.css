@@ -1,0 +1,56 @@
+/*
+Theme Name:     Demo-child
+Theme URI:
+Description:    insul child theme.
+Author:         Me
+Author URI:
+Template:       insul
+Version:        1.0.0
+*/
+
+
+.home-free .logo-free {
+    position: absolute;
+    top: -21px;
+    left: 30px;
+}
+
+.home-free .logo-free svg {
+    width: 78px !important;
+}
+
+.home-free .hfe-site-logo-container {
+    position: relative;
+}
+
+.elementor-widget-site-logo.icon-logo-theme-insul .hfe-site-logo-container {
+    position: relative;
+}
+
+.elementor-widget-site-logo.icon-logo-theme-insul .hfe-site-logo-container:before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    right: -8px;
+    bottom: 8px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: var(--primary);
+}
+
+.elementor-widget-site-logo.icon-logo-theme-insul.white .hfe-site-logo-container {
+    position: relative;
+}
+
+.elementor-widget-site-logo.icon-logo-theme-insul.white .hfe-site-logo-container:before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    right: -8px;
+    bottom: 8px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #ffffff;
+}
