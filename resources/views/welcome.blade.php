@@ -13,6 +13,43 @@
     }
     </style>
     <style>
+        /* Fix footer blank vertical space */
+    /* Remove artificial height from footer */
+#colophon .e-con.e-parent {
+  min-height: unset !important;
+  height: auto !important;
+}
+
+/* Ensure footer content starts from top */
+#colophon .e-con-inner {
+  align-items: flex-start !important;
+}
+
+
+/* Remove extra bottom margin on last widgets */
+#colophon .elementor-widget:last-child {
+  margin-bottom: 0 !important;
+}
+/* Divider height aligned to content */
+#colophon .e-con.e-child::after {
+  height: 600%;
+  top: 20%;
+}
+
+/* No divider after last column */
+#colophon .e-con.e-child:last-child::after {
+  display: none;
+}
+@media (max-width: 1024px) {
+  #colophon .e-con-inner {
+    gap: 40px;
+  }
+
+  #colophon .e-con.e-child::after {
+    display: none;
+  }
+}
+    
         /* Home page: increase header logo size (scoped so footer logo is unchanged) */
         .site-header .hfe-site-logo-img {
             height: 83px !important;
@@ -26,9 +63,136 @@
             box-sizing: border-box;
         }
 
+        /* Fix wide gaps between sections */
+        .elementor-element.e-con {
+            margin-bottom: 0 !important;
+        }
+        
+        .elementor-element.e-con-boxed {
+            margin-bottom: 0 !important;
+        }
+        
+        .elementor-section {
+            margin-bottom: 0 !important;
+            padding-top: 40px !important;
+            padding-bottom: 40px !important;
+        }
+
+        /* Fix wide gap between footer headings and links */
+        /* Contact Info section */
+        .elementor-element[data-id="d49fe94"] {
+            gap: 0 !important;
+        }
+        .elementor-element[data-id="d49fe94"] .elementor-widget-heading {
+            margin-bottom: 0 !important;
+            margin-top: 0 !important;
+        }
+        .elementor-element[data-id="d49fe94"] .elementor-widget-heading .elementor-widget-container {
+            margin-bottom: 0 !important;
+            padding-bottom: 0 !important;
+            margin-top: 0 !important;
+            padding-top: 0 !important;
+        }
+        .elementor-element[data-id="d49fe94"] .elementor-heading-wrapper-inner {
+            margin-bottom: 0 !important;
+            padding-bottom: 0 !important;
+            margin-top: 0 !important;
+            padding-top: 0 !important;
+        }
+        .elementor-element[data-id="d49fe94"] .elementor-heading-title {
+            margin-bottom: 0 !important;
+            margin-top: 0 !important;
+            line-height: 1.2 !important;
+        }
+        .elementor-element[data-id="5803901"] {
+            margin-bottom: 0 !important;
+            margin-top: 0 !important;
+        }
+        .elementor-element[data-id="5803901"] .elementor-widget-container {
+            margin-bottom: 0 !important;
+            padding-bottom: 0 !important;
+            margin-top: 0 !important;
+            padding-top: 0 !important;
+        }
+        .elementor-element[data-id="607b350"] {
+            margin-top: -10px !important;
+            margin-bottom: 0 !important;
+            padding-top: 0 !important;
+        }
+        .elementor-element[data-id="607b350"] .elementor-widget-container {
+            margin-top: 0 !important;
+            padding-top: 0 !important;
+            margin-bottom: 0 !important;
+            padding-bottom: 0 !important;
+        }
+        .elementor-element[data-id="607b350"] .elementor-icon-list-items {
+            margin-top: 0 !important;
+            padding-top: 0 !important;
+            margin-bottom: 0 !important;
+        }
+        .elementor-element[data-id="607b350"] .elementor-icon-list-item:first-child {
+            margin-top: 0 !important;
+            padding-top: 0 !important;
+        }
+        .elementor-element[data-id="607b350"] .elementor-icon-list-item {
+            margin-top: 0 !important;
+            padding-top: 0 !important;
+        }
+
+        /* Useful Links section */
+        .elementor-element[data-id="c963be7"] .elementor-widget-heading {
+            margin-bottom: 0 !important;
+        }
+        .elementor-element[data-id="c963be7"] .elementor-widget-heading .elementor-widget-container {
+            margin-bottom: 0 !important;
+            padding-bottom: 0 !important;
+        }
+        .elementor-element[data-id="c963be7"] .elementor-heading-wrapper-inner {
+            margin-bottom: 0 !important;
+            padding-bottom: 0 !important;
+        }
+        .elementor-element[data-id="c963be7"] .elementor-heading-title {
+            margin-bottom: 0 !important;
+        }
+        .elementor-element[data-id="c7c2ff7"] {
+            margin-top: 5px !important;
+        }
+        .elementor-element[data-id="c7c2ff7"] .elementor-widget-container {
+            margin-top: 0 !important;
+            padding-top: 0 !important;
+        }
+
+        /* Connect section */
+        .elementor-element[data-id="9eaab65"] .elementor-widget-heading {
+            margin-bottom: 0 !important;
+        }
+        .elementor-element[data-id="9eaab65"] .elementor-widget-heading .elementor-widget-container {
+            margin-bottom: 0 !important;
+            padding-bottom: 0 !important;
+        }
+        .elementor-element[data-id="9eaab65"] .elementor-heading-wrapper-inner {
+            margin-bottom: 0 !important;
+            padding-bottom: 0 !important;
+        }
+        .elementor-element[data-id="9eaab65"] .elementor-heading-title {
+            margin-bottom: 0 !important;
+        }
+        .elementor-element[data-id="82f6bcc"] {
+            margin-top: 5px !important;
+        }
+        .elementor-element[data-id="82f6bcc"] .elementor-widget-container {
+            margin-top: 0 !important;
+            padding-top: 0 !important;
+        }
+
         @media (max-width: 767px) {
             .site-header .hfe-site-logo-img {
                 height: 62px !important;
+            }
+            
+            .elementor-section {
+                padding-top: 30px !important;
+                padding-bottom: 30px !important;
             }
     }
     </style>
@@ -905,7 +1069,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="elementor-element elementor-element-818d01d elementor-hidden-mobile elementor-button-default elementor-widget elementor-widget-button"
+                            {{-- <div class="elementor-element elementor-element-818d01d elementor-hidden-mobile elementor-button-default elementor-widget elementor-widget-button"
                                 data-id="818d01d" data-element_type="widget" data-widget_type="button.default">
                                 <div class="elementor-widget-container">
                                     <div class="elementor-button-wrapper">
@@ -921,7 +1085,7 @@
                                         </a>
                                     </div>
                                 </div>
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                 </div>
@@ -1093,7 +1257,7 @@
                                                                         data-rsp_ch="on" data-xy="x:r;y:m;" data-pos="a"
                                                                         data-text="w:normal;s:16,16,12,12;l:24,24,18,18;fw:500;"
                                                                         data-frame_999="o:0;st:w;sR:8700;"
-                                                                        style="z-index:7;font-family:'DM Sans';">+100K
+                                                                        style="z-index:7;font-family:'DM Sans';">+1K
                                                                         Clients
                                                                     											</rs-layer>
                                                                     <!--
@@ -1612,7 +1776,7 @@
                                 <div class="elementor-widget-container">
                                     <div class="elementor-button-wrapper">
                                         <a class="elementor-button elementor-button-link elementor-size-md"
-                                            href="https://demo2.pavothemes.com/insul/contact-01/">
+                                            href="{{ url('/contact-01') }}">
                                             <span class="elementor-button-content-wrapper">
                                                 <span class="elementor-button-icon">
                                                     <i aria-hidden="true"
@@ -1842,7 +2006,7 @@
                                 <div class="elementor-widget-container">
                                     <div class="elementor-button-wrapper">
                                         <a class="elementor-button elementor-button-link elementor-size-md"
-                                            href="https://demo2.pavothemes.com/insul/contact-01/">
+                                            href="{{ url('/contact-01') }}">
                                             <span class="elementor-button-content-wrapper">
                                                 <span class="elementor-button-icon">
                                                     <i aria-hidden="true"
@@ -1947,7 +2111,7 @@
                                                                     </div>
                                                                     <h2 class="entry-title">
                                                                         <a
-                                                                            href="https://demo2.pavothemes.com/insul/services/business-consultancy/">
+                                                                            href="{{ url('/our-service-01') }}">
                                                                             Mutual Funds </a>
                                                                     </h2>
                                                                 </div>
@@ -1959,7 +2123,7 @@
                                                             </div>
                                                             <div class="button-service">
                                                                 <a class="btn-link"
-                                                                    href="https://demo2.pavothemes.com/insul/services/business-consultancy/">
+                                                                href="{{ url('/our-service-01') }}">
 
                                                                                                                         Read more                                                    
                                                                     <i class="insul-icon-arrow-up-right-1"></i>
@@ -1982,7 +2146,7 @@
                                                                     </div>
                                                                     <h2 class="entry-title">
                                                                         <a
-                                                                            href="http://127.0.0.1:8000/general-insurance/">
+                                                                        href="{{ url('/general-insurance') }}">
                                                                             General Insurance </a>
                                                                     </h2>
                                                                 </div>
@@ -1994,7 +2158,7 @@
                                                             </div>
                                                             <div class="button-service">
                                                                 <a class="btn-link"
-                                                                    href="http://127.0.0.1:8000/general-insurance/">
+                                                                href="{{ url('/general-insurance') }}">
 
                                                                                                                         Read more                                                    
                                                                     <i class="insul-icon-arrow-up-right-1"></i>
@@ -2017,7 +2181,7 @@
                                                                     </div>
                                                                     <h2 class="entry-title">
                                                                         <a
-                                                                            href="https://demo2.pavothemes.com/insul/services/strategy-lab/">
+                                                                        href="{{ url('/life-insurance') }}">
                                                                             Life Insurance </a>
                                                                     </h2>
                                                                 </div>
@@ -2029,7 +2193,7 @@
                                                             </div>
                                                             <div class="button-service">
                                                                 <a class="btn-link"
-                                                                    href="https://demo2.pavothemes.com/insul/services/strategy-lab/">
+                                                                href="{{ url('/life-insurance') }}">
 
                                                                                                                         Read more                                                    
                                                                     <i class="insul-icon-arrow-up-right-1"></i>
@@ -2678,7 +2842,7 @@
                                                     <div class="hfe-site-logo-set">
                                                         <div class="hfe-site-logo-container">
                                                             <img class="hfe-site-logo-img elementor-animation-"
-                                                                src="{{ asset('images/mainlogo.png') }}"
+                                                                src="{{ asset('images/whitelogo.png') }}"
                                                                 alt="Witan Fincare" />
                                                         </div>
                                                     </div>
@@ -2758,7 +2922,7 @@
                                     data-id="5803901" data-element_type="widget" data-widget_type="heading.default">
                                     <div class="elementor-widget-container">
                                         <div class="elementor-heading-wrapper-inner">
-                                            <h2 class="elementor-heading-title elementor-size-xxl">Contact Infor</h2>
+                                            <h2 class="elementor-heading-title elementor-size-xxl">Contact Info</h2>
                                         </div>
                                     </div>
                                 </div>
@@ -2767,7 +2931,7 @@
                                     <div class="elementor-widget-container">
                                         <ul class="elementor-icon-list-items">
                                             <li class="elementor-icon-list-item">
-                                                <a href="https://demo2.pavothemes.com/insul/contact-01/">
+                                                <a href="{{ url('/contact-01') }}">
 
                                                     <span class="elementor-icon-list-text">Contact us</span>
                                                 </a>
@@ -2779,25 +2943,25 @@
                                                 </a>
                                             </li>
                                             <li class="elementor-icon-list-item">
-                                                <a href="https://demo2.pavothemes.com/insul/our-projects/">
+                                                <a href="{{ url('/our-service-01') }}">
 
                                                     <span class="elementor-icon-list-text">Our impact</span>
                                                 </a>
                                             </li>
                                             <li class="elementor-icon-list-item">
-                                                <a href="https://demo2.pavothemes.com/insul/our-pricing/">
+                                                <a href="{{ url('/about-us') }}">
 
                                                     <span class="elementor-icon-list-text">Our values</span>
                                                 </a>
                                             </li>
                                             <li class="elementor-icon-list-item">
-                                                <a href="https://demo2.pavothemes.com/insul/our-team/">
+                                                <a href="{{ url('/blog') }}">
 
                                                     <span class="elementor-icon-list-text">Resources</span>
                                                 </a>
                                             </li>
                                             <li class="elementor-icon-list-item">
-                                                <a href="https://demo2.pavothemes.com/insul/our-team/">
+                                                <a href="{{ url('/blog') }}">
 
                                                     <span class="elementor-icon-list-text">Videos</span>
                                                 </a>
@@ -2812,7 +2976,7 @@
                                     data-id="4089f4a" data-element_type="widget" data-widget_type="heading.default">
                                     <div class="elementor-widget-container">
                                         <div class="elementor-heading-wrapper-inner">
-                                            <h2 class="elementor-heading-title elementor-size-xxl">Userful Links</h2>
+                                            <h2 class="elementor-heading-title elementor-size-xxl">Useful Links</h2>
                                         </div>
                                     </div>
                                 </div>
@@ -2821,38 +2985,37 @@
                                     <div class="elementor-widget-container">
                                         <ul class="elementor-icon-list-items">
                                             <li class="elementor-icon-list-item">
-                                                <a href="https://demo2.pavothemes.com/insul/services/insurance-saving/">
+                                                <a href="{{ url('/services/general-insurance') }}">
 
                                                     <span class="elementor-icon-list-text">Audit & Assurance</span>
                                                 </a>
                                             </li>
                                             <li class="elementor-icon-list-item">
-                                                <a
-                                                    href="https://demo2.pavothemes.com/insul/services/business-consultancy/">
+                                                <a href="{{ url('/services/mutual-funds') }}">
 
                                                     <span class="elementor-icon-list-text">Consulting</span>
                                                 </a>
                                             </li>
                                             <li class="elementor-icon-list-item">
-                                                <a href="https://demo2.pavothemes.com/insul/services/report-analysis/">
+                                                <a href="{{ url('/services/general-insurance') }}">
 
                                                     <span class="elementor-icon-list-text">Risk Advisory</span>
                                                 </a>
                                             </li>
                                             <li class="elementor-icon-list-item">
-                                                <a href="https://demo2.pavothemes.com/insul/services/finance-advisory/">
+                                                <a href="{{ url('/services/mutual-funds') }}">
 
                                                     <span class="elementor-icon-list-text">Financial Advisory</span>
                                                 </a>
                                             </li>
                                             <li class="elementor-icon-list-item">
-                                                <a href="https://demo2.pavothemes.com/insul/services/strategy-lab/">
+                                                <a href="{{ url('/services/life-insurance') }}">
 
                                                     <span class="elementor-icon-list-text">Legal</span>
                                                 </a>
                                             </li>
                                             <li class="elementor-icon-list-item">
-                                                <a href="https://demo2.pavothemes.com/insul/services/life-insurance/">
+                                                <a href="{{ url('/services/life-insurance') }}">
 
                                                     <span class="elementor-icon-list-text">Tax</span>
                                                 </a>

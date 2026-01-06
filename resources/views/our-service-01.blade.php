@@ -12,6 +12,25 @@
             contain-intrinsic-size: 3000px 1500px
         }
     </style>
+    <style>
+        /* Fix email link styling in header */
+        .elementor-element[data-id="62b8151"] .elementor-icon-list-text a {
+            color: inherit !important;
+            text-decoration: none !important;
+        }
+        
+        .elementor-element[data-id="62b8151"] .elementor-icon-list-text a:hover {
+            color: inherit !important;
+            text-decoration: underline !important;
+        }
+        
+        /* Service excerpt should use full available width (avoid fixed width) */
+        .service-layout-1 .service-content .excerpt-content {
+            width: 100% !important;
+            max-width: 100% !important;
+            box-sizing: border-box;
+        }
+    </style>
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
     <link rel="dns-prefetch" href="//s.w.org">
     <link rel='dns-prefetch' href='//demo2.pavothemes.com' />
@@ -708,8 +727,7 @@
                                                 <span class="elementor-icon-list-icon">
                                                     <i aria-hidden="true"
                                                         class="insul-icon- insul-icon-location-01"></i> </span>
-                                                <span class="elementor-icon-list-text">6391 Elgin St. Celina, Delaware
-                                                    10299</span>
+                                                <span class="elementor-icon-list-text">C-1 Main Road, Kanti Nagar, Delhi - 110085</span>
                                             </li>
                                         </ul>
                                     </div>
@@ -728,7 +746,7 @@
                                                     <span class="elementor-icon-list-icon">
                                                         <i aria-hidden="true"
                                                             class="insul-icon- insul-icon-telephone"></i> </span>
-                                                    <span class="elementor-icon-list-text">(209) 555-0104</span>
+                                                    <span class="elementor-icon-list-text">+91 97110 43285</span>
                                                 </li>
                                             </ul>
                                         </div>
@@ -745,58 +763,13 @@
                                                     <span class="elementor-icon-list-icon">
                                                         <i aria-hidden="true"
                                                             class="insul-icon- insul-icon-envelope-03"></i> </span>
-                                                    <span class="elementor-icon-list-text"><a
-                                                            href="/cdn-cgi/l/email-protection" class="__cf_email__"
-                                                            data-cfemail="523b3c21273e7c3b3c343d2012372a333f223e377c313d3f">[email&#160;protected]</a></span>
+                                                    <span class="elementor-icon-list-text"><a href="mailto:rishabh@witanfinsure.com">rishabh@witanfinsure.com</a></span>
                                                 </li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="elementor-element elementor-element-7d362e4 e-con-full e-flex e-con e-child"
-                                    data-id="7d362e4" data-element_type="container">
-                                    <div class="elementor-element elementor-element-366bbc5 insul-style-menu-special-divider-yes elementor-hidden-tablet elementor-hidden-mobile_extra elementor-hidden-mobile insul-nav-menu-sm-divider-yes elementor-widget elementor-widget-insul-nav-menu"
-                                        data-id="366bbc5" data-element_type="widget"
-                                        data-settings="{&quot;width_dropdown_item&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:150,&quot;sizes&quot;:[]},&quot;width_dropdown_item_laptop&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;width_dropdown_item_tablet_extra&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;width_dropdown_item_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;width_dropdown_item_mobile_extra&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;width_dropdown_item_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}"
-                                        data-widget_type="insul-nav-menu.default">
-                                        <div class="elementor-widget-container">
-                                            <div class="elementor-nav-menu-wrapper">
-                                                <nav class="main-navigation" role="navigation"
-                                                    aria-label="Primary Navigation">
-                                                    <div class="primary-navigation">
-                                                        <ul id="menu-1-366bbc5" class="menu">
-                                                            <li id="menu-item-892"
-                                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-892">
-                                                                <a href="#"><span class="menu-title">Eng</span></a>
-                                                                <ul class="sub-menu">
-                                                                    <li id="menu-item-893"
-                                                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-893">
-                                                                        <a href="#"><span
-                                                                                class="menu-title">France</span></a>
-                                                                    </li>
-                                                                    <li id="menu-item-3524"
-                                                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3524">
-                                                                        <a href="#"><span
-                                                                                class="menu-title">Hindi</span></a></li>
-                                                                    <li id="menu-item-3525"
-                                                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3525">
-                                                                        <a href="#"><span
-                                                                                class="menu-title">Italian</span></a>
-                                                                    </li>
-                                                                    <li id="menu-item-3526"
-                                                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3526">
-                                                                        <a href="#"><span
-                                                                                class="menu-title">German</span></a>
-                                                                    </li>
-                                                                </ul>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </nav>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                {{-- Language translation button removed --}}
                             </div>
                         </div>
                     </div>
@@ -814,7 +787,7 @@
                                                 <div class="hfe-site-logo-set">
                                                     <div class="hfe-site-logo-container">
                                                         <img class="hfe-site-logo-img elementor-animation-"
-                                                            src="{{ asset('images/icon-dark-background@2x.png') }}"
+                                                            src="{{ asset('images/whitelogo.png') }}"
                                                             alt="Witan Fincare" />
                                                     </div>
                                                 </div>
@@ -920,7 +893,7 @@
                                     <div class="elementor-widget-container">
                                         <div class="elementor-button-wrapper">
                                             <a class="elementor-button elementor-button-link elementor-size-md"
-                                                href="/contact-02/">
+                                                href="{{ url('/contact-01') }}">
                                                 <span class="elementor-button-content-wrapper">
                                                     <span class="elementor-button-icon">
                                                         <i aria-hidden="true"
@@ -1268,7 +1241,7 @@
                                                 <div class="hfe-site-logo-set">
                                                     <div class="hfe-site-logo-container">
                                                         <img class="hfe-site-logo-img elementor-animation-"
-                                                            src="{{ asset('images/word-mark@2x.png') }}"
+                                                            src="{{ asset('images/mainlogo.png') }}"
                                                             alt="Witan Fincare" />
                                                     </div>
                                                 </div>
@@ -1404,7 +1377,7 @@
                                                 </a>
                                             </li>
                                             <li class="elementor-icon-list-item">
-                                                <a href="/contact-02/">
+                                                <a href="{{ url('/contact-01') }}">
 
                                                     <span class="elementor-icon-list-text">Contact</span>
                                                 </a>
@@ -1444,8 +1417,7 @@
                                                 <span
                                                     class="insul-elementor-text-wrapper insul-elementor-text-before">Address:</span>
                                                 <span
-                                                    class="insul-elementor-text-wrapper insul-elementor-text-after">6391
-                                                    Elgin St. Celina, Delaware 10299, USA</span>
+                                                    class="insul-elementor-text-wrapper insul-elementor-text-after">C-1 Main Road, Kanti Nagar, Delhi - 110085</span>
                                             </div>
                                         </div>
                                     </div>
@@ -1456,8 +1428,7 @@
                                                 <span
                                                     class="insul-elementor-text-wrapper insul-elementor-text-before">Phone:</span>
                                                 <span
-                                                    class="insul-elementor-text-wrapper insul-elementor-text-after">(209)
-                                                    555-0104</span>
+                                                    class="insul-elementor-text-wrapper insul-elementor-text-after">+91 97110 43285</span>
                                             </div>
                                         </div>
                                     </div>
@@ -1467,9 +1438,7 @@
                                             <div class="elementor-text">
                                                 <span
                                                     class="insul-elementor-text-wrapper insul-elementor-text-before">Email:</span>
-                                                <span class="insul-elementor-text-wrapper insul-elementor-text-after"><a
-                                                        href="/cdn-cgi/l/email-protection" class="__cf_email__"
-                                                        data-cfemail="137a7d60667f3d7a7d757c6153766b727e637f763d707c7e">[email&#160;protected]</a></span>
+                                                <span class="insul-elementor-text-wrapper insul-elementor-text-after"><a href="mailto:rishabh@witanfinsure.com">rishabh@witanfinsure.com</a></span>
                                             </div>
                                         </div>
                                     </div>
@@ -1654,36 +1623,7 @@
                 </div>
             </nav>
         </div>
-        <div class="insul-language-switcher-mobile">
-            <ul class="menu">
-                <li class="item">
-                    <div class="language-switcher-head">
-                        <img src="/wp-content/themes/insul/assets/images/language-switcher/en.jpg" alt="WPML">
-                    </div>
-                </li>
-                <li class="item">
-                    <div class="language-switcher-img">
-                        <a href="#">
-                            <img src="/wp-content/themes/insul/assets/images/language-switcher/de.jpg" alt="WPML">
-                        </a>
-                    </div>
-                </li>
-                <li class="item">
-                    <div class="language-switcher-img">
-                        <a href="#">
-                            <img src="/wp-content/themes/insul/assets/images/language-switcher/it.jpg" alt="WPML">
-                        </a>
-                    </div>
-                </li>
-                <li class="item">
-                    <div class="language-switcher-img">
-                        <a href="#">
-                            <img src="/wp-content/themes/insul/assets/images/language-switcher/hi.jpg" alt="WPML">
-                        </a>
-                    </div>
-                </li>
-            </ul>
-        </div>
+        {{-- Mobile language switcher removed --}}
     </div>
     <div class="insul-overlay"></div>
 

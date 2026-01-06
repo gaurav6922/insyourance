@@ -12,6 +12,86 @@
             contain-intrinsic-size: 3000px 1500px
         }
     </style>
+    <style>
+        /* Service excerpt should use full available width (avoid fixed width) */
+        .service-layout-1 .service-content .excerpt-content {
+            width: 100% !important;
+            max-width: 100% !important;
+            box-sizing: border-box;
+        }
+        
+        /* Make accordion column take more space in flex layout */
+        .elementor-element[data-id="91e395c"] .e-con-inner {
+            display: flex !important;
+        }
+        
+        .elementor-element[data-id="4dcbea5"] {
+            flex: 2 1 0% !important;
+            min-width: 0 !important;
+            max-width: none !important;
+        }
+        
+        .elementor-element[data-id="eb6a04d"] {
+            flex: 1 1 0% !important;
+        }
+        
+        /* Accordion widget and containers should use full width */
+        .elementor-element[data-id="def2380"],
+        .elementor-element[data-id="def2380"] .elementor-widget-container,
+        .elementor-element[data-id="def2380"] .e-n-accordion {
+            width: 100% !important;
+            max-width: 100% !important;
+        }
+        
+        /* Accordion item content regions should use full width */
+        .e-n-accordion-item > div[role="region"],
+        .e-n-accordion-item > div[role="region"] .elementor-element {
+            width: 100% !important;
+            max-width: 100% !important;
+        }
+        
+        /* All icon list widgets within accordion should use full width */
+        .elementor-element[data-id="4dcbea5"] .elementor-widget-icon-list,
+        .elementor-element[data-id="4dcbea5"] .elementor-widget-icon-list .elementor-widget-container,
+        .elementor-element[data-id="4dcbea5"] .elementor-icon-list-items,
+        .elementor-element[data-id="4dcbea5"] .elementor-icon-list-item {
+            width: 100% !important;
+            max-width: 100% !important;
+        }
+        
+        /* Icon list items should allow text to expand */
+        .elementor-element[data-id="4dcbea5"] .elementor-icon-list-item {
+            display: flex !important;
+            width: 100% !important;
+            max-width: 100% !important;
+        }
+        
+        /* Icon list text should use full available width */
+        .elementor-element[data-id="4dcbea5"] .elementor-icon-list-text {
+            display: block !important;
+            flex: 1 1 auto !important;
+            width: auto !important;
+            max-width: none !important;
+            min-width: 0 !important;
+            box-sizing: border-box;
+        }
+        
+        /* Icon should not constrain text */
+        .elementor-element[data-id="4dcbea5"] .elementor-icon-list-icon {
+            flex-shrink: 0 !important;
+        }
+        
+        /* Remove any padding/margin constraints */
+        .elementor-element[data-id="4dcbea5"] .elementor-widget-container {
+            padding-right: 0 !important;
+            margin-right: 0 !important;
+        }
+        
+        /* Ensure parent containers don't constrain width */
+        .elementor-element[data-id="91e395c"] {
+            max-width: 100% !important;
+        }
+    </style>
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
     <link rel="dns-prefetch" href="//s.w.org">
     <link rel='dns-prefetch' href='//demo2.pavothemes.com' />

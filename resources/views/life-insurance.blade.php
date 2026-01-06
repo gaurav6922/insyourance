@@ -673,7 +673,7 @@
 							<li class="elementor-icon-list-item">
 											<span class="elementor-icon-list-icon">
 							<i aria-hidden="true" class="insul-icon- insul-icon-location-01"></i>						</span>
-										<span class="elementor-icon-list-text">6391 Elgin St. Celina, Delaware 10299</span>
+										<span class="elementor-icon-list-text">C-1 Main Road, Kanti Nagar, Delhi - 110085</span>
 									</li>
 						</ul>
 				</div>
@@ -687,7 +687,7 @@
 							<li class="elementor-icon-list-item">
 											<span class="elementor-icon-list-icon">
 							<i aria-hidden="true" class="insul-icon- insul-icon-telephone"></i>						</span>
-										<span class="elementor-icon-list-text">(209) 555-0104</span>
+										<span class="elementor-icon-list-text">+91 97110 43285</span>
 									</li>
 						</ul>
 				</div>
@@ -700,30 +700,13 @@
 							<li class="elementor-icon-list-item">
 											<span class="elementor-icon-list-icon">
 							<i aria-hidden="true" class="insul-icon- insul-icon-envelope-03"></i>						</span>
-										<span class="elementor-icon-list-text"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="523b3c21273e7c3b3c343d2012372a333f223e377c313d3f">[email&#160;protected]</a></span>
+										<span class="elementor-icon-list-text"><a href="mailto:rishabh@witanfinsure.com">rishabh@witanfinsure.com</a></span>
 									</li>
 						</ul>
 				</div>
 				</div>
 				</div>
-		<div class="elementor-element elementor-element-7d362e4 e-con-full e-flex e-con e-child" data-id="7d362e4" data-element_type="container">
-				<div class="elementor-element elementor-element-366bbc5 insul-style-menu-special-divider-yes elementor-hidden-tablet elementor-hidden-mobile_extra elementor-hidden-mobile insul-nav-menu-sm-divider-yes elementor-widget elementor-widget-insul-nav-menu" data-id="366bbc5" data-element_type="widget" data-settings="{&quot;width_dropdown_item&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:150,&quot;sizes&quot;:[]},&quot;width_dropdown_item_laptop&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;width_dropdown_item_tablet_extra&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;width_dropdown_item_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;width_dropdown_item_mobile_extra&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;width_dropdown_item_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="insul-nav-menu.default">
-				<div class="elementor-widget-container">
-			        <div class="elementor-nav-menu-wrapper">
-            <nav class="main-navigation" role="navigation" aria-label="Primary Navigation">
-                <div class="primary-navigation"><ul id="menu-1-366bbc5" class="menu"><li id="menu-item-892" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-892"><a href="#"><span class="menu-title">Eng</span></a>
-<ul class="sub-menu">
-	<li id="menu-item-893" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-893"><a href="#"><span class="menu-title">France</span></a></li>
-	<li id="menu-item-3524" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3524"><a href="#"><span class="menu-title">Hindi</span></a></li>
-	<li id="menu-item-3525" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3525"><a href="#"><span class="menu-title">Italian</span></a></li>
-	<li id="menu-item-3526" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3526"><a href="#"><span class="menu-title">German</span></a></li>
-</ul>
-</li>
-</ul></div>            </nav>
-        </div>
-        		</div>
-				</div>
-				</div>
+{{-- Language translation button removed --}}
 				</div>
 					</div>
 				</div>
@@ -736,7 +719,7 @@
                                                         <a data-elementor-open-lightbox="" class='elementor-clickable' href="/">
                                                             <div class="hfe-site-logo-set">
                         <div class="hfe-site-logo-container">
-                            <img class="hfe-site-logo-img elementor-animation-" src="{{ asset('images/icon-dark-background@2x.png') }}" alt="Witan Fincare"/>
+                            <img class="hfe-site-logo-img elementor-animation-" src="{{ asset('images/whitelogo.png') }}" alt="Witan Fincare"/>
                                                     </div>
                     </div>
                                     </a>
@@ -791,7 +774,7 @@
 				<div class="elementor-element elementor-element-cf3cb61 elementor-hidden-mobile elementor-button-default elementor-widget elementor-widget-button" data-id="cf3cb61" data-element_type="widget" data-widget_type="button.default">
 				<div class="elementor-widget-container">
 							<div class="elementor-button-wrapper">
-					<a class="elementor-button elementor-button-link elementor-size-md" href="/contact-02/">
+					<a class="elementor-button elementor-button-link elementor-size-md" href="{{ url('/contact-01') }}">
 						<span class="elementor-button-content-wrapper">
 						<span class="elementor-button-icon">
 				<i aria-hidden="true" class="insul-icon- insul-icon-arrow-up-right-1"></i>			</span>
@@ -1065,7 +1048,7 @@
                                                         <a data-elementor-open-lightbox="" class='elementor-clickable' href="/">
                                                             <div class="hfe-site-logo-set">
                         <div class="hfe-site-logo-container">
-                            <img class="hfe-site-logo-img elementor-animation-" src="{{ asset('images/word-mark@2x.png') }}" alt="Witan Fincare"/>
+                            <img class="hfe-site-logo-img elementor-animation-" src="{{ asset('images/mainlogo.png') }}" alt="Witan Fincare"/>
                                                     </div>
                     </div>
                                     </a>
@@ -1165,8 +1148,8 @@
 											</a>
 									</li>
 								<li class="elementor-icon-list-item">
-											<a href="/contact-02/">
-
+											<a href="{{ url('/contact-01') }}">
+											
 											<span class="elementor-icon-list-text">Contact</span>
 											</a>
 									</li>
@@ -1196,7 +1179,7 @@
 				<div class="elementor-widget-container">
 			        <div class="elementor-text">
                     <span class="insul-elementor-text-wrapper insul-elementor-text-before">Address:</span>
-                            <span class="insul-elementor-text-wrapper insul-elementor-text-after">6391 Elgin St. Celina, Delaware 10299, USA</span>
+                            <span class="insul-elementor-text-wrapper insul-elementor-text-after">C-1 Main Road, Kanti Nagar, Delhi - 110085</span>
                 </div>
         		</div>
 				</div>
@@ -1204,7 +1187,7 @@
 				<div class="elementor-widget-container">
 			        <div class="elementor-text">
                     <span class="insul-elementor-text-wrapper insul-elementor-text-before">Phone:</span>
-                            <span class="insul-elementor-text-wrapper insul-elementor-text-after">(209) 555-0104</span>
+                            <span class="insul-elementor-text-wrapper insul-elementor-text-after">+91 97110 43285</span>
                 </div>
         		</div>
 				</div>
@@ -1212,7 +1195,7 @@
 				<div class="elementor-widget-container">
 			        <div class="elementor-text">
                     <span class="insul-elementor-text-wrapper insul-elementor-text-before">Email:</span>
-                            <span class="insul-elementor-text-wrapper insul-elementor-text-after"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="137a7d60667f3d7a7d757c6153766b727e637f763d707c7e">[email&#160;protected]</a></span>
+                            <span class="insul-elementor-text-wrapper insul-elementor-text-after"><a href="mailto:rishabh@witanfinsure.com">rishabh@witanfinsure.com</a></span>
                 </div>
         		</div>
 				</div>
@@ -1223,7 +1206,7 @@
 		<div class="elementor-element elementor-element-35aec87 e-con-full e-flex e-con e-child" data-id="35aec87" data-element_type="container">
 				<div class="elementor-element elementor-element-b9ad783 elementor-widget elementor-widget-text-editor" data-id="b9ad783" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
-							Copyright © 2024 Insul. All right reserved.						</div>
+							Copyright © 2026 MargX. All right reserved.						</div>
 				</div>
 				</div>
 				</div>
