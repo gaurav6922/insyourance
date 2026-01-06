@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <link rel="profile" href="//gmpg.org/xfn/11">
-    <title>Insul &#8211; Business Consulting Company WordPress Theme</title>
+    <title>Witan Finsure</title>
+    <link rel="icon" type="image/png" href="{{ asset('images/witantitle.png') }}">
     <meta name='robots' content='max-image-preview:large' />
     <style>
     img:is([sizes="auto" i], [sizes^="auto," i]) {
@@ -109,13 +110,26 @@
             margin-top: 0 !important;
         }
         .elementor-element[data-id="5803901"] .elementor-widget-container {
-            margin-bottom: 0 !important;
+            margin-bottom: 20px !important;
             padding-bottom: 0 !important;
             margin-top: 0 !important;
             padding-top: 0 !important;
         }
         .elementor-element[data-id="607b350"] {
-            margin-top: -10px !important;
+            margin-top: 0 !important;
+            padding-top: 0 !important;
+        }
+        .elementor-element[data-id="607b350"] .elementor-widget-container {
+            margin-top: 0 !important;
+            padding-top: 0 !important;
+        }
+        .elementor-element[data-id="607b350"] .elementor-icon-list-items {
+            margin-top: 0 !important;
+            padding-top: 0 !important;
+        }
+        .elementor-element[data-id="607b350"] .elementor-icon-list-item:first-child {
+            margin-top: 0 !important;
+            padding-top: 0 !important;
             margin-bottom: 0 !important;
             padding-top: 0 !important;
         }
@@ -160,6 +174,27 @@
         .elementor-element[data-id="c7c2ff7"] .elementor-widget-container {
             margin-top: 0 !important;
             padding-top: 0 !important;
+        }
+        /* Increase heading-to-first-item spacing in Useful Links column */
+        .elementor-element[data-id="4089f4a"] .elementor-widget-container {
+            margin-bottom: 20px !important;
+            padding-bottom: 0 !important;
+        }
+        /* Force override against earlier zero-margin rules using ancestor + child specificity */
+        .elementor-element[data-id="d49fe94"] .elementor-element[data-id="5803901"] .elementor-widget-container {
+            margin-bottom: 20px !important;
+        }
+        .elementor-element[data-id="c963be7"] .elementor-element[data-id="4089f4a"] .elementor-widget-container {
+            margin-bottom: 20px !important;
+        }
+        /* Make list item spacing identical across both footer columns */
+        .elementor-element[data-id="607b350"] .elementor-icon-list-item,
+        .elementor-element[data-id="c7c2ff7"] .elementor-icon-list-item {
+            margin-bottom: 18px !important;
+        }
+        .elementor-element[data-id="607b350"] .elementor-icon-list-item:last-child,
+        .elementor-element[data-id="c7c2ff7"] .elementor-icon-list-item:last-child {
+            margin-bottom: 0 !important;
         }
 
         /* Connect section */
@@ -955,19 +990,19 @@
                                                         <ul class="sub-menu">
                                                             <li id="menu-item-185"
                                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-185">
-                                                                <a href="/our-service-01/">
+                                                                <a href="/services/mutual-funds/">
                                                                     <span class="menu-title">Mutual Funds</span>
                                                                 </a>
                                                             </li>
                                                             <li id="menu-item-186"
                                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-186">
-                                                                <a href="/general-insurance/">
+                                                                <a href="/services/general-insurance/">
                                                                     <span class="menu-title">General Insurance</span>
                                                                 </a>
                                                             </li>
                                                             <li id="menu-item-187"
                                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-187">
-                                                                <a href="/life-insurance/">
+                                                                <a href="/services/life-insurance/">
                                                                     <span class="menu-title">Life Insurance</span>
                                                                 </a>
                                                             </li>
@@ -1034,7 +1069,7 @@
                                                     <li id="menu-item-192"
                                                         class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-192">
                                                         <a href="#">
-                                                            <span class="menu-title">Page</span>
+                                                            <span class="menu-title">Utilities</span>
                                                         </a>
                                                         <ul class="sub-menu">
                                                             <li id="menu-item-202"
@@ -1221,7 +1256,7 @@
                                                                 										-->
                                                                 <a id="slider-1-slide-1-layer-6"
                                                                     class="rs-layer rev-btn"
-                                                                    href="https://demo2.pavothemes.com/insul/our-service-01/"
+                                                                    href="#our-services"
                                                                     target="_self" data-type="button" data-rsp_ch="on"
                                                                     data-xy="" data-pos="r"
                                                                     data-text="w:normal;s:14;l:24;ls:1,0,0,0;fw:700;"
@@ -1510,28 +1545,28 @@
                                         <div class="elementor-slider-scrolling-item">
                                             <div class="elementor-scrolling-item-inner">
                                                 <div class="scrolling-title">
-                                                    <span class="title-scrolling">Development .</span>
+                                                    <span class="title-scrolling">Protection .</span>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="elementor-slider-scrolling-item">
                                             <div class="elementor-scrolling-item-inner">
                                                 <div class="scrolling-title">
-                                                    <span class="title-scrolling">Management .</span>
+                                                    <span class="title-scrolling">Planning .</span>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="elementor-slider-scrolling-item">
                                             <div class="elementor-scrolling-item-inner">
                                                 <div class="scrolling-title">
-                                                    <span class="title-scrolling">Grow up .</span>
+                                                    <span class="title-scrolling">Grow Wealth .</span>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="elementor-slider-scrolling-item">
                                             <div class="elementor-scrolling-item-inner">
                                                 <div class="scrolling-title">
-                                                    <span class="title-scrolling">Increase customer .</span>
+                                                    <span class="title-scrolling">Secure Future .</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -2032,7 +2067,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="elementor-element elementor-element-a946d84 e-flex e-con-boxed e-con e-parent"
+                    <div id="our-services" class="elementor-element elementor-element-a946d84 e-flex e-con-boxed e-con e-parent"
                         data-id="a946d84" data-element_type="container">
                         <div class="e-con-inner">
                             <div class="elementor-element elementor-element-31477fa heading-effects-yes elementor-mobile-align-center subtitle-position-above elementor-widget elementor-widget-heading"
@@ -2071,7 +2106,7 @@
                                         <div>
                                             <div class="service-layout-1">
 
-                                                <div class="elementor-service-item elementor-repeater-item-d26b690">
+                                                <div class="elementor-service-item elementor-repeater-item-9c99c35">
                                                     <div class="service-inner">
                                                         <div class="service-post-thumbnail">
 
@@ -2083,70 +2118,8 @@
                                                                         <span class="number">01</span>
                                                                     </div>
                                                                     <h2 class="entry-title">
-
-                                                                        Portfolio Assessment </a>
-                                                                    </h2>
-                                                                </div>
-                                                                <div class="excerpt-content">We review your existing
-                                                                    insurance and investment portfolio to understand
-                                                                    current positioning, identify gaps, assess alignment
-                                                                    with goals, and define where adjustments are needed
-                                                                    for long-term protection and growth.</div>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="elementor-service-item elementor-repeater-item-800877f">
-                                                    <div class="service-inner">
-                                                        <div class="service-post-thumbnail">
-
-                                                        </div>
-                                                        <div class="service-content">
-                                                            <div class="service-title">
-                                                                <div class="title-number">
-                                                                    <div class="entry-number">
-                                                                        <span class="number">02</span>
-                                                                    </div>
-                                                                    <h2 class="entry-title">
                                                                         <a
-                                                                            href="{{ url('/our-service-01') }}">
-                                                                            Mutual Funds </a>
-                                                                    </h2>
-                                                                </div>
-                                                                <div class="excerpt-content">We determine suitable
-                                                                    mutual fund allocation based on risk appetite, time
-                                                                    horizon, and goals, constructing diversified
-                                                                    portfolios that balance growth, stability,
-                                                                    liquidity, and long-term wealth creation.</div>
-                                                            </div>
-                                                            <div class="button-service">
-                                                                <a class="btn-link"
-                                                                href="{{ url('/our-service-01') }}">
-
-                                                                                                                        Read more                                                    
-                                                                    <i class="insul-icon-arrow-up-right-1"></i>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="elementor-service-item elementor-repeater-item-9c99c35">
-                                                    <div class="service-inner">
-                                                        <div class="service-post-thumbnail">
-
-                                                        </div>
-                                                        <div class="service-content">
-                                                            <div class="service-title">
-                                                                <div class="title-number">
-                                                                    <div class="entry-number">
-                                                                        <span class="number">03</span>
-                                                                    </div>
-                                                                    <h2 class="entry-title">
-                                                                        <a
-                                                                        href="{{ url('/general-insurance') }}">
+                                                                        href="{{ url('/services/general-insurance') }}">
                                                                             General Insurance </a>
                                                                     </h2>
                                                                 </div>
@@ -2158,7 +2131,7 @@
                                                             </div>
                                                             <div class="button-service">
                                                                 <a class="btn-link"
-                                                                href="{{ url('/general-insurance') }}">
+                                                                href="{{ url('/services/general-insurance') }}">
 
                                                                                                                         Read more                                                    
                                                                     <i class="insul-icon-arrow-up-right-1"></i>
@@ -2177,11 +2150,11 @@
                                                             <div class="service-title">
                                                                 <div class="title-number">
                                                                     <div class="entry-number">
-                                                                        <span class="number">04</span>
+                                                                        <span class="number">02</span>
                                                                     </div>
                                                                     <h2 class="entry-title">
                                                                         <a
-                                                                        href="{{ url('/life-insurance') }}">
+                                                                        href="{{ url('/services/life-insurance') }}">
                                                                             Life Insurance </a>
                                                                     </h2>
                                                                 </div>
@@ -2193,7 +2166,42 @@
                                                             </div>
                                                             <div class="button-service">
                                                                 <a class="btn-link"
-                                                                href="{{ url('/life-insurance') }}">
+                                                                href="{{ url('/services/life-insurance') }}">
+
+                                                                                                                        Read more                                                    
+                                                                    <i class="insul-icon-arrow-up-right-1"></i>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="elementor-service-item elementor-repeater-item-800877f">
+                                                    <div class="service-inner">
+                                                        <div class="service-post-thumbnail">
+
+                                                        </div>
+                                                        <div class="service-content">
+                                                            <div class="service-title">
+                                                                <div class="title-number">
+                                                                    <div class="entry-number">
+                                                                        <span class="number">03</span>
+                                                                    </div>
+                                                                    <h2 class="entry-title">
+                                                                        <a
+                                                                            href="{{ url('/services/mutual-funds') }}">
+                                                                            Mutual Funds </a>
+                                                                    </h2>
+                                                                </div>
+                                                                <div class="excerpt-content">We determine suitable
+                                                                    mutual fund allocation based on risk appetite, time
+                                                                    horizon, and goals, constructing diversified
+                                                                    portfolios that balance growth, stability,
+                                                                    liquidity, and long-term wealth creation.</div>
+                                                            </div>
+                                                            <div class="button-service">
+                                                                <a class="btn-link"
+                                                                href="{{ url('/services/mutual-funds') }}">
 
                                                                                                                         Read more                                                    
                                                                     <i class="insul-icon-arrow-up-right-1"></i>
@@ -2802,25 +2810,6 @@
         <!-- #content -->
 
         <div class='footer-width-fixer'>
-            <div data-elementor-type="wp-post" data-elementor-id="3494" class="elementor elementor-3494">
-                <div class="elementor-element elementor-element-e4a16ef elementor-hidden-desktop elementor-hidden-laptop elementor-hidden-tablet_extra e-flex e-con-boxed e-con e-parent"
-                    data-id="e4a16ef" data-element_type="container"
-                    data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;position&quot;:&quot;fixed&quot;}">
-                    <div class="e-con-inner">
-                        <div class="elementor-element elementor-element-c1e38e6 elementor-widget__width-inherit insul-search-layout-3 elementor-widget elementor-widget-insul-search"
-                            data-id="c1e38e6" data-element_type="widget" data-widget_type="insul-search.default">
-                            <div class="elementor-widget-container">
-                                <div class="site-header-search">
-                                    <a href="#" class="button-search-popup layout-3">
-                                        <i class="insul-icon-search"></i>
-                                        <span class="content">Search</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
         <footer itemtype="https://schema.org/WPFooter" itemscope="itemscope" id="colophon" role="contentinfo">
             <div class='footer-width-fixer'>
@@ -2854,8 +2843,7 @@
                                         data-id="f972c8e" data-element_type="widget"
                                         data-widget_type="text-editor.default">
                                         <div class="elementor-widget-container">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                            tempor. </div>
+                                            Subscribe to our newsletter to get the latest news and updates. </div>
                                     </div>
                                     <div class="elementor-element elementor-element-782dd39 elementor-widget__width-initial elementor-widget-mobile__width-inherit form-mailchimp-style-default elementor-widget elementor-widget-insul-mailchmip"
                                         data-id="782dd39" data-element_type="widget"
@@ -2913,7 +2901,7 @@
                                 <div class="elementor-element elementor-element-7cd8a99 elementor-widget elementor-widget-text-editor"
                                     data-id="7cd8a99" data-element_type="widget" data-widget_type="text-editor.default">
                                     <div class="elementor-widget-container">
-                                        Copyright © 2024 Insul. All right reserved. </div>
+                                        Copyright © 2026 MargX. All right reserved. </div>
                                 </div>
                             </div>
                             <div class="elementor-element elementor-element-d49fe94 e-con-full e-flex e-con e-child"
@@ -2943,7 +2931,7 @@
                                                 </a>
                                             </li>
                                             <li class="elementor-icon-list-item">
-                                                <a href="{{ url('/our-service-01') }}">
+                                                <a href="{{ url('/services/mutual-funds') }}">
 
                                                     <span class="elementor-icon-list-text">Our impact</span>
                                                 </a>
@@ -3146,16 +3134,21 @@
                             <ul class="sub-menu">
                                 <li id="menu-item-108"
                                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-108">
-                                    <a href="https://demo2.pavothemes.com/insul/our-service-01/">Our Service 01</a>
+                                    <a href="/services/mutual-funds/">
+                                        <span class="menu-title">Mutual Funds</span>
+                                    </a>
                                 </li>
                                 <li id="menu-item-110"
                                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-110">
-                                    <a href="https://demo2.pavothemes.com/insul/our-service-02/">Our Service 02</a>
+                                    <a href="/services/general-insurance/">
+                                        <span class="menu-title">General Insurance</span>
+                                    </a>
                                 </li>
                                 <li id="menu-item-111"
-                                    class="menu-item menu-item-type-post_type menu-item-object-post menu-item-111">
-                                    <a href="https://demo2.pavothemes.com/insul/services/insurance-saving/">Service
-                                        Details</a>
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-111">
+                                    <a href="/services/life-insurance/">
+                                        <span class="menu-title">Life Insurance</span>
+                                    </a>
                                 </li>
                             </ul>
                         </li>
@@ -3165,40 +3158,25 @@
                         </li>
                         <li id="menu-item-117"
                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-117">
-                            <a href="#">Page</a>
+                            <a href="#">Utilities</a>
                             <ul class="sub-menu">
-                                <li id="menu-item-119"
-                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-119">
-                                    <a href="https://demo2.pavothemes.com/insul/our-projects/">Our Projects</a>
+                                <li id="menu-item-202"
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-202">
+                                    <a href="/testimonial">
+                                        <span class="menu-title">Testimonial</span>
+                                    </a>
                                 </li>
-                                <li id="menu-item-120"
-                                    class="menu-item menu-item-type-post_type menu-item-object-post menu-item-120">
-                                    <a href="https://demo2.pavothemes.com/insul/projects/designing-dreams/">Project
-                                        Detail</a>
+                                <li id="menu-item-204"
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-204">
+                                    <a href="/our-team">
+                                        <span class="menu-title">Our Team</span>
+                                    </a>
                                 </li>
-                                <li id="menu-item-122"
-                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-122">
-                                    <a href="https://demo2.pavothemes.com/insul/testimonial/">Testimonial</a>
-                                </li>
-                                <li id="menu-item-124"
-                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-124">
-                                    <a href="https://demo2.pavothemes.com/insul/our-pricing/">Our Pricing</a>
-                                </li>
-                                <li id="menu-item-126"
-                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-126">
-                                    <a href="https://demo2.pavothemes.com/insul/our-team/">Our Team</a>
-                                </li>
-                                <li id="menu-item-128"
-                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-128">
-                                    <a href="https://demo2.pavothemes.com/insul/faqs-page/">FAQs Page</a>
-                                </li>
-                                <li id="menu-item-2841"
-                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2841">
-                                    <a href="https://demo2.pavothemes.com/insul/404">404 Pages</a>
-                                </li>
-                                <li id="menu-item-132"
-                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-132">
-                                    <a href="https://demo2.pavothemes.com/insul/icons/">Icons</a>
+                                <li id="menu-item-205"
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-205">
+                                    <a href="/faqs-page">
+                                        <span class="menu-title">FAQ</span>
+                                    </a>
                                 </li>
                             </ul>
                         </li>
@@ -3247,10 +3225,10 @@
                             <a href="https://demo2.pavothemes.com/insul/our-projects/">Our Projects</a>
                         </li>
                         <li class="page_item page-item-107">
-                            <a href="https://demo2.pavothemes.com/insul/our-service-01/">Our Service 01</a>
+                            <a href="/services/mutual-funds/">Mutual Funds</a>
                         </li>
                         <li class="page_item page-item-109">
-                            <a href="https://demo2.pavothemes.com/insul/our-service-02/">Our Service 02</a>
+                            <a href="/services/general-insurance/">General Insurance</a>
                         </li>
                         <li class="page_item page-item-125">
                             <a href="https://demo2.pavothemes.com/insul/our-team/">Our Team</a>
@@ -3310,32 +3288,6 @@
     window.RS_MODULES.moduleWaiting = window.RS_MODULES.moduleWaiting || {};
     window.RS_MODULES.type = 'compiled';
     </script>
-    <div class="site-search-popup">
-        <div class="site-search-popup-wrap">
-            <a href="#" class="site-search-popup-close">
-                <svg class="close-icon" xmlns="http://www.w3.org/2000/svg" width="23.691" height="22.723"
-                    viewBox="0 0 23.691 22.723">
-                    <g transform="translate(-126.154 -143.139)">
-                        <line x2="23" y2="22" transform="translate(126.5 143.5)" fill="none" stroke="CurrentColor"
-                            stroke-width="1"></line>
-                        <path d="M0,22,23,0" transform="translate(126.5 143.5)" fill="none" stroke="CurrentColor"
-                            stroke-width="1"></path>
-                    </g>
-                </svg>
-            </a>
-
-            <div class="site-search">
-                <form role="search" method="get" class="search-form" action="https://demo2.pavothemes.com/insul/">
-                    <label>
-                        <span class="screen-reader-text">Search for:</span>
-                        <input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" />
-                    </label>
-                    <input type="submit" class="search-submit" value="Search" />
-                </form>
-            </div>
-        </div>
-    </div>
-    <div class="site-search-popup-overlay"></div>
     <script>
         (function () {
         function maybePrefixUrlField() {

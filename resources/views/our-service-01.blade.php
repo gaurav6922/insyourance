@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <link rel="profile" href="//gmpg.org/xfn/11">
     <title>Mutual Funds &#8211; Witan Finsure</title>
+    <link rel="icon" type="image/png" href="{{ asset('images/witantitle.png') }}">
     <meta name='robots' content='max-image-preview:large' />
     <style>
         img:is([sizes="auto" i], [sizes^="auto," i]) {
@@ -837,17 +838,17 @@
                                                             <ul class="sub-menu">
                                                                 <li id="menu-item-108"
                                                                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-108">
-                                                                    <a href="/our-service-01/"><span
+                                                                    <a href="/services/mutual-funds/"><span
                                                                             class="menu-title">Mutual Funds</span></a>
                                                                 </li>
                                                                 <li id="menu-item-110"
                                                                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-110">
-                                                                    <a href="/general-insurance/"><span
+                                                                    <a href="/services/general-insurance/"><span
                                                                             class="menu-title">General
                                                                             Insurance</span></a></li>
                                                                 <li id="menu-item-111"
                                                                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-111">
-                                                                    <a href="/life-insurance/"><span
+                                                                    <a href="/services/life-insurance/"><span
                                                                             class="menu-title">Life Insurance</span></a>
                                                                 </li>
                                                             </ul>
@@ -858,7 +859,7 @@
                                                         </li>
                                                         <li id="menu-item-117"
                                                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-117">
-                                                            <a href="#"><span class="menu-title">Page</span></a>
+                                                            <a href="#"><span class="menu-title">Utilities</span></a>
                                                             <ul class="sub-menu">
                                                                 <li id="menu-item-122"
                                                                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-122">
@@ -1371,7 +1372,7 @@
                                                 </a>
                                             </li>
                                             <li class="elementor-icon-list-item">
-                                                <a href="/our-service-01/">
+                                                <a href="/services/mutual-funds/">
 
                                                     <span class="elementor-icon-list-text">Works</span>
                                                 </a>
@@ -1383,13 +1384,13 @@
                                                 </a>
                                             </li>
                                             <li class="elementor-icon-list-item">
-                                                <a href="/our-service-01/">
+                                                <a href="/services/mutual-funds/">
 
                                                     <span class="elementor-icon-list-text">Privacy Policy</span>
                                                 </a>
                                             </li>
                                             <li class="elementor-icon-list-item">
-                                                <a href="/our-service-01/">
+                                                <a href="/services/mutual-funds/">
 
                                                     <span class="elementor-icon-list-text">Tax</span>
                                                 </a>
@@ -1526,15 +1527,21 @@
                             <ul class="sub-menu">
                                 <li id="menu-item-108"
                                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-108">
-                                    <a href="https://demo2.pavothemes.com/insul/our-service-01/">Our Service 01\\</a>
+                                    <a href="/services/mutual-funds/">
+                                        <span class="menu-title">Mutual Funds</span>
+                                    </a>
                                 </li>
                                 <li id="menu-item-110"
                                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-110">
-                                    <a href="https://demo2.pavothemes.com/insul/our-service-02/">Our Service 02</a>
+                                    <a href="/services/general-insurance/">
+                                        <span class="menu-title">General Insurance</span>
+                                    </a>
                                 </li>
                                 <li id="menu-item-111"
-                                    class="menu-item menu-item-type-post_type menu-item-object-post menu-item-111">
-                                    <a href="/services/mutual-funds/">Service Details</a>
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-111">
+                                    <a href="/services/life-insurance/">
+                                        <span class="menu-title">Life Insurance</span>
+                                    </a>
                                 </li>
                             </ul>
                         </li>
@@ -1544,7 +1551,7 @@
                         </li>
                         <li id="menu-item-117"
                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-117">
-                            <a href="#">Page</a>
+                            <a href="#">Utilities</a>
                             <ul class="sub-menu">
                                 <li id="menu-item-122"
                                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-122">
@@ -1605,10 +1612,10 @@
                             <a href="https://demo2.pavothemes.com/insul/our-projects/">Our Projects</a>
                         </li>
                         <li class="page_item page-item-107">
-                            <a href="https://demo2.pavothemes.com/insul/our-service-01/">Our Service 01</a>
+                            <a href="/services/mutual-funds/">Mutual Funds</a>
                         </li>
                         <li class="page_item page-item-109">
-                            <a href="https://demo2.pavothemes.com/insul/our-service-02/">Our Service 02</a>
+                            <a href="/services/general-insurance/">General Insurance</a>
                         </li>
                         <li class="page_item page-item-125">
                             <a href="https://demo2.pavothemes.com/insul/our-team/">Our Team</a>

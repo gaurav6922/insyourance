@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <link rel="profile" href="//gmpg.org/xfn/11">
-    <title>Our Team &#8211; Insul</title>
+    <title>Our Team &#8211; Witan Finsure</title>
+    <link rel="icon" type="image/png" href="{{ asset('images/witantitle.png') }}">
 <meta name='robots' content='max-image-preview:large' />
 	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -170,7 +171,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 							<li class="elementor-icon-list-item">
 											<span class="elementor-icon-list-icon">
 							<i aria-hidden="true" class="insul-icon- insul-icon-location-01"></i>						</span>
-										<span class="elementor-icon-list-text">6391 Elgin St. Celina, Delaware 10299</span>
+										<span class="elementor-icon-list-text">C-1 Main Road, Kanti Nagar, Delhi - 110085</span>
 									</li>
 						</ul>
 				</div>
@@ -184,7 +185,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 							<li class="elementor-icon-list-item">
 											<span class="elementor-icon-list-icon">
 							<i aria-hidden="true" class="insul-icon- insul-icon-telephone"></i>						</span>
-										<span class="elementor-icon-list-text">(209) 555-0104</span>
+										<span class="elementor-icon-list-text">+91 97110 43285</span>
 									</li>
 						</ul>
 				</div>
@@ -197,7 +198,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 							<li class="elementor-icon-list-item">
 											<span class="elementor-icon-list-icon">
 							<i aria-hidden="true" class="insul-icon- insul-icon-envelope-03"></i>						</span>
-										<span class="elementor-icon-list-text"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="3f56514c4a5311565159504d7f5a475e524f535a115c5052">[email&#160;protected]</a></span>
+										<span class="elementor-icon-list-text"><a href="mailto:rishabh@witanfinsure.com">rishabh@witanfinsure.com</a></span>
 									</li>
 						</ul>
 				</div>
@@ -208,15 +209,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 				<div class="elementor-widget-container">
 			        <div class="elementor-nav-menu-wrapper">
             <nav class="main-navigation" role="navigation" aria-label="Primary Navigation">
-                <div class="primary-navigation"><ul id="menu-1-366bbc5" class="menu"><li id="menu-item-892" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-892"><a href="#"><span class="menu-title">Eng</span></a>
-<ul class="sub-menu">
-	<li id="menu-item-893" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-893"><a href="#"><span class="menu-title">France</span></a></li>
-	<li id="menu-item-3524" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3524"><a href="#"><span class="menu-title">Hindi</span></a></li>
-	<li id="menu-item-3525" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3525"><a href="#"><span class="menu-title">Italian</span></a></li>
-	<li id="menu-item-3526" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3526"><a href="#"><span class="menu-title">German</span></a></li>
-</ul>
-</li>
-</ul></div>            </nav>
+                <div class="primary-navigation"><ul id="menu-1-366bbc5" class="menu"></ul></div>            </nav>
         </div>
         		</div>
 				</div>
@@ -233,7 +226,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
                                                         <a data-elementor-open-lightbox="" class='elementor-clickable' href="/">
                                                             <div class="hfe-site-logo-set">
                         <div class="hfe-site-logo-container">
-                            <img class="hfe-site-logo-img elementor-animation-" src="{{ asset('images/icon-dark-background@2x.png') }}" alt="Witan Fincare"/>
+                            <img class="hfe-site-logo-img elementor-animation-" src="{{ asset('images/whitelogo.png') }}" alt="Witan Fincare"/>
                                                     </div>
                     </div>
                                     </a>
@@ -265,13 +258,13 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 <li id="menu-item-105" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-105"><a href="/about-us"><span class="menu-title">About us</span></a></li>
 <li id="menu-item-106" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-106"><a href="#"><span class="menu-title">Service</span></a>
 <ul class="sub-menu">
-	<li id="menu-item-108" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-108"><a href="/our-service-01"><span class="menu-title">Our Service 01</span></a></li>
-	<li id="menu-item-110" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-110"><a href="/general-insurance"><span class="menu-title">General Insurance</span></a></li>
-	<li id="menu-item-111" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-111"><a href="/life-insurance"><span class="menu-title">Life Insurance</span></a></li>
+	<li id="menu-item-108" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-108"><a href="/services/mutual-funds"><span class="menu-title">Mutual Funds</span></a></li>
+	<li id="menu-item-110" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-110"><a href="/services/general-insurance"><span class="menu-title">General Insurance</span></a></li>
+	<li id="menu-item-111" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-111"><a href="/services/life-insurance"><span class="menu-title">Life Insurance</span></a></li>
 </ul>
 </li>
 <li id="menu-item-113" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113"><a href="/blog"><span class="menu-title">Blog</span></a></li>
-<li id="menu-item-117" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-117"><a href="#"><span class="menu-title">Page</span></a>
+<li id="menu-item-117" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-117"><a href="#"><span class="menu-title">Utilities</span></a>
 <ul class="sub-menu">
 	<li id="menu-item-122" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-122"><a href="/testimonial"><span class="menu-title">Testimonial</span></a></li>
 	<li id="menu-item-126" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-125 current_page_item menu-item-126"><a href="/our-team"><span class="menu-title">Our Team</span></a></li>
@@ -288,7 +281,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 				<div class="elementor-element elementor-element-cf3cb61 elementor-hidden-mobile elementor-button-default elementor-widget elementor-widget-button" data-id="cf3cb61" data-element_type="widget" data-widget_type="button.default">
 				<div class="elementor-widget-container">
 							<div class="elementor-button-wrapper">
-					<a class="elementor-button elementor-button-link elementor-size-md" href="/contact-01">
+					<a class="elementor-button elementor-button-link elementor-size-md" href="{{ url('/contact-01') }}">
 						<span class="elementor-button-content-wrapper">
 						<span class="elementor-button-icon">
 				<i aria-hidden="true" class="insul-icon- insul-icon-arrow-up-right-1"></i>			</span>
@@ -711,7 +704,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
                                                         <a data-elementor-open-lightbox="" class='elementor-clickable' href="/">
                                                             <div class="hfe-site-logo-set">
                         <div class="hfe-site-logo-container">
-                            <img class="hfe-site-logo-img elementor-animation-" src="{{ asset('images/word-mark@2x.png') }}" alt="Witan Fincare"/>
+                            <img class="hfe-site-logo-img elementor-animation-" src="{{ asset('images/mainlogo.png') }}" alt="Witan Fincare"/>
                                                     </div>
                     </div>
                                     </a>
@@ -720,7 +713,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 				</div>
 				<div class="elementor-element elementor-element-da90c44 elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-text-editor" data-id="da90c44" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.						</div>
+							Subscribe to our newsletter to get the latest news and updates.						</div>
 				</div>
 				<div class="elementor-element elementor-element-7d87454 elementor-widget__width-initial elementor-widget-mobile__width-inherit form-mailchimp-style-default elementor-widget elementor-widget-insul-mailchmip" data-id="7d87454" data-element_type="widget" data-widget_type="insul-mailchmip.default">
 				<div class="elementor-widget-container">
@@ -793,37 +786,37 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 				<div class="elementor-widget-container">
 					<ul class="elementor-icon-list-items">
 							<li class="elementor-icon-list-item">
-											<a href="/about-us">
+											<a href="/about-us/">
 
 											<span class="elementor-icon-list-text">About </span>
 											</a>
 									</li>
 								<li class="elementor-icon-list-item">
-											<a href="/contact-01">
+											<a href="/contact-01/">
 
 											<span class="elementor-icon-list-text">Careers</span>
 											</a>
 									</li>
 								<li class="elementor-icon-list-item">
-											<a href="/our-service-01">
+											<a href="/services/mutual-funds/">
 
 											<span class="elementor-icon-list-text">Works</span>
 											</a>
 									</li>
 								<li class="elementor-icon-list-item">
-											<a href="/contact-01">
+											<a href="{{ url('/contact-01') }}">
 
 											<span class="elementor-icon-list-text">Contact</span>
 											</a>
 									</li>
 								<li class="elementor-icon-list-item">
-											<a href="/our-service-01">
+											<a href="/services/mutual-funds">
 
 											<span class="elementor-icon-list-text">Privacy Policy</span>
 											</a>
 									</li>
 								<li class="elementor-icon-list-item">
-											<a href="/our-service-01">
+											<a href="/services/mutual-funds">
 
 											<span class="elementor-icon-list-text">Tax</span>
 											</a>
@@ -842,7 +835,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 				<div class="elementor-widget-container">
 			        <div class="elementor-text">
                     <span class="insul-elementor-text-wrapper insul-elementor-text-before">Address:</span>
-                            <span class="insul-elementor-text-wrapper insul-elementor-text-after">6391 Elgin St. Celina, Delaware 10299, USA</span>
+                            <span class="insul-elementor-text-wrapper insul-elementor-text-after">C-1 Main Road, Kanti Nagar, Delhi - 110085</span>
                 </div>
         		</div>
 				</div>
@@ -850,7 +843,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 				<div class="elementor-widget-container">
 			        <div class="elementor-text">
                     <span class="insul-elementor-text-wrapper insul-elementor-text-before">Phone:</span>
-                            <span class="insul-elementor-text-wrapper insul-elementor-text-after">(209) 555-0104</span>
+                            <span class="insul-elementor-text-wrapper insul-elementor-text-after">+91 97110 43285</span>
                 </div>
         		</div>
 				</div>
@@ -858,7 +851,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 				<div class="elementor-widget-container">
 			        <div class="elementor-text">
                     <span class="insul-elementor-text-wrapper insul-elementor-text-before">Email:</span>
-                            <span class="insul-elementor-text-wrapper insul-elementor-text-after"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="127b7c61677e3c7b7c747d6052776a737f627e773c717d7f">[email&#160;protected]</a></span>
+                            <span class="insul-elementor-text-wrapper insul-elementor-text-after"><a href="mailto:rishabh@witanfinsure.com">rishabh@witanfinsure.com</a></span>
                 </div>
         		</div>
 				</div>
@@ -869,7 +862,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 		<div class="elementor-element elementor-element-35aec87 e-con-full e-flex e-con e-child" data-id="35aec87" data-element_type="container">
 				<div class="elementor-element elementor-element-b9ad783 elementor-widget elementor-widget-text-editor" data-id="b9ad783" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
-							Copyright © 2024 Insul. All right reserved.						</div>
+							Copyright © 2026 MargX. All right reserved.						</div>
 				</div>
 				</div>
 				</div>
@@ -923,13 +916,13 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-105"><a href="/about-us">About us</a></li>
 <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-106"><a href="#">Service</a>
 <ul class="sub-menu">
-	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-108"><a href="/our-service-01">Our Service 01</a></li>
-	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-110"><a href="/general-insurance">General Insurance</a></li>
-	<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-111"><a href="/life-insurance">Life Insurance</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-108"><a href="/services/mutual-funds">Mutual Funds</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-110"><a href="/services/general-insurance">General Insurance</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-111"><a href="/services/life-insurance">Life Insurance</a></li>
 </ul>
 </li>
 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113"><a href="/blog">Blog</a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-117"><a href="#">Page</a>
+<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-117"><a href="#">Utilities</a>
 <ul class="sub-menu">
 	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-122"><a href="/testimonial">Testimonial</a></li>
 	<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-125 current_page_item menu-item-126"><a href="/our-team" aria-current="page">Our Team</a></li>

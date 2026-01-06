@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <link rel="profile" href="//gmpg.org/xfn/11">
-    <title>FAQs Page &#8211; Insul</title>
+    <title>FAQs Page &#8211; Witan Finsure</title>
+    <link rel="icon" type="image/png" href="{{ asset('images/witantitle.png') }}">
 <meta name='robots' content='max-image-preview:large' />
 	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -49,29 +50,29 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 <link rel='stylesheet' id='-css' href='https://demo2.pavothemes.com/insul/wp-content/plugins/pavo-demo/style.css?ver=6.7.1' media='all' />
 <link rel='stylesheet' id='hfe-style-css' href='https://demo2.pavothemes.com/insul/wp-content/plugins/header-footer-elementor/assets/css/header-footer-elementor.css?ver=2.0.3' media='all' />
 <link rel='stylesheet' id='elementor-icons-css' href='/css/elementor-icons.min.css' media='all' />
-<link rel='stylesheet' id='elementor-frontend-css' href='/css/custom-frontend.min.css' media='all' />
+<link rel='stylesheet' id='elementor-frontend-css' href='/css/elementor-frontend.min.css' media='all' />
 <link rel='stylesheet' id='swiper-css' href='/css/swiper.min.css' media='all' />
 <link rel='stylesheet' id='e-swiper-css' href='/css/e-swiper.min.css' media='all' />
-<link rel='stylesheet' id='elementor-post-7-css' href='/css/post-7.css' media='all' />
-<link rel='stylesheet' id='widget-text-editor-css' href='/css/widget-text-editor.min.css' media='all' />
-<link rel='stylesheet' id='widget-accordion-css' href='/css/custom-widget-accordion.min.css' media='all' />
-<link rel='stylesheet' id='elementor-post-127-css' href='/css/post-127.css' media='all' />
-<link rel='stylesheet' id='elementor-post-883-css' href='/css/post-883.css' media='all' />
-<link rel='stylesheet' id='elementor-post-145-css' href='/css/post-145.css' media='all' />
-<link rel='stylesheet' id='elementor-post-3494-css' href='/css/post-3494.css' media='all' />
+<link rel='stylesheet' id='elementor-post-7-css' href='https://demo2.pavothemes.com/insul/wp-content/uploads/elementor/css/post-7.css?ver=1733908100' media='all' />
+<link rel='stylesheet' id='widget-text-editor-css' href='https://demo2.pavothemes.com/insul/wp-content/plugins/elementor/assets/css/widget-text-editor.min.css?ver=3.25.11' media='all' />
+<link rel='stylesheet' id='widget-accordion-css' href='https://demo2.pavothemes.com/insul/wp-content/uploads/elementor/css/custom-widget-accordion.min.css?ver=1733908100' media='all' />
+<link rel='stylesheet' id='elementor-post-127-css' href='https://demo2.pavothemes.com/insul/wp-content/uploads/elementor/css/post-127.css?ver=1733918323' media='all' />
+<link rel='stylesheet' id='elementor-post-883-css' href='https://demo2.pavothemes.com/insul/wp-content/uploads/elementor/css/post-883.css?ver=1733908470' media='all' />
+<link rel='stylesheet' id='elementor-post-145-css' href='https://demo2.pavothemes.com/insul/wp-content/uploads/elementor/css/post-145.css?ver=1733908470' media='all' />
+<link rel='stylesheet' id='elementor-post-3494-css' href='https://demo2.pavothemes.com/insul/wp-content/uploads/elementor/css/post-3494.css?ver=1733908101' media='all' />
 <link rel='stylesheet' id='insul-fonts-css' href='//fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&#038;family=Sora:wght@100..800&#038;subset=latin%2Clatin-ext&#038;display=swap' media='all' />
 <link rel='stylesheet' id='insul-icon-css' href='/css/icons.css' media='all' />
 <link rel='stylesheet' id='insul-style-css' href='https://demo2.pavothemes.com/insul/wp-content/themes/insul/style.css?ver=1.0.4' media='all' />
 <style id='insul-style-inline-css'>
 .col-full{max-width: 1410px}body { --e-global-container-width: 1410px}.e-con { --container-max-width: 1410px}
 </style>
-<link rel='stylesheet' id='elementor-post-991-css' href='/css/post-991.css' media='all' />
+<link rel='stylesheet' id='elementor-post-991-css' href='https://demo2.pavothemes.com/insul/wp-content/uploads/elementor/css/post-991.css?ver=1733918323' media='all' />
 <link rel='stylesheet' id='insul-elementor-css' href='/css/insul-elementor.css' media='all' />
 <link rel='stylesheet' id='hfe-icons-list-css' href='/css/widget-icon-list.min.css' media='all' />
 <link rel='stylesheet' id='hfe-social-icons-css' href='/css/widget-social-icons.min.css' media='all' />
-<link rel='stylesheet' id='hfe-social-share-icons-brands-css' href='/css/brands.css' media='all' />
-<link rel='stylesheet' id='hfe-social-share-icons-fontawesome-css' href='/css/fontawesome.css' media='all' />
-<link rel='stylesheet' id='hfe-nav-menu-icons-css' href='/css/solid.css' media='all' />
+<link rel='stylesheet' id='hfe-social-share-icons-brands-css' href='/css/font-awesome-brands.min.css' media='all' />
+<link rel='stylesheet' id='hfe-social-share-icons-fontawesome-css' href='/css/font-awesome.min.css' media='all' />
+<link rel='stylesheet' id='hfe-nav-menu-icons-css' href='/css/font-awesome-solid.min.css' media='all' />
 <link rel='stylesheet' id='insul-child-style-css' href='https://demo2.pavothemes.com/insul/wp-content/themes/demo-child/style.css?ver=1.0.0' media='all' />
 <link rel='stylesheet' id='google-fonts-1-css' href='https://fonts.googleapis.com/css?family=DM+Sans%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CSora%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap&#038;ver=6.7.1' media='all' />
 <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin><script src="https://demo2.pavothemes.com/insul/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
@@ -160,7 +161,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 
 <div id="page" class="hfeed site">
     		<header id="masthead" itemscope="itemscope" itemtype="https://schema.org/WPHeader">
-			<p class="main-title bhf-hidden" itemprop="headline"><a href="/" title="Insul" rel="home">Insul</a></p>
+			<p class="main-title bhf-hidden" itemprop="headline"><a href="https://demo2.pavothemes.com/insul" title="Insul" rel="home">Insul</a></p>
 					<div data-elementor-type="wp-post" data-elementor-id="883" class="elementor elementor-883">
 				<div class="elementor-element elementor-element-4f33f1a e-con-full e-flex e-con e-parent" data-id="4f33f1a" data-element_type="container">
 		<div class="elementor-element elementor-element-181ba4a e-flex e-con-boxed e-con e-child" data-id="181ba4a" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
@@ -172,7 +173,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 							<li class="elementor-icon-list-item">
 											<span class="elementor-icon-list-icon">
 							<i aria-hidden="true" class="insul-icon- insul-icon-location-01"></i>						</span>
-										<span class="elementor-icon-list-text">6391 Elgin St. Celina, Delaware 10299</span>
+										<span class="elementor-icon-list-text">C-1 Main Road, Kanti Nagar, Delhi - 110085</span>
 									</li>
 						</ul>
 				</div>
@@ -186,7 +187,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 							<li class="elementor-icon-list-item">
 											<span class="elementor-icon-list-icon">
 							<i aria-hidden="true" class="insul-icon- insul-icon-telephone"></i>						</span>
-										<span class="elementor-icon-list-text">(209) 555-0104</span>
+										<span class="elementor-icon-list-text">+91 97110 43285</span>
 									</li>
 						</ul>
 				</div>
@@ -199,7 +200,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 							<li class="elementor-icon-list-item">
 											<span class="elementor-icon-list-icon">
 							<i aria-hidden="true" class="insul-icon- insul-icon-envelope-03"></i>						</span>
-										<span class="elementor-icon-list-text"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="96fff8e5e3fab8fff8f0f9e4d6f3eef7fbe6faf3b8f5f9fb">[email&#160;protected]</a></span>
+										<span class="elementor-icon-list-text"><a href="mailto:rishabh@witanfinsure.com">rishabh@witanfinsure.com</a></span>
 									</li>
 						</ul>
 				</div>
@@ -210,15 +211,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 				<div class="elementor-widget-container">
 			        <div class="elementor-nav-menu-wrapper">
             <nav class="main-navigation" role="navigation" aria-label="Primary Navigation">
-                <div class="primary-navigation"><ul id="menu-1-366bbc5" class="menu"><li id="menu-item-892" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-892"><a href="#"><span class="menu-title">Eng</span></a>
-<ul class="sub-menu">
-	<li id="menu-item-893" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-893"><a href="#"><span class="menu-title">France</span></a></li>
-	<li id="menu-item-3524" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3524"><a href="#"><span class="menu-title">Hindi</span></a></li>
-	<li id="menu-item-3525" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3525"><a href="#"><span class="menu-title">Italian</span></a></li>
-	<li id="menu-item-3526" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3526"><a href="#"><span class="menu-title">German</span></a></li>
-</ul>
-</li>
-</ul></div>            </nav>
+                <div class="primary-navigation"><ul id="menu-1-366bbc5" class="menu"></ul></div>            </nav>
         </div>
         		</div>
 				</div>
@@ -235,7 +228,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
                                                         <a data-elementor-open-lightbox="" class='elementor-clickable' href="/">
                                                             <div class="hfe-site-logo-set">
                         <div class="hfe-site-logo-container">
-                            <img class="hfe-site-logo-img elementor-animation-" src="{{ asset('images/icon-dark-background@2x.png') }}" alt="Witan Fincare"/>
+                            <img class="hfe-site-logo-img elementor-animation-" src="{{ asset('images/whitelogo.png') }}" alt="Witan Fincare"/>
                                                     </div>
                     </div>
                                     </a>
@@ -264,16 +257,16 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 			        <div class="elementor-nav-menu-wrapper">
             <nav class="main-navigation" role="navigation" aria-label="Primary Navigation">
                 <div class="primary-navigation"><ul id="menu-1-cfa7450" class="menu"><li id="menu-item-97" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-97"><a href="/"><span class="menu-title">Home</span></a></li>
-<li id="menu-item-105" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-105"><a href="/about-us"><span class="menu-title">About us</span></a></li>
+<li id="menu-item-105" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-105"><a href="/about-us/"><span class="menu-title">About us</span></a></li>
 <li id="menu-item-106" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-106"><a href="#"><span class="menu-title">Service</span></a>
 <ul class="sub-menu">
-	<li id="menu-item-108" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-108"><a href="/our-service-01"><span class="menu-title">Our Service 01</span></a></li>
-	<li id="menu-item-110" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-110"><a href="/general-insurance"><span class="menu-title">General Insurance</span></a></li>
-	<li id="menu-item-111" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-111"><a href="/life-insurance"><span class="menu-title">Life Insurance</span></a></li>
+	<li id="menu-item-108" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-108"><a href="/services/mutual-funds/"><span class="menu-title">Mutual Funds</span></a></li>
+	<li id="menu-item-110" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-110"><a href="/services/general-insurance/"><span class="menu-title">General Insurance</span></a></li>
+	<li id="menu-item-111" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-111"><a href="/services/life-insurance/"><span class="menu-title">Life Insurance</span></a></li>
 </ul>
 </li>
 <li id="menu-item-113" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113"><a href="/blog"><span class="menu-title">Blog</span></a></li>
-<li id="menu-item-117" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-117"><a href="#"><span class="menu-title">Page</span></a>
+<li id="menu-item-117" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-117"><a href="#"><span class="menu-title">Utilities</span></a>
 <ul class="sub-menu">
 	<li id="menu-item-122" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-122"><a href="/testimonial"><span class="menu-title">Testimonial</span></a></li>
 	<li id="menu-item-126" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-126"><a href="/our-team"><span class="menu-title">Our Team</span></a></li>
@@ -290,7 +283,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 				<div class="elementor-element elementor-element-cf3cb61 elementor-hidden-mobile elementor-button-default elementor-widget elementor-widget-button" data-id="cf3cb61" data-element_type="widget" data-widget_type="button.default">
 				<div class="elementor-widget-container">
 							<div class="elementor-button-wrapper">
-					<a class="elementor-button elementor-button-link elementor-size-md" href="/contact-01">
+					<a class="elementor-button elementor-button-link elementor-size-md" href="{{ url('/contact-01') }}">
 						<span class="elementor-button-content-wrapper">
 						<span class="elementor-button-icon">
 				<i aria-hidden="true" class="insul-icon- insul-icon-arrow-up-right-1"></i>			</span>
@@ -316,7 +309,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
             <h1 class="insul-title">
                 FAQs Page            </h1>
             <div class="breadcrumb-listItem"><!-- Breadcrumb NavXT 7.3.1 -->
-<span property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" title="Go to Home." href="/" class="home" ><span property="name">Home</span></a><meta property="position" content="1"></span> &gt; <span property="itemListElement" typeof="ListItem"><span property="name" class="post post-page current-item">FAQs Page</span><meta property="url" content="/faqs-page"><meta property="position" content="2"></span></div>        </div>
+<span property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" title="Go to Home." href="/" class="home" ><span property="name">Home</span></a><meta property="position" content="1"></span> &gt; <span property="itemListElement" typeof="ListItem"><span property="name" class="post post-page current-item">FAQs Page</span><meta property="url" content="/faqs-page/"><meta property="position" content="2"></span></div>        </div>
         		</div>
 				</div>
 					</div>
@@ -346,7 +339,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 				</div>
 				<div class="elementor-element elementor-element-e0adb5b elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-text-editor" data-id="e0adb5b" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
-							This are questions that you might ask about our pricing plans and service. Contact to us for more infor in page <a style="color: #1351d8; text-decoration: underline;"  href="/contact-01">Contact us</a>						</div>
+							This are questions that you might ask about our pricing plans and service. Contact to us for more infor in page <a style="color: #1351d8; text-decoration: underline;"  href="https://demo2.pavothemes.com/insul/contact-01/">Contact us</a>						</div>
 				</div>
 				<div class="elementor-element elementor-element-9c00d63 elementor-widget__width-inherit elementor-widget elementor-widget-insul-accordion" data-id="9c00d63" data-element_type="widget" data-widget_type="insul-accordion.default">
 				<div class="elementor-widget-container">
@@ -499,9 +492,9 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
                                                     <div class="elementor-slider-image-item swiper-slide">
                                 <div class="item-inner">
                                     <div class="slider-image_item image_item_1">
-                                        <a href="/wp-content/uploads/2024/04/gallery-1-min.jpeg">
+                                        <a href="https://demo2.pavothemes.com/insul/wp-content/uploads/2024/04/gallery-1-min.jpeg">
                                                         <div class="elementor-sliderimage-image-1">
-                <img decoding="async" src="/wp-content/uploads/elementor/thumbs/gallery-1-min-qwmlvh5v0scurkxa5uqez9jvwp5ahh1zxhmilmnjy0.jpeg" title="gallery-1-min" alt="gallery-1-min" loading="lazy" />            </div>
+                <img decoding="async" src="https://demo2.pavothemes.com/insul/wp-content/uploads/elementor/thumbs/gallery-1-min-qwmlvh5v0scurkxa5uqez9jvwp5ahh1zxhmilmnjy0.jpeg" title="gallery-1-min" alt="gallery-1-min" loading="lazy" />            </div>
                                                     <i class="insul-icon-plus"></i>
                                         </a>
                                     </div>
@@ -510,9 +503,9 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
                                                     <div class="elementor-slider-image-item swiper-slide">
                                 <div class="item-inner">
                                     <div class="slider-image_item image_item_1">
-                                        <a href="/wp-content/uploads/2024/04/gallery-2-min-scaled.jpeg">
+                                        <a href="https://demo2.pavothemes.com/insul/wp-content/uploads/2024/04/gallery-2-min-scaled.jpeg">
                                                         <div class="elementor-sliderimage-image-1">
-                <img decoding="async" src="/wp-content/uploads/elementor/thumbs/gallery-2-min-scaled-qwmlvh5v0scurkxa5uqez9jvwp5ahh1zxhmilmnjy0.jpeg" title="gallery-2-min" alt="gallery-2-min" loading="lazy" />            </div>
+                <img decoding="async" src="https://demo2.pavothemes.com/insul/wp-content/uploads/elementor/thumbs/gallery-2-min-scaled-qwmlvh5v0scurkxa5uqez9jvwp5ahh1zxhmilmnjy0.jpeg" title="gallery-2-min" alt="gallery-2-min" loading="lazy" />            </div>
                                                     <i class="insul-icon-plus"></i>
                                         </a>
                                     </div>
@@ -521,9 +514,9 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
                                                     <div class="elementor-slider-image-item swiper-slide">
                                 <div class="item-inner">
                                     <div class="slider-image_item image_item_1">
-                                        <a href="/wp-content/uploads/2024/04/gallery-3-min-scaled.jpeg">
+                                        <a href="https://demo2.pavothemes.com/insul/wp-content/uploads/2024/04/gallery-3-min-scaled.jpeg">
                                                         <div class="elementor-sliderimage-image-1">
-                <img decoding="async" src="/wp-content/uploads/elementor/thumbs/gallery-3-min-scaled-qwmlvh5v0scurkxa5uqez9jvwp5ahh1zxhmilmnjy0.jpeg" title="gallery-3-min" alt="gallery-3-min" loading="lazy" />            </div>
+                <img decoding="async" src="https://demo2.pavothemes.com/insul/wp-content/uploads/elementor/thumbs/gallery-3-min-scaled-qwmlvh5v0scurkxa5uqez9jvwp5ahh1zxhmilmnjy0.jpeg" title="gallery-3-min" alt="gallery-3-min" loading="lazy" />            </div>
                                                     <i class="insul-icon-plus"></i>
                                         </a>
                                     </div>
@@ -532,9 +525,9 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
                                                     <div class="elementor-slider-image-item swiper-slide">
                                 <div class="item-inner">
                                     <div class="slider-image_item image_item_1">
-                                        <a href="/wp-content/uploads/2024/04/brc-1-scaled.jpg">
+                                        <a href="https://demo2.pavothemes.com/insul/wp-content/uploads/2024/04/brc-1-scaled.jpg">
                                                         <div class="elementor-sliderimage-image-1">
-                <img decoding="async" src="/wp-content/uploads/elementor/thumbs/brc-1-scaled-qwmlvh5v0scurkxa5uqez9jvwp5ahh1zxhmilmnjy0.jpg" title="brc-1" alt="brc-1" loading="lazy" />            </div>
+                <img decoding="async" src="https://demo2.pavothemes.com/insul/wp-content/uploads/elementor/thumbs/brc-1-scaled-qwmlvh5v0scurkxa5uqez9jvwp5ahh1zxhmilmnjy0.jpg" title="brc-1" alt="brc-1" loading="lazy" />            </div>
                                                     <i class="insul-icon-plus"></i>
                                         </a>
                                     </div>
@@ -543,9 +536,9 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
                                                     <div class="elementor-slider-image-item swiper-slide">
                                 <div class="item-inner">
                                     <div class="slider-image_item image_item_1">
-                                        <a href="/wp-content/uploads/2024/04/gallery-5-min.jpeg">
+                                        <a href="https://demo2.pavothemes.com/insul/wp-content/uploads/2024/04/gallery-5-min.jpeg">
                                                         <div class="elementor-sliderimage-image-1">
-                <img decoding="async" src="/wp-content/uploads/elementor/thumbs/gallery-5-min-qwmlvh5v0scurkxa5uqez9jvwp5ahh1zxhmilmnjy0.jpeg" title="gallery-5-min" alt="gallery-5-min" loading="lazy" />            </div>
+                <img decoding="async" src="https://demo2.pavothemes.com/insul/wp-content/uploads/elementor/thumbs/gallery-5-min-qwmlvh5v0scurkxa5uqez9jvwp5ahh1zxhmilmnjy0.jpeg" title="gallery-5-min" alt="gallery-5-min" loading="lazy" />            </div>
                                                     <i class="insul-icon-plus"></i>
                                         </a>
                                     </div>
@@ -554,9 +547,9 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
                                                     <div class="elementor-slider-image-item swiper-slide">
                                 <div class="item-inner">
                                     <div class="slider-image_item image_item_1">
-                                        <a href="/wp-content/uploads/2024/04/gallery-6-min.jpeg">
+                                        <a href="https://demo2.pavothemes.com/insul/wp-content/uploads/2024/04/gallery-6-min.jpeg">
                                                         <div class="elementor-sliderimage-image-1">
-                <img decoding="async" src="/wp-content/uploads/elementor/thumbs/gallery-6-min-qwmlvh5v0scurkxa5uqez9jvwp5ahh1zxhmilmnjy0.jpeg" title="gallery-6-min" alt="gallery-6-min" loading="lazy" />            </div>
+                <img decoding="async" src="https://demo2.pavothemes.com/insul/wp-content/uploads/elementor/thumbs/gallery-6-min-qwmlvh5v0scurkxa5uqez9jvwp5ahh1zxhmilmnjy0.jpeg" title="gallery-6-min" alt="gallery-6-min" loading="lazy" />            </div>
                                                     <i class="insul-icon-plus"></i>
                                         </a>
                                     </div>
@@ -600,27 +593,13 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
                                                     <div class="elementor-slider-scrolling-item">
                                 <div class="elementor-scrolling-item-inner">
                                     <div class="scrolling-title">
-                                        <span class="title-scrolling">BEST CONSULTANT BUSINESS SERVICE </span>                                    </div>
+                                        <span class="title-scrolling">TRUSTED FINANCIAL ADVISORY SERVICES </span>                                    </div>
                                 </div>
                             </div>
                                                     <div class="elementor-slider-scrolling-item">
                                 <div class="elementor-scrolling-item-inner">
                                     <div class="scrolling-title">
-                                        <span class="title-scrolling">BEST CONSULTANT BUSINESS SERVICE </span>                                    </div>
-                                </div>
-                            </div>
-                                            </div>
-                                        <div class="elementor-slider-scrolling-inner">
-                                                    <div class="elementor-slider-scrolling-item">
-                                <div class="elementor-scrolling-item-inner">
-                                    <div class="scrolling-title">
-                                        <span class="title-scrolling">BEST CONSULTANT BUSINESS SERVICE </span>                                    </div>
-                                </div>
-                            </div>
-                                                    <div class="elementor-slider-scrolling-item">
-                                <div class="elementor-scrolling-item-inner">
-                                    <div class="scrolling-title">
-                                        <span class="title-scrolling">BEST CONSULTANT BUSINESS SERVICE </span>                                    </div>
+                                        <span class="title-scrolling">TRUSTED FINANCIAL ADVISORY SERVICES </span>                                    </div>
                                 </div>
                             </div>
                                             </div>
@@ -628,13 +607,13 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
                                                     <div class="elementor-slider-scrolling-item">
                                 <div class="elementor-scrolling-item-inner">
                                     <div class="scrolling-title">
-                                        <span class="title-scrolling">BEST CONSULTANT BUSINESS SERVICE </span>                                    </div>
+                                        <span class="title-scrolling">TRUSTED FINANCIAL ADVISORY SERVICES </span>                                    </div>
                                 </div>
                             </div>
                                                     <div class="elementor-slider-scrolling-item">
                                 <div class="elementor-scrolling-item-inner">
                                     <div class="scrolling-title">
-                                        <span class="title-scrolling">BEST CONSULTANT BUSINESS SERVICE </span>                                    </div>
+                                        <span class="title-scrolling">TRUSTED FINANCIAL ADVISORY SERVICES </span>                                    </div>
                                 </div>
                             </div>
                                             </div>
@@ -642,13 +621,27 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
                                                     <div class="elementor-slider-scrolling-item">
                                 <div class="elementor-scrolling-item-inner">
                                     <div class="scrolling-title">
-                                        <span class="title-scrolling">BEST CONSULTANT BUSINESS SERVICE </span>                                    </div>
+                                        <span class="title-scrolling">TRUSTED FINANCIAL ADVISORY SERVICES </span>                                    </div>
                                 </div>
                             </div>
                                                     <div class="elementor-slider-scrolling-item">
                                 <div class="elementor-scrolling-item-inner">
                                     <div class="scrolling-title">
-                                        <span class="title-scrolling">BEST CONSULTANT BUSINESS SERVICE </span>                                    </div>
+                                        <span class="title-scrolling">TRUSTED FINANCIAL ADVISORY SERVICES </span>                                    </div>
+                                </div>
+                            </div>
+                                            </div>
+                                        <div class="elementor-slider-scrolling-inner">
+                                                    <div class="elementor-slider-scrolling-item">
+                                <div class="elementor-scrolling-item-inner">
+                                    <div class="scrolling-title">
+                                        <span class="title-scrolling">TRUSTED FINANCIAL ADVISORY SERVICES </span>                                    </div>
+                                </div>
+                            </div>
+                                                    <div class="elementor-slider-scrolling-item">
+                                <div class="elementor-scrolling-item-inner">
+                                    <div class="scrolling-title">
+                                        <span class="title-scrolling">TRUSTED FINANCIAL ADVISORY SERVICES </span>                                    </div>
                                 </div>
                             </div>
                                             </div>
@@ -666,7 +659,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
                                                         <a data-elementor-open-lightbox="" class='elementor-clickable' href="/">
                                                             <div class="hfe-site-logo-set">
                         <div class="hfe-site-logo-container">
-                            <img class="hfe-site-logo-img elementor-animation-" src="{{ asset('images/word-mark@2x.png') }}" alt="Witan Fincare"/>
+                            <img class="hfe-site-logo-img elementor-animation-" src="{{ asset('images/mainlogo.png') }}" alt="Witan Fincare"/>
                                                     </div>
                     </div>
                                     </a>
@@ -675,7 +668,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 				</div>
 				<div class="elementor-element elementor-element-da90c44 elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-text-editor" data-id="da90c44" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.						</div>
+							Subscribe to our newsletter to get the latest news and updates.						</div>
 				</div>
 				<div class="elementor-element elementor-element-7d87454 elementor-widget__width-initial elementor-widget-mobile__width-inherit form-mailchimp-style-default elementor-widget elementor-widget-insul-mailchmip" data-id="7d87454" data-element_type="widget" data-widget_type="insul-mailchmip.default">
 				<div class="elementor-widget-container">
@@ -700,7 +693,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 
 <p>
 	<button type="submit"><i class="insul-icon-mail-plane"></i></button>
-</p></div><label style="display: none !important;">Leave this field empty if you're human: <input type="text" name="_mc4wp_honeypot" value="" tabindex="-1" autocomplete="off" /></label><input type="hidden" name="_mc4wp_timestamp" value="1766870195" /><input type="hidden" name="_mc4wp_form_id" value="521" /><input type="hidden" name="_mc4wp_form_element_id" value="mc4wp-form-1" /><div class="mc4wp-response"></div></form><!-- / Mailchimp for WordPress Plugin --></div>		</div>
+</p></div><label style="display: none !important;">Leave this field empty if you're human: <input type="text" name="_mc4wp_honeypot" value="" tabindex="-1" autocomplete="off" /></label><input type="hidden" name="_mc4wp_timestamp" value="1767733056" /><input type="hidden" name="_mc4wp_form_id" value="521" /><input type="hidden" name="_mc4wp_form_element_id" value="mc4wp-form-1" /><div class="mc4wp-response"></div></form><!-- / Mailchimp for WordPress Plugin --></div>		</div>
 				</div>
 				</div>
 		<div class="elementor-element elementor-element-4bb9611 e-con-full e-flex e-con e-child" data-id="4bb9611" data-element_type="container">
@@ -748,37 +741,37 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 				<div class="elementor-widget-container">
 					<ul class="elementor-icon-list-items">
 							<li class="elementor-icon-list-item">
-											<a href="/about-us">
+											<a href="/about-us/">
 
 											<span class="elementor-icon-list-text">About </span>
 											</a>
 									</li>
 								<li class="elementor-icon-list-item">
-											<a href="/contact-01">
+											<a href="/contact-01/">
 
 											<span class="elementor-icon-list-text">Careers</span>
 											</a>
 									</li>
 								<li class="elementor-icon-list-item">
-											<a href="/our-service-01">
+											<a href="/services/mutual-funds/">
 
 											<span class="elementor-icon-list-text">Works</span>
 											</a>
 									</li>
 								<li class="elementor-icon-list-item">
-											<a href="/contact-01">
+											<a href="{{ url('/contact-01') }}">
 
 											<span class="elementor-icon-list-text">Contact</span>
 											</a>
 									</li>
 								<li class="elementor-icon-list-item">
-											<a href="/our-service-01">
+											<a href="/services/mutual-funds/">
 
 											<span class="elementor-icon-list-text">Privacy Policy</span>
 											</a>
 									</li>
 								<li class="elementor-icon-list-item">
-											<a href="/our-service-01">
+											<a href="/services/mutual-funds/">
 
 											<span class="elementor-icon-list-text">Tax</span>
 											</a>
@@ -797,7 +790,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 				<div class="elementor-widget-container">
 			        <div class="elementor-text">
                     <span class="insul-elementor-text-wrapper insul-elementor-text-before">Address:</span>
-                            <span class="insul-elementor-text-wrapper insul-elementor-text-after">6391 Elgin St. Celina, Delaware 10299, USA</span>
+                            <span class="insul-elementor-text-wrapper insul-elementor-text-after">C-1 Main Road, Kanti Nagar, Delhi - 110085</span>
                 </div>
         		</div>
 				</div>
@@ -805,7 +798,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 				<div class="elementor-widget-container">
 			        <div class="elementor-text">
                     <span class="insul-elementor-text-wrapper insul-elementor-text-before">Phone:</span>
-                            <span class="insul-elementor-text-wrapper insul-elementor-text-after">(209) 555-0104</span>
+                            <span class="insul-elementor-text-wrapper insul-elementor-text-after">+91 97110 43285</span>
                 </div>
         		</div>
 				</div>
@@ -813,7 +806,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 				<div class="elementor-widget-container">
 			        <div class="elementor-text">
                     <span class="insul-elementor-text-wrapper insul-elementor-text-before">Email:</span>
-                            <span class="insul-elementor-text-wrapper insul-elementor-text-after"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="30595e43455c1e595e565f42705548515d405c551e535f5d">[email&#160;protected]</a></span>
+                            <span class="insul-elementor-text-wrapper insul-elementor-text-after"><a href="mailto:rishabh@witanfinsure.com">rishabh@witanfinsure.com</a></span>
                 </div>
         		</div>
 				</div>
@@ -824,7 +817,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 		<div class="elementor-element elementor-element-35aec87 e-con-full e-flex e-con e-child" data-id="35aec87" data-element_type="container">
 				<div class="elementor-element elementor-element-b9ad783 elementor-widget elementor-widget-text-editor" data-id="b9ad783" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
-							Copyright © 2024 Insul. All right reserved.						</div>
+							Copyright © 2026 MargX. All right reserved.						</div>
 				</div>
 				</div>
 				</div>
@@ -855,7 +848,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
             <button type="submit" data-button-action
                     class="btn btn-primary btn-block w-100 mt-1">Login</button>
             <input type="hidden" name="action" value="insul_login">
-            <input type="hidden" id="security-login" name="security-login" value="c1a70a6cc1" /><input type="hidden" name="_wp_http_referer" value="/insul/faqs-page/" />        </form>
+            <input type="hidden" id="security-login" name="security-login" value="fbea4809b8" /><input type="hidden" name="_wp_http_referer" value="/insul/faqs-page/" />        </form>
         <div class="login-form-bottom">
             <a href="https://demo2.pavothemes.com/insul/wp-login.php?action=lostpassword&redirect_to=https%3A%2F%2Fdemo2.pavothemes.com%2Finsul%2Ffaqs-page%2F" class="lostpass-link"
                title="Lost your password?">Lost your password?</a>
@@ -874,34 +867,74 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
         </div>
         <nav class="mobile-menu-tab mobile-navigation mobile-pages-menu active"
              aria-label="Mobile Navigation">
-            <div class="handheld-navigation"><ul id="menu-main-menu" class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-97"><a href="/">Home</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-105"><a href="/about-us">About us</a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-106"><a href="#">Service</a>
-<ul class="sub-menu">
-	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-108"><a href="/our-service-01">Our Service 01</a></li>
-	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-110"><a href="/general-insurance">General Insurance</a></li>
-	<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-111"><a href="/life-insurance">Life Insurance</a></li>
-</ul>
-</li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113"><a href="/blog">Blog</a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-117"><a href="#">Page</a>
-<ul class="sub-menu">
-	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-122"><a href="/testimonial">Testimonial</a></li>
-	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-126"><a href="/our-team">Our Team</a></li>
-	<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-127 current_page_item menu-item-128"><a href="/faqs-page" aria-current="page">FAQ</a></li>
-</ul>
-</li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a href="/contact-01">Contact</a></li>
-</ul></div>        </nav>
+            <div class="handheld-navigation">
+                    <ul id="menu-main-menu" class="menu">
+                        <li id="menu-item-97" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-97">
+                            <a href="/">Home</a>
+                        </li>
+                        <li id="menu-item-105" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-105">
+                            <a href="/about-us">About us</a>
+                        </li>
+                        <li id="menu-item-106" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-106">
+                            <a href="#">Service</a>
+                            <ul class="sub-menu">
+                                <li id="menu-item-108" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-108">
+                                    <a href="/services/mutual-funds/">
+                                        <span class="menu-title">Mutual Funds</span>
+                                    </a>
+                                </li>
+                                <li id="menu-item-110" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-110">
+                                    <a href="/services/general-insurance/">
+                                        <span class="menu-title">General Insurance</span>
+                                    </a>
+                                </li>
+                                <li id="menu-item-111" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-111">
+                                    <a href="/services/life-insurance/">
+                                        <span class="menu-title">Life Insurance</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li id="menu-item-113" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113">
+                            <a href="/blog">Blog</a>
+                        </li>
+                        <li id="menu-item-117" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-117">
+                            <a href="#">Utilities</a>
+                            <ul class="sub-menu">
+                                <li id="menu-item-122" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-122">
+                                    <a href="/testimonial">Testimonial</a>
+                                </li>
+                                <li id="menu-item-126" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-126">
+                                    <a href="/our-team">Our Team</a>
+                                </li>
+                                <li id="menu-item-128" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-127 current_page_item menu-item-128">
+                                    <a href="/faqs-page">FAQ</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li id="menu-item-133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133">
+                            <a href="/contact-01">Contact</a>
+                        </li>
+                    </ul>
+                </div>        </nav>
         <nav class="mobile-menu-tab mobile-navigation-categories mobile-categories-menu"
              aria-label="Mobile Navigation">
             <div class="menu"><ul>
-<li ><a href="/">Home</a></li><li class="page_item page-item-104"><a href="/about-us">About us</a></li>
-<li class="page_item page-item-112"><a href="/blog">Blog</a></li>
-<li class="page_item page-item-134"><a href="/contact-01">Contact</a></li>
-<li class="page_item page-item-127 current_page_item"><a href="/faqs-page" aria-current="page">FAQs Page</a></li>
-<li class="page_item page-item-125"><a href="/our-team">Our Team</a></li>
-<li class="page_item page-item-121"><a href="/testimonial">Testimonial</a></li>
+<li ><a href="https://demo2.pavothemes.com/insul/">Home</a></li><li class="page_item page-item-104"><a href="https://demo2.pavothemes.com/insul/about-us/">About us</a></li>
+<li class="page_item page-item-112"><a href="https://demo2.pavothemes.com/insul/blog/">Blog</a></li>
+<li class="page_item page-item-134"><a href="https://demo2.pavothemes.com/insul/contact-01/">Contact 01</a></li>
+<li class="page_item page-item-136"><a href="https://demo2.pavothemes.com/insul/contact-02/">Contact 02</a></li>
+<li class="page_item page-item-127 current_page_item"><a href="https://demo2.pavothemes.com/insul/faqs-page/" aria-current="page">FAQs Page</a></li>
+<li class="page_item page-item-100"><a href="https://demo2.pavothemes.com/insul/home-2/">Home 2</a></li>
+<li class="page_item page-item-102"><a href="https://demo2.pavothemes.com/insul/home-3/">Home 3</a></li>
+<li class="page_item page-item-131"><a href="https://demo2.pavothemes.com/insul/icons/">Icons</a></li>
+<li class="page_item page-item-123"><a href="https://demo2.pavothemes.com/insul/our-pricing/">Our Pricing</a></li>
+<li class="page_item page-item-118"><a href="https://demo2.pavothemes.com/insul/our-projects/">Our Projects</a></li>
+<li class="page_item page-item-107"><a href="https://demo2.pavothemes.com/insul/our-service-01/">Our Service 01</a></li>
+<li class="page_item page-item-109"><a href="https://demo2.pavothemes.com/insul/our-service-02/">Our Service 02</a></li>
+<li class="page_item page-item-125"><a href="https://demo2.pavothemes.com/insul/our-team/">Our Team</a></li>
+<li class="page_item page-item-2"><a href="https://demo2.pavothemes.com/insul/sample-page/">Sample Page</a></li>
+<li class="page_item page-item-121"><a href="https://demo2.pavothemes.com/insul/testimonial/">Testimonial</a></li>
 </ul></div>
         </nav>
                         </div>
@@ -966,7 +999,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
                 </a>
 
                 <div class="site-search">
-                    <form role="search" method="get" class="search-form" action="/">
+                    <form role="search" method="get" class="search-form" action="https://demo2.pavothemes.com/insul/">
 				<label>
 					<span class="screen-reader-text">Search for:</span>
 					<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" />
@@ -1013,7 +1046,7 @@ for (let j = 0; j < urlFields.length; j++) {
 					document.addEventListener( event, lazyloadRunObserver );
 				} );
 			</script>
-			<link rel='stylesheet' id='widget-icon-list-css' href='/css/custom-widget-icon-list.min.css' media='all' />
+			<link rel='stylesheet' id='widget-icon-list-css' href='https://demo2.pavothemes.com/insul/wp-content/uploads/elementor/css/custom-widget-icon-list.min.css?ver=1733908100' media='all' />
 <link rel='stylesheet' id='magnific-popup-css' href='https://demo2.pavothemes.com/insul/wp-content/themes/insul/assets/css/libs/magnific-popup.css?ver=1.0.4' media='all' />
 <link rel='stylesheet' id='rs-plugin-settings-css' href='//demo2.pavothemes.com/insul/wp-content/plugins/revslider/sr6/assets/css/rs6.css?ver=6.7.23' media='all' />
 <style id='rs-plugin-settings-inline-css'>
@@ -1073,7 +1106,7 @@ var insulAjax = {"ajaxurl":"https:\/\/demo2.pavothemes.com\/insul\/wp-admin\/adm
 <script src="https://demo2.pavothemes.com/insul/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.25.11" id="elementor-frontend-modules-js"></script>
 <script src="https://demo2.pavothemes.com/insul/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3" id="jquery-ui-core-js"></script>
 <script id="elementor-frontend-js-before">
-var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close","a11yCarouselWrapperAriaLabel":"Carousel | Horizontal scrolling: Arrow Left & Right","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":true},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":true},"laptop":{"label":"Laptop","value":1440,"default_value":1366,"direction":"max","is_enabled":true},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}},"hasCustomBreakpoints":true},"version":"3.25.11","is_static":false,"experimentalFeatures":{"additional_custom_breakpoints":true,"container":true,"e_swiper_latest":true,"e_nested_atomic_repeaters":true,"e_optimized_control_loading":true,"e_onboarding":true,"e_css_smooth_scroll":true,"home_screen":true,"landing-pages":true,"nested-elements":true,"editor_v2":true,"link-in-bio":true,"floating-buttons":true},"urls":{"assets":"https:\/\/demo2.pavothemes.com\/insul\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"https:\/\/demo2.pavothemes.com\/insul\/wp-admin\/admin-ajax.php","uploadUrl":"https:\/\/demo2.pavothemes.com\/insul\/wp-content\/uploads"},"nonces":{"floatingButtonsClickTracking":"2418f30110"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_mobile_extra","viewport_tablet","viewport_tablet_extra","viewport_laptop"],"body_background_background":"classic","viewport_laptop":1440,"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":127,"title":"FAQs%20Page%20%E2%80%93%20Insul","excerpt":"","featuredImage":false}};
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close","a11yCarouselWrapperAriaLabel":"Carousel | Horizontal scrolling: Arrow Left & Right","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":true},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":true},"laptop":{"label":"Laptop","value":1440,"default_value":1366,"direction":"max","is_enabled":true},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}},"hasCustomBreakpoints":true},"version":"3.25.11","is_static":false,"experimentalFeatures":{"additional_custom_breakpoints":true,"container":true,"e_swiper_latest":true,"e_nested_atomic_repeaters":true,"e_optimized_control_loading":true,"e_onboarding":true,"e_css_smooth_scroll":true,"home_screen":true,"landing-pages":true,"nested-elements":true,"editor_v2":true,"link-in-bio":true,"floating-buttons":true},"urls":{"assets":"https:\/\/demo2.pavothemes.com\/insul\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"https:\/\/demo2.pavothemes.com\/insul\/wp-admin\/admin-ajax.php","uploadUrl":"https:\/\/demo2.pavothemes.com\/insul\/wp-content\/uploads"},"nonces":{"floatingButtonsClickTracking":"db1146ad56"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_mobile_extra","viewport_tablet","viewport_tablet_extra","viewport_laptop"],"body_background_background":"classic","viewport_laptop":1440,"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":127,"title":"FAQs%20Page%20%E2%80%93%20Insul","excerpt":"","featuredImage":false}};
 </script>
 <script src="https://demo2.pavothemes.com/insul/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.25.11" id="elementor-frontend-js"></script>
 <script src="https://demo2.pavothemes.com/insul/wp-content/themes/insul/assets/js/elementor/accordion.js?ver=1.0.4" id="insul-elementor-accordion-js"></script>
@@ -1087,5 +1120,5 @@ var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false
 if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
 images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
 if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="https://demo2.pavothemes.com/insul/wp-content/plugins/wp-rocket/assets/js/lazyload/16.1/lazyload.min.js"></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"2262db23ef41480dbb281abb8b2626b5","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9b4bd6fa4f4f9e23',t:'MTc2Njg3MDE5NA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</body>
 </html>

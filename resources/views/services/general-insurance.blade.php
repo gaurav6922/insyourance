@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <link rel="profile" href="//gmpg.org/xfn/11">
-    <title>General Insurance Solutions &#8211; Witan Insurance</title>
+    <title>General Insurance Solutions &#8211; Witan Finsure</title>
+    <link rel="icon" type="image/png" href="{{ asset('images/witantitle.png') }}">
     <meta name='robots' content='max-image-preview:large' />
     <style>
         img:is([sizes="auto" i], [sizes^="auto," i]) {
@@ -942,19 +943,19 @@
                                                             <ul class="sub-menu">
                                                                 <li id="menu-item-108"
                                                                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-108">
-                                                                    <a href="/our-service-01/"><span
+                                                                    <a href="/services/mutual-funds/"><span
                                                                             class="menu-title">Mutual Funds</span></a>
                                                                 </li>
                                                                 <li id="menu-item-110"
                                                                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-110">
-                                                                    <a href="/general-insurance/"><span
+                                                                    <a href="/services/general-insurance/"><span
                                                                             class="menu-title">General
                                                                             Insurance</span></a>
                                                                 </li>
                                                                 <li id="menu-item-111"
                                                                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-111">
-                                                                    <a href="/life-insurance/"><span
-                                                                            class="menu-title">General Insurance</span></a>
+                                                                    <a href="/services/life-insurance/"><span
+                                                                            class="menu-title">Life Insurance</span></a>
                                                                 </li>
                                                             </ul>
                                                         </li>
@@ -964,7 +965,7 @@
                                                         </li>
                                                         <li id="menu-item-117"
                                                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-117">
-                                                            <a href="#"><span class="menu-title">Page</span></a>
+                                                            <a href="#"><span class="menu-title">Utilities</span></a>
                                                             <ul class="sub-menu">
                                                                 <li id="menu-item-122"
                                                                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-122">
@@ -1002,7 +1003,7 @@
                                     <div class="elementor-widget-container">
                                         <div class="elementor-button-wrapper">
                                             <a class="elementor-button elementor-button-link elementor-size-md"
-                                                href="/contact-02/">
+                                                href="{{ url('/contact-01') }}">
                                                 <span class="elementor-button-content-wrapper">
                                                     <span class="elementor-button-icon">
                                                         <i aria-hidden="true"
@@ -1036,7 +1037,7 @@
                                         <!-- Breadcrumb NavXT 7.3.1 -->
                                         <span property="itemListElement" typeof="ListItem">
                                             <a property="item" typeof="WebPage" title="Go to Home."
-                                                href="https://demo2.pavothemes.com/insul" class="home">
+                                                href="/" class="home">
                                                 <span property="name">Home</span>
                                             </a>
                                             <meta property="position" content="1">
@@ -1044,7 +1045,7 @@
                                         &gt;
                                         <span property="itemListElement" typeof="ListItem">
                                             <a property="item" typeof="WebPage" title="Go to Services."
-                                                href="https://demo2.pavothemes.com/insul/services/"
+                                                href="/services/"
                                                 class="archive post-insul_service-archive">
                                                 <span property="name">Services</span>
                                             </a>
@@ -1052,22 +1053,12 @@
                                         </span>
                                         &gt;
                                         <span property="itemListElement" typeof="ListItem">
-                                            <a property="item" typeof="WebPage"
-                                                title="Go to the Finance Category archives."
-                                                href="https://demo2.pavothemes.com/insul/service-cat/finance/"
-                                                class="taxonomy insul_service_cat">
-                                                <span property="name">Finance</span>
-                                            </a>
-                                            <meta property="position" content="3">
-                                        </span>
-                                        &gt;
-                                        <span property="itemListElement" typeof="ListItem">
                                             <span property="name" class="post post-insul_service current-item">General
                                                 Insurance Solutions
                                             </span>
                                             <meta property="url"
-                                                content="https://demo2.pavothemes.com/insul/services/financial-advices/">
-                                            <meta property="position" content="4">
+                                                content="/services/general-insurance/">
+                                            <meta property="position" content="3">
                                         </span>
                                     </div>
                                 </div>
@@ -1520,7 +1511,7 @@
                                                                 <div class="service-title">
                                                                     <h2 class="entry-title">
                                                                         <a
-                                                                            href="https://demo2.pavothemes.com/insul/services/business-consultancy/">
+                                                                            href="{{ url('/contact-01') }}">
                                                                             Motor Insurance Solutions </a>
                                                                     </h2>
                                                                 </div>
@@ -1540,7 +1531,7 @@
                                                                 <div class="service-title">
                                                                     <h2 class="entry-title">
                                                                         <a
-                                                                            href="https://demo2.pavothemes.com/insul/services/finance-advisory/">
+                                                                            href="{{ url('/contact-01') }}">
                                                                             Health Insurance Solutions </a>
                                                                     </h2>
                                                                 </div>
@@ -1560,7 +1551,7 @@
                                                                 <div class="service-title">
                                                                     <h2 class="entry-title">
                                                                         <a
-                                                                            href="https://demo2.pavothemes.com/insul/services/insurance-saving/">
+                                                                            href="{{ url('/contact-01') }}">
                                                                             Business Risk Coverage </a>
                                                                     </h2>
                                                                 </div>
@@ -1580,7 +1571,7 @@
                                                                 <div class="service-title">
                                                                     <h2 class="entry-title">
                                                                         <a
-                                                                            href="https://demo2.pavothemes.com/insul/services/rapidapp-innovate/">
+                                                                            href="{{ url('/contact-01') }}">
                                                                             Corporate Insurance Solutions</a>
 
                                                                 </div>
@@ -1600,7 +1591,7 @@
                                                                 <div class="service-title">
                                                                     <h2 class="entry-title">
                                                                         <a
-                                                                            href="https://demo2.pavothemes.com/insul/services/strategy-lab/">
+                                                                            href="{{ url('/contact-01') }}">
                                                                             Indiiduals and Corporates</a>
                                                                     </h2>
                                                                 </div>
@@ -1949,7 +1940,7 @@
                                         <div class="elementor-widget-container">
                                             <div class="hfe-site-logo">
                                                 <a data-elementor-open-lightbox="" class='elementor-clickable'
-                                                    href="https://demo2.pavothemes.com/insul">
+                                                    href="/">
                                                     <div class="hfe-site-logo-set">
                                                         <div class="hfe-site-logo-container">
                                                             <img class="hfe-site-logo-img elementor-animation-"
@@ -1965,8 +1956,7 @@
                                         data-id="da90c44" data-element_type="widget"
                                         data-widget_type="text-editor.default">
                                         <div class="elementor-widget-container">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                            tempor. </div>
+                                            Subscribe to our newsletter to get the latest news and updates. </div>
                                     </div>
                                     <div class="elementor-element elementor-element-7d87454 elementor-widget__width-initial elementor-widget-mobile__width-inherit form-mailchimp-style-default elementor-widget elementor-widget-insul-mailchmip"
                                         data-id="7d87454" data-element_type="widget"
@@ -2082,37 +2072,37 @@
                                         <div class="elementor-widget-container">
                                             <ul class="elementor-icon-list-items">
                                                 <li class="elementor-icon-list-item">
-                                                    <a href="https://demo2.pavothemes.com/insul/about-us/">
+                                                    <a href="/about-us/">
 
                                                         <span class="elementor-icon-list-text">About </span>
                                                     </a>
                                                 </li>
                                                 <li class="elementor-icon-list-item">
-                                                    <a href="https://demo2.pavothemes.com/insul/contact-01/">
+                                                    <a href="/contact-01/">
 
                                                         <span class="elementor-icon-list-text">Careers</span>
                                                     </a>
                                                 </li>
                                                 <li class="elementor-icon-list-item">
-                                                    <a href="https://demo2.pavothemes.com/insul/our-service-01/">
+                                                    <a href="/services/mutual-funds/">
 
                                                         <span class="elementor-icon-list-text">Works</span>
                                                     </a>
                                                 </li>
                                                 <li class="elementor-icon-list-item">
-                                                    <a href="https://demo2.pavothemes.com/insul/contact-02/">
+                                                    <a href="{{ url('/contact-01') }}">
 
                                                         <span class="elementor-icon-list-text">Contact</span>
                                                     </a>
                                                 </li>
                                                 <li class="elementor-icon-list-item">
-                                                    <a href="https://demo2.pavothemes.com/insul/our-service-01/">
+                                                    <a href="/services/mutual-funds/">
 
                                                         <span class="elementor-icon-list-text">Privacy Policy</span>
                                                     </a>
                                                 </li>
                                                 <li class="elementor-icon-list-item">
-                                                    <a href="https://demo2.pavothemes.com/insul/our-service-01/">
+                                                    <a href="/services/mutual-funds/">
 
                                                         <span class="elementor-icon-list-text">Tax</span>
                                                     </a>
@@ -2180,7 +2170,7 @@
                             <div class="elementor-element elementor-element-b9ad783 elementor-widget elementor-widget-text-editor"
                                 data-id="b9ad783" data-element_type="widget" data-widget_type="text-editor.default">
                                 <div class="elementor-widget-container">
-                                    Copyright © 2024 Insul. All right reserved. </div>
+                                    Copyright © 2026 MargX. All right reserved. </div>
                             </div>
                         </div>
                     </div>
@@ -2267,14 +2257,19 @@
                             <a href="#">Service</a>
                             <ul class="sub-menu">
                                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-108">
-                                    <a href="https://demo2.pavothemes.com/insul/our-service-01/">Our Service 01</a>
+                                    <a href="/services/mutual-funds/">
+                                        <span class="menu-title">Mutual Funds</span>
+                                    </a>
                                 </li>
                                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-110">
-                                    <a href="https://demo2.pavothemes.com/insul/our-service-02/">Our Service 02</a>
+                                    <a href="/services/general-insurance/">
+                                        <span class="menu-title">General Insurance</span>
+                                    </a>
                                 </li>
-                                <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-111">
-                                    <a href="https://demo2.pavothemes.com/insul/services/insurance-saving/">Service
-                                        Details</a>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-111">
+                                    <a href="/services/life-insurance/">
+                                        <span class="menu-title">Life Insurance</span>
+                                    </a>
                                 </li>
                             </ul>
                         </li>
@@ -2299,7 +2294,7 @@
                         </li>
                         <li
                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-117">
-                            <a href="#">Page</a>
+                            <a href="#">Utilities</a>
                             <ul class="sub-menu">
                                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-119">
                                     <a href="https://demo2.pavothemes.com/insul/our-projects/">Our Projects</a>
@@ -2381,10 +2376,10 @@
                             <a href="https://demo2.pavothemes.com/insul/our-projects/">Our Projects</a>
                         </li>
                         <li class="page_item page-item-107">
-                            <a href="https://demo2.pavothemes.com/insul/our-service-01/">Our Service 01</a>
+                            <a href="/services/mutual-funds/">Mutual Funds</a>
                         </li>
                         <li class="page_item page-item-109">
-                            <a href="https://demo2.pavothemes.com/insul/our-service-02/">Our Service 02</a>
+                            <a href="/services/general-insurance/">General Insurance</a>
                         </li>
                         <li class="page_item page-item-125">
                             <a href="https://demo2.pavothemes.com/insul/our-team/">Our Team</a>
