@@ -25,6 +25,19 @@
         }
     </style>
     <style>
+        /* Hide search function on mobile devices */
+        @media screen and (max-width: 1024px) {
+            .elementor-element[data-id="e4a16ef"],
+            .elementor-widget-insul-search,
+            .site-header-search,
+            .button-search-popup,
+            .site-search-popup,
+            .site-search-popup-overlay {
+                display: none !important;
+            }
+        }
+    </style>
+    <style>
         /* Service excerpt should use full available width (avoid fixed width) */
         .service-layout-1 .service-content .excerpt-content {
             width: 100% !important;
@@ -2170,7 +2183,7 @@
                             <div class="elementor-element elementor-element-b9ad783 elementor-widget elementor-widget-text-editor"
                                 data-id="b9ad783" data-element_type="widget" data-widget_type="text-editor.default">
                                 <div class="elementor-widget-container">
-                                    Copyright © 2026 MargX. All right reserved. </div>
+                                    Copyright © 2026 Witan Finsure. Designed by <a href="https://www.margx.in" target="_blank" rel="noopener">MargX</a>. All right reserved. </div>
                             </div>
                         </div>
                     </div>
@@ -2231,109 +2244,51 @@
             <nav class="mobile-menu-tab mobile-navigation mobile-pages-menu active" aria-label="Mobile Navigation">
                 <div class="handheld-navigation">
                     <ul id="menu-main-menu" class="menu">
-                        <li
-                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-97">
-                            <a href="#">Home</a>
-                            <ul class="sub-menu">
-                                <li
-                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-99">
-                                    <a href="https://demo2.pavothemes.com/insul/">01 &#8211; Finance Advisory</a>
-                                </li>
-                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-101">
-                                    <a href="https://demo2.pavothemes.com/insul/home-2/">02 &#8211; Business
-                                        Consulting</a>
-                                </li>
-                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-103">
-                                    <a href="https://demo2.pavothemes.com/insul/home-3/">03 &#8211; Insurance
-                                        Company</a>
-                                </li>
-                            </ul>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-97">
+                            <a href="{{ url('/') }}">Home</a>
                         </li>
                         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-105">
-                            <a href="https://demo2.pavothemes.com/insul/about-us/">About us</a>
+                            <a href="{{ url('/about-us') }}">About us</a>
                         </li>
-                        <li
-                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-106">
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-106">
                             <a href="#">Service</a>
                             <ul class="sub-menu">
                                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-110">
-                                    <a href="/services/general-insurance/">
+                                    <a href="{{ url('/services/general-insurance') }}">
                                         <span class="menu-title">General Insurance</span>
                                     </a>
                                 </li>
                                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-111">
-                                    <a href="/services/life-insurance/">
+                                    <a href="{{ url('/services/life-insurance') }}">
                                         <span class="menu-title">Life Insurance</span>
                                     </a>
                                 </li>
                                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-108">
-                                    <a href="/services/mutual-funds/">
+                                    <a href="{{ url('/services/mutual-funds') }}">
                                         <span class="menu-title">Mutual Funds</span>
                                     </a>
                                 </li>
                             </ul>
                         </li>
-                        <li
-                            class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-has-children menu-item-113">
-                            <a href="https://demo2.pavothemes.com/insul/blog/">Blog</a>
-                            <ul class="sub-menu">
-                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-114">
-                                    <a
-                                        href="https://demo2.pavothemes.com/insul/blog/?blog_style=style-1&#038;posts_per_page=8&#038;blog_sidebar=none">Our
-                                        Blog &#8211; Grid</a>
-                                </li>
-                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-115">
-                                    <a href="https://demo2.pavothemes.com/insul/blog">Our Blog &#8211; List</a>
-                                </li>
-                                <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2068">
-                                    <a
-                                        href="https://demo2.pavothemes.com/insul/embracing-change-transformative-insights-from-insul-business-experts/">Single
-                                        Post</a>
-                                </li>
-                            </ul>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113">
+                            <a href="{{ url('/blog') }}">Blog</a>
                         </li>
-                        <li
-                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-117">
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-117">
                             <a href="#">Utilities</a>
                             <ul class="sub-menu">
-                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-119">
-                                    <a href="https://demo2.pavothemes.com/insul/our-projects/">Our Projects</a>
-                                </li>
-                                <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-120">
-                                    <a href="https://demo2.pavothemes.com/insul/projects/designing-dreams/">Project
-                                        Detail</a>
-                                </li>
                                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-122">
-                                    <a href="https://demo2.pavothemes.com/insul/testimonial/">Testimonial</a>
-                                </li>
-                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-124">
-                                    <a href="https://demo2.pavothemes.com/insul/our-pricing/">Our Pricing</a>
+                                    <a href="{{ url('/testimonial') }}">Testimonial</a>
                                 </li>
                                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-126">
-                                    <a href="https://demo2.pavothemes.com/insul/our-team/">Our Team</a>
+                                    <a href="{{ url('/our-team') }}">Our Team</a>
                                 </li>
                                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-128">
-                                    <a href="https://demo2.pavothemes.com/insul/faqs-page/">FAQs Page</a>
-                                </li>
-                                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2841">
-                                    <a href="https://demo2.pavothemes.com/insul/404">404 Pages</a>
-                                </li>
-                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-132">
-                                    <a href="https://demo2.pavothemes.com/insul/icons/">Icons</a>
+                                    <a href="{{ url('/faqs-page') }}">FAQ</a>
                                 </li>
                             </ul>
                         </li>
-                        <li
-                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-133">
-                            <a href="#">Contact</a>
-                            <ul class="sub-menu">
-                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-135">
-                                    <a href="https://demo2.pavothemes.com/insul/contact-01/">Contact 01</a>
-                                </li>
-                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-137">
-                                    <a href="https://demo2.pavothemes.com/insul/contact-02/">Contact 02</a>
-                                </li>
-                            </ul>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133">
+                            <a href="{{ url('/contact-01') }}">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -2342,54 +2297,16 @@
                 aria-label="Mobile Navigation">
                 <div class="menu">
                     <ul>
-                        <li>
-                            <a href="https://demo2.pavothemes.com/insul/">Home</a>
-                        </li>
-                        <li class="page_item page-item-104">
-                            <a href="https://demo2.pavothemes.com/insul/about-us/">About us</a>
-                        </li>
-                        <li class="page_item page-item-112 current_page_parent">
-                            <a href="https://demo2.pavothemes.com/insul/blog/">Blog</a>
-                        </li>
-                        <li class="page_item page-item-134">
-                            <a href="https://demo2.pavothemes.com/insul/contact-01/">Contact 01</a>
-                        </li>
-                        <li class="page_item page-item-136">
-                            <a href="https://demo2.pavothemes.com/insul/contact-02/">Contact 02</a>
-                        </li>
-                        <li class="page_item page-item-127">
-                            <a href="https://demo2.pavothemes.com/insul/faqs-page/">FAQs Page</a>
-                        </li>
-                        <li class="page_item page-item-100">
-                            <a href="https://demo2.pavothemes.com/insul/home-2/">Home 2</a>
-                        </li>
-                        <li class="page_item page-item-102">
-                            <a href="https://demo2.pavothemes.com/insul/home-3/">Home 3</a>
-                        </li>
-                        <li class="page_item page-item-131">
-                            <a href="https://demo2.pavothemes.com/insul/icons/">Icons</a>
-                        </li>
-                        <li class="page_item page-item-123">
-                            <a href="https://demo2.pavothemes.com/insul/our-pricing/">Our Pricing</a>
-                        </li>
-                        <li class="page_item page-item-118">
-                            <a href="https://demo2.pavothemes.com/insul/our-projects/">Our Projects</a>
-                        </li>
-                        <li class="page_item page-item-107">
-                            <a href="/services/mutual-funds/">Mutual Funds</a>
-                        </li>
-                        <li class="page_item page-item-109">
-                            <a href="/services/general-insurance/">General Insurance</a>
-                        </li>
-                        <li class="page_item page-item-125">
-                            <a href="https://demo2.pavothemes.com/insul/our-team/">Our Team</a>
-                        </li>
-                        <li class="page_item page-item-2">
-                            <a href="https://demo2.pavothemes.com/insul/sample-page/">Sample Page</a>
-                        </li>
-                        <li class="page_item page-item-121">
-                            <a href="https://demo2.pavothemes.com/insul/testimonial/">Testimonial</a>
-                        </li>
+                        <li><a href="{{ url('/') }}">Home</a></li>
+                        <li class="page_item page-item-104"><a href="{{ url('/about-us') }}">About us</a></li>
+                        <li class="page_item page-item-112"><a href="{{ url('/blog') }}">Blog</a></li>
+                        <li class="page_item page-item-134"><a href="{{ url('/contact-01') }}">Contact</a></li>
+                        <li class="page_item page-item-125"><a href="{{ url('/our-team') }}">Our Team</a></li>
+                        <li class="page_item page-item-127"><a href="{{ url('/faqs-page') }}">FAQs Page</a></li>
+                        <li class="page_item page-item-121"><a href="{{ url('/testimonial') }}">Testimonial</a></li>
+                        <li class="page_item page-item-107"><a href="{{ url('/services/mutual-funds') }}">Mutual Funds</a></li>
+                        <li class="page_item page-item-109"><a href="{{ url('/services/general-insurance') }}">General Insurance</a></li>
+                        <li class="page_item page-item-111"><a href="{{ url('/services/life-insurance') }}">Life Insurance</a></li>
                     </ul>
                 </div>
             </nav>

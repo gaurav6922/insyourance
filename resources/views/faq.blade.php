@@ -9,6 +9,19 @@
     <link rel="icon" type="image/png" href="{{ asset('images/witantitle.png') }}">
 <meta name='robots' content='max-image-preview:large' />
 	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	<style>
+		/* Hide search function on mobile devices */
+		@media screen and (max-width: 1024px) {
+			.elementor-element[data-id="e4a16ef"],
+			.elementor-widget-insul-search,
+			.site-header-search,
+			.button-search-popup,
+			.site-search-popup,
+			.site-search-popup-overlay {
+				display: none !important;
+			}
+		}
+	</style>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 <link rel="dns-prefetch" href="//s.w.org">
 <link rel='dns-prefetch' href='//demo2.pavothemes.com' />
@@ -817,7 +830,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 		<div class="elementor-element elementor-element-35aec87 e-con-full e-flex e-con e-child" data-id="35aec87" data-element_type="container">
 				<div class="elementor-element elementor-element-b9ad783 elementor-widget elementor-widget-text-editor" data-id="b9ad783" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
-							Copyright © 2026 MargX. All right reserved.						</div>
+							Copyright © 2026 Witan Finsure. Designed by <a href="https://www.margx.in" target="_blank" rel="noopener">MargX</a>. All right reserved.						</div>
 				</div>
 				</div>
 				</div>

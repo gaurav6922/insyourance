@@ -14,6 +14,19 @@
         }
     </style>
     <style>
+        /* Hide search function on mobile devices */
+        @media screen and (max-width: 1024px) {
+            .elementor-element[data-id="e4a16ef"],
+            .elementor-widget-insul-search,
+            .site-header-search,
+            .button-search-popup,
+            .site-search-popup,
+            .site-search-popup-overlay {
+                display: none !important;
+            }
+        }
+    </style>
+    <style>
         /* Fix email link styling in header */
         .elementor-element[data-id="62b8151"] .elementor-icon-list-text a {
             color: inherit !important;
@@ -2171,7 +2184,7 @@
                             <div class="elementor-element elementor-element-b9ad783 elementor-widget elementor-widget-text-editor"
                                 data-id="b9ad783" data-element_type="widget" data-widget_type="text-editor.default">
                                 <div class="elementor-widget-container">
-                                    Copyright © 2026 MargX. All right reserved. </div>
+                                    Copyright © 2026 Witan Finsure. Designed by <a href="https://www.margx.in" target="_blank" rel="noopener">MargX</a>. All right reserved. </div>
                             </div>
                         </div>
                     </div>

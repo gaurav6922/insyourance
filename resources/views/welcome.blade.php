@@ -14,6 +14,19 @@
     }
     </style>
     <style>
+        /* Hide search function on mobile devices */
+        @media screen and (max-width: 1024px) {
+            .elementor-element[data-id="e4a16ef"],
+            .elementor-widget-insul-search,
+            .site-header-search,
+            .button-search-popup,
+            .site-search-popup,
+            .site-search-popup-overlay {
+                display: none !important;
+            }
+        }
+    </style>
+    <style>
         /* Fix footer blank vertical space */
     /* Remove artificial height from footer */
 #colophon .e-con.e-parent {
@@ -195,6 +208,25 @@
         .elementor-element[data-id="607b350"] .elementor-icon-list-item:last-child,
         .elementor-element[data-id="c7c2ff7"] .elementor-icon-list-item:last-child {
             margin-bottom: 0 !important;
+        }
+        /* Add spacing between Contact us and About us in footer */
+        .elementor-element[data-id="607b350"] .elementor-icon-list-item:nth-child(2) {
+            margin-top: 20px !important;
+        }
+        /* Make MargX link white in footer copyright (home page only) */
+        .elementor-element[data-id="7cd8a99"] a {
+            color: #ffffff !important;
+        }
+        /* Remove blue underline below "Advisor" text in slider */
+        #slider-1-slide-1-layer-4 {
+            text-decoration: none !important;
+            border-bottom: none !important;
+        }
+        /* Hide the underline shape element if it's a separate layer */
+        rs-layer#slider-1-slide-1-layer-10,
+        rs-layer[data-xy*="yo:203px"] {
+            display: none !important;
+            visibility: hidden !important;
         }
 
         /* Connect section */
@@ -2901,7 +2933,7 @@
                                 <div class="elementor-element elementor-element-7cd8a99 elementor-widget elementor-widget-text-editor"
                                     data-id="7cd8a99" data-element_type="widget" data-widget_type="text-editor.default">
                                     <div class="elementor-widget-container">
-                                        Copyright © 2026 MargX. All right reserved. </div>
+                                        Copyright © 2026 Witan Finsure. Designed by <a href="https://www.margx.in" target="_blank" rel="noopener">MargX</a>. All right reserved. </div>
                                 </div>
                             </div>
                             <div class="elementor-element elementor-element-d49fe94 e-con-full e-flex e-con e-child"
