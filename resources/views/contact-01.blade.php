@@ -268,9 +268,9 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 <li id="menu-item-105" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-105"><a href="/about-us/"><span class="menu-title">About us</span></a></li>
 <li id="menu-item-106" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-106"><a href="#"><span class="menu-title">Service</span></a>
 <ul class="sub-menu">
-	<li id="menu-item-108" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-108"><a href="/services/mutual-funds/"><span class="menu-title">Mutual Funds</span></a></li>
 	<li id="menu-item-110" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-110"><a href="/services/general-insurance/"><span class="menu-title">General Insurance</span></a></li>
 	<li id="menu-item-111" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-111"><a href="/services/life-insurance/"><span class="menu-title">Life Insurance</span></a></li>
+	<li id="menu-item-108" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-108"><a href="/services/mutual-funds/"><span class="menu-title">Mutual Funds</span></a></li>
 </ul>
 </li>
 <li id="menu-item-113" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113"><a href="/blog"><span class="menu-title">Blog</span></a></li>
@@ -911,9 +911,9 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-105"><a href="https://demo2.pavothemes.com/insul/about-us/">About us</a></li>
 <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-106"><a href="#">Service</a>
                             <ul class="sub-menu">
-	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-108"><a href="/services/mutual-funds/"><span class="menu-title">Mutual Funds</span></a></li>
 	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-110"><a href="/services/general-insurance/"><span class="menu-title">General Insurance</span></a></li>
 	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-111"><a href="/services/life-insurance/"><span class="menu-title">Life Insurance</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-108"><a href="/services/mutual-funds/"><span class="menu-title">Mutual Funds</span></a></li>
                             </ul>
                         </li>
 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113"><a href="/blog">Blog</a></li>

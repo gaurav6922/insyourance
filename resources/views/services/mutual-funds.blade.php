@@ -941,11 +941,6 @@
                                                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-106">
                                                             <a href="#"><span class="menu-title">Service</span></a>
                                                             <ul class="sub-menu">
-                                                                <li id="menu-item-108"
-                                                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-108">
-                                                                    <a href="/services/mutual-funds/"><span
-                                                                            class="menu-title">Mutual Funds</span></a>
-                                                                </li>
                                                                 <li id="menu-item-110"
                                                                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-110">
                                                                     <a href="/services/general-insurance/"><span
@@ -956,6 +951,11 @@
                                                                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-111">
                                                                     <a href="/services/life-insurance/"><span
                                                                             class="menu-title">Life Insurance</span></a>
+                                                                </li>
+                                                                <li id="menu-item-108"
+                                                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-108">
+                                                                    <a href="/services/mutual-funds/"><span
+                                                                            class="menu-title">Mutual Funds</span></a>
                                                                 </li>
                                                             </ul>
                                                         </li>
@@ -1758,7 +1758,7 @@
                                                             <span class="sub-title">Corporate & Individual</span>
                                                             <h2 class="entry-title">
                                                                 <a
-                                                                    href="https://demo2.pavothemes.com/insul/services/finance-advisory/">
+                                                                    href="{{ url('/services/general-insurance') }}">
                                                                     General Insurance </a>
                                                             </h2>
                                                         </div>
@@ -1780,7 +1780,7 @@
                                                             <span class="sub-title">Individual & Family</span>
                                                             <h2 class="entry-title">
                                                                 <a
-                                                                    href="https://demo2.pavothemes.com/insul/services/health-insurance/">
+                                                                    href="{{ url('/services/life-insurance') }}">
                                                                     Life Insurance </a>
                                                             </h2>
                                                         </div>
@@ -1802,8 +1802,8 @@
                                                             <span class="sub-title">Personal & Corporate</span>
                                                             <h2 class="entry-title">
                                                                 <a
-                                                                    href="https://demo2.pavothemes.com/insul/services/financial-advices/">
-                                                                    Financial Advisory </a>
+                                                                    href="{{ url('/services/mutual-funds') }}">
+                                                                    Mutual Fund </a>
                                                             </h2>
                                                         </div>
                                                     </div>
@@ -2241,11 +2241,6 @@
                         <li id="menu-item-106" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-106">
                             <a href="#">Service</a>
                             <ul class="sub-menu">
-                                <li id="menu-item-108" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-108">
-                                    <a href="/services/mutual-funds/">
-                                        <span class="menu-title">Mutual Funds</span>
-                                    </a>
-                                </li>
                                 <li id="menu-item-110" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-110">
                                     <a href="/services/general-insurance/">
                                         <span class="menu-title">General Insurance</span>
@@ -2254,6 +2249,11 @@
                                 <li id="menu-item-111" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-111">
                                     <a href="/services/life-insurance/">
                                         <span class="menu-title">Life Insurance</span>
+                                    </a>
+                                </li>
+                                <li id="menu-item-108" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-108">
+                                    <a href="/services/mutual-funds/">
+                                        <span class="menu-title">Mutual Funds</span>
                                     </a>
                                 </li>
                             </ul>

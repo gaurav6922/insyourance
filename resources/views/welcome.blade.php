@@ -988,12 +988,6 @@
                                                             <span class="menu-title">Service</span>
                                                         </a>
                                                         <ul class="sub-menu">
-                                                            <li id="menu-item-185"
-                                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-185">
-                                                                <a href="/services/mutual-funds/">
-                                                                    <span class="menu-title">Mutual Funds</span>
-                                                                </a>
-                                                            </li>
                                                             <li id="menu-item-186"
                                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-186">
                                                                 <a href="/services/general-insurance/">
@@ -1004,6 +998,12 @@
                                                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-187">
                                                                 <a href="/services/life-insurance/">
                                                                     <span class="menu-title">Life Insurance</span>
+                                                                </a>
+                                                            </li>
+                                                            <li id="menu-item-185"
+                                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-185">
+                                                                <a href="/services/mutual-funds/">
+                                                                    <span class="menu-title">Mutual Funds</span>
                                                                 </a>
                                                             </li>
                                                         </ul>
@@ -1292,7 +1292,7 @@
                                                                         data-rsp_ch="on" data-xy="x:r;y:m;" data-pos="a"
                                                                         data-text="w:normal;s:16,16,12,12;l:24,24,18,18;fw:500;"
                                                                         data-frame_999="o:0;st:w;sR:8700;"
-                                                                        style="z-index:7;font-family:'DM Sans';">+1K
+                                                                        style="z-index:7;font-family:'DM Sans';">+1000
                                                                         Clients
                                                                     											</rs-layer>
                                                                     <!--
@@ -3132,12 +3132,6 @@
                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-106">
                             <a href="#">Service</a>
                             <ul class="sub-menu">
-                                <li id="menu-item-108"
-                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-108">
-                                    <a href="/services/mutual-funds/">
-                                        <span class="menu-title">Mutual Funds</span>
-                                    </a>
-                                </li>
                                 <li id="menu-item-110"
                                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-110">
                                     <a href="/services/general-insurance/">
@@ -3148,6 +3142,12 @@
                                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-111">
                                     <a href="/services/life-insurance/">
                                         <span class="menu-title">Life Insurance</span>
+                                    </a>
+                                </li>
+                                <li id="menu-item-108"
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-108">
+                                    <a href="/services/mutual-funds/">
+                                        <span class="menu-title">Mutual Funds</span>
                                     </a>
                                 </li>
                             </ul>
