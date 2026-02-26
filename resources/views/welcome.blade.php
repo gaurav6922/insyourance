@@ -13,24 +13,37 @@
         contain-intrinsic-size: 3000px 1500px
     }
     </style>
-    <style>
-        /* Hide search function on mobile devices */
-        @media screen and (max-width: 1024px) {
-            .elementor-element[data-id="e4a16ef"],
-            .elementor-widget-insul-search,
-            .site-header-search,
-            .button-search-popup,
-            .site-search-popup,
-            .site-search-popup-overlay {
-                display: none !important;
-            }
-        }
-    </style>
-    <style>
-        /* Fix footer blank vertical space */
-    /* Remove artificial height from footer */
-#colophon .e-con.e-parent {
-  min-height: unset !important;
+	    <style>
+	        /* Hide search function on mobile devices */
+	        @media screen and (max-width: 1024px) {
+	            .elementor-element[data-id="e4a16ef"],
+	            .elementor-widget-insul-search,
+	            .site-header-search,
+	            .button-search-popup,
+	            .site-search-popup,
+	            .site-search-popup-overlay {
+	                display: none !important;
+	            }
+	        }
+	    </style>
+	    <style>
+	        /* Home slider: hide the person image on mobile */
+	        @media screen and (max-width: 767.98px) {
+	            rs-layer#slider-1-slide-1-layer-13,
+	            rs-layer#slider-1-slide-1-layer-13 img,
+	            img.tp-rs-img.rs-lazyload[data-lazyload*="img-sl1-person-min.png"],
+	            rs-layer#slider-1-slide-1-layer-21,
+	            rs-layer#slider-1-slide-1-layer-21 img,
+	            img.tp-rs-img.rs-lazyload[data-lazyload*="/2024/04/line.svg"] {
+	                display: none !important;
+	            }
+	        }
+	    </style>
+	    <style>
+	        /* Fix footer blank vertical space */
+	    /* Remove artificial height from footer */
+	#colophon .e-con.e-parent {
+	  min-height: unset !important;
   height: auto !important;
 }
 
