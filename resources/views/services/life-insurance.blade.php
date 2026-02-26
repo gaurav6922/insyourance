@@ -152,12 +152,6 @@
 	            gap: 24px;
 	            width: max-content;
 	        }
-
-	        /* If no animation (logos fit), center them */
-	        .insy-partners__logos:not(.is-animated) .insy-partners__track {
-	            width: 100%;
-	            justify-content: center;
-	        }
 	        
 	        .insy-partners__track a {
 	            display: block;
@@ -3187,42 +3181,16 @@
 		                var track = el.querySelector('.insy-partners__track');
 		                if (!track) return;
 		
-		                var originalHtml = track.innerHTML;
+		                // Duplicate once for seamless looping (only if not already duplicated)
+		                if (!el.dataset.cloned) {
+		                    track.innerHTML += track.innerHTML;
+		                    el.dataset.cloned = '1';
+		                }
+		
 		                var rafId = null;
-		                var running = false;
 		                var paused = false;
 		                var speed = 0.9; // px per frame
 		                var pos = el.scrollLeft || 0;
-		
-		                function baseWidth() {
-		                    return el.dataset.cloned ? (track.scrollWidth / 2) : track.scrollWidth;
-		                }
-		
-		                function setCloned(shouldClone) {
-		                    if (shouldClone && !el.dataset.cloned) {
-		                        track.innerHTML += originalHtml;
-		                        el.dataset.cloned = '1';
-		                    } else if (!shouldClone && el.dataset.cloned) {
-		                        track.innerHTML = originalHtml;
-		                        delete el.dataset.cloned;
-		                    }
-		                }
-		
-		                function shouldAnimate() {
-		                    return baseWidth() > (el.clientWidth + 2);
-		                }
-		
-		                function stop() {
-		                    running = false;
-		                    if (rafId) window.cancelAnimationFrame(rafId);
-		                    rafId = null;
-		                }
-		
-		                function start() {
-		                    if (running) return;
-		                    running = true;
-		                    rafId = window.requestAnimationFrame(step);
-		                }
 		
 		                el.addEventListener('scroll', function () { pos = el.scrollLeft || 0; }, { passive: true });
 		                el.addEventListener('mouseenter', function () { paused = true; });
@@ -3231,36 +3199,29 @@
 		                el.addEventListener('touchend', function () { paused = false; }, { passive: true });
 		
 		                function step() {
-		                    if (!running) return;
-		
-		                    if (!paused && shouldAnimate()) {
+		                    if (!paused) {
 		                        var half = track.scrollWidth / 2;
-		                        pos += speed;
-		                        if (pos >= half) pos -= half;
-		                        el.scrollLeft = pos;
-		                    } else if (!shouldAnimate()) {
-		                        pos = 0;
-		                        el.scrollLeft = 0;
+		                        if (half > el.clientWidth + 2) {
+		                            pos += speed;
+		                            if (pos >= half) pos -= half;
+		                            el.scrollLeft = pos;
+		                        } else {
+		                            pos = 0;
+		                            el.scrollLeft = 0;
+		                        }
 		                    }
-		
 		                    rafId = window.requestAnimationFrame(step);
 		                }
 		
-		                function update() {
-		                    var animate = shouldAnimate();
-		                    setCloned(animate);
-		                    el.classList.toggle('is-animated', animate);
-		                    pos = 0;
+		                window.addEventListener('resize', function () {
 		                    el.scrollLeft = 0;
-		                    if (animate) start();
-		                    else stop();
-		                }
+		                    pos = 0;
+		                });
 		
-		                window.addEventListener('resize', update);
-		                update();
+		                step();
 		
 		                window.addEventListener('beforeunload', function () {
-		                    stop();
+		                    if (rafId) window.cancelAnimationFrame(rafId);
 		                });
 		            }
 	
