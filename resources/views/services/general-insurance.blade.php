@@ -165,6 +165,12 @@
 	            gap: 24px;
 	            width: max-content;
 	        }
+
+	        /* If no animation (logos fit), center them */
+	        .insy-partners__logos:not(.is-animated) .insy-partners__track {
+	            width: 100%;
+	            justify-content: center;
+	        }
 	        
 	        .insy-partners__track a {
 	            display: block;
@@ -3136,59 +3142,85 @@
 		                if (!track) return;
 		
 		                var dir = (el.dataset.scrollDir || 'ltr').toLowerCase() === 'rtl' ? -1 : 1;
+		                var originalHtml = track.innerHTML;
 		
-		                // Duplicate once for seamless looping
-		                if (!el.dataset.cloned) {
-		                    track.innerHTML += track.innerHTML;
-		                    el.dataset.cloned = '1';
+		                var rafId = null;
+		                var running = false;
+		                var paused = false;
+		                var speed = 0.9; // px per frame
+		                var pos = el.scrollLeft || 0;
+		
+		                function baseWidth() {
+		                    return el.dataset.cloned ? (track.scrollWidth / 2) : track.scrollWidth;
 		                }
-	
-	                var rafId = null;
-	                var paused = false;
-	                var speed = 0.9; // px per frame
-	                var pos = el.scrollLeft || 0;
-	
-	                el.addEventListener('scroll', function () { pos = el.scrollLeft || 0; }, { passive: true });
-	                el.addEventListener('mouseenter', function () { paused = true; });
-	                el.addEventListener('mouseleave', function () { paused = false; });
-	                el.addEventListener('touchstart', function () { paused = true; }, { passive: true });
-	                el.addEventListener('touchend', function () { paused = false; }, { passive: true });
-	
-		                function step() {
-		                    if (!paused) {
-		                        var half = track.scrollWidth / 2;
-		                        if (half > el.clientWidth + 2) {
-		                            pos += dir * speed;
-		                            if (pos >= half) pos -= half;
-		                            if (pos < 0) pos += half;
-		                            el.scrollLeft = pos;
-		                        } else {
-		                            pos = 0;
-		                            el.scrollLeft = 0;
-		                        }
+		
+		                function setCloned(shouldClone) {
+		                    if (shouldClone && !el.dataset.cloned) {
+		                        track.innerHTML += originalHtml;
+		                        el.dataset.cloned = '1';
+		                    } else if (!shouldClone && el.dataset.cloned) {
+		                        track.innerHTML = originalHtml;
+		                        delete el.dataset.cloned;
 		                    }
+		                }
+		
+		                function shouldAnimate() {
+		                    return baseWidth() > (el.clientWidth + 2);
+		                }
+		
+		                function stop() {
+		                    running = false;
+		                    if (rafId) window.cancelAnimationFrame(rafId);
+		                    rafId = null;
+		                }
+		
+		                function start() {
+		                    if (running) return;
+		                    running = true;
 		                    rafId = window.requestAnimationFrame(step);
 		                }
-		
-		                window.addEventListener('resize', function () {
-		                    var half = track.scrollWidth / 2;
-		                    pos = dir === -1 ? Math.max(0, half - 1) : 0;
-		                    el.scrollLeft = pos;
-		                });
-		
-		                // Initialize start position for RTL so it scrolls in the opposite direction immediately
-		                (function initPos() {
-		                    var half = track.scrollWidth / 2;
-		                    pos = dir === -1 ? Math.max(0, half - 1) : 0;
-		                    el.scrollLeft = pos;
-		                })();
-		
-		                step();
 	
-	                window.addEventListener('beforeunload', function () {
-	                    if (rafId) window.cancelAnimationFrame(rafId);
-	                });
-	            }
+		                el.addEventListener('scroll', function () { pos = el.scrollLeft || 0; }, { passive: true });
+		                el.addEventListener('mouseenter', function () { paused = true; });
+		                el.addEventListener('mouseleave', function () { paused = false; });
+		                el.addEventListener('touchstart', function () { paused = true; }, { passive: true });
+		                el.addEventListener('touchend', function () { paused = false; }, { passive: true });
+	
+		                function step() {
+		                    if (!running) return;
+		
+		                    if (!paused && shouldAnimate()) {
+		                        var half = track.scrollWidth / 2;
+		                        pos += dir * speed;
+		                        if (pos >= half) pos -= half;
+		                        if (pos < 0) pos += half;
+		                        el.scrollLeft = pos;
+		                    } else if (!shouldAnimate()) {
+		                        pos = 0;
+		                        el.scrollLeft = 0;
+		                    }
+		
+		                    rafId = window.requestAnimationFrame(step);
+		                }
+	
+		                function update() {
+		                    var animate = shouldAnimate();
+		                    setCloned(animate);
+		                    el.classList.toggle('is-animated', animate);
+		                    var half = track.scrollWidth / 2;
+		                    pos = (animate && dir === -1) ? Math.max(0, half - 1) : 0;
+		                    el.scrollLeft = pos;
+		                    if (animate) start();
+		                    else stop();
+		                }
+		
+		                window.addEventListener('resize', update);
+		                update();
+	
+		                window.addEventListener('beforeunload', function () {
+		                    stop();
+		                });
+		            }
 	
 	            function init() {
 	                var els = document.querySelectorAll('[data-autoscroll="partners"]');
