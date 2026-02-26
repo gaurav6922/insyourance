@@ -112,11 +112,94 @@
             margin-right: 0 !important;
         }
         
-        /* Ensure parent containers don't constrain width */
-        .elementor-element[data-id="91e395c"] {
-            max-width: 100% !important;
-        }
-    </style>
+	        /* Ensure parent containers don't constrain width */
+	        .elementor-element[data-id="91e395c"] {
+	            max-width: 100% !important;
+	        }
+
+	        /* Services page: Our Partners row (above "Our Popular Services") */
+	        .insy-partners {
+	            margin: 0 0 24px;
+	            text-align: center;
+	        }
+
+	        .insy-partners__title {
+	            margin: 0 0 14px;
+	            font-size: 18px;
+	            font-weight: 700;
+	            letter-spacing: 0.08em;
+	            text-transform: uppercase;
+	        }
+
+	        .insy-partners__logos {
+	            display: flex;
+	            flex-wrap: nowrap;
+	            align-items: center;
+	            justify-content: center;
+	            gap: 24px;
+	            width: 100%;
+	            overflow-x: auto;
+	            overflow-y: hidden;
+	            -webkit-overflow-scrolling: touch;
+	            padding: 6px 0 10px;
+	            scrollbar-width: none;
+	        }
+	        
+	        .insy-partners__logos::-webkit-scrollbar {
+	            display: none;
+	        }
+
+	        .insy-partners__logos img {
+	            display: block;
+	            flex: 0 0 auto;
+	            width: auto !important;
+	            max-width: 260px !important;
+	            height: 76px !important;
+	            max-height: 76px !important;
+	            object-fit: contain;
+	        }
+
+	        .insy-partners__logos img.insy-partners__logo--lg {
+	            max-width: 320px !important;
+	            height: 92px !important;
+	            max-height: 92px !important;
+	        }
+
+	        /* Make ICICI ~20% bigger than other "lg" logos */
+	        .insy-partners__logos img.insy-partners__logo--icici {
+	            height: 138px !important;
+	            max-height: 138px !important;
+	        }
+
+	        @media (max-width: 767.98px) {
+	            .insy-partners {
+	                margin-bottom: 18px;
+	            }
+
+	            .insy-partners__logos {
+	                justify-content: flex-start;
+	                gap: 16px;
+	                padding: 6px 12px 10px;
+	            }
+
+	            .insy-partners__logos img {
+	                max-width: 210px !important;
+	                height: 64px !important;
+	                max-height: 64px !important;
+	            }
+
+	            .insy-partners__logos img.insy-partners__logo--lg {
+	                max-width: 240px !important;
+	                height: 74px !important;
+	                max-height: 74px !important;
+	            }
+
+	            .insy-partners__logos img.insy-partners__logo--icici {
+	                height: 111px !important;
+	                max-height: 111px !important;
+	            }
+	        }
+	    </style>
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
     <link rel="dns-prefetch" href="//s.w.org">
     <link rel='dns-prefetch' href='//demo2.pavothemes.com' />
@@ -1732,15 +1815,35 @@
                             </div>
                         </div>
                     </div>
-                    <div class="elementor-element elementor-element-04ef773 e-flex e-con-boxed e-con e-parent"
-                        data-id="04ef773" data-element_type="container">
-                        <div class="e-con-inner">
-                            <div class="elementor-element elementor-element-a4c4e5a heading-effects-yes subtitle-position-above elementor-widget elementor-widget-heading"
-                                data-id="a4c4e5a" data-element_type="widget" data-widget_type="heading.default">
-                                <div class="elementor-widget-container">
-                                    <div class="elementor-heading-wrapper-inner">
-                                        <div class="elementor-sub-title">
-                                            <span class="sub-title">OUR SERVICES</span>
+	                    <div class="elementor-element elementor-element-04ef773 e-flex e-con-boxed e-con e-parent"
+	                        data-id="04ef773" data-element_type="container">
+	                        <div class="e-con-inner">
+	                            <div class="insy-partners" aria-label="Our Partners">
+	                                <h3 class="insy-partners__title">Our Partners</h3>
+		                                <div class="insy-partners__logos" id="insy-partners-logos">
+		                                    <img class="insy-partners__logo--lg" loading="lazy" decoding="async"
+		                                        src="{{ asset('images/partners/life/tata-life.png') }}"
+		                                        alt="Tata Life Insurance">
+		                                    <img class="insy-partners__logo--lg" loading="lazy" decoding="async"
+		                                        src="{{ asset('images/partners/life/bajaj-life.png') }}"
+		                                        alt="Bajaj Life Insurance">
+		                                    <img loading="lazy" decoding="async"
+		                                        src="{{ asset('images/partners/life/axis-life.png') }}"
+		                                        alt="Axis Life Insurance">
+		                                    <img class="insy-partners__logo--lg insy-partners__logo--icici" loading="lazy" decoding="async"
+		                                        src="{{ asset('images/partners/life/icici-life.png') }}"
+		                                        alt="ICICI Life Insurance">
+		                                    <img loading="lazy" decoding="async"
+		                                        src="{{ asset('images/partners/life/hdfc-life.png') }}"
+		                                        alt="HDFC Life Insurance">
+		                                </div>
+		                            </div>
+	                            <div class="elementor-element elementor-element-a4c4e5a heading-effects-yes subtitle-position-above elementor-widget elementor-widget-heading"
+	                                data-id="a4c4e5a" data-element_type="widget" data-widget_type="heading.default">
+	                                <div class="elementor-widget-container">
+	                                    <div class="elementor-heading-wrapper-inner">
+	                                        <div class="elementor-sub-title">
+	                                            <span class="sub-title">OUR SERVICES</span>
                                         </div>
                                     </div>
                                 </div>
@@ -3037,11 +3140,71 @@
     </script>
     <script data-no-minify="1" async
         src="https://demo2.pavothemes.com/insul/wp-content/plugins/wp-rocket/assets/js/lazyload/16.1/lazyload.min.js"></script>
-    <script defer
-        src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015"
-        integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ=="
-        data-cf-beacon='{"version":"2024.11.0","token":"2262db23ef41480dbb281abb8b2626b5","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}'
-        crossorigin="anonymous"></script>
-</body>
+	    <script defer
+	        src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015"
+	        integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ=="
+	        data-cf-beacon='{"version":"2024.11.0","token":"2262db23ef41480dbb281abb8b2626b5","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}'
+	        crossorigin="anonymous"></script>
+	    <script>
+	        (function () {
+	            var prefersReduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+	            if (prefersReduced) return;
+	
+	            function startAutoScroll() {
+	                var el = document.getElementById('insy-partners-logos');
+	                if (!el) return;
+	
+	                var rafId = null;
+	                var paused = false;
+	                var speed = 0.9; // px per frame (use a float accumulator for mobile)
+	                var pos = 0;
+	
+	                // Keep our float position in sync if the user scrolls manually
+	                el.addEventListener('scroll', function () {
+	                    pos = el.scrollLeft || 0;
+	                }, { passive: true });
+	
+	                function step() {
+	                    if (!paused) {
+	                        var maxScroll = el.scrollWidth - el.clientWidth;
+	                        if (maxScroll > 2) {
+	                            pos += speed;
+	                            if (pos >= maxScroll) pos = 0;
+	                            el.scrollLeft = pos;
+	                        } else {
+	                            pos = 0;
+	                            el.scrollLeft = 0;
+	                        }
+	                    }
+	                    rafId = window.requestAnimationFrame(step);
+	                }
+	
+	                el.addEventListener('mouseenter', function () { paused = true; });
+	                el.addEventListener('mouseleave', function () { paused = false; });
+	                el.addEventListener('touchstart', function () { paused = true; }, { passive: true });
+	                el.addEventListener('touchend', function () { paused = false; }, { passive: true });
+	
+	                // Restart if layout changes (e.g., rotation)
+	                window.addEventListener('resize', function () {
+	                    el.scrollLeft = 0;
+	                    pos = 0;
+	                });
+	
+	                step();
+	
+	                // Cleanup hook (not strictly needed on this page)
+	                window.addEventListener('beforeunload', function () {
+	                    if (rafId) window.cancelAnimationFrame(rafId);
+	                });
+	            }
+	
+	            if (document.readyState === 'loading') {
+	                document.addEventListener('DOMContentLoaded', startAutoScroll);
+	            } else {
+	                startAutoScroll();
+	            }
+	        })();
+	    </script>
+	</body>
 
 </html>
