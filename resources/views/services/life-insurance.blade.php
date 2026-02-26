@@ -152,6 +152,12 @@
 	            gap: 24px;
 	            width: max-content;
 	        }
+	        
+	        .insy-partners__track a {
+	            display: block;
+	            line-height: 0;
+	            text-decoration: none;
+	        }
 
 	        .insy-partners__logos img {
 	            display: block;
@@ -1828,21 +1834,31 @@
 	                                <h3 class="insy-partners__title">Our Partners</h3>
 		                                <div class="insy-partners__logos" id="insy-partners-logos" data-autoscroll="partners">
 		                                    <div class="insy-partners__track">
-		                                        <img class="insy-partners__logo--lg" loading="lazy" decoding="async"
-		                                            src="{{ asset('images/partners/life/tata-life.png') }}"
-		                                            alt="Tata Life Insurance">
-		                                        <img class="insy-partners__logo--lg" loading="lazy" decoding="async"
-		                                            src="{{ asset('images/partners/life/bajaj-life.png') }}"
-		                                            alt="Bajaj Life Insurance">
-		                                        <img loading="lazy" decoding="async"
-		                                            src="{{ asset('images/partners/life/axis-life.png') }}"
-		                                            alt="Axis Life Insurance">
-		                                        <img class="insy-partners__logo--lg insy-partners__logo--icici" loading="lazy" decoding="async"
-		                                            src="{{ asset('images/partners/life/icici-life.png') }}"
-		                                            alt="ICICI Life Insurance">
-		                                        <img loading="lazy" decoding="async"
-		                                            src="{{ asset('images/partners/life/hdfc-life.png') }}"
-		                                            alt="HDFC Life Insurance">
+		                                        <a href="https://www.tataaia.com" target="_blank" rel="noopener noreferrer">
+		                                            <img class="insy-partners__logo--lg" loading="lazy" decoding="async"
+		                                                src="{{ asset('images/partners/life/tata-life.png') }}"
+		                                                alt="Tata AIA Life Insurance">
+		                                        </a>
+		                                        <a href="https://www.bajajallianzlife.com" target="_blank" rel="noopener noreferrer">
+		                                            <img class="insy-partners__logo--lg" loading="lazy" decoding="async"
+		                                                src="{{ asset('images/partners/life/bajaj-life.png') }}"
+		                                                alt="Bajaj Allianz Life Insurance">
+		                                        </a>
+		                                        <a href="https://www.maxlifeinsurance.com" target="_blank" rel="noopener noreferrer">
+		                                            <img loading="lazy" decoding="async"
+		                                                src="{{ asset('images/partners/life/axis-life.png') }}"
+		                                                alt="Axis Max Life Insurance">
+		                                        </a>
+		                                        <a href="https://www.iciciprulife.com" target="_blank" rel="noopener noreferrer">
+		                                            <img class="insy-partners__logo--lg insy-partners__logo--icici" loading="lazy" decoding="async"
+		                                                src="{{ asset('images/partners/life/icici-life.png') }}"
+		                                                alt="ICICI Prudential Life Insurance">
+		                                        </a>
+		                                        <a href="https://www.hdfclife.com" target="_blank" rel="noopener noreferrer">
+		                                            <img loading="lazy" decoding="async"
+		                                                src="{{ asset('images/partners/life/hdfc-life.png') }}"
+		                                                alt="HDFC Life Insurance">
+		                                        </a>
 		                                    </div>
 		                                </div>
 		                            </div>

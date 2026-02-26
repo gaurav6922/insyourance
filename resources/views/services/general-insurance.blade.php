@@ -165,6 +165,12 @@
 	            gap: 24px;
 	            width: max-content;
 	        }
+	        
+	        .insy-partners__track a {
+	            display: block;
+	            line-height: 0;
+	            text-decoration: none;
+	        }
 
 	        .insy-partners__logos img {
 	            display: block;
@@ -1811,6 +1817,30 @@
 	
 	                                $healthPartnerFiles = $insyPartnersGlob('images/partners/health');
 	                                $motorPartnerFiles = $insyPartnersGlob('images/partners/motor');
+	
+	                                $healthPartnerLinks = [
+	                                    'care-health.png' => 'https://www.careinsurance.com',
+	                                    'hfdc-health.png' => 'https://www.hdfcergo.com',
+	                                    'icici-health.png' => 'https://www.icicilombard.com',
+	                                    'national-health.png' => 'https://nationalinsurance.nic.co.in',
+	                                    'newindia-health.png' => 'https://www.newindia.co.in',
+	                                    'niva-health.png' => 'https://www.nivabupa.com',
+	                                    'star-health.png' => 'https://www.starhealth.in',
+	                                    'tata-health.png' => 'https://www.tataaig.com',
+	                                    'united-health.png' => 'https://uiic.co.in',
+	                                ];
+	
+	                                $motorPartnerLinks = [
+	                                    'digit-motor.png' => 'https://www.godigit.com',
+	                                    'hdfc-motor.png' => 'https://www.hdfcergo.com',
+	                                    'icici-motor.png' => 'https://www.icicilombard.com',
+	                                    'liberty-motor.png' => 'https://www.libertyinsurance.in',
+	                                    'newindia-motor.png' => 'https://www.newindia.co.in',
+	                                    'reliance-motor.png' => 'https://www.reliancegeneral.co.in',
+	                                    'tata-motor.png' => 'https://www.tataaig.com',
+	                                    'united-motor.png' => 'https://uiic.co.in',
+	                                    'zuno-motor.png' => 'https://www.zuno.com',
+	                                ];
 	                            @endphp
 	
 	                            <div class="insy-partners" aria-label="Our Partners">
@@ -1821,9 +1851,18 @@
 	                                    <div class="insy-partners__logos" data-autoscroll="partners" data-scroll-dir="ltr">
 	                                        <div class="insy-partners__track">
 	                                            @foreach ($healthPartnerFiles as $file)
-	                                                <img loading="lazy" decoding="async"
-	                                                    src="{{ asset('images/partners/health/' . basename($file)) }}"
-	                                                    alt="{{ $insyPartnersHumanize($file) }} logo">
+	                                                @php $name = basename($file); $url = $healthPartnerLinks[$name] ?? null; @endphp
+	                                                @if ($url)
+	                                                    <a href="{{ $url }}" target="_blank" rel="noopener noreferrer">
+	                                                        <img loading="lazy" decoding="async"
+	                                                            src="{{ asset('images/partners/health/' . $name) }}"
+	                                                            alt="{{ $insyPartnersHumanize($file) }} logo">
+	                                                    </a>
+	                                                @else
+	                                                    <img loading="lazy" decoding="async"
+	                                                        src="{{ asset('images/partners/health/' . $name) }}"
+	                                                        alt="{{ $insyPartnersHumanize($file) }} logo">
+	                                                @endif
 	                                            @endforeach
 	                                        </div>
 	                                    </div>
@@ -1834,9 +1873,18 @@
 	                                    <div class="insy-partners__logos" data-autoscroll="partners" data-scroll-dir="rtl">
 	                                        <div class="insy-partners__track">
 	                                            @foreach ($motorPartnerFiles as $file)
-	                                                <img loading="lazy" decoding="async"
-	                                                    src="{{ asset('images/partners/motor/' . basename($file)) }}"
-	                                                    alt="{{ $insyPartnersHumanize($file) }} logo">
+	                                                @php $name = basename($file); $url = $motorPartnerLinks[$name] ?? null; @endphp
+	                                                @if ($url)
+	                                                    <a href="{{ $url }}" target="_blank" rel="noopener noreferrer">
+	                                                        <img loading="lazy" decoding="async"
+	                                                            src="{{ asset('images/partners/motor/' . $name) }}"
+	                                                            alt="{{ $insyPartnersHumanize($file) }} logo">
+	                                                    </a>
+	                                                @else
+	                                                    <img loading="lazy" decoding="async"
+	                                                        src="{{ asset('images/partners/motor/' . $name) }}"
+	                                                        alt="{{ $insyPartnersHumanize($file) }} logo">
+	                                                @endif
 	                                            @endforeach
 	                                        </div>
 	                                    </div>
