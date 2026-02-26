@@ -132,11 +132,7 @@
 	        }
 
 	        .insy-partners__logos {
-	            display: flex;
-	            flex-wrap: nowrap;
-	            align-items: center;
-	            justify-content: center;
-	            gap: 24px;
+	            display: block;
 	            width: 100%;
 	            overflow-x: auto;
 	            overflow-y: hidden;
@@ -147,6 +143,14 @@
 	        
 	        .insy-partners__logos::-webkit-scrollbar {
 	            display: none;
+	        }
+
+	        .insy-partners__track {
+	            display: flex;
+	            flex-wrap: nowrap;
+	            align-items: center;
+	            gap: 24px;
+	            width: max-content;
 	        }
 
 	        .insy-partners__logos img {
@@ -177,9 +181,11 @@
 	            }
 
 	            .insy-partners__logos {
-	                justify-content: flex-start;
-	                gap: 16px;
 	                padding: 6px 12px 10px;
+	            }
+
+	            .insy-partners__track {
+	                gap: 16px;
 	            }
 
 	            .insy-partners__logos img {
@@ -1820,22 +1826,24 @@
 	                        <div class="e-con-inner">
 	                            <div class="insy-partners" aria-label="Our Partners">
 	                                <h3 class="insy-partners__title">Our Partners</h3>
-		                                <div class="insy-partners__logos" id="insy-partners-logos">
-		                                    <img class="insy-partners__logo--lg" loading="lazy" decoding="async"
-		                                        src="{{ asset('images/partners/life/tata-life.png') }}"
-		                                        alt="Tata Life Insurance">
-		                                    <img class="insy-partners__logo--lg" loading="lazy" decoding="async"
-		                                        src="{{ asset('images/partners/life/bajaj-life.png') }}"
-		                                        alt="Bajaj Life Insurance">
-		                                    <img loading="lazy" decoding="async"
-		                                        src="{{ asset('images/partners/life/axis-life.png') }}"
-		                                        alt="Axis Life Insurance">
-		                                    <img class="insy-partners__logo--lg insy-partners__logo--icici" loading="lazy" decoding="async"
-		                                        src="{{ asset('images/partners/life/icici-life.png') }}"
-		                                        alt="ICICI Life Insurance">
-		                                    <img loading="lazy" decoding="async"
-		                                        src="{{ asset('images/partners/life/hdfc-life.png') }}"
-		                                        alt="HDFC Life Insurance">
+		                                <div class="insy-partners__logos" id="insy-partners-logos" data-autoscroll="partners">
+		                                    <div class="insy-partners__track">
+		                                        <img class="insy-partners__logo--lg" loading="lazy" decoding="async"
+		                                            src="{{ asset('images/partners/life/tata-life.png') }}"
+		                                            alt="Tata Life Insurance">
+		                                        <img class="insy-partners__logo--lg" loading="lazy" decoding="async"
+		                                            src="{{ asset('images/partners/life/bajaj-life.png') }}"
+		                                            alt="Bajaj Life Insurance">
+		                                        <img loading="lazy" decoding="async"
+		                                            src="{{ asset('images/partners/life/axis-life.png') }}"
+		                                            alt="Axis Life Insurance">
+		                                        <img class="insy-partners__logo--lg insy-partners__logo--icici" loading="lazy" decoding="async"
+		                                            src="{{ asset('images/partners/life/icici-life.png') }}"
+		                                            alt="ICICI Life Insurance">
+		                                        <img loading="lazy" decoding="async"
+		                                            src="{{ asset('images/partners/life/hdfc-life.png') }}"
+		                                            alt="HDFC Life Insurance">
+		                                    </div>
 		                                </div>
 		                            </div>
 	                            <div class="elementor-element elementor-element-a4c4e5a heading-effects-yes subtitle-position-above elementor-widget elementor-widget-heading"
@@ -3150,53 +3158,56 @@
 	            var prefersReduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 	            if (prefersReduced) return;
 	
-	            function startAutoScroll() {
-	                var el = document.getElementById('insy-partners-logos');
-	                if (!el) return;
-	
-	                var rafId = null;
-	                var paused = false;
-	                var speed = 0.9; // px per frame (use a float accumulator for mobile)
-	                var pos = 0;
-	
-	                // Keep our float position in sync if the user scrolls manually
-	                el.addEventListener('scroll', function () {
-	                    pos = el.scrollLeft || 0;
-	                }, { passive: true });
-	
-	                function step() {
-	                    if (!paused) {
-	                        var maxScroll = el.scrollWidth - el.clientWidth;
-	                        if (maxScroll > 2) {
-	                            pos += speed;
-	                            if (pos >= maxScroll) pos = 0;
-	                            el.scrollLeft = pos;
-	                        } else {
-	                            pos = 0;
-	                            el.scrollLeft = 0;
-	                        }
-	                    }
-	                    rafId = window.requestAnimationFrame(step);
-	                }
-	
-	                el.addEventListener('mouseenter', function () { paused = true; });
-	                el.addEventListener('mouseleave', function () { paused = false; });
-	                el.addEventListener('touchstart', function () { paused = true; }, { passive: true });
-	                el.addEventListener('touchend', function () { paused = false; }, { passive: true });
-	
-	                // Restart if layout changes (e.g., rotation)
-	                window.addEventListener('resize', function () {
-	                    el.scrollLeft = 0;
-	                    pos = 0;
-	                });
-	
-	                step();
-	
-	                // Cleanup hook (not strictly needed on this page)
-	                window.addEventListener('beforeunload', function () {
-	                    if (rafId) window.cancelAnimationFrame(rafId);
-	                });
-	            }
+		            function startAutoScroll() {
+		                var el = document.getElementById('insy-partners-logos');
+		                if (!el) return;
+		
+		                var track = el.querySelector('.insy-partners__track');
+		                if (!track) return;
+		
+		                // Duplicate once for seamless looping (only if not already duplicated)
+		                if (!el.dataset.cloned) {
+		                    track.innerHTML += track.innerHTML;
+		                    el.dataset.cloned = '1';
+		                }
+		
+		                var rafId = null;
+		                var paused = false;
+		                var speed = 0.9; // px per frame
+		                var pos = el.scrollLeft || 0;
+		
+		                el.addEventListener('scroll', function () { pos = el.scrollLeft || 0; }, { passive: true });
+		                el.addEventListener('mouseenter', function () { paused = true; });
+		                el.addEventListener('mouseleave', function () { paused = false; });
+		                el.addEventListener('touchstart', function () { paused = true; }, { passive: true });
+		                el.addEventListener('touchend', function () { paused = false; }, { passive: true });
+		
+		                function step() {
+		                    if (!paused) {
+		                        var half = track.scrollWidth / 2;
+		                        if (half > el.clientWidth + 2) {
+		                            pos += speed;
+		                            if (pos >= half) pos -= half;
+		                            el.scrollLeft = pos;
+		                        } else {
+		                            pos = 0;
+		                            el.scrollLeft = 0;
+		                        }
+		                    }
+		                    rafId = window.requestAnimationFrame(step);
+		                }
+		
+		                window.addEventListener('resize', function () {
+		                    el.scrollLeft = 0;
+		                    pos = 0;
+		                });
+		
+		                step();
+		
+		                window.addEventListener('beforeunload', function () {
+		                    if (rafId) window.cancelAnimationFrame(rafId);
+		                });
+		            }
 	
 	            if (document.readyState === 'loading') {
 	                document.addEventListener('DOMContentLoaded', startAutoScroll);

@@ -145,11 +145,7 @@
 	        }
 
 	        .insy-partners__logos {
-	            display: flex;
-	            flex-wrap: nowrap;
-	            align-items: center;
-	            justify-content: center;
-	            gap: 24px;
+	            display: block;
 	            width: 100%;
 	            overflow-x: auto;
 	            overflow-y: hidden;
@@ -160,6 +156,14 @@
 
 	        .insy-partners__logos::-webkit-scrollbar {
 	            display: none;
+	        }
+
+	        .insy-partners__track {
+	            display: flex;
+	            flex-wrap: nowrap;
+	            align-items: center;
+	            gap: 24px;
+	            width: max-content;
 	        }
 
 	        .insy-partners__logos img {
@@ -177,9 +181,11 @@
 	            }
 
 	            .insy-partners__logos {
-	                justify-content: flex-start;
-	                gap: 16px;
 	                padding: 6px 12px 10px;
+	            }
+
+	            .insy-partners__track {
+	                gap: 16px;
 	            }
 
 	            .insy-partners__logos img {
@@ -1812,22 +1818,26 @@
 	                                <div class="insy-partners__section" aria-label="Health Insurance Partners">
 	                                    <h4 class="insy-partners__subtitle">Health Insurance</h4>
 	                                    <div class="insy-partners__logos" data-autoscroll="partners">
-	                                        @foreach ($healthPartnerFiles as $file)
-	                                            <img loading="lazy" decoding="async"
-	                                                src="{{ asset('images/partners/health/' . basename($file)) }}"
-	                                                alt="{{ $insyPartnersHumanize($file) }} logo">
-	                                        @endforeach
+	                                        <div class="insy-partners__track">
+	                                            @foreach ($healthPartnerFiles as $file)
+	                                                <img loading="lazy" decoding="async"
+	                                                    src="{{ asset('images/partners/health/' . basename($file)) }}"
+	                                                    alt="{{ $insyPartnersHumanize($file) }} logo">
+	                                            @endforeach
+	                                        </div>
 	                                    </div>
 	                                </div>
 	
 	                                <div class="insy-partners__section" aria-label="Motor Insurance Partners">
 	                                    <h4 class="insy-partners__subtitle">Motor Insurance</h4>
 	                                    <div class="insy-partners__logos" data-autoscroll="partners">
-	                                        @foreach ($motorPartnerFiles as $file)
-	                                            <img loading="lazy" decoding="async"
-	                                                src="{{ asset('images/partners/motor/' . basename($file)) }}"
-	                                                alt="{{ $insyPartnersHumanize($file) }} logo">
-	                                        @endforeach
+	                                        <div class="insy-partners__track">
+	                                            @foreach ($motorPartnerFiles as $file)
+	                                                <img loading="lazy" decoding="async"
+	                                                    src="{{ asset('images/partners/motor/' . basename($file)) }}"
+	                                                    alt="{{ $insyPartnersHumanize($file) }} logo">
+	                                            @endforeach
+	                                        </div>
 	                                    </div>
 	                                </div>
 	                            </div>
@@ -3073,6 +3083,15 @@
 	            if (prefersReduced) return;
 	
 	            function setupAutoScroll(el) {
+	                var track = el.querySelector('.insy-partners__track');
+	                if (!track) return;
+	
+	                // Duplicate once for seamless looping
+	                if (!el.dataset.cloned) {
+	                    track.innerHTML += track.innerHTML;
+	                    el.dataset.cloned = '1';
+	                }
+	
 	                var rafId = null;
 	                var paused = false;
 	                var speed = 0.9; // px per frame
@@ -3086,10 +3105,10 @@
 	
 	                function step() {
 	                    if (!paused) {
-	                        var maxScroll = el.scrollWidth - el.clientWidth;
-	                        if (maxScroll > 2) {
+	                        var half = track.scrollWidth / 2;
+	                        if (half > el.clientWidth + 2) {
 	                            pos += speed;
-	                            if (pos >= maxScroll) pos = 0;
+	                            if (pos >= half) pos -= half;
 	                            el.scrollLeft = pos;
 	                        } else {
 	                            pos = 0;
