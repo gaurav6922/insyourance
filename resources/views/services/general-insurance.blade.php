@@ -169,7 +169,7 @@
 	        .insy-partners__logos img {
 	            display: block;
 	            flex: 0 0 auto;
-	            width: auto !important;
+	            width: 220px !important;
 	            height: 96px !important;
 	            max-height: 96px !important;
 	            object-fit: contain;
@@ -189,6 +189,7 @@
 	            }
 
 	            .insy-partners__logos img {
+	                width: 190px !important;
 	                height: 84px !important;
 	                max-height: 84px !important;
 	            }
@@ -1817,7 +1818,7 @@
 	
 	                                <div class="insy-partners__section" aria-label="Health Insurance Partners">
 	                                    <h4 class="insy-partners__subtitle">Health Insurance</h4>
-	                                    <div class="insy-partners__logos" data-autoscroll="partners">
+	                                    <div class="insy-partners__logos" data-autoscroll="partners" data-scroll-dir="ltr">
 	                                        <div class="insy-partners__track">
 	                                            @foreach ($healthPartnerFiles as $file)
 	                                                <img loading="lazy" decoding="async"
@@ -1830,7 +1831,7 @@
 	
 	                                <div class="insy-partners__section" aria-label="Motor Insurance Partners">
 	                                    <h4 class="insy-partners__subtitle">Motor Insurance</h4>
-	                                    <div class="insy-partners__logos" data-autoscroll="partners">
+	                                    <div class="insy-partners__logos" data-autoscroll="partners" data-scroll-dir="rtl">
 	                                        <div class="insy-partners__track">
 	                                            @foreach ($motorPartnerFiles as $file)
 	                                                <img loading="lazy" decoding="async"
@@ -3082,15 +3083,17 @@
 	            var prefersReduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 	            if (prefersReduced) return;
 	
-	            function setupAutoScroll(el) {
-	                var track = el.querySelector('.insy-partners__track');
-	                if (!track) return;
-	
-	                // Duplicate once for seamless looping
-	                if (!el.dataset.cloned) {
-	                    track.innerHTML += track.innerHTML;
-	                    el.dataset.cloned = '1';
-	                }
+		            function setupAutoScroll(el) {
+		                var track = el.querySelector('.insy-partners__track');
+		                if (!track) return;
+		
+		                var dir = (el.dataset.scrollDir || 'ltr').toLowerCase() === 'rtl' ? -1 : 1;
+		
+		                // Duplicate once for seamless looping
+		                if (!el.dataset.cloned) {
+		                    track.innerHTML += track.innerHTML;
+		                    el.dataset.cloned = '1';
+		                }
 	
 	                var rafId = null;
 	                var paused = false;
@@ -3103,27 +3106,36 @@
 	                el.addEventListener('touchstart', function () { paused = true; }, { passive: true });
 	                el.addEventListener('touchend', function () { paused = false; }, { passive: true });
 	
-	                function step() {
-	                    if (!paused) {
-	                        var half = track.scrollWidth / 2;
-	                        if (half > el.clientWidth + 2) {
-	                            pos += speed;
-	                            if (pos >= half) pos -= half;
-	                            el.scrollLeft = pos;
-	                        } else {
-	                            pos = 0;
-	                            el.scrollLeft = 0;
-	                        }
-	                    }
-	                    rafId = window.requestAnimationFrame(step);
-	                }
-	
-	                window.addEventListener('resize', function () {
-	                    el.scrollLeft = 0;
-	                    pos = 0;
-	                });
-	
-	                step();
+		                function step() {
+		                    if (!paused) {
+		                        var half = track.scrollWidth / 2;
+		                        if (half > el.clientWidth + 2) {
+		                            pos += dir * speed;
+		                            if (pos >= half) pos -= half;
+		                            if (pos < 0) pos += half;
+		                            el.scrollLeft = pos;
+		                        } else {
+		                            pos = 0;
+		                            el.scrollLeft = 0;
+		                        }
+		                    }
+		                    rafId = window.requestAnimationFrame(step);
+		                }
+		
+		                window.addEventListener('resize', function () {
+		                    var half = track.scrollWidth / 2;
+		                    pos = dir === -1 ? Math.max(0, half - 1) : 0;
+		                    el.scrollLeft = pos;
+		                });
+		
+		                // Initialize start position for RTL so it scrolls in the opposite direction immediately
+		                (function initPos() {
+		                    var half = track.scrollWidth / 2;
+		                    pos = dir === -1 ? Math.max(0, half - 1) : 0;
+		                    el.scrollLeft = pos;
+		                })();
+		
+		                step();
 	
 	                window.addEventListener('beforeunload', function () {
 	                    if (rafId) window.cancelAnimationFrame(rafId);
