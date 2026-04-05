@@ -53,3 +53,15 @@ Route::get('/faqs-page', function () {
 Route::get('/our-team', function () {
     return view('our-team');
 });
+
+Route::get('/sip-planner', function () {
+    return view('sip-planner');
+});
+
+Route::get('/swp-calculator', function () {
+    return view('swp-calculator');
+});
+
+Route::get('/sip-delay-cost-calculator', function () {
+    return view('sip-delay-cost-calculator');
+});

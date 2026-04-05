@@ -796,6 +796,13 @@
 	<li id="menu-item-128" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-128"><a href="/faqs-page"><span class="menu-title">FAQ</span></a></li>
 </ul>
 </li>
+<li id="menu-item-calculators" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-calculators"><a href="#"><span class="menu-title">Calculators</span></a>
+<ul class="sub-menu">
+	<li id="menu-item-sip-planner" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-sip"><a href="/sip-planner"><span class="menu-title">SIP Planner</span></a></li>
+	<li id="menu-item-sip-delay-cost" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-sip-delay"><a href="/sip-delay-cost-calculator"><span class="menu-title">SIP Delay Cost</span></a></li>
+	<li id="menu-item-swp-calculator" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-swp"><a href="/swp-calculator"><span class="menu-title">SWP Calculator</span></a></li>
+</ul>
+</li>
 <li id="menu-item-133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a href="/contact-01"><span class="menu-title">Contact</span></a></li>
 </ul></div>            </nav>
         </div>
@@ -1744,6 +1751,20 @@
                                 </li>
                                 <li id="menu-item-128" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-128">
                                     <a href="/faqs-page">FAQ</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li id="menu-item-calculators" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-calculators">
+                            <a href="#">Calculators</a>
+                            <ul class="sub-menu">
+                                <li id="menu-item-sip-planner" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-sip">
+                                    <a href="/sip-planner">SIP Planner</a>
+                                </li>
+                                <li id="menu-item-sip-delay-cost" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-sip-delay">
+                                    <a href="/sip-delay-cost-calculator">SIP Delay Cost</a>
+                                </li>
+                                <li id="menu-item-swp-calculator" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-swp">
+                                    <a href="/swp-calculator">SWP Calculator</a>
                                 </li>
                             </ul>
                         </li>

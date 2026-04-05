@@ -284,6 +284,13 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 	<li id="menu-item-128" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-128"><a href="/faqs-page"><span class="menu-title">FAQ</span></a></li>
 </ul>
 </li>
+<li id="menu-item-calculators" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-calculators"><a href="#"><span class="menu-title">Calculators</span></a>
+<ul class="sub-menu">
+	<li id="menu-item-sip-planner" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-sip"><a href="/sip-planner"><span class="menu-title">SIP Planner</span></a></li>
+	<li id="menu-item-sip-delay-cost" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-sip-delay"><a href="/sip-delay-cost-calculator"><span class="menu-title">SIP Delay Cost</span></a></li>
+	<li id="menu-item-swp-calculator" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-swp"><a href="/swp-calculator"><span class="menu-title">SWP Calculator</span></a></li>
+</ul>
+</li>
 <li id="menu-item-133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a href="/contact-01"><span class="menu-title">Contact</span></a></li>
 </ul></div>            </nav>
         </div>
@@ -352,7 +359,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 				<div class="elementor-element elementor-element-9499e9e elementor-grid-3 elementor-pagination-style-2 elementor-grid-tablet-2 elementor-grid-mobile-1 elementor-view-default elementor-widget elementor-widget-insul-testimonials" data-id="9499e9e" data-element_type="widget" data-settings="{&quot;column&quot;:&quot;3&quot;,&quot;column_tablet&quot;:&quot;2&quot;,&quot;column_mobile&quot;:&quot;1&quot;,&quot;column_spacing&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:30,&quot;sizes&quot;:[]}}" data-widget_type="insul-testimonials.default">
 				<div class="elementor-widget-container">
 			            <div class="elementor-testimonial-item-wrapper insul-wrapper">
-                <div class="insul-con  elementor-testimonials-swiper" data-count="9">
+                <div class="insul-con  elementor-testimonials-swiper" data-count="8">
                     <div class="insul-con-inner elementor-grid layout-1">
                                                     <div class="elementor-grid-item elementor-testimonial-item">
                                                                     <div class="item-inner inner">
@@ -362,7 +369,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
                                                                 <div class="elementor-testimonial-image">
                 <img fetchpriority="high" decoding="async" width="768" height="816" src="/wp-content/uploads/2024/04/h1-testi01.png" class="attachment-full size-full wp-image-464" alt="" srcset="/wp-content/uploads/2024/04/h1-testi01.png 768w, /wp-content/uploads/2024/04/h1-testi01-282x300.png 282w" sizes="(max-width: 768px) 100vw, 768px" />            </div>
                                                             <div class="details">
-                                                        <span class="name">Sharon H.</span>                                                                                                                    <span class="job">UI Designer</span>
+                                                        <span class="name">Mayank</span>                                                                                                                    <span class="job">IT Professional</span>
 				</div>
 					</div>
                                                                                                     <div class="icon"><i aria-hidden="true" class="insul-icon- insul-icon-quotes-1"></i></div>
@@ -382,7 +389,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
                                                                 <div class="elementor-testimonial-image">
                 <img decoding="async" width="752" height="800" src="/wp-content/uploads/2024/04/h1-testi02.jpg" class="attachment-full size-full wp-image-465" alt="" srcset="/wp-content/uploads/2024/04/h1-testi02.jpg 752w, /wp-content/uploads/2024/04/h1-testi02-282x300.jpg 282w" sizes="(max-width: 752px) 100vw, 752px" />            </div>
                                                             <div class="details">
-                                                        <span class="name">Nadine Adams</span>                                                                                                                    <span class="job">UI Designer</span>
+                                                        <span class="name">Sarthak</span>                                                                                                                    <span class="job">Chartered Accountant</span>
 				</div>
 				</div>
                                                                                                     <div class="icon"><i aria-hidden="true" class="insul-icon- insul-icon-quotes-1"></i></div>
@@ -402,7 +409,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
                                                                 <div class="elementor-testimonial-image">
                 <img decoding="async" width="752" height="800" src="/wp-content/uploads/2024/04/h1-testi03.jpg" class="attachment-full size-full wp-image-466" alt="" srcset="/wp-content/uploads/2024/04/h1-testi03.jpg 752w, /wp-content/uploads/2024/04/h1-testi03-282x300.jpg 282w" sizes="(max-width: 752px) 100vw, 752px" />            </div>
                                                             <div class="details">
-                                                        <span class="name">Peter Reinish</span>                                                                                                                    <span class="job">UI Designer</span>
+                                                        <span class="name">Aditya</span>                                                                                                                    <span class="job">Doctor</span>
 					</div>
 				</div>
                                                                                                     <div class="icon"><i aria-hidden="true" class="insul-icon- insul-icon-quotes-1"></i></div>
@@ -422,7 +429,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
                                                                 <div class="elementor-testimonial-image">
                 <img loading="lazy" decoding="async" width="2560" height="1707" src="/wp-content/uploads/2024/04/h1-testi05-scaled.jpeg" class="attachment-full size-full wp-image-468" alt="" srcset="/wp-content/uploads/2024/04/h1-testi05-scaled.jpeg 2560w, /wp-content/uploads/2024/04/h1-testi05-300x200.jpeg 300w, /wp-content/uploads/2024/04/h1-testi05-1024x683.jpeg 1024w, /wp-content/uploads/2024/04/h1-testi05-768x512.jpeg 768w, /wp-content/uploads/2024/04/h1-testi05-1536x1024.jpeg 1536w, /wp-content/uploads/2024/04/h1-testi05-2048x1366.jpeg 2048w" sizes="(max-width: 2560px) 100vw, 2560px" />            </div>
                                                             <div class="details">
-                                                        <span class="name">Alisa Garrison</span>                                                                                                                    <span class="job">UI Designer</span>
+                                                        <span class="name">Udit</span>                                                                                                                    <span class="job">Civil Engineer</span>
 				</div>
 				</div>
                                                                                                     <div class="icon"><i aria-hidden="true" class="insul-icon- insul-icon-quotes-1"></i></div>
@@ -442,7 +449,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
                                                                 <div class="elementor-testimonial-image">
                 <img loading="lazy" decoding="async" width="1707" height="2560" src="/wp-content/uploads/2024/04/h1-testi04-scaled.jpeg" class="attachment-full size-full wp-image-467" alt="" srcset="/wp-content/uploads/2024/04/h1-testi04-scaled.jpeg 1707w, /wp-content/uploads/2024/04/h1-testi04-200x300.jpeg 200w, /wp-content/uploads/2024/04/h1-testi04-683x1024.jpeg 683w, /wp-content/uploads/2024/04/h1-testi04-768x1152.jpeg 768w, /wp-content/uploads/2024/04/h1-testi04-1024x1536.jpeg 1024w, /wp-content/uploads/2024/04/h1-testi04-1365x2048.jpeg 1365w" sizes="(max-width: 1707px) 100vw, 1707px" />            </div>
                                                             <div class="details">
-                                                        <span class="name">Thomas Wilso</span>                                                                                                                    <span class="job">UI Designer</span>
+                                                        <span class="name">Akshat</span>                                                                                                                    <span class="job">Business Owner</span>
 				</div>
         		</div>
                                                                                                     <div class="icon"><i aria-hidden="true" class="insul-icon- insul-icon-quotes-1"></i></div>
@@ -462,7 +469,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
                                                                 <div class="elementor-testimonial-image">
                 <img loading="lazy" decoding="async" width="1061" height="1500" src="/wp-content/uploads/2024/04/tes-6-min.jpeg" class="attachment-full size-full wp-image-1128" alt="" srcset="/wp-content/uploads/2024/04/tes-6-min.jpeg 1061w, /wp-content/uploads/2024/04/tes-6-min-212x300.jpeg 212w, /wp-content/uploads/2024/04/tes-6-min-724x1024.jpeg 724w, /wp-content/uploads/2024/04/tes-6-min-768x1086.jpeg 768w" sizes="(max-width: 1061px) 100vw, 1061px" />            </div>
                                                             <div class="details">
-                                                        <span class="name">James Baker</span>                                                                                                                    <span class="job">UI Designer</span>
+                                                        <span class="name">Himanshu</span>                                                                                                                    <span class="job">Bank Manager</span>
 				</div>
 				</div>
                                                                                                     <div class="icon"><i aria-hidden="true" class="insul-icon- insul-icon-quotes-1"></i></div>
@@ -482,7 +489,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
                                                                 <div class="elementor-testimonial-image">
                 <img loading="lazy" decoding="async" width="1000" height="1500" src="/wp-content/uploads/2024/04/tes-7-min.jpeg" class="attachment-full size-full wp-image-1129" alt="" srcset="/wp-content/uploads/2024/04/tes-7-min.jpeg 1000w, /wp-content/uploads/2024/04/tes-7-min-200x300.jpeg 200w, /wp-content/uploads/2024/04/tes-7-min-683x1024.jpeg 683w, /wp-content/uploads/2024/04/tes-7-min-768x1152.jpeg 768w" sizes="(max-width: 1000px) 100vw, 1000px" />            </div>
                                                             <div class="details">
-                                                        <span class="name">Robert Walder</span>                                                                                                                    <span class="job">UI Designer</span>
+                                                        <span class="name">Shivam</span>                                                                                                                    <span class="job">Government Employee</span>
                                     </div>
                                 </div>
                                                                                                     <div class="icon"><i aria-hidden="true" class="insul-icon- insul-icon-quotes-1"></i></div>
@@ -502,7 +509,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
                                                                 <div class="elementor-testimonial-image">
                 <img loading="lazy" decoding="async" width="1072" height="1500" src="/wp-content/uploads/2024/04/tes-8-min.jpeg" class="attachment-full size-full wp-image-1130" alt="" srcset="/wp-content/uploads/2024/04/tes-8-min.jpeg 1072w, /wp-content/uploads/2024/04/tes-8-min-214x300.jpeg 214w, /wp-content/uploads/2024/04/tes-8-min-732x1024.jpeg 732w, /wp-content/uploads/2024/04/tes-8-min-768x1075.jpeg 768w" sizes="(max-width: 1072px) 100vw, 1072px" />            </div>
                                                             <div class="details">
-                                                        <span class="name">Tasnia Jim</span>                                                                                                                    <span class="job">UI Designer</span>
+                                                        <span class="name">Mehak</span>                                                                                                                    <span class="job">School Teacher</span>
                                     </div>
                                 </div>
                                                                                                     <div class="icon"><i aria-hidden="true" class="insul-icon- insul-icon-quotes-1"></i></div>
@@ -514,26 +521,6 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
                                                     </div>
             		</div>
 				</div>
-                                                    <div class="elementor-grid-item elementor-testimonial-item">
-                                                                    <div class="item-inner inner">
-                                        <div class="testimonial-content-text">
-                                            <div class="testimonial-caption">
-                                                <div class="caption-top">
-                                                                <div class="elementor-testimonial-image">
-                <img loading="lazy" decoding="async" width="1707" height="2560" src="/wp-content/uploads/2024/04/tes-9-min-scaled.jpeg" class="attachment-full size-full wp-image-1131" alt="" srcset="/wp-content/uploads/2024/04/tes-9-min-scaled.jpeg 1707w, /wp-content/uploads/2024/04/tes-9-min-200x300.jpeg 200w, /wp-content/uploads/2024/04/tes-9-min-683x1024.jpeg 683w, /wp-content/uploads/2024/04/tes-9-min-768x1152.jpeg 768w, /wp-content/uploads/2024/04/tes-9-min-1024x1536.jpeg 1024w, /wp-content/uploads/2024/04/tes-9-min-1365x2048.jpeg 1365w" sizes="(max-width: 1707px) 100vw, 1707px" />            </div>
-                                                            <div class="details">
-                                                        <span class="name">Tom Hank</span>                                                                                                                    <span class="job">UI Designer</span>
-				</div>
-					</div>
-                                                                                                    <div class="icon"><i aria-hidden="true" class="insul-icon- insul-icon-quotes-1"></i></div>
-                </div>
-
-                                                                                            <h3 class="title">It’s just increable!</h3>
-                                                                                                                                        <div class="content">“It is such a pleasure to deal with people who are honest, truly interested in helping their customers, and willing to go the extra mile.”</div>
-                                                                                        <div class="elementor-testimonial-rating"><i class="insul-icon-star-o active" aria-hidden="true"></i><i class="insul-icon-star-o active" aria-hidden="true"></i><i class="insul-icon-star-o active" aria-hidden="true"></i><i class="insul-icon-star-o active" aria-hidden="true"></i><i class="insul-icon-star-o active" aria-hidden="true"></i></div>
-                                                        </div>
-            </div>
-        </div>
                 </div>
 
                 </div>
@@ -863,8 +850,15 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 	<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-121 current_page_item menu-item-122"><a href="/testimonial" aria-current="page">Testimonial</a></li>
 	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-126"><a href="/our-team">Our Team</a></li>
 	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-128"><a href="/faqs-page">FAQ</a></li>
-                            </ul>
-                        </li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-calculators"><a href="#">Calculators</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-sip"><a href="/sip-planner">SIP Planner</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-sip-delay"><a href="/sip-delay-cost-calculator">SIP Delay Cost</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-swp"><a href="/swp-calculator">SWP Calculator</a></li>
+</ul>
+</li>
 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a href="/contact-01">Contact</a></li>
 </ul></div>        </nav>
         <nav class="mobile-menu-tab mobile-navigation-categories mobile-categories-menu"

@@ -1137,6 +1137,32 @@
                                                             </li>
                                                         </ul>
                                                     </li>
+                                                    <li id="menu-item-calculators"
+                                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-calculators">
+                                                        <a href="#">
+                                                            <span class="menu-title">Calculators</span>
+                                                        </a>
+                                                        <ul class="sub-menu">
+                                                            <li id="menu-item-sip-planner"
+                                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-sip">
+                                                                <a href="/sip-planner">
+                                                                    <span class="menu-title">SIP Planner</span>
+                                                                </a>
+                                                            </li>
+                                                            <li id="menu-item-sip-delay-cost"
+                                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-sip-delay">
+                                                                <a href="/sip-delay-cost-calculator">
+                                                                    <span class="menu-title">SIP Delay Cost</span>
+                                                                </a>
+                                                            </li>
+                                                            <li id="menu-item-swp-calculator"
+                                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-swp">
+                                                                <a href="/swp-calculator">
+                                                                    <span class="menu-title">SWP Calculator</span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
                                                     <li id="menu-item-196"
                                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-196">
                                                         <a href="/contact-01">
@@ -2641,8 +2667,8 @@
                                                                         sizes="(max-width: 768px) 100vw, 768px" />
                                                                 </div>
                                                                 <div class="details">
-                                                                    <span class="name">Sharon H.</span>
-                                                                    <span class="job">UI Designer</span>
+                                                                    <span class="name">Mayank</span>
+                                                                    <span class="job">IT Professional</span>
                                                                 </div>
                                                             </div>
                                                             <div class="icon">
@@ -2681,8 +2707,8 @@
                                                                         sizes="(max-width: 752px) 100vw, 752px" />
                                                                 </div>
                                                                 <div class="details">
-                                                                    <span class="name">Nadine Adams</span>
-                                                                    <span class="job">UI Designer</span>
+                                                                    <span class="name">Sarthak</span>
+                                                                    <span class="job">Chartered Accountant</span>
                                                                 </div>
                                                             </div>
                                                             <div class="icon">
@@ -2721,8 +2747,8 @@
                                                                         sizes="(max-width: 752px) 100vw, 752px" />
                                                                 </div>
                                                                 <div class="details">
-                                                                    <span class="name">Peter Reinish</span>
-                                                                    <span class="job">UI Designer</span>
+                                                                    <span class="name">Aditya</span>
+                                                                    <span class="job">Doctor</span>
                                                                 </div>
                                                             </div>
                                                             <div class="icon">
@@ -2761,8 +2787,8 @@
                                                                         sizes="(max-width: 1707px) 100vw, 1707px" />
                                                                 </div>
                                                                 <div class="details">
-                                                                    <span class="name">Thomas Wilso</span>
-                                                                    <span class="job">UI Designer</span>
+                                                                    <span class="name">Udit</span>
+                                                                    <span class="job">Civil Engineer</span>
                                                                 </div>
                                                             </div>
                                                             <div class="icon">
@@ -2801,8 +2827,8 @@
                                                                         sizes="(max-width: 2560px) 100vw, 2560px" />
                                                                 </div>
                                                                 <div class="details">
-                                                                    <span class="name">Alisa Garrison</span>
-                                                                    <span class="job">UI Designer</span>
+                                                                    <span class="name">Akshat</span>
+                                                                    <span class="job">Business Owner</span>
                                                                 </div>
                                                             </div>
                                                             <div class="icon">
@@ -3221,6 +3247,30 @@
                                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-205">
                                     <a href="/faqs-page">
                                         <span class="menu-title">FAQ</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li id="menu-item-calculators-2"
+                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-calculators">
+                            <a href="#">Calculators</a>
+                            <ul class="sub-menu">
+                                <li id="menu-item-sip-planner-2"
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-sip">
+                                    <a href="/sip-planner">
+                                        <span class="menu-title">SIP Planner</span>
+                                    </a>
+                                </li>
+                                <li id="menu-item-sip-delay-cost-2"
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-sip-delay">
+                                    <a href="/sip-delay-cost-calculator">
+                                        <span class="menu-title">SIP Delay Cost</span>
+                                    </a>
+                                </li>
+                                <li id="menu-item-swp-calculator-2"
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-swp">
+                                    <a href="/swp-calculator">
+                                        <span class="menu-title">SWP Calculator</span>
                                     </a>
                                 </li>
                             </ul>

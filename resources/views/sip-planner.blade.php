@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <link rel="profile" href="//gmpg.org/xfn/11">
-    <title>FAQs Page &#8211; Witan Finsure</title>
+    <title>SIP Planner &#8211; Witan Finsure</title>
     <link rel="icon" type="image/png" href="{{ asset('images/witantitle.png') }}">
 <meta name='robots' content='max-image-preview:large' />
 	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
@@ -96,7 +96,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 <script src="https://demo2.pavothemes.com/insul/wp-content/themes/insul/assets/js/libs/jarallax.js?ver=6.7.1" id="jarallax-js"></script>
 <link rel="https://api.w.org/" href="https://demo2.pavothemes.com/insul/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://demo2.pavothemes.com/insul/wp-json/wp/v2/pages/127" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://demo2.pavothemes.com/insul/xmlrpc.php?rsd" />
 <meta name="generator" content="WordPress 6.7.1" />
-<link rel="canonical" href="https://demo2.pavothemes.com/insul/faqs-page/" />
+<link rel="canonical" href="{{ url('/sip-planner') }}" />
 <link rel='shortlink' href='https://demo2.pavothemes.com/insul/?p=127' />
 <link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://demo2.pavothemes.com/insul/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdemo2.pavothemes.com%2Finsul%2Ffaqs-page%2F" />
 <link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://demo2.pavothemes.com/insul/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdemo2.pavothemes.com%2Finsul%2Ffaqs-page%2F&#038;format=xml" />
@@ -283,12 +283,12 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 <ul class="sub-menu">
 	<li id="menu-item-122" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-122"><a href="/testimonial"><span class="menu-title">Testimonial</span></a></li>
 	<li id="menu-item-126" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-126"><a href="/our-team"><span class="menu-title">Our Team</span></a></li>
-	<li id="menu-item-128" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-127 current_page_item menu-item-128"><a href="/faqs-page"><span class="menu-title">FAQ</span></a></li>
+	<li id="menu-item-128" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-128"><a href="/faqs-page"><span class="menu-title">FAQ</span></a></li>
 </ul>
 </li>
-<li id="menu-item-calculators" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-calculators"><a href="#"><span class="menu-title">Calculators</span></a>
+<li id="menu-item-calculators" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-calculators"><a href="#"><span class="menu-title">Calculators</span></a>
 <ul class="sub-menu">
-	<li id="menu-item-sip-planner" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-sip"><a href="/sip-planner"><span class="menu-title">SIP Planner</span></a></li>
+	<li id="menu-item-sip-planner" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item current_page_item menu-item-sip"><a href="/sip-planner"><span class="menu-title">SIP Planner</span></a></li>
 	<li id="menu-item-sip-delay-cost" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-sip-delay"><a href="/sip-delay-cost-calculator"><span class="menu-title">SIP Delay Cost</span></a></li>
 	<li id="menu-item-swp-calculator" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-swp"><a href="/swp-calculator"><span class="menu-title">SWP Calculator</span></a></li>
 </ul>
@@ -327,9 +327,9 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 				<div class="elementor-widget-container">
 			        <div class="breadcrumb" typeof="BreadcrumbList" vocab="https://schema.org/">
             <h1 class="insul-title">
-                FAQs Page            </h1>
+                SIP Planner            </h1>
             <div class="breadcrumb-listItem"><!-- Breadcrumb NavXT 7.3.1 -->
-<span property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" title="Go to Home." href="/" class="home" ><span property="name">Home</span></a><meta property="position" content="1"></span> &gt; <span property="itemListElement" typeof="ListItem"><span property="name" class="post post-page current-item">FAQs Page</span><meta property="url" content="/faqs-page/"><meta property="position" content="2"></span></div>        </div>
+<span property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" title="Go to Home." href="/" class="home" ><span property="name">Home</span></a><meta property="position" content="1"></span> &gt; <span property="itemListElement" typeof="ListItem"><span property="name" class="post post-page current-item">SIP Planner</span><meta property="url" content="/sip-planner"><meta property="position" content="2"></span></div>        </div>
         		</div>
 				</div>
 					</div>
@@ -340,250 +340,367 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
     <div id="content" class="site-content" tabindex="-1">
         <div class="col-full">
 
-    		<div data-elementor-type="wp-page" data-elementor-id="127" class="elementor elementor-127">
-				<div class="elementor-element elementor-element-9621cae e-flex e-con-boxed e-con e-parent" data-id="9621cae" data-element_type="container">
-					<div class="e-con-inner">
-				<div class="elementor-element elementor-element-bcadabe elementor-align-center heading-effects-yes subtitle-position-above elementor-widget elementor-widget-heading" data-id="bcadabe" data-element_type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-			<div class="elementor-heading-wrapper-inner"><div class="elementor-sub-title"><span class="sub-title">PRICING FAQS</span></div></div>		</div>
-				</div>
-				<div class="elementor-element elementor-element-93488f7 elementor-widget-mobile__width-inherit insul-elementor-headline--style-highlight elementor-widget elementor-widget-insul-animated-headline" data-id="93488f7" data-element_type="widget" data-settings="{&quot;marker&quot;:&quot;underline&quot;,&quot;highlighted_text&quot;:&quot;questions&quot;,&quot;headline_style&quot;:&quot;highlight&quot;,&quot;loop&quot;:&quot;yes&quot;,&quot;highlight_animation_duration&quot;:1200,&quot;highlight_iteration_delay&quot;:8000}" data-widget_type="insul-animated-headline.default">
-				<div class="elementor-widget-container">
-			        <h3 class="elementor-headline">
-                    <span class="insul-elementor-headline-plain-text insul-elementor-headline-text-wrapper">Frequently asked</span>
-                <span class="insul-elementor-headline-dynamic-wrapper insul-elementor-headline-text-wrapper">
-		            <span class="insul-elementor-headline-dynamic-text insul-elementor-headline-text-active">questions</span>
-        		</span>
-                        </h3>
-        		</div>
-				</div>
-				<div class="elementor-element elementor-element-e0adb5b elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-text-editor" data-id="e0adb5b" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-							This are questions that you might ask about our pricing plans and service. Contact to us for more infor in page <a style="color: #1351d8; text-decoration: underline;"  href="https://demo2.pavothemes.com/insul/contact-01/">Contact us</a>						</div>
-				</div>
-				<div class="elementor-element elementor-element-9c00d63 elementor-widget__width-inherit elementor-widget elementor-widget-insul-accordion" data-id="9c00d63" data-element_type="widget" data-widget_type="insul-accordion.default">
-				<div class="elementor-widget-container">
-			        <div class="elementor-accordion">
-                        <div class="elementor-accordion-item">
-                <div id="elementor-tab-title-1631" class="elementor-tab-title" data-tab="1" role="button" aria-controls="elementor-tab-content-1631" aria-expanded="false">
-                                <div class="title-icon">
-                                            <span class="elementor-accordion-icon-accordion" aria-hidden="true">
-                                                    <span class="elementor-accordion-icon-acc"></span>
-                                            </span>
-                                        <div class="elementor-number-list-number">
-                        <span class="number">01.</span>
-                    </div>
-                    <div class="elementor-accordion-title">What is it that makes you stand out in the industry?</div>
-                </div>
-                                    <span class="elementor-accordion-icon" aria-hidden="true">
-                                            <span class="elementor-accordion-icon-closed"><i class="insul-icon- insul-icon-angle-down"></i></span>
-                        <span class="elementor-accordion-icon-opened"><i class="insul-icon- insul-icon-angle-up"></i></span>
-                                    </span>
-                            </div>
-            <div id="elementor-tab-content-1631" class="elementor-tab-content elementor-clearfix" data-tab="1" role="region" aria-labelledby="elementor-tab-title-1631">Of course, I’d be happy to help you with a business review. However, could you please provide more specific details about the business you’d like to review? Are you looking for a review of a particular company’s.</div>
 
-        </div>
-                <div class="elementor-accordion-item">
-                <div id="elementor-tab-title-1632" class="elementor-tab-title" data-tab="2" role="button" aria-controls="elementor-tab-content-1632" aria-expanded="false">
-                                <div class="title-icon">
-                                            <span class="elementor-accordion-icon-accordion" aria-hidden="true">
-                                                    <span class="elementor-accordion-icon-acc"></span>
-                                            </span>
-                                        <div class="elementor-number-list-number">
-                        <span class="number">02.</span>
-                    </div>
-                    <div class="elementor-accordion-title">In which countries can I find your company?</div>
-                </div>
-                                    <span class="elementor-accordion-icon" aria-hidden="true">
-                                            <span class="elementor-accordion-icon-closed"><i class="insul-icon- insul-icon-angle-down"></i></span>
-                        <span class="elementor-accordion-icon-opened"><i class="insul-icon- insul-icon-angle-up"></i></span>
-                                    </span>
-                            </div>
-            <div id="elementor-tab-content-1632" class="elementor-tab-content elementor-clearfix" data-tab="2" role="region" aria-labelledby="elementor-tab-title-1632">Of course, I’d be happy to help you with a business review. However, could you please provide more specific details about the business you’d like to review? Are you looking for a review of a particular company’s.</div>
-
-        </div>
-                <div class="elementor-accordion-item">
-                <div id="elementor-tab-title-1633" class="elementor-tab-title" data-tab="3" role="button" aria-controls="elementor-tab-content-1633" aria-expanded="false">
-                                <div class="title-icon">
-                                            <span class="elementor-accordion-icon-accordion" aria-hidden="true">
-                                                    <span class="elementor-accordion-icon-acc"></span>
-                                            </span>
-                                        <div class="elementor-number-list-number">
-                        <span class="number">03.</span>
-                    </div>
-                    <div class="elementor-accordion-title">Which industries does your company provide its services?</div>
-                </div>
-                                    <span class="elementor-accordion-icon" aria-hidden="true">
-                                            <span class="elementor-accordion-icon-closed"><i class="insul-icon- insul-icon-angle-down"></i></span>
-                        <span class="elementor-accordion-icon-opened"><i class="insul-icon- insul-icon-angle-up"></i></span>
-                                    </span>
-                            </div>
-            <div id="elementor-tab-content-1633" class="elementor-tab-content elementor-clearfix" data-tab="3" role="region" aria-labelledby="elementor-tab-title-1633">Of course, I’d be happy to help you with a business review. However, could you please provide more specific details about the business you’d like to review? Are you looking for a review of a particular company’s.</div>
-
-        </div>
-                <div class="elementor-accordion-item">
-                <div id="elementor-tab-title-1634" class="elementor-tab-title" data-tab="4" role="button" aria-controls="elementor-tab-content-1634" aria-expanded="false">
-                                <div class="title-icon">
-                                            <span class="elementor-accordion-icon-accordion" aria-hidden="true">
-                                                    <span class="elementor-accordion-icon-acc"></span>
-                                            </span>
-                                        <div class="elementor-number-list-number">
-                        <span class="number">04.</span>
-                    </div>
-                    <div class="elementor-accordion-title">What does your services provide for its customers?</div>
-                </div>
-                                    <span class="elementor-accordion-icon" aria-hidden="true">
-                                            <span class="elementor-accordion-icon-closed"><i class="insul-icon- insul-icon-angle-down"></i></span>
-                        <span class="elementor-accordion-icon-opened"><i class="insul-icon- insul-icon-angle-up"></i></span>
-                                    </span>
-                            </div>
-            <div id="elementor-tab-content-1634" class="elementor-tab-content elementor-clearfix" data-tab="4" role="region" aria-labelledby="elementor-tab-title-1634">Of course, I’d be happy to help you with a business review. However, could you please provide more specific details about the business you’d like to review? Are you looking for a review of a particular company’s.</div>
-
-        </div>
-                <div class="elementor-accordion-item">
-                <div id="elementor-tab-title-1635" class="elementor-tab-title" data-tab="5" role="button" aria-controls="elementor-tab-content-1635" aria-expanded="false">
-                                <div class="title-icon">
-                                            <span class="elementor-accordion-icon-accordion" aria-hidden="true">
-                                                    <span class="elementor-accordion-icon-acc"></span>
-                                            </span>
-                                        <div class="elementor-number-list-number">
-                        <span class="number">05.</span>
-                    </div>
-                    <div class="elementor-accordion-title">What is your service expertise?</div>
-                </div>
-                                    <span class="elementor-accordion-icon" aria-hidden="true">
-                                            <span class="elementor-accordion-icon-closed"><i class="insul-icon- insul-icon-angle-down"></i></span>
-                        <span class="elementor-accordion-icon-opened"><i class="insul-icon- insul-icon-angle-up"></i></span>
-                                    </span>
-                            </div>
-            <div id="elementor-tab-content-1635" class="elementor-tab-content elementor-clearfix" data-tab="5" role="region" aria-labelledby="elementor-tab-title-1635">Of course, I’d be happy to help you with a business review. However, could you please provide more specific details about the business you’d like to review? Are you looking for a review of a particular company’s.</div>
-
-        </div>
-                <div class="elementor-accordion-item">
-                <div id="elementor-tab-title-1636" class="elementor-tab-title" data-tab="6" role="button" aria-controls="elementor-tab-content-1636" aria-expanded="false">
-                                <div class="title-icon">
-                                            <span class="elementor-accordion-icon-accordion" aria-hidden="true">
-                                                    <span class="elementor-accordion-icon-acc"></span>
-                                            </span>
-                                        <div class="elementor-number-list-number">
-                        <span class="number">06.</span>
-                    </div>
-                    <div class="elementor-accordion-title">When should I receive my money?</div>
-                </div>
-                                    <span class="elementor-accordion-icon" aria-hidden="true">
-                                            <span class="elementor-accordion-icon-closed"><i class="insul-icon- insul-icon-angle-down"></i></span>
-                        <span class="elementor-accordion-icon-opened"><i class="insul-icon- insul-icon-angle-up"></i></span>
-                                    </span>
-                            </div>
-            <div id="elementor-tab-content-1636" class="elementor-tab-content elementor-clearfix" data-tab="6" role="region" aria-labelledby="elementor-tab-title-1636">Of course, I’d be happy to help you with a business review. However, could you please provide more specific details about the business you’d like to review? Are you looking for a review of a particular company’s.</div>
-
-        </div>
-                <div class="elementor-accordion-item">
-                <div id="elementor-tab-title-1637" class="elementor-tab-title" data-tab="7" role="button" aria-controls="elementor-tab-content-1637" aria-expanded="false">
-                                <div class="title-icon">
-                                            <span class="elementor-accordion-icon-accordion" aria-hidden="true">
-                                                    <span class="elementor-accordion-icon-acc"></span>
-                                            </span>
-                                        <div class="elementor-number-list-number">
-                        <span class="number">07.</span>
-                    </div>
-                    <div class="elementor-accordion-title">Why my card payment is failing?</div>
-                </div>
-                                    <span class="elementor-accordion-icon" aria-hidden="true">
-                                            <span class="elementor-accordion-icon-closed"><i class="insul-icon- insul-icon-angle-down"></i></span>
-                        <span class="elementor-accordion-icon-opened"><i class="insul-icon- insul-icon-angle-up"></i></span>
-                                    </span>
-                            </div>
-            <div id="elementor-tab-content-1637" class="elementor-tab-content elementor-clearfix" data-tab="7" role="region" aria-labelledby="elementor-tab-title-1637">Of course, I’d be happy to help you with a business review. However, could you please provide more specific details about the business you’d like to review? Are you looking for a review of a particular company’s.</div>
-
-        </div>
-                    </div>
-        		</div>
-				</div>
+			<style>
+				.sip-planner-wrap { max-width: 900px; margin: 0 auto 3rem; padding: 0 1rem; }
+				.sip-planner-card {
+					background: #fff;
+					border-radius: 12px;
+					box-shadow: 0 4px 24px rgba(15, 23, 42, 0.08);
+					border: 1px solid rgba(19, 81, 216, 0.12);
+					overflow: hidden;
+				}
+				.sip-planner-tabs {
+					display: flex;
+					border-bottom: 1px solid #e8ecf4;
+				}
+				.sip-planner-tab {
+					flex: 1;
+					padding: 14px 16px;
+					font-family: "DM Sans", Sora, sans-serif;
+					font-size: 15px;
+					font-weight: 600;
+					color: #64748b;
+					background: #f8fafc;
+					border: none;
+					cursor: pointer;
+					transition: background .2s, color .2s;
+				}
+				.sip-planner-tab.is-active {
+					background: #fff;
+					color: #1351d8;
+					box-shadow: inset 0 -2px 0 #1351d8;
+				}
+				.sip-planner-body { padding: 28px 24px 32px; }
+				.sip-planner-field { margin-bottom: 22px; }
+				.sip-planner-field label {
+					display: block;
+					font-size: 13px;
+					font-weight: 600;
+					color: #334155;
+					margin-bottom: 8px;
+					font-family: "DM Sans", Sora, sans-serif;
+				}
+				.sip-planner-input-wrap {
+					display: flex;
+					align-items: center;
+					border: 1px solid #cbd5e1;
+					border-radius: 8px;
+					overflow: hidden;
+					background: #fff;
+				}
+				.sip-planner-input-wrap:focus-within { border-color: #1351d8; box-shadow: 0 0 0 3px rgba(19, 81, 216, 0.15); }
+				.sip-planner-prefix, .sip-planner-suffix {
+					padding: 12px 14px;
+					background: #f1f5f9;
+					color: #475569;
+					font-size: 14px;
+					font-weight: 600;
+				}
+				.sip-planner-input-wrap input {
+					flex: 1;
+					border: none;
+					padding: 12px 14px;
+					font-size: 16px;
+					font-family: inherit;
+					min-width: 0;
+				}
+				.sip-planner-input-wrap input:focus { outline: none; }
+				.sip-planner-results {
+					margin-top: 8px;
+					padding-top: 20px;
+					border-top: 1px solid #e8ecf4;
+				}
+				.sip-planner-results-layout {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					gap: 8px;
+				}
+				@media (min-width: 640px) {
+					.sip-planner-results-layout {
+						flex-direction: row;
+						align-items: flex-start;
+						justify-content: space-between;
+						gap: 32px;
+					}
+					.sip-planner-chart-block { flex: 1; min-width: 0; max-width: 320px; }
+					.sip-planner-figures-block { flex: 1; min-width: 200px; }
+				}
+				.sip-donut-legend {
+					display: flex;
+					flex-wrap: wrap;
+					justify-content: center;
+					gap: 20px 28px;
+					margin-bottom: 20px;
+					font-family: "DM Sans", Sora, sans-serif;
+					font-size: 14px;
+					font-weight: 500;
+					color: #475569;
+				}
+				.sip-donut-legend-item {
+					display: inline-flex;
+					align-items: center;
+					gap: 10px;
+				}
+				.sip-donut-legend-swatch {
+					width: 36px;
+					height: 10px;
+					border-radius: 999px;
+					flex-shrink: 0;
+				}
+				.sip-donut-legend-swatch--inv { background: #e8ecff; }
+				.sip-donut-legend-swatch--ret { background: #5367ff; }
+				.sip-donut-wrap {
+					position: relative;
+					width: min(240px, 80vw);
+					height: min(240px, 80vw);
+					margin: 0 auto;
+				}
+				.sip-donut-ring {
+					position: relative;
+					z-index: 0;
+					width: 100%;
+					height: 100%;
+					border-radius: 50%;
+					background: #e2e8f0;
+					transition: background 0.35s ease;
+				}
+				.sip-donut-ring.is-empty {
+					background: #e2e8f0 !important;
+				}
+				.sip-donut-hole {
+					position: absolute;
+					z-index: 1;
+					inset: 28%;
+					background: #fff;
+					border-radius: 50%;
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					justify-content: center;
+					text-align: center;
+					padding: 8px;
+					box-shadow: inset 0 0 0 1px rgba(15, 23, 42, 0.04);
+				}
+				.sip-donut-hole-label {
+					font-size: 11px;
+					font-weight: 600;
+					color: #94a3b8;
+					text-transform: uppercase;
+					letter-spacing: 0.06em;
+					font-family: "DM Sans", Sora, sans-serif;
+				}
+				.sip-donut-hole-value {
+					font-size: clamp(13px, 3.5vw, 16px);
+					font-weight: 700;
+					color: #0f172a;
+					font-variant-numeric: tabular-nums;
+					line-height: 1.25;
+					margin-top: 4px;
+					font-family: "DM Sans", Sora, sans-serif;
+				}
+				.sip-planner-result-row {
+					display: flex;
+					justify-content: space-between;
+					align-items: baseline;
+					padding: 10px 0;
+					font-family: "DM Sans", Sora, sans-serif;
+					font-size: 15px;
+				}
+				.sip-planner-result-row span:first-child { color: #64748b; }
+				.sip-planner-result-row strong { color: #0f172a; font-variant-numeric: tabular-nums; }
+				.sip-planner-result-total {
+					margin-top: 8px;
+					padding-top: 16px;
+					border-top: 1px dashed #cbd5e1;
+				}
+				.sip-planner-result-total strong { font-size: 1.25rem; color: #1351d8; }
+				.sip-planner-note {
+					margin-top: 24px;
+					font-size: 13px;
+					line-height: 1.6;
+					color: #64748b;
+					font-family: "DM Sans", Sora, sans-serif;
+				}
+				.sip-planner-intro {
+					text-align: center;
+					margin-bottom: 2rem;
+				}
+				.sip-planner-intro .sub-title { color: #1351d8; letter-spacing: 0.08em; font-size: 12px; font-weight: 700; text-transform: uppercase; }
+				.sip-planner-intro h2 { margin: 12px 0 8px; font-size: clamp(1.5rem, 4vw, 2rem); color: #0f172a; }
+				.sip-planner-intro p { color: #64748b; max-width: 520px; margin: 0 auto; font-size: 15px; line-height: 1.6; }
+				@media (max-width: 600px) {
+					.sip-planner-body { padding: 20px 16px 24px; }
+				}
+			</style>
+			<div class="elementor-element e-flex e-con-boxed e-con e-parent">
+				<div class="e-con-inner">
+					<div class="sip-planner-intro">
+						<div class="elementor-heading-wrapper-inner"><div class="elementor-sub-title"><span class="sub-title">UTILITIES</span></div></div>
+						<h2>SIP planner</h2>
+						<p>Estimate maturity value for monthly SIPs or one-time lump sum investments using the same compounding approach used by standard SIP calculators. Figures are illustrative only.</p>
+					</div>
+					<div class="sip-planner-wrap">
+						<div class="sip-planner-card">
+							<div class="sip-planner-tabs" role="tablist">
+								<button type="button" class="sip-planner-tab is-active" id="sip-tab-sip" role="tab" aria-selected="true" data-mode="sip">SIP</button>
+								<button type="button" class="sip-planner-tab" id="sip-tab-lumpsum" role="tab" aria-selected="false" data-mode="lumpsum">Lumpsum</button>
+							</div>
+							<div class="sip-planner-body">
+								<div id="sip-panel-sip">
+									<div class="sip-planner-field">
+										<label for="sip-monthly">Monthly investment</label>
+										<div class="sip-planner-input-wrap">
+											<span class="sip-planner-prefix">₹</span>
+											<input type="number" id="sip-monthly" min="0" step="100" value="5000" inputmode="decimal" />
+										</div>
+									</div>
+									<div class="sip-planner-field">
+										<label for="sip-rate">Expected return rate (p.a.)</label>
+										<div class="sip-planner-input-wrap">
+											<input type="number" id="sip-rate" min="0" max="100" step="0.1" value="12" inputmode="decimal" />
+											<span class="sip-planner-suffix">%</span>
+										</div>
+									</div>
+									<div class="sip-planner-field">
+										<label for="sip-years">Time period</label>
+										<div class="sip-planner-input-wrap">
+											<input type="number" id="sip-years" min="1" max="60" step="1" value="10" inputmode="numeric" />
+											<span class="sip-planner-suffix">Yr</span>
+										</div>
+									</div>
+								</div>
+								<div id="sip-panel-lumpsum" hidden>
+									<div class="sip-planner-field">
+										<label for="sip-lump-amount">Total investment</label>
+										<div class="sip-planner-input-wrap">
+											<span class="sip-planner-prefix">₹</span>
+											<input type="number" id="sip-lump-amount" min="0" step="1000" value="100000" inputmode="decimal" />
+										</div>
+									</div>
+									<div class="sip-planner-field">
+										<label for="sip-lump-rate">Expected return rate (p.a.)</label>
+										<div class="sip-planner-input-wrap">
+											<input type="number" id="sip-lump-rate" min="0" max="100" step="0.1" value="12" inputmode="decimal" />
+											<span class="sip-planner-suffix">%</span>
+										</div>
+									</div>
+									<div class="sip-planner-field">
+										<label for="sip-lump-years">Time period</label>
+										<div class="sip-planner-input-wrap">
+											<input type="number" id="sip-lump-years" min="1" max="60" step="1" value="10" inputmode="numeric" />
+											<span class="sip-planner-suffix">Yr</span>
+										</div>
+									</div>
+								</div>
+								<div class="sip-planner-results" aria-live="polite">
+									<div class="sip-planner-results-layout">
+										<div class="sip-planner-chart-block">
+											<div class="sip-donut-legend" aria-hidden="true">
+												<span class="sip-donut-legend-item"><span class="sip-donut-legend-swatch sip-donut-legend-swatch--inv"></span>Invested amount</span>
+												<span class="sip-donut-legend-item"><span class="sip-donut-legend-swatch sip-donut-legend-swatch--ret"></span>Est. returns</span>
+											</div>
+											<div class="sip-donut-wrap" aria-hidden="true">
+												<div class="sip-donut-ring" id="sip-donut-ring"></div>
+												<div class="sip-donut-hole">
+													<span class="sip-donut-hole-label">Total value</span>
+													<span class="sip-donut-hole-value" id="sip-donut-center-total">—</span>
+												</div>
+											</div>
+										</div>
+										<div class="sip-planner-figures-block">
+											<div class="sip-planner-result-row"><span>Invested amount</span><strong id="sip-out-invested">—</strong></div>
+											<div class="sip-planner-result-row"><span>Est. returns</span><strong id="sip-out-returns">—</strong></div>
+											<div class="sip-planner-result-row sip-planner-result-total"><span>Total value</span><strong id="sip-out-total">—</strong></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<p class="sip-planner-note">Monthly return is derived as (1 + annual)<sup>1/12</sup> − 1 so that compounding matches your stated annual rate. This does not account for taxes, loads, or expense ratios.</p>
 					</div>
 				</div>
-		<div class="elementor-element elementor-element-e51a960 e-con-full e-flex e-con e-parent" data-id="e51a960" data-element_type="container">
-				<div class="elementor-element elementor-element-b9a4d96 elementor-widget elementor-widget-insul-image-carousel" data-id="b9a4d96" data-element_type="widget" data-widget_type="insul-image-carousel.default">
-				<div class="elementor-widget-container">
-			
-            <div class="elementor-slider-image-item-wrapper">
-                <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
-                                                    <div class="elementor-slider-image-item swiper-slide">
-                                <div class="item-inner">
-                                    <div class="slider-image_item image_item_1">
-                                        <a href="https://demo2.pavothemes.com/insul/wp-content/uploads/2024/04/gallery-1-min.jpeg">
-                                                        <div class="elementor-sliderimage-image-1">
-                <img decoding="async" src="https://demo2.pavothemes.com/insul/wp-content/uploads/elementor/thumbs/gallery-1-min-qwmlvh5v0scurkxa5uqez9jvwp5ahh1zxhmilmnjy0.jpeg" title="gallery-1-min" alt="gallery-1-min" loading="lazy" />            </div>
-                                                    <i class="insul-icon-plus"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                                                    <div class="elementor-slider-image-item swiper-slide">
-                                <div class="item-inner">
-                                    <div class="slider-image_item image_item_1">
-                                        <a href="https://demo2.pavothemes.com/insul/wp-content/uploads/2024/04/gallery-2-min-scaled.jpeg">
-                                                        <div class="elementor-sliderimage-image-1">
-                <img decoding="async" src="https://demo2.pavothemes.com/insul/wp-content/uploads/elementor/thumbs/gallery-2-min-scaled-qwmlvh5v0scurkxa5uqez9jvwp5ahh1zxhmilmnjy0.jpeg" title="gallery-2-min" alt="gallery-2-min" loading="lazy" />            </div>
-                                                    <i class="insul-icon-plus"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                                                    <div class="elementor-slider-image-item swiper-slide">
-                                <div class="item-inner">
-                                    <div class="slider-image_item image_item_1">
-                                        <a href="https://demo2.pavothemes.com/insul/wp-content/uploads/2024/04/gallery-3-min-scaled.jpeg">
-                                                        <div class="elementor-sliderimage-image-1">
-                <img decoding="async" src="https://demo2.pavothemes.com/insul/wp-content/uploads/elementor/thumbs/gallery-3-min-scaled-qwmlvh5v0scurkxa5uqez9jvwp5ahh1zxhmilmnjy0.jpeg" title="gallery-3-min" alt="gallery-3-min" loading="lazy" />            </div>
-                                                    <i class="insul-icon-plus"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                                                    <div class="elementor-slider-image-item swiper-slide">
-                                <div class="item-inner">
-                                    <div class="slider-image_item image_item_1">
-                                        <a href="https://demo2.pavothemes.com/insul/wp-content/uploads/2024/04/brc-1-scaled.jpg">
-                                                        <div class="elementor-sliderimage-image-1">
-                <img decoding="async" src="https://demo2.pavothemes.com/insul/wp-content/uploads/elementor/thumbs/brc-1-scaled-qwmlvh5v0scurkxa5uqez9jvwp5ahh1zxhmilmnjy0.jpg" title="brc-1" alt="brc-1" loading="lazy" />            </div>
-                                                    <i class="insul-icon-plus"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                                                    <div class="elementor-slider-image-item swiper-slide">
-                                <div class="item-inner">
-                                    <div class="slider-image_item image_item_1">
-                                        <a href="https://demo2.pavothemes.com/insul/wp-content/uploads/2024/04/gallery-5-min.jpeg">
-                                                        <div class="elementor-sliderimage-image-1">
-                <img decoding="async" src="https://demo2.pavothemes.com/insul/wp-content/uploads/elementor/thumbs/gallery-5-min-qwmlvh5v0scurkxa5uqez9jvwp5ahh1zxhmilmnjy0.jpeg" title="gallery-5-min" alt="gallery-5-min" loading="lazy" />            </div>
-                                                    <i class="insul-icon-plus"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                                                    <div class="elementor-slider-image-item swiper-slide">
-                                <div class="item-inner">
-                                    <div class="slider-image_item image_item_1">
-                                        <a href="https://demo2.pavothemes.com/insul/wp-content/uploads/2024/04/gallery-6-min.jpeg">
-                                                        <div class="elementor-sliderimage-image-1">
-                <img decoding="async" src="https://demo2.pavothemes.com/insul/wp-content/uploads/elementor/thumbs/gallery-6-min-qwmlvh5v0scurkxa5uqez9jvwp5ahh1zxhmilmnjy0.jpeg" title="gallery-6-min" alt="gallery-6-min" loading="lazy" />            </div>
-                                                    <i class="insul-icon-plus"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                                            </div>
-                </div>
-
-            </div>
-            		</div>
-				</div>
-				</div>
-				</div>
-		
+			</div>
+			<script>
+			(function () {
+				function formatINR(n) {
+					if (!isFinite(n)) return "—";
+					return "₹ " + Math.round(n).toLocaleString("en-IN");
+				}
+				function sipMaturity(P, annualPct, years) {
+					var r = annualPct / 100;
+					var i = Math.pow(1 + r, 1 / 12) - 1;
+					var n = Math.round(years * 12);
+					if (n <= 0 || P <= 0) return { total: 0, invested: 0 };
+					if (i <= 0) return { total: P * n, invested: P * n };
+					var total = P * ((Math.pow(1 + i, n) - 1) / i) * (1 + i);
+					return { total: total, invested: P * n };
+				}
+				function lumpsumFV(pv, annualPct, years) {
+					var r = annualPct / 100;
+					return pv * Math.pow(1 + r, years);
+				}
+				var mode = "sip";
+				var tabSip = document.getElementById("sip-tab-sip");
+				var tabLump = document.getElementById("sip-tab-lumpsum");
+				var panelSip = document.getElementById("sip-panel-sip");
+				var panelLump = document.getElementById("sip-panel-lumpsum");
+				function setMode(m) {
+					mode = m;
+					var isSip = m === "sip";
+					tabSip.classList.toggle("is-active", isSip);
+					tabLump.classList.toggle("is-active", !isSip);
+					tabSip.setAttribute("aria-selected", isSip);
+					tabLump.setAttribute("aria-selected", !isSip);
+					panelSip.hidden = !isSip;
+					panelLump.hidden = isSip;
+					calc();
+				}
+				tabSip.addEventListener("click", function () { setMode("sip"); });
+				tabLump.addEventListener("click", function () { setMode("lumpsum"); });
+				function calc() {
+					var invested, total, returns;
+					if (mode === "sip") {
+						var P = parseFloat(document.getElementById("sip-monthly").value) || 0;
+						var rate = parseFloat(document.getElementById("sip-rate").value) || 0;
+						var y = parseFloat(document.getElementById("sip-years").value) || 0;
+						var res = sipMaturity(P, rate, y);
+						invested = res.invested;
+						total = res.total;
+					} else {
+						var pv = parseFloat(document.getElementById("sip-lump-amount").value) || 0;
+						var lr = parseFloat(document.getElementById("sip-lump-rate").value) || 0;
+						var ly = parseFloat(document.getElementById("sip-lump-years").value) || 0;
+						invested = pv;
+						total = lumpsumFV(pv, lr, ly);
+					}
+					returns = total - invested;
+					document.getElementById("sip-out-invested").textContent = formatINR(invested);
+					document.getElementById("sip-out-returns").textContent = formatINR(returns);
+					document.getElementById("sip-out-total").textContent = formatINR(total);
+					var ring = document.getElementById("sip-donut-ring");
+					var center = document.getElementById("sip-donut-center-total");
+					if (center) center.textContent = formatINR(total);
+					if (ring) {
+						if (!isFinite(total) || total <= 0) {
+							ring.classList.add("is-empty");
+							ring.style.background = "";
+						} else {
+							ring.classList.remove("is-empty");
+							var invDeg = Math.min(360, Math.max(0, (invested / total) * 360));
+							ring.style.background =
+								"conic-gradient(from -90deg, #e8ecff 0deg, #e8ecff " + invDeg + "deg, #5367ff " + invDeg + "deg, #5367ff 360deg)";
+						}
+					}
+				}
+				["sip-monthly", "sip-rate", "sip-years", "sip-lump-amount", "sip-lump-rate", "sip-lump-years"].forEach(function (id) {
+					var el = document.getElementById(id);
+					if (el) el.addEventListener("input", calc);
+				});
+				calc();
+			})();
+			</script>
 		</div><!-- .col-full -->
 	</div><!-- #content -->
 
@@ -927,15 +1044,15 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
                                 <li id="menu-item-126" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-126">
                                     <a href="/our-team">Our Team</a>
                                 </li>
-                                <li id="menu-item-128" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-127 current_page_item menu-item-128">
+                                <li id="menu-item-128" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-128">
                                     <a href="/faqs-page">FAQ</a>
                                 </li>
                             </ul>
                         </li>
-                        <li id="menu-item-calculators" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-calculators">
+                        <li id="menu-item-calculators" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-calculators">
                             <a href="#">Calculators</a>
                             <ul class="sub-menu">
-                                <li id="menu-item-sip-planner" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-sip">
+                                <li id="menu-item-sip-planner" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item current_page_item menu-item-sip">
                                     <a href="/sip-planner">SIP Planner</a>
                                 </li>
                                 <li id="menu-item-sip-delay-cost" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-sip-delay">
@@ -958,7 +1075,10 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 <li class="page_item page-item-112"><a href="https://demo2.pavothemes.com/insul/blog/">Blog</a></li>
 <li class="page_item page-item-134"><a href="https://demo2.pavothemes.com/insul/contact-01/">Contact 01</a></li>
 <li class="page_item page-item-136"><a href="https://demo2.pavothemes.com/insul/contact-02/">Contact 02</a></li>
-<li class="page_item page-item-127 current_page_item"><a href="https://demo2.pavothemes.com/insul/faqs-page/" aria-current="page">FAQs Page</a></li>
+<li class="page_item page-item-127"><a href="/faqs-page">FAQs Page</a></li>
+<li class="page_item page-item-sip-planner current_page_item"><a href="/sip-planner" aria-current="page">SIP Planner</a></li>
+<li class="page_item page-item-sip-delay-cost"><a href="/sip-delay-cost-calculator">SIP Delay Cost</a></li>
+<li class="page_item page-item-swp-calculator"><a href="/swp-calculator">SWP Calculator</a></li>
 <li class="page_item page-item-100"><a href="https://demo2.pavothemes.com/insul/home-2/">Home 2</a></li>
 <li class="page_item page-item-102"><a href="https://demo2.pavothemes.com/insul/home-3/">Home 3</a></li>
 <li class="page_item page-item-131"><a href="https://demo2.pavothemes.com/insul/icons/">Icons</a></li>
