@@ -1,8 +1,5 @@
 @charset "UTF-8";
-@font-face {
-  font-family: "insul-icon";
-  src: url("../fonts/icons/insul-icon-1.0.4.woff2") format("woff2");
-}
+/* @font-face for insul-icon is in resources/views/partials/site-fonts.blade.php */
 [class*=insul-icon-] {
   font-family: "insul-icon";
   -webkit-font-smoothing: antialiased;
