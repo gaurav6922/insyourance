@@ -3394,9 +3394,9 @@
             "floating-buttons": true
         },
         "urls": {
-            "assets": {!! json_encode(rtrim(public_asset_prefix(), '/') . '/js/elementor/assets/') !!},
+            "assets": {!! json_encode(public_asset('js/elementor/assets/')) !!},
             "ajaxurl": "\/wp-admin\/admin-ajax.php",
-            "uploadUrl": {!! json_encode(rtrim(public_asset_prefix(), '/') . '/images/home') !!}
+            "uploadUrl": {!! json_encode(public_asset('images/home')) !!}
         },
         "nonces": {
             "floatingButtonsClickTracking": "e44bf9c3ae"

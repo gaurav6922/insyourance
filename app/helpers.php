@@ -2,8 +2,7 @@
 
 if (! function_exists('public_asset_prefix')) {
     /**
-     * Base URL prefix for static files under public/.
-     * Empty string when files exist locally; CDN base when they do not (e.g. incomplete deploy).
+     * Base URL prefix for static files under public/ (empty = same-origin /public).
      */
     function public_asset_prefix(): string
     {
@@ -13,7 +12,6 @@ if (! function_exists('public_asset_prefix')) {
             return $prefix;
         }
 
-        // When ASSET_CDN_BASE is set, always use CDN (e.g. production with incomplete public/ deploy).
         $forcedCdn = env('ASSET_CDN_BASE');
         if (is_string($forcedCdn) && $forcedCdn !== '') {
             $prefix = rtrim($forcedCdn, '/');
@@ -21,15 +19,16 @@ if (! function_exists('public_asset_prefix')) {
             return $prefix;
         }
 
-        $marker = public_path('js/insul/assets/js/frontend/main.js');
+        $appUrl = (string) config('app.url');
+        $onProductionHost = str_contains($appUrl, 'witanfinsure.com');
 
-        if (is_file($marker)) {
-            $prefix = '';
+        if (app()->environment('production') || $onProductionHost) {
+            $prefix = rtrim((string) config('app.asset_cdn'), '/');
 
             return $prefix;
         }
 
-        $prefix = rtrim((string) config('app.asset_cdn'), '/');
+        $prefix = '';
 
         return $prefix;
     }
@@ -37,7 +36,8 @@ if (! function_exists('public_asset_prefix')) {
 
 if (! function_exists('public_asset')) {
     /**
-     * URL for a file in public/ (local asset() or CDN when missing on disk).
+     * URL for a file in public/.
+     * Production uses GitHub/jsDelivr CDN until public/ is fully deployed on the server.
      */
     function public_asset(string $path): string
     {
@@ -48,12 +48,22 @@ if (! function_exists('public_asset')) {
         }
 
         $path = ltrim($path, '/');
-        $prefix = public_asset_prefix();
+        $cdn = public_asset_prefix();
 
-        if ($prefix === '') {
+        if ($cdn !== '') {
+            return $cdn.'/'.$path.$query;
+        }
+
+        $local = public_path($path);
+        if (is_file($local)) {
             return asset($path).$query;
         }
 
-        return $prefix.'/'.$path.$query;
+        $fallback = rtrim((string) config('app.asset_cdn'), '/');
+        if ($fallback !== '') {
+            return $fallback.'/'.$path.$query;
+        }
+
+        return asset($path).$query;
     }
 }
