@@ -51,6 +51,11 @@ if (! function_exists('public_asset')) {
         $cdn = public_asset_prefix();
 
         if ($cdn !== '') {
+            $version = (string) config('app.asset_cdn_version', '');
+            if ($version !== '' && ! str_contains($query, 'cdn-v=')) {
+                $query .= ($query === '' ? '?' : '&').'cdn-v='.$version;
+            }
+
             return $cdn.'/'.$path.$query;
         }
 

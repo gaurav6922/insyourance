@@ -32,18 +32,6 @@
         color: #ffffff !important;
     }
 
-    /* Free consultation CTA band (background image + visible outline button) */
-    .elementor-104 .elementor-element.elementor-element-678ca47:not(.elementor-motion-effects-element-type-background),
-    .elementor-104 .elementor-element.elementor-element-678ca47 > .elementor-motion-effects-container > .elementor-motion-effects-layer {
-        background-image: url('{{ public_asset('wp-content/uploads/2024/04/h3-background02.png') }}');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-    }
-    .elementor-104 .elementor-element.elementor-element-7a1b8af.elementor-button-outline .elementor-button {
-        border-color: #ffffff;
-    }
-    
     /* Fix email link styling in header */
     .elementor-element[data-id="62b8151"] .elementor-icon-list-text a {
         color: inherit !important;
@@ -551,6 +539,21 @@
     <link rel='stylesheet' id='elementor-post-144-css' href="{{ public_asset('css/post-144.css') }}" media='all'/>
     <link rel='stylesheet' id='elementor-post-3494-css' href="{{ public_asset('css/post-3494.css') }}" media='all'/>
     <link rel='stylesheet' id='elementor-post-104-css' href="{{ public_asset('css/post-104.css') }}" media='all'/>
+    <style id='about-us-cta-fix'>
+    /* After post-104.css: ensure consultation CTA background wins on production CDN */
+    .elementor-104 .elementor-element.elementor-element-678ca47:not(.elementor-motion-effects-element-type-background),
+    .elementor-104 .elementor-element.elementor-element-678ca47 > .elementor-motion-effects-container > .elementor-motion-effects-layer {
+        background-image: url('{{ public_asset('wp-content/uploads/2024/04/h3-background02.png') }}') !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        background-position: center center !important;
+    }
+    .elementor-104 .elementor-element.elementor-element-7a1b8af.elementor-button-outline .elementor-button {
+        border-color: #ffffff !important;
+        color: #ffffff !important;
+        fill: #ffffff !important;
+    }
+    </style>
     <link rel='stylesheet' id='elementor-post-871-css' href="{{ public_asset('css/post-871.css') }}" media='all'/>
     <link rel='stylesheet' id='elementor-post-883-css' href="{{ public_asset('css/post-883.css') }}" media='all'/>
     <link rel='stylesheet' id='elementor-post-145-css' href="{{ public_asset('css/post-145.css') }}" media='all'/>
