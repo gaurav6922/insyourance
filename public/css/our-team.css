@@ -1,0 +1,65 @@
+.elementor-125 .elementor-element.elementor-element-6446799 {
+	padding: 80px 30px 100px;
+}
+
+.elementor-125 .elementor-element-8d3f344 .insul-con-inner.elementor-grid {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 300px));
+	justify-content: center;
+	gap: 50px 40px;
+	max-width: 1020px;
+	margin: 0 auto;
+}
+
+.elementor-125 .team-style-1 .elementor-teambox-item .team-image {
+	aspect-ratio: 1 / 1;
+	max-width: 300px;
+	margin: 0 auto;
+}
+
+.elementor-125 .team-style-1 .elementor-teambox-item .team-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: top center;
+}
+
+.elementor-125 .team-style-1 .elementor-teambox-item .team-caption {
+	text-align: center;
+	margin-top: 24px;
+}
+
+.elementor-125 .team-style-1 .elementor-teambox-item .team-caption .job-socical {
+	justify-content: center;
+	padding-top: 6px;
+}
+
+.elementor-125 .team-style-1 .elementor-teambox-item .team-name {
+	border-bottom: none;
+	padding-bottom: 0;
+	margin-bottom: 4px;
+}
+
+.elementor-125 .team-style-1 .elementor-teambox-item .team-job {
+	color: var(--e-global-color-lighter, #888);
+}
+
+@media (max-width: 991px) {
+	.elementor-125 .elementor-element-8d3f344 .insul-con-inner.elementor-grid {
+		grid-template-columns: repeat(2, minmax(0, 280px));
+	}
+
+	.elementor-125 .elementor-element.elementor-element-6446799 {
+		padding: 60px 30px 80px;
+	}
+}
+
+@media (max-width: 575px) {
+	.elementor-125 .elementor-element-8d3f344 .insul-con-inner.elementor-grid {
+		grid-template-columns: minmax(0, 320px);
+	}
+
+	.elementor-125 .elementor-element.elementor-element-6446799 {
+		padding: 50px 15px 70px;
+	}
+}

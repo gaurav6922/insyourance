@@ -554,7 +554,7 @@
         fill: #ffffff !important;
     }
     </style>
-    <link rel='stylesheet' id='elementor-post-871-css' href="{{ public_asset('css/post-871.css') }}" media='all'/>
+    <link rel='stylesheet' id='calculator-hero-css' href="{{ public_asset('css/calculator-hero.css') }}" media='all'/>
     <link rel='stylesheet' id='elementor-post-883-css' href="{{ public_asset('css/post-883.css') }}" media='all'/>
     <link rel='stylesheet' id='elementor-post-145-css' href="{{ public_asset('css/post-145.css') }}" media='all'/>
     <link rel='stylesheet' id='insul-fonts-css' href='//fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&#038;family=Sora:wght@100..800&#038;subset=latin%2Clatin-ext&#038;display=swap' media='all'/>
@@ -839,22 +839,11 @@
 				</div>
 				</header>
 
-        <div class="breadcrumb-wrap">		<div data-elementor-type="wp-post" data-elementor-id="871" class="elementor elementor-871">
-				<div class="elementor-element elementor-element-356b9a4 e-flex e-con-boxed e-con e-parent" data-id="356b9a4" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-					<div class="e-con-inner">
-				<div class="elementor-element elementor-element-c511a6c elementor-widget elementor-widget-insul-breadcrumb" data-id="c511a6c" data-element_type="widget" data-widget_type="insul-breadcrumb.default">
-				<div class="elementor-widget-container">
-			        <div class="breadcrumb" typeof="BreadcrumbList" vocab="https://schema.org/">
-            <h1 class="insul-title">
-                About us            </h1>
-            <div class="breadcrumb-listItem"><!-- Breadcrumb NavXT 7.3.1 -->
-<span property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" title="Go to Home." href="/" class="home" ><span property="name">Home</span></a><meta property="position" content="1"></span> &gt; <span property="itemListElement" typeof="ListItem"><span property="name" class="post post-page current-item">About us</span><meta property="url" content="/about-us/"><meta property="position" content="2"></span></div>        </div>
-        		</div>
-				</div>
-					</div>
-				</div>
-				</div>
-		</div>
+        @include('partials.calculator-hero', [
+            'title' => 'About us',
+            'url' => url('/about-us'),
+            'image' => 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1920&q=80',
+        ])
     
     <div id="content" class="site-content" tabindex="-1">
             <div class="col-full">
@@ -982,284 +971,15 @@
 				</div>
 				</div>
 		<div class="elementor-element elementor-element-a471a2e e-con-full e-flex e-con e-child" data-id="a471a2e" data-element_type="container">
-				<div class="elementor-element elementor-element-3454b28 elementor-grid-tablet_extra-3 elementor-grid-mobile_extra-2 elementor-grid-mobile-1 team-style-1 elementor-view-default elementor-grid-4 overflow-to-none elementor-widget elementor-widget-insul-team-box" data-id="3454b28" data-element_type="widget" data-settings="{&quot;column_tablet_extra&quot;:&quot;3&quot;,&quot;column_mobile_extra&quot;:&quot;2&quot;,&quot;column_mobile&quot;:&quot;1&quot;,&quot;navigation&quot;:&quot;none&quot;,&quot;column&quot;:4,&quot;column_spacing&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:30,&quot;sizes&quot;:[]},&quot;swiper_overflow&quot;:&quot;none&quot;,&quot;autoplay&quot;:&quot;yes&quot;,&quot;pause_on_hover&quot;:&quot;yes&quot;,&quot;pause_on_interaction&quot;:&quot;yes&quot;,&quot;autoplay_speed&quot;:5000,&quot;infinite&quot;:&quot;yes&quot;,&quot;speed&quot;:500}" data-widget_type="insul-team-box.default">
+				<div class="elementor-element elementor-element-3454b28 elementor-grid-tablet_extra-3 elementor-grid-mobile_extra-2 elementor-grid-mobile-1 team-style-1 elementor-view-default elementor-grid-3 overflow-to-none elementor-widget elementor-widget-insul-team-box" data-id="3454b28" data-element_type="widget" data-settings="{&quot;column_tablet_extra&quot;:&quot;3&quot;,&quot;column_mobile_extra&quot;:&quot;2&quot;,&quot;column_mobile&quot;:&quot;1&quot;,&quot;navigation&quot;:&quot;none&quot;,&quot;column&quot;:3,&quot;column_spacing&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:30,&quot;sizes&quot;:[]},&quot;swiper_overflow&quot;:&quot;none&quot;,&quot;autoplay&quot;:&quot;yes&quot;,&quot;pause_on_hover&quot;:&quot;yes&quot;,&quot;pause_on_interaction&quot;:&quot;yes&quot;,&quot;autoplay_speed&quot;:5000,&quot;infinite&quot;:&quot;yes&quot;,&quot;speed&quot;:500}" data-widget_type="insul-team-box.default">
 				<div class="elementor-widget-container">
 			
             <div class="insul-wrapper insul-swiper-wrapper swiper elementor-teambox-item-wrapper">
                 <div class="insul-con swiper insul-swiper" data-center="false">
                     <div class="insul-con-inner swiper-wrapper" aria-live="off">
-                                                    <div class="swiper-slide elementor-item elementor-teambox-item">
-                                <div class="team-items">
-                                    <div class="team-top">
-                                                    <div class="team-image">
-                <img loading="lazy" decoding="async" width="330" height="330" src="{{ public_asset('wp-content/uploads/2024/04/team-6.jpg') }}" class="attachment-full size-full wp-image-48" alt="" srcset="{{ public_asset('wp-content/uploads/2024/04/team-6.jpg') }} 330w, {{ public_asset('wp-content/uploads/2024/04/team-6-300x300.jpg') }} 300w, {{ public_asset('wp-content/uploads/2024/04/team-6-150x150.jpg') }} 150w" sizes="(max-width: 330px) 100vw, 330px" />            </div>
-                                            </div>
-                                    <div class="team-caption">
-                                        <div class="team-name">
-                                            Andrew Smith                                        </div>
-                                        <div class="job-socical">
-                                            <div class="team-job">CEO &amp; Founder</div>
-                                            <div class="team-icon-socials">
-                                                <ul>
-                                                                                                                                                                        <li class="social">
-                                                                <a href="https://linkedin.com/PavoThemes/">
-                                                                    <i class="insul-icon-linkedin"></i>
-                                                                </a>
-                                                            </li>
-                                                                                                                                                                                                                                <li class="social">
-                                                                <a href="https://behance.com/PavoThemes/">
-                                                                    <i class="insul-icon-behance"></i>
-                                                                </a>
-                                                            </li>
-                                                                                                                                                                                                                                <li class="social">
-                                                                <a href="https://www.instagram.com/">
-                                                                    <i class="insul-icon-instagram"></i>
-                                                                </a>
-                                                            </li>
-                                                                                                                                                            </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                                                    <div class="swiper-slide elementor-item elementor-teambox-item">
-                                <div class="team-items">
-                                    <div class="team-top">
-                                                    <div class="team-image">
-                <img loading="lazy" decoding="async" width="330" height="330" src="{{ public_asset('wp-content/uploads/2024/04/team-5.jpg') }}" class="attachment-full size-full wp-image-47" alt="" srcset="{{ public_asset('wp-content/uploads/2024/04/team-5.jpg') }} 330w, {{ public_asset('wp-content/uploads/2024/04/team-5-300x300.jpg') }} 300w, {{ public_asset('wp-content/uploads/2024/04/team-5-150x150.jpg') }} 150w" sizes="(max-width: 330px) 100vw, 330px" />            </div>
-                                            </div>
-                                    <div class="team-caption">
-                                        <div class="team-name">
-                                            Nadine Adams                                        </div>
-                                        <div class="job-socical">
-                                            <div class="team-job">Manager</div>
-                                            <div class="team-icon-socials">
-                                                <ul>
-                                                                                                                                                                        <li class="social">
-                                                                <a href="https://linkedin.com/PavoThemes/">
-                                                                    <i class="insul-icon-linkedin"></i>
-                                                                </a>
-                                                            </li>
-                                                                                                                                                                                                                                <li class="social">
-                                                                <a href="https://behance.com/PavoThemes/">
-                                                                    <i class="insul-icon-behance"></i>
-                                                                </a>
-                                                            </li>
-                                                                                                                                                                                                                                <li class="social">
-                                                                <a href="https://www.instagram.com/">
-                                                                    <i class="insul-icon-instagram"></i>
-                                                                </a>
-                                                            </li>
-                                                                                                                                                            </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                                                    <div class="swiper-slide elementor-item elementor-teambox-item">
-                                <div class="team-items">
-                                    <div class="team-top">
-                                                    <div class="team-image">
-                <img loading="lazy" decoding="async" width="330" height="330" src="{{ public_asset('wp-content/uploads/2024/04/team-8.jpg') }}" class="attachment-full size-full wp-image-50" alt="" srcset="{{ public_asset('wp-content/uploads/2024/04/team-8.jpg') }} 330w, {{ public_asset('wp-content/uploads/2024/04/team-8-300x300.jpg') }} 300w, {{ public_asset('wp-content/uploads/2024/04/team-8-150x150.jpg') }} 150w" sizes="(max-width: 330px) 100vw, 330px" />            </div>
-                                            </div>
-                                    <div class="team-caption">
-                                        <div class="team-name">
-                                            Peter Reinish                                        </div>
-                                        <div class="job-socical">
-                                            <div class="team-job">Manager</div>
-                                            <div class="team-icon-socials">
-                                                <ul>
-                                                                                                                                                                        <li class="social">
-                                                                <a href="https://linkedin.com/PavoThemes/">
-                                                                    <i class="insul-icon-linkedin"></i>
-                                                                </a>
-                                                            </li>
-                                                                                                                                                                                                                                <li class="social">
-                                                                <a href="https://behance.com/PavoThemes/">
-                                                                    <i class="insul-icon-behance"></i>
-                                                                </a>
-                                                            </li>
-                                                                                                                                                                                                                                <li class="social">
-                                                                <a href="https://www.instagram.com/">
-                                                                    <i class="insul-icon-instagram"></i>
-                                                                </a>
-                                                            </li>
-                                                                                                                                                            </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                                                    <div class="swiper-slide elementor-item elementor-teambox-item">
-                                <div class="team-items">
-                                    <div class="team-top">
-                                                    <div class="team-image">
-                <img loading="lazy" decoding="async" width="330" height="330" src="{{ public_asset('wp-content/uploads/2024/04/team-1.jpg') }}" class="attachment-full size-full wp-image-43" alt="" srcset="{{ public_asset('wp-content/uploads/2024/04/team-1.jpg') }} 330w, {{ public_asset('wp-content/uploads/2024/04/team-1-300x300.jpg') }} 300w, {{ public_asset('wp-content/uploads/2024/04/team-1-150x150.jpg') }} 150w" sizes="(max-width: 330px) 100vw, 330px" />            </div>
-                                            </div>
-                                    <div class="team-caption">
-                                        <div class="team-name">
-                                            Alisa Garrison                                        </div>
-                                        <div class="job-socical">
-                                            <div class="team-job">Expert</div>
-                                            <div class="team-icon-socials">
-                                                <ul>
-                                                                                                                                                                        <li class="social">
-                                                                <a href="https://linkedin.com/PavoThemes/">
-                                                                    <i class="insul-icon-linkedin"></i>
-                                                                </a>
-                                                            </li>
-                                                                                                                                                                                                                                <li class="social">
-                                                                <a href="https://behance.com/PavoThemes/">
-                                                                    <i class="insul-icon-behance"></i>
-                                                                </a>
-                                                            </li>
-                                                                                                                                                                                                                                <li class="social">
-                                                                <a href="https://www.instagram.com/">
-                                                                    <i class="insul-icon-instagram"></i>
-                                                                </a>
-                                                            </li>
-                                                                                                                                                            </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                                                    <div class="swiper-slide elementor-item elementor-teambox-item">
-                                <div class="team-items">
-                                    <div class="team-top">
-                                                    <div class="team-image">
-                <img loading="lazy" decoding="async" width="330" height="330" src="{{ public_asset('wp-content/uploads/2024/04/team-2.jpg') }}" class="attachment-full size-full wp-image-44" alt="" srcset="{{ public_asset('wp-content/uploads/2024/04/team-2.jpg') }} 330w, {{ public_asset('wp-content/uploads/2024/04/team-2-300x300.jpg') }} 300w, {{ public_asset('wp-content/uploads/2024/04/team-2-150x150.jpg') }} 150w" sizes="(max-width: 330px) 100vw, 330px" />            </div>
-                                            </div>
-                                    <div class="team-caption">
-                                        <div class="team-name">
-                                            Alisa Garrison                                        </div>
-                                        <div class="job-socical">
-                                            <div class="team-job">CEO &amp; Founder</div>
-                                            <div class="team-icon-socials">
-                                                <ul>
-                                                                                                                                                                        <li class="social">
-                                                                <a href="https://linkedin.com/PavoThemes/">
-                                                                    <i class="insul-icon-linkedin"></i>
-                                                                </a>
-                                                            </li>
-                                                                                                                                                                                                                                <li class="social">
-                                                                <a href="https://behance.com/PavoThemes/">
-                                                                    <i class="insul-icon-behance"></i>
-                                                                </a>
-                                                            </li>
-                                                                                                                                                                                                                                <li class="social">
-                                                                <a href="https://www.instagram.com/">
-                                                                    <i class="insul-icon-instagram"></i>
-                                                                </a>
-                                                            </li>
-                                                                                                                                                            </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                                                    <div class="swiper-slide elementor-item elementor-teambox-item">
-                                <div class="team-items">
-                                    <div class="team-top">
-                                                    <div class="team-image">
-                <img loading="lazy" decoding="async" width="330" height="330" src="{{ public_asset('wp-content/uploads/2024/04/team-3.jpg') }}" class="attachment-full size-full wp-image-45" alt="" srcset="{{ public_asset('wp-content/uploads/2024/04/team-3.jpg') }} 330w, {{ public_asset('wp-content/uploads/2024/04/team-3-300x300.jpg') }} 300w, {{ public_asset('wp-content/uploads/2024/04/team-3-150x150.jpg') }} 150w" sizes="(max-width: 330px) 100vw, 330px" />            </div>
-                                            </div>
-                                    <div class="team-caption">
-                                        <div class="team-name">
-                                            Thomas Wilso                                        </div>
-                                        <div class="job-socical">
-                                            <div class="team-job">Manager</div>
-                                            <div class="team-icon-socials">
-                                                <ul>
-                                                                                                                                                                        <li class="social">
-                                                                <a href="https://linkedin.com/PavoThemes/">
-                                                                    <i class="insul-icon-linkedin"></i>
-                                                                </a>
-                                                            </li>
-                                                                                                                                                                                                                                <li class="social">
-                                                                <a href="https://behance.com/PavoThemes/">
-                                                                    <i class="insul-icon-behance"></i>
-                                                                </a>
-                                                            </li>
-                                                                                                                                                                                                                                <li class="social">
-                                                                <a href="https://www.instagram.com/">
-                                                                    <i class="insul-icon-instagram"></i>
-                                                                </a>
-                                                            </li>
-                                                                                                                                                            </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                                                    <div class="swiper-slide elementor-item elementor-teambox-item">
-                                <div class="team-items">
-                                    <div class="team-top">
-                                                    <div class="team-image">
-                <img loading="lazy" decoding="async" width="330" height="330" src="{{ public_asset('wp-content/uploads/2024/04/team-4.jpg') }}" class="attachment-full size-full wp-image-46" alt="" srcset="{{ public_asset('wp-content/uploads/2024/04/team-4.jpg') }} 330w, {{ public_asset('wp-content/uploads/2024/04/team-4-300x300.jpg') }} 300w, {{ public_asset('wp-content/uploads/2024/04/team-4-150x150.jpg') }} 150w" sizes="(max-width: 330px) 100vw, 330px" />            </div>
-                                            </div>
-                                    <div class="team-caption">
-                                        <div class="team-name">
-                                            James Baker                                        </div>
-                                        <div class="job-socical">
-                                            <div class="team-job">Expert</div>
-                                            <div class="team-icon-socials">
-                                                <ul>
-                                                                                                                                                                        <li class="social">
-                                                                <a href="https://linkedin.com/PavoThemes/">
-                                                                    <i class="insul-icon-linkedin"></i>
-                                                                </a>
-                                                            </li>
-                                                                                                                                                                                                                                <li class="social">
-                                                                <a href="https://behance.com/PavoThemes/">
-                                                                    <i class="insul-icon-behance"></i>
-                                                                </a>
-                                                            </li>
-                                                                                                                                                                                                                                <li class="social">
-                                                                <a href="https://www.instagram.com/">
-                                                                    <i class="insul-icon-instagram"></i>
-                                                                </a>
-                                                            </li>
-                                                                                                                                                            </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                                                    <div class="swiper-slide elementor-item elementor-teambox-item">
-                                <div class="team-items">
-                                    <div class="team-top">
-                                                    <div class="team-image">
-                <img loading="lazy" decoding="async" width="330" height="330" src="{{ public_asset('wp-content/uploads/2024/04/team-7.jpg') }}" class="attachment-full size-full wp-image-49" alt="" srcset="{{ public_asset('wp-content/uploads/2024/04/team-7.jpg') }} 330w, {{ public_asset('wp-content/uploads/2024/04/team-7-300x300.jpg') }} 300w, {{ public_asset('wp-content/uploads/2024/04/team-7-150x150.jpg') }} 150w" sizes="(max-width: 330px) 100vw, 330px" />            </div>
-                                            </div>
-                                    <div class="team-caption">
-                                        <div class="team-name">
-                                            Robert Walder                                        </div>
-                                        <div class="job-socical">
-                                            <div class="team-job">Manager</div>
-                                            <div class="team-icon-socials">
-                                                <ul>
-                                                                                                                                                                        <li class="social">
-                                                                <a href="https://linkedin.com/PavoThemes/">
-                                                                    <i class="insul-icon-linkedin"></i>
-                                                                </a>
-                                                            </li>
-                                                                                                                                                                                                                                <li class="social">
-                                                                <a href="https://behance.com/PavoThemes/">
-                                                                    <i class="insul-icon-behance"></i>
-                                                                </a>
-                                                            </li>
-                                                                                                                                                                                                                                <li class="social">
-                                                                <a href="https://www.instagram.com/">
-                                                                    <i class="insul-icon-instagram"></i>
-                                                                </a>
-                                                            </li>
-                                                                                                                                                            </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        @foreach (config('team') as $member)
+                            @include('partials.team-member', ['member' => $member, 'layout' => 'swiper'])
+                        @endforeach
                                             </div>
                 </div>
                                     
