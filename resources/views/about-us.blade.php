@@ -31,6 +31,18 @@
     .elementor-element-witanfinsure-message .elementor-widget-container {
         color: #ffffff !important;
     }
+
+    /* Free consultation CTA band (background image + visible outline button) */
+    .elementor-104 .elementor-element.elementor-element-678ca47:not(.elementor-motion-effects-element-type-background),
+    .elementor-104 .elementor-element.elementor-element-678ca47 > .elementor-motion-effects-container > .elementor-motion-effects-layer {
+        background-image: url('{{ public_asset('wp-content/uploads/2024/04/h3-background02.png') }}');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+    .elementor-104 .elementor-element.elementor-element-7a1b8af.elementor-button-outline .elementor-button {
+        border-color: #ffffff;
+    }
     
     /* Fix email link styling in header */
     .elementor-element[data-id="62b8151"] .elementor-icon-list-text a {
