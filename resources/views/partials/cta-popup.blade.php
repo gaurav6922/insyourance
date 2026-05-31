@@ -1,7 +1,7 @@
 @php
     $formspreeId = config('services.formspree.form_id');
 @endphp
-<link rel="stylesheet" href="{{ asset('css/cta-popup.css') }}">
+<link rel="stylesheet" href="{{ public_asset('css/cta-popup.css') }}">
 
 <div
     id="cta-popup"
@@ -111,4 +111,4 @@
     </div>
 </div>
 
-<script src="{{ asset('js/cta-popup.js') }}" defer></script>
+<script src="{{ public_asset('js/cta-popup.js') }}" defer></script>

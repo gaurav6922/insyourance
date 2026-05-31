@@ -3,7 +3,7 @@
     $whatsappMessage = rawurlencode('Hi, I would like to know more about your insurance services.');
     $whatsappUrl = "https://wa.me/{$whatsappNumber}?text={$whatsappMessage}";
 @endphp
-<link rel="stylesheet" href="{{ asset('css/whatsapp-float.css') }}">
+<link rel="stylesheet" href="{{ public_asset('css/whatsapp-float.css') }}">
 
 <div
     id="whatsapp-popup"
@@ -40,5 +40,5 @@
     </svg>
 </a>
 
-<script src="{{ asset('js/whatsapp-float.js') }}" defer></script>
+<script src="{{ public_asset('js/whatsapp-float.js') }}" defer></script>
 @include('partials.cta-popup')
