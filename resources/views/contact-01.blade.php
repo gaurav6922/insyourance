@@ -24,12 +24,9 @@
 	</style>
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
     <link rel="dns-prefetch" href="//s.w.org">
-<link rel='dns-prefetch' href='//demo2.pavothemes.com' />
 <link rel='dns-prefetch' href='//fonts.googleapis.com' />
-<link rel="alternate" type="application/rss+xml" title="Insul &raquo; Feed" href="https://demo2.pavothemes.com/insul/feed/" />
-<link rel="alternate" type="application/rss+xml" title="Insul &raquo; Comments Feed" href="https://demo2.pavothemes.com/insul/comments/feed/" />
-    <script>
-window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/demo2.pavothemes.com\/insul\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.7.1"}};
+<script>
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/","svgExt":".svg","source":{"concatemoji":"\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.7.1"}};
     /*! This file is auto-generated */
 !function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83d\udc26\u200d\u2b1b","\ud83d\udc26\u200b\u2b1b")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
     </script>
@@ -76,7 +73,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 <link rel='stylesheet' id='elementor-post-3494-css' href='/css/post-3494.css' media='all' />
 <link rel='stylesheet' id='insul-fonts-css' href='//fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&#038;family=Sora:wght@100..800&#038;subset=latin%2Clatin-ext&#038;display=swap' media='all' />
 <link rel='stylesheet' id='insul-icon-css' href='/css/icons.css' media='all' />
-<link rel='stylesheet' id='insul-style-css' href='/css/insul-style.css' media='all' />
+<link rel='stylesheet' id='insul-style-css' href='/wp-content/themes/insul/style.css' media='all' />
     <style id='insul-style-inline-css'>
 .col-full{max-width: 1410px}body { --e-global-container-width: 1410px}.e-con { --container-max-width: 1410px}
     </style>
@@ -89,19 +86,15 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 <link rel='stylesheet' id='hfe-nav-menu-icons-css' href='/css/solid.css' media='all' />
 <link rel='stylesheet' id='insul-child-style-css' href='/css/demo-child.css' media='all' />
 <link rel='stylesheet' id='google-fonts-1-css' href='https://fonts.googleapis.com/css?family=DM+Sans%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CSora%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap&#038;ver=6.7.1' media='all' />
-<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin><script src="https://demo2.pavothemes.com/insul/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
-    <script src="https://demo2.pavothemes.com/insul/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin><script src="/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+    <script src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
     <script id="jquery-js-after">
 !function($){"use strict";$(document).ready(function(){$(this).scrollTop()>100&&$(".hfe-scroll-to-top-wrap").removeClass("hfe-scroll-to-top-hide"),$(window).scroll(function(){$(this).scrollTop()<100?$(".hfe-scroll-to-top-wrap").fadeOut(300):$(".hfe-scroll-to-top-wrap").fadeIn(300)}),$(".hfe-scroll-to-top-wrap").on("click",function(){$("html, body").animate({scrollTop:0},300);return!1})})}(jQuery);
     </script>
-    <script src="https://demo2.pavothemes.com/insul/wp-content/themes/insul/assets/js/libs/jarallax.js?ver=6.7.1" id="jarallax-js"></script>
-<link rel="https://api.w.org/" href="https://demo2.pavothemes.com/insul/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://demo2.pavothemes.com/insul/wp-json/wp/v2/pages/134" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://demo2.pavothemes.com/insul/xmlrpc.php?rsd" />
-<meta name="generator" content="WordPress 6.7.1" />
-<link rel="canonical" href="https://demo2.pavothemes.com/insul/contact-01/" />
-<link rel='shortlink' href='https://demo2.pavothemes.com/insul/?p=134' />
-<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://demo2.pavothemes.com/insul/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdemo2.pavothemes.com%2Finsul%2Fcontact-01%2F" />
-<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://demo2.pavothemes.com/insul/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdemo2.pavothemes.com%2Finsul%2Fcontact-01%2F&#038;format=xml" />
-    <meta name="generator" content="Elementor 3.25.11; features: additional_custom_breakpoints, e_optimized_control_loading; settings: css_print_method-external, google_font-enabled, font_display-swap">
+    <script src="/wp-content/themes/insul/assets/js/libs/jarallax.js?ver=6.7.1" id="jarallax-js"></script>
+<link rel="canonical" href="/contact-01/" />
+<link rel='shortlink' href='/?p=134' />
+<meta name="generator" content="Elementor 3.25.11; features: additional_custom_breakpoints, e_optimized_control_loading; settings: css_print_method-external, google_font-enabled, font_display-swap">
     <style>
 				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
 				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
@@ -171,18 +164,12 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
     //});
 		  };</script>
 <noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript>
-    <style>
-        /* Contact page: shift footer logo a bit to the left */
-        .elementor-element-028e058 .hfe-site-logo {
-            margin-left: -12px;
-        }
-    </style>
 </head>
 <body class="page-template-default page page-id-134 wp-custom-logo wp-embed-responsive ehf-header ehf-footer ehf-template-insul ehf-stylesheet-demo-child chrome no-wc-breadcrumb elementor-default elementor-template-full-width elementor-kit-7 elementor-page elementor-page-134">
 
     <div id="page" class="hfeed site">
         <header id="masthead" itemscope="itemscope" itemtype="https://schema.org/WPHeader">
-			<p class="main-title bhf-hidden" itemprop="headline"><a href="https://demo2.pavothemes.com/insul" title="Insul" rel="home">Insul</a></p>
+			<p class="main-title bhf-hidden" itemprop="headline"><a href="/" title="Witan Finsure" rel="home">Witan Finsure</a></p>
 					<div data-elementor-type="wp-post" data-elementor-id="883" class="elementor elementor-883">
 				<div class="elementor-element elementor-element-4f33f1a e-con-full e-flex e-con e-parent" data-id="4f33f1a" data-element_type="container">
 		<div class="elementor-element elementor-element-181ba4a e-flex e-con-boxed e-con e-child" data-id="181ba4a" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
@@ -627,262 +614,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 		</div><!-- .col-full -->
 	</div><!-- #content -->
 
-	<div class='footer-width-fixer'>		<div data-elementor-type="wp-post" data-elementor-id="3494" class="elementor elementor-3494">
-				<div class="elementor-element elementor-element-e4a16ef elementor-hidden-desktop elementor-hidden-laptop elementor-hidden-tablet_extra e-flex e-con-boxed e-con e-parent" data-id="e4a16ef" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;position&quot;:&quot;fixed&quot;}">
-					<div class="e-con-inner">
-				<div class="elementor-element elementor-element-c1e38e6 elementor-widget__width-inherit insul-search-layout-3 elementor-widget elementor-widget-insul-search" data-id="c1e38e6" data-element_type="widget" data-widget_type="insul-search.default">
-				<div class="elementor-widget-container">
-			            <div class="site-header-search">
-                <a href="#" class="button-search-popup layout-3">
-                    <i class="insul-icon-search"></i>
-                    <span class="content">Search</span>
-                </a>
-            </div>
-            		</div>
-				</div>
-					</div>
-				</div>
-				</div>
-		</div>		<footer itemtype="https://schema.org/WPFooter" itemscope="itemscope" id="colophon" role="contentinfo">
-			<div class='footer-width-fixer'>		<div data-elementor-type="wp-post" data-elementor-id="145" class="elementor elementor-145">
-				<div class="elementor-element elementor-element-658e1f4 e-con-full e-flex e-con e-parent" data-id="658e1f4" data-element_type="container">
-				<div class="elementor-element elementor-element-462a4cd scroll-style-2 scrolling-effects-yes elementor-widget elementor-widget-insul-slider-scrolling" data-id="462a4cd" data-element_type="widget" data-widget_type="insul-slider-scrolling.default">
-				<div class="elementor-widget-container">
-			            <div class="elementor-slider-scrolling-item-wrapper">
-                                    <div class="elementor-slider-scrolling-inner">
-                                                    <div class="elementor-slider-scrolling-item">
-                                <div class="elementor-scrolling-item-inner">
-                                    <div class="scrolling-title">
-                                        <span class="title-scrolling">TRUSTED FINANCIAL ADVISORY SERVICES </span>                                    </div>
-                                </div>
-                            </div>
-                                                    <div class="elementor-slider-scrolling-item">
-                                <div class="elementor-scrolling-item-inner">
-                                    <div class="scrolling-title">
-                                        <span class="title-scrolling">TRUSTED FINANCIAL ADVISORY SERVICES </span>                                    </div>
-                                </div>
-                            </div>
-                                            </div>
-                                        <div class="elementor-slider-scrolling-inner">
-                                                    <div class="elementor-slider-scrolling-item">
-                                <div class="elementor-scrolling-item-inner">
-                                    <div class="scrolling-title">
-                                        <span class="title-scrolling">TRUSTED FINANCIAL ADVISORY SERVICES </span>                                    </div>
-                                </div>
-                            </div>
-                                                    <div class="elementor-slider-scrolling-item">
-                                <div class="elementor-scrolling-item-inner">
-                                    <div class="scrolling-title">
-                                        <span class="title-scrolling">TRUSTED FINANCIAL ADVISORY SERVICES </span>                                    </div>
-                                </div>
-                            </div>
-                                            </div>
-                                        <div class="elementor-slider-scrolling-inner">
-                                                    <div class="elementor-slider-scrolling-item">
-                                <div class="elementor-scrolling-item-inner">
-                                    <div class="scrolling-title">
-                                        <span class="title-scrolling">TRUSTED FINANCIAL ADVISORY SERVICES </span>                                    </div>
-                                </div>
-                            </div>
-                                                    <div class="elementor-slider-scrolling-item">
-                                <div class="elementor-scrolling-item-inner">
-                                    <div class="scrolling-title">
-                                        <span class="title-scrolling">TRUSTED FINANCIAL ADVISORY SERVICES </span>                                    </div>
-                                </div>
-                            </div>
-                                            </div>
-                                        <div class="elementor-slider-scrolling-inner">
-                                                    <div class="elementor-slider-scrolling-item">
-                                <div class="elementor-scrolling-item-inner">
-                                    <div class="scrolling-title">
-                                        <span class="title-scrolling">TRUSTED FINANCIAL ADVISORY SERVICES </span>                                    </div>
-                                </div>
-                            </div>
-                                                    <div class="elementor-slider-scrolling-item">
-                                <div class="elementor-scrolling-item-inner">
-                                    <div class="scrolling-title">
-                                        <span class="title-scrolling">TRUSTED FINANCIAL ADVISORY SERVICES </span>                                    </div>
-                                </div>
-                            </div>
-                                            </div>
-                                </div>
-            		</div>
-				</div>
-				</div>
-		<div class="elementor-element elementor-element-2847981 e-con-full e-flex e-con e-parent" data-id="2847981" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-		<div class="elementor-element elementor-element-e02ef32 e-flex e-con-boxed e-con e-child" data-id="e02ef32" data-element_type="container">
-					<div class="e-con-inner">
-		<div class="elementor-element elementor-element-3fe4563 e-con-full e-flex e-con e-child" data-id="3fe4563" data-element_type="container">
-				<div class="elementor-element elementor-element-028e058 elementor-widget elementor-widget-site-logo" data-id="028e058" data-element_type="widget" data-widget_type="site-logo.default">
-				<div class="elementor-widget-container">
-			        <div class="hfe-site-logo">
-                                                        <a data-elementor-open-lightbox="" class='elementor-clickable' href="/">
-                                                            <div class="hfe-site-logo-set">
-                        <div class="hfe-site-logo-container">
-                            <img class="hfe-site-logo-img elementor-animation-" src="{{ asset('images/mainlogo.png') }}" alt="Witan Fincare"/>
-                                                    </div>
-                    </div>
-                                    </a>
-                                    </div>
-        		</div>
-				</div>
-				<div class="elementor-element elementor-element-da90c44 elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-text-editor" data-id="da90c44" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-							Subscribe to our newsletter to get the latest news and updates.						</div>
-				</div>
-				<div class="elementor-element elementor-element-7d87454 elementor-widget__width-initial elementor-widget-mobile__width-inherit form-mailchimp-style-default elementor-widget elementor-widget-insul-mailchmip" data-id="7d87454" data-element_type="widget" data-widget_type="insul-mailchmip.default">
-				<div class="elementor-widget-container">
-			<div class="form-style"><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>(function() {
-	window.mc4wp = window.mc4wp || {
-		listeners: [],
-		forms: {
-			on: function(evt, cb) {
-				window.mc4wp.listeners.push(
-					{
-						event   : evt,
-						callback: cb
-					}
-				);
-			}
-		}
-	}
-})();
-</script><!-- Mailchimp for WordPress v4.9.19 - https://wordpress.org/plugins/mailchimp-for-wp/ --><form id="mc4wp-form-1" class="mc4wp-form mc4wp-form-521" method="post" data-id="521" data-name="" ><div class="mc4wp-form-fields"><p>
-	<input type="email" name="EMAIL" placeholder="Your email address" required />
-</p>
-
-<p>
-	<button type="submit"><i class="insul-icon-mail-plane"></i></button>
-</p></div><label style="display: none !important;">Leave this field empty if you're human: <input type="text" name="_mc4wp_honeypot" value="" tabindex="-1" autocomplete="off" /></label><input type="hidden" name="_mc4wp_timestamp" value="1766839467" /><input type="hidden" name="_mc4wp_form_id" value="521" /><input type="hidden" name="_mc4wp_form_element_id" value="mc4wp-form-1" /><div class="mc4wp-response"></div></form><!-- / Mailchimp for WordPress Plugin --></div>		</div>
-				</div>
-				</div>
-		<div class="elementor-element elementor-element-4bb9611 e-con-full e-flex e-con e-child" data-id="4bb9611" data-element_type="container">
-				<div class="elementor-element elementor-element-d081d64 subtitle-position-above elementor-widget elementor-widget-heading" data-id="d081d64" data-element_type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-			<div class="elementor-heading-wrapper-inner"><h2 class="elementor-heading-title elementor-size-xxl">GET IN TOUCH</h2></div>		</div>
-				</div>
-				<div class="elementor-element elementor-element-da80f48 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="da80f48" data-element_type="widget" data-widget_type="icon-list.default">
-				<div class="elementor-widget-container">
-					<ul class="elementor-icon-list-items">
-							<li class="elementor-icon-list-item">
-											<a href="https://www.facebook.com/PavoThemes/">
-
-											<span class="elementor-icon-list-text">Facebook</span>
-											</a>
-									</li>
-								<li class="elementor-icon-list-item">
-											<a href="https://www.instagram.com/pavothemeswp/">
-
-											<span class="elementor-icon-list-text">Instagram</span>
-											</a>
-									</li>
-								<li class="elementor-icon-list-item">
-											<a href="https://www.linkedin.com/">
-
-											<span class="elementor-icon-list-text">Linkedin</span>
-											</a>
-									</li>
-								<li class="elementor-icon-list-item">
-											<a href="https://twitter.com/PavoThemes/">
-
-											<span class="elementor-icon-list-text">Twitter</span>
-											</a>
-									</li>
-						</ul>
-				</div>
-				</div>
-				</div>
-		<div class="elementor-element elementor-element-b057fd7 e-con-full e-flex e-con e-child" data-id="b057fd7" data-element_type="container">
-				<div class="elementor-element elementor-element-9585bbf subtitle-position-above elementor-widget elementor-widget-heading" data-id="9585bbf" data-element_type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-			<div class="elementor-heading-wrapper-inner"><h2 class="elementor-heading-title elementor-size-xxl">EXPLORE</h2></div>		</div>
-				</div>
-				<div class="elementor-element elementor-element-947c2f6 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="947c2f6" data-element_type="widget" data-widget_type="icon-list.default">
-				<div class="elementor-widget-container">
-					<ul class="elementor-icon-list-items">
-							<li class="elementor-icon-list-item">
-											<a href="/about-us/">
-
-											<span class="elementor-icon-list-text">About </span>
-											</a>
-									</li>
-								<li class="elementor-icon-list-item">
-											<a href="/contact-01/">
-
-											<span class="elementor-icon-list-text">Careers</span>
-											</a>
-									</li>
-								<li class="elementor-icon-list-item">
-											<a href="/services/mutual-funds/">
-
-											<span class="elementor-icon-list-text">Works</span>
-											</a>
-									</li>
-								<li class="elementor-icon-list-item">
-											<a href="{{ url('/contact-01') }}">
-
-											<span class="elementor-icon-list-text">Contact</span>
-											</a>
-									</li>
-								<li class="elementor-icon-list-item">
-											<a href="/services/mutual-funds/">
-
-											<span class="elementor-icon-list-text">Privacy Policy</span>
-											</a>
-									</li>
-								<li class="elementor-icon-list-item">
-											<a href="/services/mutual-funds/">
-
-											<span class="elementor-icon-list-text">Tax</span>
-											</a>
-									</li>
-						</ul>
-				</div>
-				</div>
-				</div>
-		<div class="elementor-element elementor-element-65b63cc e-con-full e-flex e-con e-child" data-id="65b63cc" data-element_type="container">
-				<div class="elementor-element elementor-element-b1286a8 subtitle-position-above elementor-widget elementor-widget-heading" data-id="b1286a8" data-element_type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-			<div class="elementor-heading-wrapper-inner"><h2 class="elementor-heading-title elementor-size-xxl">FIND US</h2></div>		</div>
-				</div>
-		<div class="elementor-element elementor-element-851852a e-con-full e-flex e-con e-child" data-id="851852a" data-element_type="container">
-				<div class="elementor-element elementor-element-ba69b31 elementor-widget__width-initial elementor-widget elementor-widget-text" data-id="ba69b31" data-element_type="widget" data-widget_type="text.default">
-				<div class="elementor-widget-container">
-			        <div class="elementor-text">
-                    <span class="insul-elementor-text-wrapper insul-elementor-text-before">Address:</span>
-                            <span class="insul-elementor-text-wrapper insul-elementor-text-after">C-1 Main Road, Kanti Nagar, Delhi - 110085</span>
-                </div>
-        		</div>
-				</div>
-				<div class="elementor-element elementor-element-dcc9a5f elementor-widget elementor-widget-text" data-id="dcc9a5f" data-element_type="widget" data-widget_type="text.default">
-				<div class="elementor-widget-container">
-			        <div class="elementor-text">
-                    <span class="insul-elementor-text-wrapper insul-elementor-text-before">Phone:</span>
-                            <span class="insul-elementor-text-wrapper insul-elementor-text-after">+91 97110 43285</span>
-                </div>
-        		</div>
-				</div>
-				<div class="elementor-element elementor-element-f016362 elementor-widget elementor-widget-text" data-id="f016362" data-element_type="widget" data-widget_type="text.default">
-				<div class="elementor-widget-container">
-			        <div class="elementor-text">
-                    <span class="insul-elementor-text-wrapper insul-elementor-text-before">Email:</span>
-                            <span class="insul-elementor-text-wrapper insul-elementor-text-after"><a href="mailto:rishabh@witanfinsure.com">rishabh@witanfinsure.com</a></span>
-                </div>
-        		</div>
-				</div>
-				</div>
-				</div>
-					</div>
-				</div>
-		<div class="elementor-element elementor-element-35aec87 e-con-full e-flex e-con e-child" data-id="35aec87" data-element_type="container">
-				<div class="elementor-element elementor-element-b9ad783 elementor-widget elementor-widget-text-editor" data-id="b9ad783" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-							Copyright © 2026 Witan Finsure. Designed by <a href="https://www.margx.in" target="_blank" rel="noopener">MargX</a>. All right reserved.						</div>
-				</div>
-				</div>
-				</div>
-				</div>
-		</div>		</footer>
+@include('partials.site-footer')
 
 </div><!-- #page -->
 
@@ -891,7 +623,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
             <div class="login-form-head">
                 <span class="login-form-title">Sign in</span>
                 <span class="pull-right">
-                <a class="register-link" href="https://demo2.pavothemes.com/insul/wp-login.php?action=register"
+                <a class="register-link" href="/wp-login.php?action=register"
                    title="Register">Create an Account</a>
                 </span>
             </div>
@@ -910,8 +642,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
                 <input type="hidden" name="action" value="insul_login">
             <input type="hidden" id="security-login" name="security-login" value="c1a70a6cc1" /><input type="hidden" name="_wp_http_referer" value="/insul/contact-01/" />        </form>
             <div class="login-form-bottom">
-            <a href="https://demo2.pavothemes.com/insul/wp-login.php?action=lostpassword&redirect_to=https%3A%2F%2Fdemo2.pavothemes.com%2Finsul%2Fcontact-01%2F" class="lostpass-link"
-               title="Lost your password?">Lost your password?</a>
+            
             </div>
         </div>
     </div>
@@ -928,7 +659,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
         <nav class="mobile-menu-tab mobile-navigation mobile-pages-menu active"
              aria-label="Mobile Navigation">
             <div class="handheld-navigation"><ul id="menu-main-menu" class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-97"><a href="/">Home</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-105"><a href="https://demo2.pavothemes.com/insul/about-us/">About us</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-105"><a href="/about-us/">About us</a></li>
 <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-106"><a href="#">Service</a>
                             <ul class="sub-menu">
 	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-110"><a href="/services/general-insurance/"><span class="menu-title">General Insurance</span></a></li>
@@ -956,20 +687,20 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
         <nav class="mobile-menu-tab mobile-navigation-categories mobile-categories-menu"
              aria-label="Mobile Navigation">
             <div class="menu"><ul>
-<li ><a href="https://demo2.pavothemes.com/insul/">Home</a></li><li class="page_item page-item-104"><a href="https://demo2.pavothemes.com/insul/about-us/">About us</a></li>
-<li class="page_item page-item-112"><a href="https://demo2.pavothemes.com/insul/blog/">Blog</a></li>
+<li ><a href="/">Home</a></li><li class="page_item page-item-104"><a href="/about-us/">About us</a></li>
+<li class="page_item page-item-112"><a href="/blog/">Blog</a></li>
 <li class="page_item page-item-134 current_page_item"><a href="/contact-01" aria-current="page">Contact</a></li>
-<li class="page_item page-item-127"><a href="https://demo2.pavothemes.com/insul/faqs-page/">FAQs Page</a></li>
-<li class="page_item page-item-100"><a href="https://demo2.pavothemes.com/insul/home-2/">Home 2</a></li>
-<li class="page_item page-item-102"><a href="https://demo2.pavothemes.com/insul/home-3/">Home 3</a></li>
-<li class="page_item page-item-131"><a href="https://demo2.pavothemes.com/insul/icons/">Icons</a></li>
-<li class="page_item page-item-123"><a href="https://demo2.pavothemes.com/insul/our-pricing/">Our Pricing</a></li>
-<li class="page_item page-item-118"><a href="https://demo2.pavothemes.com/insul/our-projects/">Our Projects</a></li>
+<li class="page_item page-item-127"><a href="/faqs-page/">FAQs Page</a></li>
+<li class="page_item page-item-100"><a href="/home-2/">Home 2</a></li>
+<li class="page_item page-item-102"><a href="/home-3/">Home 3</a></li>
+<li class="page_item page-item-131"><a href="/icons/">Icons</a></li>
+<li class="page_item page-item-123"><a href="/our-pricing/">Our Pricing</a></li>
+<li class="page_item page-item-118"><a href="/our-projects/">Our Projects</a></li>
 <li class="page_item page-item-107"><a href="/services/mutual-funds/">Mutual Funds</a></li>
 <li class="page_item page-item-109"><a href="/services/general-insurance/">General Insurance</a></li>
-<li class="page_item page-item-125"><a href="https://demo2.pavothemes.com/insul/our-team/">Our Team</a></li>
-<li class="page_item page-item-2"><a href="https://demo2.pavothemes.com/insul/sample-page/">Sample Page</a></li>
-<li class="page_item page-item-121"><a href="https://demo2.pavothemes.com/insul/testimonial/">Testimonial</a></li>
+<li class="page_item page-item-125"><a href="/our-team/">Our Team</a></li>
+<li class="page_item page-item-2"><a href="/sample-page/">Sample Page</a></li>
+<li class="page_item page-item-121"><a href="/testimonial/">Testimonial</a></li>
 </ul></div>
             </nav>
         </div>
@@ -978,7 +709,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
                 <li class="item">
                     <div class="language-switcher-head">
                         <img
-                                src="https://demo2.pavothemes.com/insul/wp-content/themes/insul/assets/images/language-switcher/en.jpg"
+                                src="/wp-content/themes/insul/assets/images/language-switcher/en.jpg"
                                 alt="WPML">
                     </div>
                 </li>
@@ -986,7 +717,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
                     <div class="language-switcher-img">
                         <a href="#">
                             <img
-                                    src="https://demo2.pavothemes.com/insul/wp-content/themes/insul/assets/images/language-switcher/de.jpg"
+                                    src="/wp-content/themes/insul/assets/images/language-switcher/de.jpg"
                                     alt="WPML">
                         </a>
                     </div>
@@ -995,7 +726,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
                     <div class="language-switcher-img">
                         <a href="#">
                             <img
-                                    src="https://demo2.pavothemes.com/insul/wp-content/themes/insul/assets/images/language-switcher/it.jpg"
+                                    src="/wp-content/themes/insul/assets/images/language-switcher/it.jpg"
                                     alt="WPML">
                         </a>
                     </div>
@@ -1004,7 +735,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
                     <div class="language-switcher-img">
                         <a href="#">
                             <img
-                                    src="https://demo2.pavothemes.com/insul/wp-content/themes/insul/assets/images/language-switcher/hi.jpg"
+                                    src="/wp-content/themes/insul/assets/images/language-switcher/hi.jpg"
                                     alt="WPML">
                         </a>
                     </div>
@@ -1014,7 +745,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
     </div>
     <div class="insul-overlay"></div>
 
-		<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+		<script>
     window.RS_MODULES = window.RS_MODULES || {};
     window.RS_MODULES.modules = window.RS_MODULES.modules || {};
     window.RS_MODULES.waiting = window.RS_MODULES.waiting || [];
@@ -1034,7 +765,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
             </a>
 
             <div class="site-search">
-                <form role="search" method="get" class="search-form" action="https://demo2.pavothemes.com/insul/">
+                <form role="search" method="get" class="search-form" action="/">
                     <label>
                         <span class="screen-reader-text">Search for:</span>
 					<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" />
@@ -1087,71 +818,62 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
     <style id='rs-plugin-settings-inline-css'>
 #rs-demo-id {}
     </style>
-    <script src="https://demo2.pavothemes.com/insul/wp-includes/js/dist/hooks.min.js?ver=4d63a3d491d11ffd8ac6" id="wp-hooks-js"></script>
-    <script src="https://demo2.pavothemes.com/insul/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6" id="wp-i18n-js"></script>
+    <script src="/wp-includes/js/dist/hooks.min.js?ver=4d63a3d491d11ffd8ac6" id="wp-hooks-js"></script>
+    <script src="/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6" id="wp-i18n-js"></script>
     <script id="wp-i18n-js-after">
 wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
     </script>
-    <script src="https://demo2.pavothemes.com/insul/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=6.0.1" id="swv-js"></script>
+    <script src="/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=6.0.1" id="swv-js"></script>
     <script id="contact-form-7-js-before">
     var wpcf7 = {
         "api": {
-            "root": "https:\/\/demo2.pavothemes.com\/insul\/wp-json\/",
+            "root": "\/wp-json\/",
             "namespace": "contact-form-7\/v1"
         }
     };
     </script>
-    <script src="https://demo2.pavothemes.com/insul/wp-content/plugins/contact-form-7/includes/js/index.js?ver=6.0.1" id="contact-form-7-js"></script>
-    <script src="//demo2.pavothemes.com/insul/wp-content/plugins/revslider/sr6/assets/js/rbtools.min.js?ver=6.7.23" defer async id="tp-tools-js"></script>
-    <script src="//demo2.pavothemes.com/insul/wp-content/plugins/revslider/sr6/assets/js/rs6.min.js?ver=6.7.23" defer async id="revmin-js"></script>
-    <script id="rocket-browser-checker-js-after">
-"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
-    </script>
-    <script id="rocket-preload-links-js-extra">
-var RocketPreloadLinksConfig = {"excludeUris":"\/insul(\/(.+\/)?feed\/?.+\/?|\/(?:.+\/)?embed\/|\/(index\\.php\/)?wp\\-json(\/.*|$))|\/wp-admin\/|\/logout\/|\/wp-login.php","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|php|pdf|html|htm","siteUrl":"https:\/\/demo2.pavothemes.com\/insul","onHoverDelay":"100","rateThrottle":"3"};
-    </script>
+    <script src="/wp-content/plugins/contact-form-7/includes/js/index.js?ver=6.0.1" id="contact-form-7-js"></script>
+    <script src="/wp-content/plugins/revslider/sr6/assets/js/rbtools.min.js?ver=6.7.23" defer async id="tp-tools-js"></script>
+    <script src="/wp-content/plugins/revslider/sr6/assets/js/rs6.min.js?ver=6.7.23" defer async id="revmin-js"></script>
     <script id="rocket-preload-links-js-after">
     (function() {
 "use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
     }());
     </script>
-    <script src="https://demo2.pavothemes.com/insul/wp-content/themes/insul/assets/js/libs/jquery.sticky-kit.min.js?ver=1.0.4" id="sticky-kit-js"></script>
-    <script src="https://demo2.pavothemes.com/insul/wp-includes/js/underscore.min.js?ver=1.13.7" id="underscore-js"></script>
+    <script src="/wp-content/themes/insul/assets/js/libs/jquery.sticky-kit.min.js?ver=1.0.4" id="sticky-kit-js"></script>
+    <script src="/wp-includes/js/underscore.min.js?ver=1.13.7" id="underscore-js"></script>
     <script id="wp-util-js-extra">
 var _wpUtilSettings = {"ajax":{"url":"\/insul\/wp-admin\/admin-ajax.php"}};
     </script>
-    <script src="https://demo2.pavothemes.com/insul/wp-includes/js/wp-util.min.js?ver=6.7.1" id="wp-util-js"></script>
-    <script src="https://demo2.pavothemes.com/insul/wp-content/themes/insul/assets/js/libs/swiper.js?ver=1.0.4" id="swiper-js"></script>
+    <script src="/wp-includes/js/wp-util.min.js?ver=6.7.1" id="wp-util-js"></script>
+    <script src="/wp-content/themes/insul/assets/js/libs/swiper.js?ver=1.0.4" id="swiper-js"></script>
     <script id="insul-theme-js-extra">
-var insulAjax = {"ajaxurl":"https:\/\/demo2.pavothemes.com\/insul\/wp-admin\/admin-ajax.php"};
+var insulAjax = {"ajaxurl":"\/wp-admin\/admin-ajax.php"};
     </script>
-    <script src="https://demo2.pavothemes.com/insul/wp-content/themes/insul/assets/js/frontend/main.js?ver=1.0.4" id="insul-theme-js"></script>
-<script src="https://demo2.pavothemes.com/insul/wp-includes/js/imagesloaded.min.js?ver=5.0.0" id="imagesloaded-js"></script>
-    <script src="https://demo2.pavothemes.com/insul/wp-content/themes/insul/assets/js/skip-link-focus-fix.min.js?ver=1.0.4" id="insul-skip-link-focus-fix-js"></script>
-    <script src="https://demo2.pavothemes.com/insul/wp-content/themes/insul/assets/js/frontend/search-popup.js?ver=1.0.4" id="insul-search-popup-js"></script>
-    <script src="https://demo2.pavothemes.com/insul/wp-content/themes/insul/assets/js/frontend/text-editor.js?ver=1.0.4" id="insul-text-editor-js"></script>
-    <script src="https://demo2.pavothemes.com/insul/wp-content/themes/insul/assets/js/frontend/nav-mobile.js?ver=1.0.4" id="insul-nav-mobile-js"></script>
-    <script src="https://demo2.pavothemes.com/insul/wp-content/themes/insul/inc/megamenu/assets/js/frontend.js?ver=1.0.4" id="insul-megamenu-frontend-js"></script>
-    <script src="https://demo2.pavothemes.com/insul/wp-content/themes/insul/assets/js/frontend/login.js?ver=1.0.4" id="insul-ajax-login-js"></script>
-    <script src="https://demo2.pavothemes.com/insul/wp-content/themes/insul/assets/js/libs/TweenMax.min.js?ver=1.11.1" id="tweenmax-js"></script>
-    <script src="https://demo2.pavothemes.com/insul/wp-content/themes/insul/assets/js/libs/jquery-parallax.js?ver=1.0.4" id="parallaxmouse-js"></script>
-    <script src="https://demo2.pavothemes.com/insul/wp-content/themes/insul/assets/js/libs/jquery.magnific-popup.min.js?ver=1.0.4" id="magnific-popup-js"></script>
-    <script defer src="https://demo2.pavothemes.com/insul/wp-content/plugins/mailchimp-for-wp/assets/js/forms.js?ver=4.9.19" id="mc4wp-forms-api-js"></script>
-    <script src="https://demo2.pavothemes.com/insul/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.25.11" id="elementor-webpack-runtime-js"></script>
-    <script src="https://demo2.pavothemes.com/insul/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.25.11" id="elementor-frontend-modules-js"></script>
-    <script src="https://demo2.pavothemes.com/insul/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3" id="jquery-ui-core-js"></script>
+    <script src="/wp-content/themes/insul/assets/js/frontend/main.js?ver=1.0.4" id="insul-theme-js"></script>
+<script src="/wp-includes/js/imagesloaded.min.js?ver=5.0.0" id="imagesloaded-js"></script>
+    <script src="/wp-content/themes/insul/assets/js/skip-link-focus-fix.min.js?ver=1.0.4" id="insul-skip-link-focus-fix-js"></script>
+    <script src="/wp-content/themes/insul/assets/js/frontend/search-popup.js?ver=1.0.4" id="insul-search-popup-js"></script>
+    <script src="/wp-content/themes/insul/assets/js/frontend/text-editor.js?ver=1.0.4" id="insul-text-editor-js"></script>
+    <script src="/wp-content/themes/insul/assets/js/frontend/nav-mobile.js?ver=1.0.4" id="insul-nav-mobile-js"></script>
+    <script src="/wp-content/themes/insul/inc/megamenu/assets/js/frontend.js?ver=1.0.4" id="insul-megamenu-frontend-js"></script>
+    <script src="/wp-content/themes/insul/assets/js/frontend/login.js?ver=1.0.4" id="insul-ajax-login-js"></script>
+    <script src="/wp-content/themes/insul/assets/js/libs/TweenMax.min.js?ver=1.11.1" id="tweenmax-js"></script>
+    <script src="/wp-content/themes/insul/assets/js/libs/jquery-parallax.js?ver=1.0.4" id="parallaxmouse-js"></script>
+    <script src="/wp-content/themes/insul/assets/js/libs/jquery.magnific-popup.min.js?ver=1.0.4" id="magnific-popup-js"></script>
+    <script defer src="/wp-content/plugins/mailchimp-for-wp/assets/js/forms.js?ver=4.9.19" id="mc4wp-forms-api-js"></script>
+    <script src="/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.25.11" id="elementor-webpack-runtime-js"></script>
+    <script src="/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.25.11" id="elementor-frontend-modules-js"></script>
+    <script src="/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3" id="jquery-ui-core-js"></script>
     <script id="elementor-frontend-js-before">
-var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close","a11yCarouselWrapperAriaLabel":"Carousel | Horizontal scrolling: Arrow Left & Right","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":true},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":true},"laptop":{"label":"Laptop","value":1440,"default_value":1366,"direction":"max","is_enabled":true},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}},"hasCustomBreakpoints":true},"version":"3.25.11","is_static":false,"experimentalFeatures":{"additional_custom_breakpoints":true,"container":true,"e_swiper_latest":true,"e_nested_atomic_repeaters":true,"e_optimized_control_loading":true,"e_onboarding":true,"e_css_smooth_scroll":true,"home_screen":true,"landing-pages":true,"nested-elements":true,"editor_v2":true,"link-in-bio":true,"floating-buttons":true},"urls":{"assets":"https:\/\/demo2.pavothemes.com\/insul\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"https:\/\/demo2.pavothemes.com\/insul\/wp-admin\/admin-ajax.php","uploadUrl":"https:\/\/demo2.pavothemes.com\/insul\/wp-content\/uploads"},"nonces":{"floatingButtonsClickTracking":"2418f30110"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_mobile_extra","viewport_tablet","viewport_tablet_extra","viewport_laptop"],"body_background_background":"classic","viewport_laptop":1440,"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":134,"title":"Contact%2001%20%E2%80%93%20Insul","excerpt":"","featuredImage":false}};
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close","a11yCarouselWrapperAriaLabel":"Carousel | Horizontal scrolling: Arrow Left & Right","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":true},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":true},"laptop":{"label":"Laptop","value":1440,"default_value":1366,"direction":"max","is_enabled":true},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}},"hasCustomBreakpoints":true},"version":"3.25.11","is_static":false,"experimentalFeatures":{"additional_custom_breakpoints":true,"container":true,"e_swiper_latest":true,"e_nested_atomic_repeaters":true,"e_optimized_control_loading":true,"e_onboarding":true,"e_css_smooth_scroll":true,"home_screen":true,"landing-pages":true,"nested-elements":true,"editor_v2":true,"link-in-bio":true,"floating-buttons":true},"urls":{"assets":"\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"\/wp-admin\/admin-ajax.php","uploadUrl":"\/wp-content\/uploads"},"nonces":{"floatingButtonsClickTracking":"2418f30110"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_mobile_extra","viewport_tablet","viewport_tablet_extra","viewport_laptop"],"body_background_background":"classic","viewport_laptop":1440,"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":134,"title":"Contact%2001%20%E2%80%93%20Insul","excerpt":"","featuredImage":false}};
     </script>
-    <script src="https://demo2.pavothemes.com/insul/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.25.11" id="elementor-frontend-js"></script>
-    <script src="https://demo2.pavothemes.com/insul/wp-content/themes/insul/assets/js/elementor/animated-headline.js?ver=1.0.4" id="insul-elementor-animated-headline-js"></script>
-    <script src="https://demo2.pavothemes.com/insul/wp-content/themes/insul/assets/js/elementor/slider-scrolling.js?ver=1.0.4" id="insul-elementor-slider-scrolling-js"></script>
-    <script src="https://demo2.pavothemes.com/insul/wp-content/themes/insul/assets/js/elementor-frontend.js?ver=1.0.4" id="insul-elementor-frontend-js"></script>
-    <script src="https://demo2.pavothemes.com/insul/wp-content/themes/insul/assets/js/frontend/jquery-sticky.js?ver=1.0.4" id="elementor-sticky-js"></script>
-    <script src="https://demo2.pavothemes.com/insul/wp-content/themes/insul/assets/js/libs/sticky.js?ver=1.0.4" id="insul-elementor-sticky-js"></script>
-<script>window.lazyLoadOptions={elements_selector:"img[data-lazy-src],.rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}};window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
-if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
-images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
-if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="https://demo2.pavothemes.com/insul/wp-content/plugins/wp-rocket/assets/js/lazyload/16.1/lazyload.min.js"></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"2262db23ef41480dbb281abb8b2626b5","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+    <script src="/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.25.11" id="elementor-frontend-js"></script>
+    <script src="/wp-content/themes/insul/assets/js/elementor/animated-headline.js?ver=1.0.4" id="insul-elementor-animated-headline-js"></script>
+    <script src="/wp-content/themes/insul/assets/js/elementor/slider-scrolling.js?ver=1.0.4" id="insul-elementor-slider-scrolling-js"></script>
+    <script src="/wp-content/themes/insul/assets/js/elementor-frontend.js?ver=1.0.4" id="insul-elementor-frontend-js"></script>
+    <script src="/wp-content/themes/insul/assets/js/frontend/jquery-sticky.js?ver=1.0.4" id="elementor-sticky-js"></script>
+    <script src="/wp-content/themes/insul/assets/js/libs/sticky.js?ver=1.0.4" id="insul-elementor-sticky-js"></script>
+@include('partials.whatsapp-float')
 </body>
 </html>

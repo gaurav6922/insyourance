@@ -9,16 +9,13 @@
 	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 <link rel="dns-prefetch" href="//s.w.org">
-<link rel='dns-prefetch' href='//demo2.pavothemes.com' />
 <link rel='dns-prefetch' href='//fonts.googleapis.com' />
-<link rel="alternate" type="application/rss+xml" title="Insul &raquo; Feed" href="https://demo2.pavothemes.com/insul/feed/" />
-<link rel="alternate" type="application/rss+xml" title="Insul &raquo; Comments Feed" href="https://demo2.pavothemes.com/insul/comments/feed/" />
 <script>
-window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/demo2.pavothemes.com\/insul\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.7.1"}};
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/","svgExt":".svg","source":{"concatemoji":"\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.7.1"}};
 /*! This file is auto-generated */
 !function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83d\udc26\u200d\u2b1b","\ud83d\udc26\u200b\u2b1b")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
 </script>
-<link rel='stylesheet' id='hfe-widgets-style-css' href='https://demo2.pavothemes.com/insul/wp-content/plugins/header-footer-elementor/inc/widgets-css/frontend.css?ver=2.0.3' media='all' />
+<link rel='stylesheet' id='hfe-widgets-style-css' href='/css/frontend.css?ver=2.0.3' media='all' />
 <style id='wp-emoji-styles-inline-css'>
 
 	img.wp-smiley, img.emoji {
@@ -33,7 +30,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 		padding: 0 !important;
 	}
 </style>
-<link rel='stylesheet' id='insul-gutenberg-blocks-css' href='https://demo2.pavothemes.com/insul/wp-content/themes/insul/assets/css/gutenberg-blocks.css?ver=1.0.4' media='all' />
+<link rel='stylesheet' id='insul-gutenberg-blocks-css' href='/css/gutenberg-blocks.css?ver=1.0.4' media='all' />
 <style id='classic-theme-styles-inline-css'>
 /*! This file is auto-generated */
 .wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
@@ -44,9 +41,9 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 :where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
 :root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
 </style>
-<link rel='stylesheet' id='contact-form-7-css' href='https://demo2.pavothemes.com/insul/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=6.0.1' media='all' />
-<link rel='stylesheet' id='-css' href='https://demo2.pavothemes.com/insul/wp-content/plugins/pavo-demo/style.css?ver=6.7.1' media='all' />
-<link rel='stylesheet' id='hfe-style-css' href='https://demo2.pavothemes.com/insul/wp-content/plugins/header-footer-elementor/assets/css/header-footer-elementor.css?ver=2.0.3' media='all' />
+<link rel='stylesheet' id='contact-form-7-css' href='/css/contact-form-7.css?ver=6.0.1' media='all' />
+<link rel='stylesheet' id='-css' href='/css/pavo-demo.css?ver=6.7.1' media='all' />
+<link rel='stylesheet' id='hfe-style-css' href='/css/header-footer-elementor.css?ver=2.0.3' media='all' />
 <link rel='stylesheet' id='elementor-icons-css' href='/css/elementor-icons.min.css' media='all' />
 <link rel='stylesheet' id='elementor-frontend-css' href='/css/custom-frontend.min.css' media='all' />
 <link rel='stylesheet' id='swiper-css' href='/css/swiper.min.css' media='all' />
@@ -60,7 +57,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 <link rel='stylesheet' id='elementor-post-3494-css' href='/css/post-3494.css' media='all' />
 <link rel='stylesheet' id='insul-fonts-css' href='//fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&#038;family=Sora:wght@100..800&#038;subset=latin%2Clatin-ext&#038;display=swap' media='all' />
 <link rel='stylesheet' id='insul-icon-css' href='/css/icons.css' media='all' />
-<link rel='stylesheet' id='insul-style-css' href='https://demo2.pavothemes.com/insul/wp-content/themes/insul/style.css?ver=1.0.4' media='all' />
+<link rel='stylesheet' id='insul-style-css' href='/wp-content/themes/insul/style.css?ver=1.0.4' media='all' />
 <style id='insul-style-inline-css'>
 .col-full{max-width: 1410px}body { --e-global-container-width: 1410px}.e-con { --container-max-width: 1410px}
 </style>
@@ -71,20 +68,16 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 <link rel='stylesheet' id='hfe-social-share-icons-brands-css' href='/css/brands.css' media='all' />
 <link rel='stylesheet' id='hfe-social-share-icons-fontawesome-css' href='/css/fontawesome.css' media='all' />
 <link rel='stylesheet' id='hfe-nav-menu-icons-css' href='/css/solid.css' media='all' />
-<link rel='stylesheet' id='insul-child-style-css' href='https://demo2.pavothemes.com/insul/wp-content/themes/demo-child/style.css?ver=1.0.0' media='all' />
+<link rel='stylesheet' id='insul-child-style-css' href='/css/demo-child.css?ver=1.0.0' media='all' />
 <link rel='stylesheet' id='google-fonts-1-css' href='https://fonts.googleapis.com/css?family=DM+Sans%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CSora%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap&#038;ver=6.7.1' media='all' />
-<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin><script src="https://demo2.pavothemes.com/insul/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
-<script src="https://demo2.pavothemes.com/insul/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin><script src="/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
 <script id="jquery-js-after">
 !function($){"use strict";$(document).ready(function(){$(this).scrollTop()>100&&$(".hfe-scroll-to-top-wrap").removeClass("hfe-scroll-to-top-hide"),$(window).scroll(function(){$(this).scrollTop()<100?$(".hfe-scroll-to-top-wrap").fadeOut(300):$(".hfe-scroll-to-top-wrap").fadeIn(300)}),$(".hfe-scroll-to-top-wrap").on("click",function(){$("html, body").animate({scrollTop:0},300);return!1})})}(jQuery);
 </script>
-<script src="https://demo2.pavothemes.com/insul/wp-content/themes/insul/assets/js/libs/jarallax.js?ver=6.7.1" id="jarallax-js"></script>
-<link rel="https://api.w.org/" href="https://demo2.pavothemes.com/insul/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://demo2.pavothemes.com/insul/wp-json/wp/v2/pages/127" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://demo2.pavothemes.com/insul/xmlrpc.php?rsd" />
-<meta name="generator" content="WordPress 6.7.1" />
-<link rel="canonical" href="https://demo2.pavothemes.com/insul/faqs-page/" />
-<link rel='shortlink' href='https://demo2.pavothemes.com/insul/?p=127' />
-<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://demo2.pavothemes.com/insul/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdemo2.pavothemes.com%2Finsul%2Ffaqs-page%2F" />
-<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://demo2.pavothemes.com/insul/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdemo2.pavothemes.com%2Finsul%2Ffaqs-page%2F&#038;format=xml" />
+<script src="/wp-content/themes/insul/assets/js/libs/jarallax.js?ver=6.7.1" id="jarallax-js"></script>
+<link rel="canonical" href="/faqs-page/" />
+<link rel='shortlink' href='/?p=127' />
 <meta name="generator" content="Elementor 3.25.11; features: additional_custom_breakpoints, e_optimized_control_loading; settings: css_print_method-external, google_font-enabled, font_display-swap">
 			<style>
 				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),

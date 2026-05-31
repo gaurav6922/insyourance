@@ -27,56 +27,1053 @@
 	        }
 	    </style>
 	    <style>
-	        /* Home slider: hide the person image on mobile */
-	        @media screen and (max-width: 767.98px) {
-	            rs-layer#slider-1-slide-1-layer-13,
-	            rs-layer#slider-1-slide-1-layer-13 img,
-	            img.tp-rs-img.rs-lazyload[data-lazyload*="img-sl1-person-min.png"],
-	            rs-layer#slider-1-slide-1-layer-21,
-	            rs-layer#slider-1-slide-1-layer-21 img,
-	            img.tp-rs-img.rs-lazyload[data-lazyload*="/2024/04/line.svg"] {
-	                display: none !important;
+	        /* Minimal home hero */
+	        .home-hero-minimal {
+	            position: relative;
+	            background: url('/wp-content/uploads/2024/04/bg-sl1-min-scaled.jpeg') center center / cover no-repeat;
+	            padding: 180px 24px 80px;
+	            text-align: center;
+	            overflow: hidden;
+	        }
+	        .home-hero-minimal::before {
+	            content: '';
+	            position: absolute;
+	            inset: 0;
+	            background: rgba(255, 255, 255, 0.85);
+	            z-index: 0;
+	        }
+	        .home-hero-minimal::after {
+	            content: '';
+	            position: absolute;
+	            inset: 0;
+	            background:
+	                radial-gradient(ellipse at 15% 25%, rgba(156, 235, 252, 0.25) 0%, transparent 70%),
+	                radial-gradient(ellipse at 85% 15%, rgba(255, 144, 244, 0.35) 0%, transparent 55%),
+	                radial-gradient(ellipse at 25% 85%, rgba(69, 38, 255, 0.2) 0%, transparent 70%);
+	            z-index: 0;
+	        }
+	        .home-hero-minimal__inner {
+	            position: relative;
+	            z-index: 1;
+	            max-width: 720px;
+	            margin: 0 auto;
+	        }
+	        .home-hero-minimal__title {
+	            font-family: 'Sora', sans-serif;
+	            font-size: clamp(2.25rem, 5vw, 3.75rem);
+	            font-weight: 600;
+	            line-height: 1.15;
+	            color: #212121;
+	            margin: 0 0 24px;
+	            letter-spacing: -0.02em;
+	        }
+	        .home-hero-minimal__subtitle {
+	            font-family: 'DM Sans', sans-serif;
+	            font-size: clamp(1rem, 2vw, 1.25rem);
+	            line-height: 1.65;
+	            color: #444;
+	            margin: 0 auto 40px;
+	            max-width: 580px;
+	        }
+	        .home-hero-minimal__actions {
+	            display: flex;
+	            flex-wrap: wrap;
+	            align-items: center;
+	            justify-content: center;
+	            gap: 16px;
+	            margin-bottom: 36px;
+	        }
+	        .home-hero-minimal__btn {
+	            display: inline-flex;
+	            align-items: center;
+	            justify-content: center;
+	            gap: 8px;
+	            font-family: 'DM Sans', sans-serif;
+	            font-size: 14px;
+	            font-weight: 700;
+	            letter-spacing: 0.05em;
+	            text-transform: uppercase;
+	            text-decoration: none;
+	            border-radius: 30px;
+	            padding: 16px 32px;
+	            transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+	        }
+	        .home-hero-minimal__btn--primary {
+	            background-color: #1351D8;
+	            color: #fff;
+	            border: 2px solid #1351D8;
+	        }
+	        .home-hero-minimal__btn--primary:hover {
+	            background-color: #0f42b0;
+	            border-color: #0f42b0;
+	            color: #fff;
+	        }
+	        .home-hero-minimal__btn--secondary {
+	            background-color: transparent;
+	            color: #1351D8;
+	            border: 2px solid #1351D8;
+	        }
+	        .home-hero-minimal__btn--secondary:hover {
+	            background-color: #1351D8;
+	            color: #fff;
+	        }
+	        .home-hero-minimal__proof {
+	            display: inline-flex;
+	            align-items: center;
+	            gap: 12px;
+	        }
+	        .home-hero-minimal__proof img {
+	            height: 40px;
+	            width: auto;
+	        }
+	        .home-hero-minimal__proof span {
+	            font-family: 'DM Sans', sans-serif;
+	            font-size: 15px;
+	            font-weight: 500;
+	            color: #212121;
+	        }
+	        @media (max-width: 767px) {
+	            .home-hero-minimal {
+	                padding: 130px 20px 56px;
+	            }
+	            .home-hero-minimal__actions {
+	                flex-direction: column;
+	                width: 100%;
+	            }
+	            .home-hero-minimal__btn {
+	                width: 100%;
+	                max-width: 280px;
 	            }
 	        }
 	    </style>
 	    <style>
-	        /* Fix footer blank vertical space */
-	    /* Remove artificial height from footer */
-	#colophon .e-con.e-parent {
-	  min-height: unset !important;
-  height: auto !important;
-}
-
-/* Ensure footer content starts from top */
-#colophon .e-con-inner {
-  align-items: flex-start !important;
-}
-
-
-/* Remove extra bottom margin on last widgets */
-#colophon .elementor-widget:last-child {
-  margin-bottom: 0 !important;
-}
-/* Divider height aligned to content */
-#colophon .e-con.e-child::after {
-  height: 600%;
-  top: 20%;
-}
-
-/* No divider after last column */
-#colophon .e-con.e-child:last-child::after {
-  display: none;
-}
-@media (max-width: 1024px) {
-  #colophon .e-con-inner {
-    gap: 40px;
-  }
-
-  #colophon .e-con.e-child::after {
-    display: none;
-  }
-}
-    
+	        /* Home services section */
+	        .home-services {
+	            position: relative;
+	            padding: 80px 24px 100px;
+	            background: #fff;
+	            overflow: hidden;
+	        }
+	        .home-services::before {
+	            content: '';
+	            position: absolute;
+	            top: -120px;
+	            right: -80px;
+	            width: 420px;
+	            height: 420px;
+	            background: radial-gradient(circle, rgba(156, 235, 252, 0.35) 0%, transparent 70%);
+	            pointer-events: none;
+	        }
+	        .home-services__inner {
+	            position: relative;
+	            z-index: 1;
+	            max-width: 1100px;
+	            margin: 0 auto;
+	        }
+	        .home-services__header {
+	            margin-bottom: 48px;
+	            max-width: 720px;
+	        }
+	        .home-services__eyebrow {
+	            display: inline-flex;
+	            align-items: center;
+	            gap: 8px;
+	            font-family: 'DM Sans', sans-serif;
+	            font-size: 13px;
+	            font-weight: 700;
+	            letter-spacing: 0.12em;
+	            text-transform: uppercase;
+	            color: #1351D8;
+	            margin: 0 0 16px;
+	        }
+	        .home-services__eyebrow::before {
+	            content: '';
+	            width: 6px;
+	            height: 6px;
+	            border-radius: 50%;
+	            background: #1351D8;
+	        }
+	        .home-services__title {
+	            font-family: 'Sora', sans-serif;
+	            font-size: clamp(1.75rem, 4vw, 2.75rem);
+	            font-weight: 600;
+	            line-height: 1.2;
+	            color: #212121;
+	            margin: 0;
+	            letter-spacing: -0.02em;
+	        }
+	        .home-services__highlight {
+	            position: relative;
+	            display: inline;
+	        }
+	        .home-services__highlight::after {
+	            content: '';
+	            position: absolute;
+	            left: 0;
+	            right: 0;
+	            bottom: 2px;
+	            height: 10px;
+	            background: linear-gradient(90deg, rgba(19, 81, 216, 0.25), rgba(19, 81, 216, 0.5));
+	            border-radius: 4px;
+	            z-index: -1;
+	        }
+	        .home-services__grid {
+	            display: grid;
+	            grid-template-columns: repeat(3, 1fr);
+	            gap: 24px;
+	            list-style: none;
+	            margin: 0;
+	            padding: 0;
+	        }
+	        .home-services__box {
+	            display: flex;
+	            flex-direction: column;
+	            min-height: 320px;
+	            padding: 32px 28px 28px;
+	            border: 1px solid #e8e8e8;
+	            border-radius: 16px;
+	            background: #fff;
+	            text-decoration: none;
+	            color: inherit;
+	            transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+	        }
+	        .home-services__box:hover {
+	            border-color: #1351D8;
+	            box-shadow: 0 12px 40px rgba(19, 81, 216, 0.12);
+	            transform: translateY(-4px);
+	        }
+	        .home-services__num {
+	            font-family: 'DM Sans', sans-serif;
+	            font-size: 0.875rem;
+	            font-weight: 700;
+	            letter-spacing: 0.08em;
+	            color: #1351D8;
+	            margin: 0 0 20px;
+	        }
+	        .home-services__name {
+	            font-family: 'Sora', sans-serif;
+	            font-size: 1.375rem;
+	            font-weight: 600;
+	            line-height: 1.3;
+	            color: #212121;
+	            margin: 0 0 16px;
+	        }
+	        .home-services__desc {
+	            font-family: 'DM Sans', sans-serif;
+	            font-size: 0.9375rem;
+	            line-height: 1.65;
+	            color: #666;
+	            margin: 0;
+	            flex: 1;
+	        }
+	        .home-services__footer {
+	            display: flex;
+	            align-items: center;
+	            justify-content: space-between;
+	            margin-top: 28px;
+	            padding-top: 24px;
+	            border-top: 1px solid #eee;
+	        }
+	        .home-services__cta-text {
+	            font-family: 'DM Sans', sans-serif;
+	            font-size: 14px;
+	            font-weight: 700;
+	            letter-spacing: 0.04em;
+	            text-transform: uppercase;
+	            color: #1351D8;
+	        }
+	        .home-services__icon {
+	            display: inline-flex;
+	            align-items: center;
+	            justify-content: center;
+	            width: 44px;
+	            height: 44px;
+	            border-radius: 999px;
+	            background: #1351D8;
+	            color: #fff;
+	            transition: transform 0.2s;
+	        }
+	        .home-services__box:hover .home-services__icon {
+	            transform: translate(2px, -2px);
+	        }
+	        .home-services__icon svg {
+	            width: 18px;
+	            height: 18px;
+	        }
+	        @media (max-width: 991px) {
+	            .home-services__grid {
+	                grid-template-columns: 1fr;
+	                gap: 20px;
+	            }
+	            .home-services__box {
+	                min-height: 0;
+	            }
+	        }
+	        @media (max-width: 767px) {
+	            .home-services {
+	                padding: 56px 20px 72px;
+	            }
+	            .home-services__header {
+	                margin-bottom: 32px;
+	            }
+	        }
+	    </style>
+	    <style>
+	        /* Home about / who we are */
+	        .home-about {
+	            padding: 80px 24px 100px;
+	            background: #fff;
+	        }
+	        .home-about__inner {
+	            max-width: 1100px;
+	            margin: 0 auto;
+	        }
+	        .home-about__top {
+	            display: grid;
+	            grid-template-columns: 1fr 1fr;
+	            gap: 48px 64px;
+	            align-items: start;
+	            margin-bottom: 64px;
+	        }
+	        .home-about__eyebrow {
+	            display: inline-flex;
+	            align-items: center;
+	            gap: 8px;
+	            font-family: 'DM Sans', sans-serif;
+	            font-size: 13px;
+	            font-weight: 700;
+	            letter-spacing: 0.12em;
+	            text-transform: uppercase;
+	            color: #1351D8;
+	            margin: 0 0 16px;
+	        }
+	        .home-about__eyebrow::before {
+	            content: '';
+	            width: 6px;
+	            height: 6px;
+	            border-radius: 50%;
+	            background: #1351D8;
+	        }
+	        .home-about__title {
+	            font-family: 'Sora', sans-serif;
+	            font-size: clamp(1.75rem, 4vw, 2.75rem);
+	            font-weight: 600;
+	            line-height: 1.2;
+	            color: #212121;
+	            margin: 0;
+	            letter-spacing: -0.02em;
+	        }
+	        .home-about__highlight {
+	            position: relative;
+	            display: inline;
+	        }
+	        .home-about__highlight::after {
+	            content: '';
+	            position: absolute;
+	            left: 0;
+	            right: 0;
+	            bottom: 2px;
+	            height: 10px;
+	            background: linear-gradient(90deg, rgba(19, 81, 216, 0.25), rgba(19, 81, 216, 0.5));
+	            border-radius: 4px;
+	            z-index: -1;
+	        }
+	        .home-about__intro {
+	            display: flex;
+	            flex-direction: column;
+	            justify-content: center;
+	            gap: 24px;
+	            padding-top: 32px;
+	        }
+	        .home-about__intro p {
+	            font-family: 'DM Sans', sans-serif;
+	            font-size: 1.0625rem;
+	            line-height: 1.7;
+	            color: #666;
+	            margin: 0;
+	        }
+	        .home-about__link {
+	            display: inline-flex;
+	            align-items: center;
+	            gap: 8px;
+	            font-family: 'DM Sans', sans-serif;
+	            font-size: 14px;
+	            font-weight: 700;
+	            letter-spacing: 0.04em;
+	            text-transform: uppercase;
+	            color: #1351D8;
+	            text-decoration: none;
+	            transition: gap 0.2s;
+	        }
+	        .home-about__link:hover {
+	            gap: 12px;
+	        }
+	        .home-about__link svg {
+	            width: 16px;
+	            height: 16px;
+	        }
+	        .home-about__stats {
+	            display: grid;
+	            grid-template-columns: repeat(3, 1fr);
+	            gap: 0;
+	            border-top: 1px solid #eee;
+	        }
+	        .home-about__stat {
+	            padding: 40px 32px 0 0;
+	        }
+	        .home-about__stat + .home-about__stat {
+	            padding-left: 32px;
+	            border-left: 1px solid #eee;
+	        }
+	        .home-about__stat-label {
+	            font-family: 'DM Sans', sans-serif;
+	            font-size: 13px;
+	            font-weight: 700;
+	            letter-spacing: 0.06em;
+	            text-transform: uppercase;
+	            color: #212121;
+	            margin: 0 0 12px;
+	        }
+	        .home-about__stat-value {
+	            font-family: 'Sora', sans-serif;
+	            font-size: clamp(2rem, 4vw, 2.75rem);
+	            font-weight: 600;
+	            line-height: 1;
+	            color: #1351D8;
+	            margin: 0 0 16px;
+	            letter-spacing: -0.02em;
+	        }
+	        .home-about__stat-desc {
+	            font-family: 'DM Sans', sans-serif;
+	            font-size: 0.9375rem;
+	            line-height: 1.65;
+	            color: #666;
+	            margin: 0;
+	        }
+	        @media (max-width: 991px) {
+	            .home-about__top {
+	                grid-template-columns: 1fr;
+	                gap: 24px;
+	                margin-bottom: 48px;
+	            }
+	            .home-about__intro {
+	                padding-top: 0;
+	            }
+	            .home-about__stats {
+	                grid-template-columns: 1fr;
+	                gap: 32px;
+	            }
+	            .home-about__stat {
+	                padding: 32px 0 0;
+	                border-top: 1px solid #eee;
+	            }
+	            .home-about__stat:first-child {
+	                border-top: none;
+	                padding-top: 0;
+	            }
+	            .home-about__stat + .home-about__stat {
+	                padding-left: 0;
+	                border-left: none;
+	            }
+	        }
+	        @media (max-width: 767px) {
+	            .home-about {
+	                padding: 56px 20px 72px;
+	            }
+	        }
+	    </style>
+	    <style>
+	        /* Home expert guidance */
+	        .home-guidance {
+	            padding: 80px 24px 100px;
+	            background: #fafafa;
+	        }
+	        .home-guidance__inner {
+	            max-width: 1100px;
+	            margin: 0 auto;
+	            display: grid;
+	            grid-template-columns: 1fr 1fr;
+	            gap: 64px;
+	            align-items: center;
+	        }
+	        .home-guidance__eyebrow {
+	            display: inline-flex;
+	            align-items: center;
+	            gap: 8px;
+	            font-family: 'DM Sans', sans-serif;
+	            font-size: 13px;
+	            font-weight: 700;
+	            letter-spacing: 0.12em;
+	            text-transform: uppercase;
+	            color: #1351D8;
+	            margin: 0 0 16px;
+	        }
+	        .home-guidance__eyebrow::before {
+	            content: '';
+	            width: 6px;
+	            height: 6px;
+	            border-radius: 50%;
+	            background: #1351D8;
+	        }
+	        .home-guidance__title {
+	            font-family: 'Sora', sans-serif;
+	            font-size: clamp(1.75rem, 4vw, 2.75rem);
+	            font-weight: 600;
+	            line-height: 1.2;
+	            color: #212121;
+	            margin: 0 0 24px;
+	            letter-spacing: -0.02em;
+	        }
+	        .home-guidance__highlight {
+	            position: relative;
+	            display: inline;
+	        }
+	        .home-guidance__highlight::after {
+	            content: '';
+	            position: absolute;
+	            left: 0;
+	            right: 0;
+	            bottom: 2px;
+	            height: 10px;
+	            background: linear-gradient(90deg, rgba(19, 81, 216, 0.25), rgba(19, 81, 216, 0.5));
+	            border-radius: 4px;
+	            z-index: -1;
+	        }
+	        .home-guidance__text {
+	            font-family: 'DM Sans', sans-serif;
+	            font-size: 1.0625rem;
+	            line-height: 1.7;
+	            color: #666;
+	            margin: 0 0 32px;
+	        }
+	        .home-guidance__btn {
+	            display: inline-flex;
+	            align-items: center;
+	            justify-content: center;
+	            gap: 8px;
+	            font-family: 'DM Sans', sans-serif;
+	            font-size: 14px;
+	            font-weight: 700;
+	            letter-spacing: 0.05em;
+	            text-transform: uppercase;
+	            text-decoration: none;
+	            border-radius: 30px;
+	            padding: 16px 32px;
+	            background-color: #1351D8;
+	            color: #fff;
+	            border: 2px solid #1351D8;
+	            transition: background-color 0.2s, border-color 0.2s;
+	        }
+	        .home-guidance__btn:hover {
+	            background-color: #0f42b0;
+	            border-color: #0f42b0;
+	            color: #fff;
+	        }
+	        .home-guidance__btn svg {
+	            width: 16px;
+	            height: 16px;
+	        }
+	        .home-guidance__visual {
+	            display: flex;
+	            flex-direction: column;
+	            gap: 24px;
+	        }
+	        .home-guidance__image-wrap {
+	            position: relative;
+	            border-radius: 16px;
+	            overflow: hidden;
+	            aspect-ratio: 4 / 3;
+	        }
+	        .home-guidance__image-wrap img {
+	            width: 100%;
+	            height: 100%;
+	            object-fit: cover;
+	            display: block;
+	        }
+	        .home-guidance__points {
+	            list-style: none;
+	            margin: 0;
+	            padding: 0;
+	            display: flex;
+	            flex-direction: column;
+	            gap: 12px;
+	        }
+	        .home-guidance__point {
+	            display: flex;
+	            align-items: flex-start;
+	            gap: 12px;
+	            font-family: 'DM Sans', sans-serif;
+	            font-size: 0.9375rem;
+	            line-height: 1.5;
+	            color: #444;
+	            padding: 14px 16px;
+	            background: #fff;
+	            border: 1px solid #eee;
+	            border-radius: 10px;
+	        }
+	        .home-guidance__point-icon {
+	            flex-shrink: 0;
+	            display: inline-flex;
+	            align-items: center;
+	            justify-content: center;
+	            width: 22px;
+	            height: 22px;
+	            border-radius: 50%;
+	            background: #1351D8;
+	            color: #fff;
+	            margin-top: 1px;
+	        }
+	        .home-guidance__point-icon svg {
+	            width: 12px;
+	            height: 12px;
+	        }
+	        @media (max-width: 991px) {
+	            .home-guidance__inner {
+	                grid-template-columns: 1fr;
+	                gap: 40px;
+	            }
+	            .home-guidance__visual {
+	                order: -1;
+	            }
+	        }
+	        @media (max-width: 767px) {
+	            .home-guidance {
+	                padding: 56px 20px 72px;
+	            }
+	        }
+	    </style>
+	    <style>
+	        /* Home why choose us */
+	        .home-why {
+	            position: relative;
+	            padding: 80px 24px 100px;
+	            background: #fff;
+	            overflow: hidden;
+	        }
+	        .home-why::before {
+	            content: '';
+	            position: absolute;
+	            top: -120px;
+	            right: -80px;
+	            width: 420px;
+	            height: 420px;
+	            background: radial-gradient(circle, rgba(156, 235, 252, 0.35) 0%, transparent 70%);
+	            pointer-events: none;
+	        }
+	        .home-why__inner {
+	            position: relative;
+	            z-index: 1;
+	            max-width: 1100px;
+	            margin: 0 auto;
+	        }
+	        .home-why__header {
+	            max-width: 720px;
+	            margin-bottom: 48px;
+	        }
+	        .home-why__eyebrow {
+	            display: inline-flex;
+	            align-items: center;
+	            gap: 8px;
+	            font-family: 'DM Sans', sans-serif;
+	            font-size: 13px;
+	            font-weight: 700;
+	            letter-spacing: 0.12em;
+	            text-transform: uppercase;
+	            color: #1351D8;
+	            margin: 0 0 16px;
+	        }
+	        .home-why__eyebrow::before {
+	            content: '';
+	            width: 6px;
+	            height: 6px;
+	            border-radius: 50%;
+	            background: #1351D8;
+	        }
+	        .home-why__title {
+	            font-family: 'Sora', sans-serif;
+	            font-size: clamp(1.75rem, 4vw, 2.75rem);
+	            font-weight: 600;
+	            line-height: 1.2;
+	            color: #212121;
+	            margin: 0 0 20px;
+	            letter-spacing: -0.02em;
+	        }
+	        .home-why__highlight {
+	            position: relative;
+	            display: inline;
+	        }
+	        .home-why__highlight::after {
+	            content: '';
+	            position: absolute;
+	            left: 0;
+	            right: 0;
+	            bottom: 2px;
+	            height: 10px;
+	            background: linear-gradient(90deg, rgba(19, 81, 216, 0.25), rgba(19, 81, 216, 0.5));
+	            border-radius: 4px;
+	            z-index: -1;
+	        }
+	        .home-why__intro {
+	            font-family: 'DM Sans', sans-serif;
+	            font-size: 1.0625rem;
+	            line-height: 1.7;
+	            color: #666;
+	            margin: 0;
+	        }
+	        .home-why__pillars {
+	            display: grid;
+	            grid-template-columns: repeat(4, 1fr);
+	            gap: 20px;
+	            list-style: none;
+	            margin: 0 0 48px;
+	            padding: 0;
+	        }
+	        .home-why__pillar {
+	            display: flex;
+	            flex-direction: column;
+	            gap: 14px;
+	            padding: 24px 20px;
+	            background: #fff;
+	            border: 1px solid #e8e8e8;
+	            border-radius: 16px;
+	            font-family: 'DM Sans', sans-serif;
+	            font-size: 0.9375rem;
+	            font-weight: 600;
+	            line-height: 1.45;
+	            color: #212121;
+	            transition: border-color 0.2s, box-shadow 0.2s;
+	        }
+	        .home-why__pillar:hover {
+	            border-color: #1351D8;
+	            box-shadow: 0 8px 32px rgba(19, 81, 216, 0.08);
+	        }
+	        .home-why__pillar-icon {
+	            display: inline-flex;
+	            align-items: center;
+	            justify-content: center;
+	            width: 44px;
+	            height: 44px;
+	            border-radius: 999px;
+	            background: #1351D8;
+	            color: #fff;
+	            flex-shrink: 0;
+	        }
+	        .home-why__pillar-icon svg {
+	            width: 18px;
+	            height: 18px;
+	        }
+	        .home-why__grid {
+	            display: grid;
+	            grid-template-columns: 1fr 1fr;
+	            gap: 24px;
+	            margin-bottom: 48px;
+	        }
+	        .home-why__panel {
+	            padding: 32px 28px;
+	            border: 1px solid #e8e8e8;
+	            border-radius: 16px;
+	            background: #fff;
+	            transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+	        }
+	        .home-why__panel:hover {
+	            border-color: #1351D8;
+	            box-shadow: 0 12px 40px rgba(19, 81, 216, 0.12);
+	            transform: translateY(-4px);
+	        }
+	        .home-why__panel-head {
+	            display: flex;
+	            align-items: center;
+	            gap: 14px;
+	            margin-bottom: 24px;
+	        }
+	        .home-why__panel-icon {
+	            display: inline-flex;
+	            align-items: center;
+	            justify-content: center;
+	            width: 44px;
+	            height: 44px;
+	            border-radius: 999px;
+	            background: #1351D8;
+	            color: #fff;
+	            flex-shrink: 0;
+	        }
+	        .home-why__panel-icon svg {
+	            width: 18px;
+	            height: 18px;
+	        }
+	        .home-why__panel-title {
+	            font-family: 'Sora', sans-serif;
+	            font-size: 1.25rem;
+	            font-weight: 600;
+	            color: #212121;
+	            margin: 0;
+	        }
+	        .home-why__quote {
+	            font-family: 'DM Sans', sans-serif;
+	            font-size: 1rem;
+	            font-weight: 600;
+	            font-style: italic;
+	            line-height: 1.6;
+	            color: #212121;
+	            margin: 0 0 20px;
+	            padding-left: 16px;
+	            border-left: 3px solid #1351D8;
+	        }
+	        .home-why__panel p {
+	            font-family: 'DM Sans', sans-serif;
+	            font-size: 0.9375rem;
+	            line-height: 1.65;
+	            color: #666;
+	            margin: 0 0 16px;
+	        }
+	        .home-why__panel p:last-child {
+	            margin-bottom: 0;
+	        }
+	        .home-why__tags {
+	            display: flex;
+	            flex-wrap: wrap;
+	            gap: 8px;
+	            list-style: none;
+	            margin: 24px 0 0;
+	            padding: 0;
+	        }
+	        .home-why__tag {
+	            font-family: 'DM Sans', sans-serif;
+	            font-size: 0.75rem;
+	            font-weight: 700;
+	            letter-spacing: 0.06em;
+	            text-transform: uppercase;
+	            color: #1351D8;
+	            padding: 6px 12px;
+	            background: #fff;
+	            border: 1px solid #e8e8e8;
+	            border-radius: 6px;
+	        }
+	        .home-why__mv {
+	            display: flex;
+	            flex-direction: column;
+	            gap: 24px;
+	        }
+	        .home-why__mv-block {
+	            padding-top: 24px;
+	            border-top: 1px solid #eee;
+	        }
+	        .home-why__mv-block:first-child {
+	            padding-top: 0;
+	            border-top: none;
+	        }
+	        .home-why__mv-heading {
+	            font-family: 'Sora', sans-serif;
+	            font-size: 1rem;
+	            font-weight: 600;
+	            color: #212121;
+	            margin: 0 0 10px;
+	        }
+	        .home-why__mv-block p {
+	            margin: 0;
+	        }
+	        .home-why__cta-wrap {
+	            display: flex;
+	            align-items: center;
+	            justify-content: space-between;
+	            gap: 24px;
+	            padding-top: 48px;
+	            border-top: 1px solid #eee;
+	        }
+	        .home-why__cta-text {
+	            font-family: 'DM Sans', sans-serif;
+	            font-size: 1rem;
+	            line-height: 1.65;
+	            color: #666;
+	            margin: 0;
+	            max-width: 560px;
+	        }
+	        .home-why__cta-text strong {
+	            display: block;
+	            font-family: 'Sora', sans-serif;
+	            font-size: 1.125rem;
+	            font-weight: 600;
+	            color: #212121;
+	            margin-bottom: 6px;
+	        }
+	        .home-why__btn {
+	            display: inline-flex;
+	            align-items: center;
+	            justify-content: center;
+	            gap: 8px;
+	            font-family: 'DM Sans', sans-serif;
+	            font-size: 14px;
+	            font-weight: 700;
+	            letter-spacing: 0.05em;
+	            text-transform: uppercase;
+	            text-decoration: none;
+	            border-radius: 30px;
+	            padding: 16px 32px;
+	            background-color: #1351D8;
+	            color: #fff;
+	            border: 2px solid #1351D8;
+	            white-space: nowrap;
+	            flex-shrink: 0;
+	            transition: background-color 0.2s, border-color 0.2s;
+	        }
+	        .home-why__btn:hover {
+	            background-color: #0f42b0;
+	            border-color: #0f42b0;
+	            color: #fff;
+	        }
+	        .home-why__btn svg {
+	            width: 16px;
+	            height: 16px;
+	        }
+	        @media (max-width: 991px) {
+	            .home-why__pillars {
+	                grid-template-columns: repeat(2, 1fr);
+	            }
+	            .home-why__grid {
+	                grid-template-columns: 1fr;
+	            }
+	            .home-why__cta-wrap {
+	                flex-direction: column;
+	                align-items: flex-start;
+	            }
+	        }
+	        @media (max-width: 767px) {
+	            .home-why {
+	                padding: 56px 20px 72px;
+	            }
+	            .home-why__header {
+	                margin-bottom: 32px;
+	            }
+	            .home-why__pillars {
+	                grid-template-columns: 1fr;
+	                margin-bottom: 32px;
+	            }
+	        }
+	    </style>
+	    <style>
+	        /* Home testimonial carousel — edge arrows outside full-bleed track */
+	        .home-testimonials-outer {
+	            display: flex;
+	            align-items: center;
+	            gap: 12px;
+	            width: 100%;
+	            padding: 0 24px;
+	            box-sizing: border-box;
+	        }
+	        .home-testimonials-outer > .elementor-element-c449d47 {
+	            flex: 1;
+	            min-width: 0;
+	        }
+	        .home-testimonials-nav__btn {
+	            flex-shrink: 0;
+	            display: inline-flex;
+	            align-items: center;
+	            justify-content: center;
+	            width: 48px;
+	            height: 48px;
+	            border: none;
+	            border-radius: 50%;
+	            background: #1351D8;
+	            color: #fff;
+	            box-shadow: 0 4px 20px rgba(19, 81, 216, 0.25);
+	            cursor: pointer;
+	            z-index: 10;
+	            transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+	        }
+	        .home-testimonials-nav__btn:hover {
+	            background: #0f42b0;
+	            color: #fff;
+	            box-shadow: 0 6px 24px rgba(19, 81, 216, 0.35);
+	        }
+	        .home-testimonials-nav__btn i {
+	            font-size: 20px;
+	            line-height: 1;
+	            color: inherit;
+	        }
+	        .elementor-element.elementor-element-a840e06,
+	        .elementor-element.elementor-element-c449d47,
+	        .elementor-element.elementor-element-c449d47 > .elementor-widget-container {
+	            overflow: visible !important;
+	        }
+	        .elementor-element.elementor-element-c449d47 > .elementor-widget-container {
+	            margin: 0 !important;
+	        }
+	        @media (max-width: 1199px) {
+	            .home-testimonials-outer {
+	                display: block;
+	                padding: 0 20px;
+	            }
+	            .home-testimonials-outer > .elementor-element-c449d47 {
+	                width: 100%;
+	            }
+	            .home-testimonials-nav__btn {
+	                display: none !important;
+	            }
+	            .elementor-element.elementor-element-c449d47 {
+	                --e-global-column-to-show: 2;
+	                --grid-column-gap: 20px;
+	            }
+	        }
+	        @media (max-width: 880px) {
+	            .elementor-element.elementor-element-c449d47 {
+	                --e-global-column-to-show: 1;
+	                --grid-column-gap: 16px;
+	            }
+	        }
+	        @media (max-width: 767px) {
+	            .elementor-element.elementor-element-a840e06 {
+	                padding-left: 15px !important;
+	                padding-right: 15px !important;
+	                padding-bottom: 60px !important;
+	            }
+	            .elementor-element.elementor-element-85e6ba9 .elementor-headline {
+	                font-size: 28px !important;
+	                line-height: 1.25 !important;
+	                margin-bottom: 32px !important;
+	            }
+	            .home-testimonials-outer {
+	                padding: 0 12px;
+	            }
+	            .elementor-element.elementor-element-c449d47 .layout-1 .inner {
+	                padding: 22px 20px 28px;
+	            }
+	            .elementor-element.elementor-element-c449d47 .layout-1 .testimonial-caption {
+	                padding-bottom: 20px;
+	            }
+	            .elementor-element.elementor-element-c449d47 .layout-1 .title {
+	                font-size: 16px;
+	                line-height: 1.4;
+	            }
+	            .elementor-element.elementor-element-c449d47 .layout-1 .content {
+	                font-size: 15px;
+	                line-height: 1.55;
+	                margin-bottom: 18px;
+	            }
+	            .elementor-element.elementor-element-c449d47 .layout-1 .icon {
+	                font-size: 32px;
+	            }
+	            .elementor-element.elementor-element-c449d47 .layout-1 .elementor-testimonial-image img {
+	                width: 48px;
+	                height: 48px;
+	            }
+	            .elementor-element.elementor-element-c449d47 .swiper-pagination-c449d47 {
+	                margin-top: 20px;
+	            }
+	            .elementor-element.elementor-element-c449d47 .swiper-pagination-bullet {
+	                width: 8px;
+	                height: 8px;
+	            }
+	        }
+	        @media (max-width: 480px) {
+	            .elementor-element.elementor-element-85e6ba9 .elementor-headline {
+	                font-size: 24px !important;
+	            }
+	            .elementor-element.elementor-element-c449d47 .layout-1 .inner {
+	                padding: 20px 16px 24px;
+	            }
+	        }
+	    </style>
+	    <style>
         /* Home page: increase header logo size (scoped so footer logo is unchanged) */
         .site-header .hfe-site-logo-img {
             height: 83px !important;
@@ -105,166 +1102,6 @@
             padding-bottom: 40px !important;
         }
 
-        /* Fix wide gap between footer headings and links */
-        /* Contact Info section */
-        .elementor-element[data-id="d49fe94"] {
-            gap: 0 !important;
-        }
-        .elementor-element[data-id="d49fe94"] .elementor-widget-heading {
-            margin-bottom: 0 !important;
-            margin-top: 0 !important;
-        }
-        .elementor-element[data-id="d49fe94"] .elementor-widget-heading .elementor-widget-container {
-            margin-bottom: 0 !important;
-            padding-bottom: 0 !important;
-            margin-top: 0 !important;
-            padding-top: 0 !important;
-        }
-        .elementor-element[data-id="d49fe94"] .elementor-heading-wrapper-inner {
-            margin-bottom: 0 !important;
-            padding-bottom: 0 !important;
-            margin-top: 0 !important;
-            padding-top: 0 !important;
-        }
-        .elementor-element[data-id="d49fe94"] .elementor-heading-title {
-            margin-bottom: 0 !important;
-            margin-top: 0 !important;
-            line-height: 1.2 !important;
-        }
-        .elementor-element[data-id="5803901"] {
-            margin-bottom: 0 !important;
-            margin-top: 0 !important;
-        }
-        .elementor-element[data-id="5803901"] .elementor-widget-container {
-            margin-bottom: 20px !important;
-            padding-bottom: 0 !important;
-            margin-top: 0 !important;
-            padding-top: 0 !important;
-        }
-        .elementor-element[data-id="607b350"] {
-            margin-top: 0 !important;
-            padding-top: 0 !important;
-        }
-        .elementor-element[data-id="607b350"] .elementor-widget-container {
-            margin-top: 0 !important;
-            padding-top: 0 !important;
-        }
-        .elementor-element[data-id="607b350"] .elementor-icon-list-items {
-            margin-top: 0 !important;
-            padding-top: 0 !important;
-        }
-        .elementor-element[data-id="607b350"] .elementor-icon-list-item:first-child {
-            margin-top: 0 !important;
-            padding-top: 0 !important;
-            margin-bottom: 0 !important;
-            padding-top: 0 !important;
-        }
-        .elementor-element[data-id="607b350"] .elementor-widget-container {
-            margin-top: 0 !important;
-            padding-top: 0 !important;
-            margin-bottom: 0 !important;
-            padding-bottom: 0 !important;
-        }
-        .elementor-element[data-id="607b350"] .elementor-icon-list-items {
-            margin-top: 0 !important;
-            padding-top: 0 !important;
-            margin-bottom: 0 !important;
-        }
-        .elementor-element[data-id="607b350"] .elementor-icon-list-item:first-child {
-            margin-top: 0 !important;
-            padding-top: 0 !important;
-        }
-        .elementor-element[data-id="607b350"] .elementor-icon-list-item {
-            margin-top: 0 !important;
-            padding-top: 0 !important;
-        }
-
-        /* Useful Links section */
-        .elementor-element[data-id="c963be7"] .elementor-widget-heading {
-            margin-bottom: 0 !important;
-        }
-        .elementor-element[data-id="c963be7"] .elementor-widget-heading .elementor-widget-container {
-            margin-bottom: 0 !important;
-            padding-bottom: 0 !important;
-        }
-        .elementor-element[data-id="c963be7"] .elementor-heading-wrapper-inner {
-            margin-bottom: 0 !important;
-            padding-bottom: 0 !important;
-        }
-        .elementor-element[data-id="c963be7"] .elementor-heading-title {
-            margin-bottom: 0 !important;
-        }
-        .elementor-element[data-id="c7c2ff7"] {
-            margin-top: 5px !important;
-        }
-        .elementor-element[data-id="c7c2ff7"] .elementor-widget-container {
-            margin-top: 0 !important;
-            padding-top: 0 !important;
-        }
-        /* Increase heading-to-first-item spacing in Useful Links column */
-        .elementor-element[data-id="4089f4a"] .elementor-widget-container {
-            margin-bottom: 20px !important;
-            padding-bottom: 0 !important;
-        }
-        /* Force override against earlier zero-margin rules using ancestor + child specificity */
-        .elementor-element[data-id="d49fe94"] .elementor-element[data-id="5803901"] .elementor-widget-container {
-            margin-bottom: 20px !important;
-        }
-        .elementor-element[data-id="c963be7"] .elementor-element[data-id="4089f4a"] .elementor-widget-container {
-            margin-bottom: 20px !important;
-        }
-        /* Make list item spacing identical across both footer columns */
-        .elementor-element[data-id="607b350"] .elementor-icon-list-item,
-        .elementor-element[data-id="c7c2ff7"] .elementor-icon-list-item {
-            margin-bottom: 18px !important;
-        }
-        .elementor-element[data-id="607b350"] .elementor-icon-list-item:last-child,
-        .elementor-element[data-id="c7c2ff7"] .elementor-icon-list-item:last-child {
-            margin-bottom: 0 !important;
-        }
-        /* Add spacing between Contact us and About us in footer */
-        .elementor-element[data-id="607b350"] .elementor-icon-list-item:nth-child(2) {
-            margin-top: 20px !important;
-        }
-        /* Make MargX link white in footer copyright (home page only) */
-        .elementor-element[data-id="7cd8a99"] a {
-            color: #ffffff !important;
-        }
-        /* Remove blue underline below "Advisor" text in slider */
-        #slider-1-slide-1-layer-4 {
-            text-decoration: none !important;
-            border-bottom: none !important;
-        }
-        /* Hide the underline shape element if it's a separate layer */
-        rs-layer#slider-1-slide-1-layer-10,
-        rs-layer[data-xy*="yo:203px"] {
-            display: none !important;
-            visibility: hidden !important;
-        }
-
-        /* Connect section */
-        .elementor-element[data-id="9eaab65"] .elementor-widget-heading {
-            margin-bottom: 0 !important;
-        }
-        .elementor-element[data-id="9eaab65"] .elementor-widget-heading .elementor-widget-container {
-            margin-bottom: 0 !important;
-            padding-bottom: 0 !important;
-        }
-        .elementor-element[data-id="9eaab65"] .elementor-heading-wrapper-inner {
-            margin-bottom: 0 !important;
-            padding-bottom: 0 !important;
-        }
-        .elementor-element[data-id="9eaab65"] .elementor-heading-title {
-            margin-bottom: 0 !important;
-        }
-        .elementor-element[data-id="82f6bcc"] {
-            margin-top: 5px !important;
-        }
-        .elementor-element[data-id="82f6bcc"] .elementor-widget-container {
-            margin-top: 0 !important;
-            padding-top: 0 !important;
-        }
-
         @media (max-width: 767px) {
             .site-header .hfe-site-logo-img {
                 height: 62px !important;
@@ -274,16 +1111,11 @@
                 padding-top: 30px !important;
                 padding-bottom: 30px !important;
             }
-    }
+        }
     </style>
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
     <link rel="dns-prefetch" href="//s.w.org">
-    <link rel='dns-prefetch' href='//demo2.pavothemes.com' />
     <link rel='dns-prefetch' href='//fonts.googleapis.com' />
-    <link rel="alternate" type="application/rss+xml" title="Insul &raquo; Feed"
-        href="https://demo2.pavothemes.com/insul/feed/" />
-    <link rel="alternate" type="application/rss+xml" title="Insul &raquo; Comments Feed"
-        href="https://demo2.pavothemes.com/insul/comments/feed/" />
     <script>
     window._wpemojiSettings = {
         "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/",
@@ -291,7 +1123,7 @@
         "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/",
         "svgExt": ".svg",
         "source": {
-            "concatemoji": "https:\/\/demo2.pavothemes.com\/insul\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.7.1"
+            "concatemoji": "\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.7.1"
         }
     };
     /*! This file is auto-generated */
@@ -396,7 +1228,7 @@
     }((window, document), window._wpemojiSettings);
     </script>
     <link rel='stylesheet' id='hfe-widgets-style-css'
-        href='https://demo2.pavothemes.com/insul/wp-content/plugins/header-footer-elementor/inc/widgets-css/frontend.css?ver=2.0.3'
+        href='/css/frontend.css?ver=2.0.3'
         media='all' />
     <style id='wp-emoji-styles-inline-css'>
         img.wp-smiley,
@@ -413,7 +1245,7 @@
     }
     </style>
     <link rel='stylesheet' id='insul-gutenberg-blocks-css'
-        href='https://demo2.pavothemes.com/insul/wp-content/themes/insul/assets/css/gutenberg-blocks.css?ver=1.0.4'
+        href='/css/gutenberg-blocks.css?ver=1.0.4'
         media='all' />
     <style id='classic-theme-styles-inline-css'>
     /*! This file is auto-generated */
@@ -761,68 +1593,68 @@
     }
     </style>
     <link rel='stylesheet' id='contact-form-7-css'
-        href='https://demo2.pavothemes.com/insul/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=6.0.1'
+        href='/css/contact-form-7.css?ver=6.0.1'
         media='all' />
     <link rel='stylesheet' id='-css'
-        href='https://demo2.pavothemes.com/insul/wp-content/plugins/pavo-demo/style.css?ver=6.7.1' media='all' />
+        href='/css/pavo-demo.css?ver=6.7.1' media='all' />
     <link rel='stylesheet' id='hfe-style-css'
-        href='https://demo2.pavothemes.com/insul/wp-content/plugins/header-footer-elementor/assets/css/header-footer-elementor.css?ver=2.0.3'
+        href='/css/header-footer-elementor.css?ver=2.0.3'
         media='all' />
     <link rel='stylesheet' id='elementor-icons-css' href='/css/elementor-icons.min.css' media='all' />
     <link rel='stylesheet' id='elementor-frontend-css'
-        href='https://demo2.pavothemes.com/insul/wp-content/uploads/elementor/css/custom-frontend.min.css?ver=1733908100'
+        href='/wp-content/uploads/elementor/css/custom-frontend.min.css?ver=1733908100'
         media='all' />
     <link rel='stylesheet' id='swiper-css'
-        href='https://demo2.pavothemes.com/insul/wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css?ver=8.4.5'
+        href='/wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css?ver=8.4.5'
         media='all' />
     <link rel='stylesheet' id='e-swiper-css'
-        href='https://demo2.pavothemes.com/insul/wp-content/plugins/elementor/assets/css/conditionals/e-swiper.min.css?ver=3.25.11'
+        href='/wp-content/plugins/elementor/assets/css/conditionals/e-swiper.min.css?ver=3.25.11'
         media='all' />
     <link rel='stylesheet' id='elementor-post-7-css'
-        href='https://demo2.pavothemes.com/insul/wp-content/uploads/elementor/css/post-7.css?ver=1733908100'
+        href='/wp-content/uploads/elementor/css/post-7.css?ver=1733908100'
         media='all' />
     <link rel='stylesheet' id='widget-text-path-css'
-        href='https://demo2.pavothemes.com/insul/wp-content/plugins/elementor/assets/css/widget-text-path.min.css?ver=3.25.11'
+        href='/css/widget-text-path.min.css?ver=3.25.11'
         media='all' />
     <link rel='stylesheet' id='widget-text-editor-css'
-        href='https://demo2.pavothemes.com/insul/wp-content/plugins/elementor/assets/css/widget-text-editor.min.css?ver=3.25.11'
+        href='/css/widget-text-editor.min.css?ver=3.25.11'
         media='all' />
     <link rel='stylesheet' id='e-animation-slideInUp-css'
-        href='https://demo2.pavothemes.com/insul/wp-content/plugins/elementor/assets/lib/animations/styles/slideInUp.min.css?ver=3.25.11'
+        href='/css/slideInUp.min.css?ver=3.25.11'
         media='all' />
     <link rel='stylesheet' id='e-animation-slideInRight-css'
-        href='https://demo2.pavothemes.com/insul/wp-content/plugins/elementor/assets/lib/animations/styles/slideInRight.min.css?ver=3.25.11'
+        href='/css/slideInRight.min.css?ver=3.25.11'
         media='all' />
     <link rel='stylesheet' id='e-animation-slideInLeft-css'
-        href='https://demo2.pavothemes.com/insul/wp-content/plugins/elementor/assets/lib/animations/styles/slideInLeft.min.css?ver=3.25.11'
+        href='/css/slideInLeft.min.css?ver=3.25.11'
         media='all' />
     <link rel='stylesheet' id='widget-image-css'
-        href='https://demo2.pavothemes.com/insul/wp-content/plugins/elementor/assets/css/widget-image.min.css?ver=3.25.11'
+        href='/css/widget-image.min.css?ver=3.25.11'
         media='all' />
     <link rel='stylesheet' id='widget-nested-tabs-css'
-        href='https://demo2.pavothemes.com/insul/wp-content/uploads/elementor/css/custom-widget-nested-tabs.min.css?ver=1733908100'
+        href='/wp-content/uploads/elementor/css/custom-widget-nested-tabs.min.css?ver=1733908100'
         media='all' />
     <link rel='stylesheet' id='widget-accordion-css'
-        href='https://demo2.pavothemes.com/insul/wp-content/uploads/elementor/css/custom-widget-accordion.min.css?ver=1733908100'
+        href='/wp-content/uploads/elementor/css/custom-widget-accordion.min.css?ver=1733908100'
         media='all' />
     <link rel='stylesheet' id='elementor-post-98-css'
-        href='https://demo2.pavothemes.com/insul/wp-content/uploads/elementor/css/post-98.css?ver=1733908101'
+        href='/wp-content/uploads/elementor/css/post-98.css?ver=1733908101'
         media='all' />
     <link rel='stylesheet' id='elementor-post-141-css'
-        href='https://demo2.pavothemes.com/insul/wp-content/uploads/elementor/css/post-141.css?ver=1733908101'
+        href='/wp-content/uploads/elementor/css/post-141.css?ver=1733908101'
         media='all' />
     <link rel='stylesheet' id='elementor-post-144-css'
-        href='https://demo2.pavothemes.com/insul/wp-content/uploads/elementor/css/post-144.css?ver=1733908101'
+        href='/wp-content/uploads/elementor/css/post-144.css?ver=1733908101'
         media='all' />
     <link rel='stylesheet' id='elementor-post-3494-css'
-        href='https://demo2.pavothemes.com/insul/wp-content/uploads/elementor/css/post-3494.css?ver=1733908101'
+        href='/wp-content/uploads/elementor/css/post-3494.css?ver=1733908101'
         media='all' />
     <link rel='stylesheet' id='insul-fonts-css'
         href='//fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&#038;family=Sora:wght@100..800&#038;subset=latin%2Clatin-ext&#038;display=swap'
         media='all' />
     <link rel='stylesheet' id='insul-icon-css' href='/css/icons.css' media='all' />
     <link rel='stylesheet' id='insul-style-css'
-        href='https://demo2.pavothemes.com/insul/wp-content/themes/insul/style.css?ver=1.0.4' media='all' />
+        href='/wp-content/themes/insul/style.css?ver=1.0.4' media='all' />
     <style id='insul-style-inline-css'>
     .col-full {
         max-width: 1410px
@@ -837,19 +1669,19 @@
     }
     </style>
     <link rel='stylesheet' id='insul-elementor-css'
-        href='https://demo2.pavothemes.com/insul/wp-content/themes/insul/assets/css/elementor.css?ver=1.0.4'
+        href='/css/insul-elementor.css?ver=1.0.4'
         media='all' />
     <link rel='stylesheet' id='hfe-icons-list-css'
-        href='https://demo2.pavothemes.com/insul/wp-content/plugins/elementor/assets/css/widget-icon-list.min.css?ver=3.24.3'
+        href='/wp-content/plugins/elementor/assets/css/widget-icon-list.min.css?ver=3.24.3'
         media='all' />
     <link rel='stylesheet' id='hfe-social-icons-css'
-        href='https://demo2.pavothemes.com/insul/wp-content/plugins/elementor/assets/css/widget-social-icons.min.css?ver=3.24.0'
+        href='/wp-content/plugins/elementor/assets/css/widget-social-icons.min.css?ver=3.24.0'
         media='all' />
     <link rel='stylesheet' id='hfe-social-share-icons-brands-css' href='/css/font-awesome-brands.min.css' media='all' />
     <link rel='stylesheet' id='hfe-social-share-icons-fontawesome-css' href='/css/font-awesome.min.css' media='all' />
     <link rel='stylesheet' id='hfe-nav-menu-icons-css' href='/css/font-awesome-solid.min.css' media='all' />
     <link rel='stylesheet' id='insul-child-style-css'
-        href='https://demo2.pavothemes.com/insul/wp-content/themes/demo-child/style.css?ver=1.0.0' media='all' />
+        href='/css/demo-child.css?ver=1.0.0' media='all' />
     <link rel='stylesheet' id='google-fonts-1-css'
         href='https://fonts.googleapis.com/css?family=DM+Sans%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CSora%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap&#038;ver=6.7.1'
         media='all' />
@@ -857,9 +1689,9 @@
     <link rel='stylesheet' id='elementor-icons-fa-solid-css' href='/css/font-awesome-solid.min.css' media='all' />
     <link rel='stylesheet' id='elementor-icons-fa-brands-css' href='/css/font-awesome-brands.min.css' media='all' />
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-    <script src="https://demo2.pavothemes.com/insul/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"
+    <script src="/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"
         id="jquery-core-js"></script>
-    <script src="https://demo2.pavothemes.com/insul/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1"
+    <script src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1"
         id="jquery-migrate-js"></script>
     <script id="jquery-js-after">
         !function ($) {
@@ -878,20 +1710,8 @@
         })
     }(jQuery);
     </script>
-    <script src="https://demo2.pavothemes.com/insul/wp-content/themes/insul/assets/js/libs/jarallax.js?ver=6.7.1"
+    <script src="/wp-content/themes/insul/assets/js/libs/jarallax.js?ver=6.7.1"
         id="jarallax-js"></script>
-    <link rel="https://api.w.org/" href="https://demo2.pavothemes.com/insul/wp-json/" />
-    <link rel="alternate" title="JSON" type="application/json"
-        href="https://demo2.pavothemes.com/insul/wp-json/wp/v2/pages/98" />
-    <link rel="EditURI" type="application/rsd+xml" title="RSD"
-        href="https://demo2.pavothemes.com/insul/xmlrpc.php?rsd" />
-    <meta name="generator" content="WordPress 6.7.1" />
-    <link rel="canonical" href="https://demo2.pavothemes.com/insul/" />
-    <link rel='shortlink' href='https://demo2.pavothemes.com/insul/' />
-    <link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed"
-        href="https://demo2.pavothemes.com/insul/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdemo2.pavothemes.com%2Finsul%2F" />
-    <link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed"
-        href="https://demo2.pavothemes.com/insul/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdemo2.pavothemes.com%2Finsul%2F&#038;format=xml" />
     <meta name="generator"
         content="Elementor 3.25.11; features: additional_custom_breakpoints, e_optimized_control_loading; settings: css_print_method-external, google_font-enabled, font_display-swap">
     <style>
@@ -997,7 +1817,7 @@
     <div id="page" class="hfeed site">
         <header id="masthead" itemscope="itemscope" itemtype="https://schema.org/WPHeader">
             <p class="main-title bhf-hidden" itemprop="headline">
-                <a href="https://demo2.pavothemes.com/insul" title="Insul" rel="home">Insul</a>
+                <a href="/" title="Witan Finsure" rel="home">Witan Finsure</a>
             </p>
             <div data-elementor-type="wp-post" data-elementor-id="141" class="elementor elementor-141">
                 <div class="elementor-element elementor-element-b081b12 e-flex e-con-boxed e-con e-parent"
@@ -1180,7 +2000,7 @@
                                 <div class="elementor-widget-container">
                                     <div class="elementor-button-wrapper">
                                         <a class="elementor-button elementor-button-link elementor-size-md"
-                                            href="https://demo2.pavothemes.com/insul/our-pricing/">
+                                            href="/our-pricing/">
                                             <span class="elementor-button-content-wrapper">
                                                 <span class="elementor-button-icon">
                                                     <i aria-hidden="true"
@@ -1210,337 +2030,25 @@
                             data-id="8da8c64" data-element_type="widget" data-widget_type="slider_revolution.default">
                             <div class="elementor-widget-container">
 
-                                <div class="wp-block-themepunch-revslider">
-                                    <!-- START Slider 1 REVOLUTION SLIDER 6.7.23 -->
-                                    <p class="rs-p-wp-fix"></p>
-                                    <rs-module-wrap id="rev_slider_1_1_wrapper" data-source="gallery"
-                                        style="visibility:hidden;background:transparent;padding:0;margin:0px auto;margin-top:0;margin-bottom:0;">
-                                        <rs-module id="rev_slider_1_1" style="" data-version="6.7.23">
-                                            <rs-slides style="overflow: hidden; position: absolute;">
-                                                <rs-slide style="position: absolute;" data-key="rs-1" data-title="Slide"
-                                                    data-in="o:0;" data-out="a:false;">
-                                                    <img fetchpriority="high" decoding="async"
-                                                        src="//demo2.pavothemes.com/insul/wp-content/plugins/revslider/sr6/assets/assets/dummy.png"
-                                                        alt="" title="bg-sl1-min" width="2560" height="1280"
-                                                        class="rev-slidebg tp-rs-img rs-lazyload"
-                                                        data-lazyload="//demo2.pavothemes.com/insul/wp-content/uploads/2024/04/bg-sl1-min-scaled.jpeg"
-                                                        data-parallax="off" data-no-retina>
-                                                    <!--						-->
-                                                    <rs-zone id="rrzm_1" class="rev_row_zone_middle"
-                                                        style="z-index: 12;">
-                                                        <!--
-
-                                                        								-->
-                                                        <rs-row id="slider-1-slide-1-layer-0" data-type="row"
-                                                            data-xy="xo:50px;yo:50px;" data-rsp_bd="off"
-                                                            data-padding="t:80,40,40,40;r:30,30,30,15;l:30,30,30,15;"
-                                                            data-frame_0="o:1;"
-                                                            data-frame_999="o:0;st:w;sR:8700;sA:9000;"
-                                                            style="z-index:6;">
-                                                            <!--
-                                                            									-->
-                                                            <rs-column id="slider-1-slide-1-layer-1" data-type="column"
-                                                                data-xy="xo:50px;yo:50px;" data-rsp_bd="off"
-                                                                data-column="w:100%;" data-frame_0="o:1;"
-                                                                data-frame_999="o:0;st:w;sR:8700;sA:9000;"
-                                                                style="z-index:6;width:100%;">
-                                                                <!--
-                                                                										-->
-                                                                <rs-layer id="slider-1-slide-1-layer-4" data-type="text"
-                                                                    data-color="#212121" data-rsp_ch="on" data-xy=""
-                                                                    data-pos="r"
-                                                                    data-text="w:normal;s:90,70,53,53;l:100,78,59,59;fw:600;"
-                                                                    data-dim="w:760px,600px,455px,100%;"
-                                                                    data-frame_0="y:-50,-34,-25,-15;"
-                                                                    data-frame_1="sp:1000;"
-                                                                    data-frame_999="o:0;st:w;sR:8000;"
-                                                                    style="z-index:12;font-family:'Sora';">Your Trusted
-                                                                    Finance Advisor
-                                                                										</rs-layer>
-                                                                <!--
-
-                                                                										-->
-                                                                <rs-layer id="slider-1-slide-1-layer-10"
-                                                                    data-type="shape" data-rsp_ch="on"
-                                                                    data-xy="xo:50px,34px,25px,15px;yo:203px,141px,107px,66px;"
-                                                                    data-pos="r"
-                                                                    data-text="w:normal;s:20,13,9,5;c:both;l:0,17,12,7;"
-                                                                    data-flcr="c:both;"
-                                                                    data-dim="w:100%;h:23px,16px,12px,7px;"
-                                                                    data-frame_999="o:0;st:w;sR:8700;"
-                                                                    style="z-index:11;"></rs-layer>
-                                                                <!--
-
-                                                                										-->
-                                                                <rs-layer id="slider-1-slide-1-layer-5" data-type="text"
-                                                                    data-color="#000000" data-rsp_ch="on" data-xy=""
-                                                                    data-pos="r"
-                                                                    data-text="w:normal;s:20,20,15,15;l:30,30,22,22;"
-                                                                    data-dim="w:600px,500px,379px,70%;"
-                                                                    data-frame_0="y:50,34,25,15;"
-                                                                    data-frame_1="sp:1000;"
-                                                                    data-frame_999="o:0;st:w;sR:8000;"
-                                                                    style="z-index:10;font-family:'DM Sans';">By
-                                                                    understanding your goals and risk profile, we help
-                                                                    you choose the right mix of insurance and
-                                                                    investments, so your money stays protected and
-                                                                    growing
-                                                                										</rs-layer>
-                                                                <!--
-
-                                                                										-->
-                                                                <rs-layer id="slider-1-slide-1-layer-11"
-                                                                    data-type="shape" data-rsp_ch="on"
-                                                                    data-xy="xo:50px,34px,25px,15px;yo:203px,141px,107px,66px;"
-                                                                    data-pos="r"
-                                                                    data-text="w:normal;s:20,13,9,5;c:both;l:0,17,12,7;"
-                                                                    data-flcr="c:both;"
-                                                                    data-dim="w:100%;h:27px,18px,13px,13px;"
-                                                                    data-frame_999="o:0;st:w;sR:8700;"
-                                                                    style="z-index:9;"></rs-layer>
-                                                                <!--
-
-                                                                										-->
-                                                                <rs-layer id="slider-1-slide-1-layer-21"
-                                                                    class="e-hide-highlight" data-type="image"
-                                                                    data-rsp_ch="on"
-                                                                    data-xy="x:c;xo:-155px,-54px,-27px,105px;y:m;yo:14px,4px,-3px,-10px;"
-                                                                    data-pos="a"
-                                                                    data-text="w:normal;s:20,13,9,5;l:0,17,12,7;"
-                                                                    data-dim="w:338px,260px,230px,230px;h:[&#039;14px&#039;,&#039;14px&#039;,&#039;14px&#039;,&#039;14px&#039;];"
-                                                                    data-wrpcls="elementor-headline"
-                                                                    data-frame_0="x:175%;o:1;"
-                                                                    data-frame_0_mask="u:t;x:-100%;"
-                                                                    data-frame_1="e:power3.out;st:980;sp:1000;sR:980;"
-                                                                    data-frame_1_mask="u:t;"
-                                                                    data-frame_999="o:0;st:w;sR:7020;"
-                                                                    style="z-index:8;">
-                                                                    <img decoding="async"
-                                                                        src="//demo2.pavothemes.com/insul/wp-content/plugins/revslider/sr6/assets/assets/dummy.png"
-                                                                        alt="" class="tp-rs-img rs-lazyload" width="338"
-                                                                        height="14"
-                                                                        data-lazyload="//demo2.pavothemes.com/insul/wp-content/uploads/2024/04/line.svg"
-                                                                        data-no-retina>
-                                                                </rs-layer>
-                                                                <!--
-
-                                                                										-->
-                                                                <a id="slider-1-slide-1-layer-6"
-                                                                    class="rs-layer rev-btn"
-                                                                    href="#our-services"
-                                                                    target="_self" data-type="button" data-rsp_ch="on"
-                                                                    data-xy="" data-pos="r"
-                                                                    data-text="w:normal;s:14;l:24;ls:1,0,0,0;fw:700;"
-                                                                    data-dim="minh:0px,none,none,none;"
-                                                                    data-wrpcls="elementor-button elementor-size-md"
-                                                                    data-disp="inline-block"
-                                                                    data-border="bor:30px,30px,30px,30px;"
-                                                                    data-frame_0="x:-50,-34,-25,-15;"
-                                                                    data-frame_1="sp:1000;"
-                                                                    data-frame_999="o:0;st:w;sR:8000;"
-                                                                    data-frame_hover="bor:30px,30px,30px,30px;sp:200;"
-                                                                    style="z-index:7;font-family:'DM Sans';text-transform:uppercase;display:inline-block;">
-                                                                    EXPLORE NOW 
+                                <section class="home-hero-minimal" aria-label="Hero">
+                                    <div class="home-hero-minimal__inner">
+                                        <h1 class="home-hero-minimal__title">Your Trusted Finance Advisor</h1>
+                                        <p class="home-hero-minimal__subtitle">By understanding your goals and risk profile, we help you choose the right mix of insurance and investments, so your money stays protected and growing.</p>
+                                        <div class="home-hero-minimal__actions">
+                                            <a href="#our-services" class="home-hero-minimal__btn home-hero-minimal__btn--primary">
+                                                Explore Now
                                                                     <i class="insul-icon-arrow-up-right-1"></i>
                                                                 </a>
-                                                                <!--
-
-                                                                										-->
-                                                                <rs-group id="slider-1-slide-1-layer-7"
-                                                                    data-type="group" data-rsp_ch="on" data-xy=""
-                                                                    data-pos="r"
-                                                                    data-text="w:normal;s:20,13,9,5;l:0,17,12,7;"
-                                                                    data-dim="w:257px,277px,210px,180px;h:52px,52px,52px,40px;"
-                                                                    data-vbility="t,t,t,f" data-disp="inline-block"
-                                                                    data-frame_0="x:50,34,25,15;"
-                                                                    data-frame_1="sp:1000;"
-                                                                    data-frame_999="o:0;st:w;sR:8000;sA:9000;"
-                                                                    style="z-index:6;display:inline-block;">
-                                                                    <!--
-                                                                    											-->
-                                                                    <rs-layer id="slider-1-slide-1-layer-9"
-                                                                        data-type="text" data-color="#000000"
-                                                                        data-rsp_ch="on" data-xy="x:r;y:m;" data-pos="a"
-                                                                        data-text="w:normal;s:16,16,12,12;l:24,24,18,18;fw:500;"
-                                                                        data-frame_999="o:0;st:w;sR:8700;"
-                                                                        style="z-index:7;font-family:'DM Sans';">+1000
-                                                                        Clients
-                                                                    											</rs-layer>
-                                                                    <!--
-
-                                                                    											-->
-                                                                    <rs-layer id="slider-1-slide-1-layer-8"
-                                                                        data-type="image" data-rsp_ch="on"
-                                                                        data-xy="xo:20px,40px,30px,18px;y:m;"
-                                                                        data-pos="a"
-                                                                        data-text="w:normal;s:20,13,9,5;l:0,17,12,7;"
-                                                                        data-dim="w:120px,120px,91px,75px;h:48px,48px,36px,30px;"
-                                                                        data-frame_999="o:0;st:w;sR:8700;"
-                                                                        style="z-index:6;">
-                                                                        <img decoding="async"
-                                                                            src="//demo2.pavothemes.com/insul/wp-content/plugins/revslider/sr6/assets/assets/dummy.png"
-                                                                            alt="" class="tp-rs-img rs-lazyload"
-                                                                            width="120" height="48"
-                                                                            data-lazyload="//demo2.pavothemes.com/insul/wp-content/uploads/2024/04/img-sl1-client-min.png"
-                                                                            data-no-retina>
-                                                                    </rs-layer>
-                                                                    <!--
-                                                                    										-->
-                                                                </rs-group>
-                                                                <!--
-                                                                									-->
-                                                            </rs-column>
-                                                            <!--
-                                                            								-->
-                                                        </rs-row>
-                                                        <!--
-                                                        							-->
-                                                    </rs-zone>
-                                                    <!--
-
-                                                    							-->
-                                                    <rs-group id="slider-1-slide-1-layer-12" data-type="group"
-                                                        data-rsp_ch="on" data-xy="x:r;xo:82px,35px,26px,-124px;y:b;"
-                                                        data-text="w:normal;s:20,13,9,5;l:0,17,12,7;"
-                                                        data-dim="w:657px,557px,423px,423px;h:804px,660px,501px,501px;"
-                                                        data-frame_0="o:1;" data-frame_999="o:0;st:w;sR:8700;sA:9000;"
-                                                        style="z-index:11;">
-                                                        <!--
-                                                        								-->
-                                                        <rs-layer id="slider-1-slide-1-layer-22" data-type="shape"
-                                                            data-rsp_ch="on" data-xy="x:c,c,c,r;y:m;" data-pos="a"
-                                                            data-text="w:normal;s:20,13,9,5;l:0,17,12,7;"
-                                                            data-dim="w:100%;h:100%;" data-vbility="f,f,f,f"
-                                                            data-frame_999="o:0;st:w;sR:8700;"
-                                                            style="z-index:10;background-color:rgba(255,255,255,0.5);"></rs-layer>
-                                                        <!--
-
-                                                        								-->
-
-
-
-                                                        <rs-layer id="slider-1-slide-1-layer-13" data-type="image"
-                                                            data-rsp_ch="on" data-xy="x:c;y:m,b,b,b;" data-pos="a"
-                                                            data-text="w:normal;s:20,13,9,5;l:0,17,12,7;"
-                                                            data-dim="w:657px,480px,364px,423px;h:804px,587px,445px,501px;"
-                                                            data-frame_0="y:50,34,25,15;" data-frame_1="sp:1000;"
-                                                            data-frame_999="o:0;st:w;sR:8000;" style="z-index:6;">
-                                                            <img loading="lazy" decoding="async"
-                                                                src="//demo2.pavothemes.com/insul/wp-content/plugins/revslider/sr6/assets/assets/dummy.png"
-                                                                alt="" class="tp-rs-img rs-lazyload" width="657"
-                                                                height="804"
-                                                                data-lazyload="//demo2.pavothemes.com/insul/wp-content/uploads/2024/04/img-sl1-person-min.png"
-                                                                data-no-retina>
-                                                        </rs-layer>
-                                                        <!--
-                                                        							-->
-                                                    </rs-group>
-                                                    <!--
-
-                                                    							-->
-                                                    <rs-layer id="slider-1-slide-1-layer-2" class="rs-pxl-7"
-                                                        data-type="image" data-rsp_ch="on"
-                                                        data-xy="x:r;xo:-630px,-438px,-332px,-204px;y:b;yo:-302px,-210px,-159px,-98px;"
-                                                        data-text="w:normal;s:20,13,9,5;l:0,17,12,7;"
-                                                        data-dim="w:953px,663px,503px,310px;h:880px,613px,465px,286px;"
-                                                        data-btrans="o:0.4;" data-frame_0="x:-175%;o:1;"
-                                                        data-frame_0_mask="u:t;x:100%;"
-                                                        data-frame_1="e:power3.out;st:680;sp:1500;sR:680;"
-                                                        data-frame_1_mask="u:t;" data-frame_999="o:0;st:w;sR:6820;"
-                                                        style="z-index:6;">
-                                                        <img loading="lazy" decoding="async"
-                                                            src="//demo2.pavothemes.com/insul/wp-content/plugins/revslider/sr6/assets/assets/dummy.png"
-                                                            alt="" class="tp-rs-img rs-lazyload" width="953"
-                                                            height="880"
-                                                            data-lazyload="//demo2.pavothemes.com/insul/wp-content/uploads/2024/04/Ellipse-34-min.png"
-                                                            data-no-retina>
-                                                    </rs-layer>
-                                                    <!--
-
-                                                    							-->
-                                                    <rs-layer id="slider-1-slide-1-layer-3" data-type="shape"
-                                                        data-rsp_ch="on"
-                                                        data-xy="xo:-559px,-389px,-295px,-182px;yo:-245px,-170px,-129px,-79px;"
-                                                        data-text="w:normal;s:20,13,9,5;l:0,17,12,7;"
-                                                        data-dim="w:776px,540px,410px,252px;h:776px,540px,410px,252px;"
-                                                        data-frame_999="o:0;st:w;sR:8700;"
-                                                        style="z-index:8;background:radial-gradient(ellipse at center, rgba(156,235,252,0.2) 0%, rgba(156,235,252,0) 70%, rgba(208,247,255,0) 80%);"></rs-layer>
-                                                    <!--
-
-                                                    							-->
-                                                    <rs-layer id="slider-1-slide-1-layer-17" data-type="shape"
-                                                        data-rsp_ch="on"
-                                                        data-xy="x:r;xo:-707px,-492px,-373px,-230px;yo:-188px,-130px,-98px,-60px;"
-                                                        data-text="w:normal;s:20,13,9,5;l:0,17,12,7;"
-                                                        data-dim="w:1917px,1335px,1014px,625px;h:793px,552px,419px,258px;"
-                                                        data-frame_999="o:0;st:w;sR:8700;"
-                                                        style="z-index:9;background:radial-gradient(ellipse at center, rgba(255,144,244,0.4) 0%, rgba(255,144,244,0) 50%, rgba(255,144,244,0) 100%);"></rs-layer>
-                                                    <!--
-
-                                                    							-->
-                                                    <rs-layer id="slider-1-slide-1-layer-18" data-type="shape"
-                                                        data-rsp_ch="on"
-                                                        data-xy="xo:-446px,-310px,-235px,-144px;y:b;yo:-273px,-190px,-144px,-88px;"
-                                                        data-text="w:normal;s:20,13,9,5;l:0,17,12,7;"
-                                                        data-dim="w:776px,540px,410px,252px;h:776px,540px,410px,252px;"
-                                                        data-frame_999="o:0;st:w;sR:8700;"
-                                                        style="z-index:7;background:radial-gradient(ellipse at center, rgba(69,38,255,0.25) 0%, rgba(69,38,255,0) 70%, rgba(69,38,255,0) 80%);"></rs-layer>
-                                                    <!--
-
-                                                    							-->
-                                                    <rs-layer id="slider-1-slide-1-layer-19" class="rs-pxl-1"
-                                                        data-type="image" data-rsp_ch="on"
-                                                        data-xy="x:r;yo:604px,420px,319px,196px;"
-                                                        data-text="w:normal;s:20,13,9,5;l:0,17,12,7;"
-                                                        data-dim="w:753px,524px,398px,245px;h:906px,631px,479px,295px;"
-                                                        data-btrans="o:0.4;" data-frame_0="x:175%;o:1;"
-                                                        data-frame_0_mask="u:t;x:-100%;"
-                                                        data-frame_1="e:power3.out;st:680;sp:1500;sR:680;"
-                                                        data-frame_1_mask="u:t;" data-frame_999="o:0;st:w;sR:6820;"
-                                                        style="z-index:5;">
-                                                        <img loading="lazy" decoding="async"
-                                                            src="//demo2.pavothemes.com/insul/wp-content/plugins/revslider/sr6/assets/assets/dummy.png"
-                                                            alt="" class="tp-rs-img rs-lazyload" width="753"
-                                                            height="906"
-                                                            data-lazyload="//demo2.pavothemes.com/insul/wp-content/uploads/2024/04/Ellipse-35-min.png"
-                                                            data-no-retina>
-                                                    </rs-layer>
-                                                    <!--
-
-                                                    							-->
-                                                    <rs-layer id="slider-1-slide-1-layer-20" data-type="shape"
-                                                        data-rsp_ch="on" data-xy="x:c;y:m;"
-                                                        data-text="w:normal;s:20,13,9,5;l:0,17,12,7;"
-                                                        data-dim="w:100%;h:100%;" data-basealign="slide"
-                                                        data-frame_999="o:0;st:w;sR:8700;"
-                                                        style="z-index:4;background-color:rgba(255,255,255,0.85);"></rs-layer>
-                                                    <!--
-                                                    -->
-                                                </rs-slide>
-                                            </rs-slides>
-                                        </rs-module>
-                                        <script>
-                                        setREVStartSize({
-                                            c: 'rev_slider_1_1',
-                                            rl: [1240, 1025, 778, 480],
-                                            el: [900, 750, 650, 600],
-                                            gw: [1470, 1024, 778, 480],
-                                            gh: [900, 750, 650, 600],
-                                            type: 'standard',
-                                            justify: '',
-                                            layout: 'fullwidth',
-                                            mh: "0"
-                                        });
-                                        if (window.RS_MODULES !== undefined && window.RS_MODULES.modules !== undefined && window.RS_MODULES.modules["revslider11"] !== undefined) {
-                                            window.RS_MODULES.modules["revslider11"].once = false;
-                                            window.revapi1 = undefined;
-                                            if (window.RS_MODULES.checkMinimal !== undefined)
-                                                window.RS_MODULES.checkMinimal()
-                                        }
-                                        </script>
-                                    </rs-module-wrap>
-                                    <!-- END REVOLUTION SLIDER -->
+                                            <a href="{{ url('/contact-01') }}" class="home-hero-minimal__btn home-hero-minimal__btn--secondary">
+                                                Contact Us
+                                            </a>
                                 </div>
+                                        <div class="home-hero-minimal__proof">
+                                            <img src="/wp-content/uploads/2024/04/img-sl1-client-min.png" alt="Happy clients" width="120" height="40" loading="eager">
+                                            <span>+1000 Clients</span>
+                                        </div>
+                                    </div>
+                                </section>
 
                             </div>
                         </div>
@@ -1676,938 +2184,223 @@
                             </div>
                         </div>
                     </div>
-                    <div class="elementor-element elementor-element-ec99816 e-flex e-con-boxed e-con e-parent"
-                        data-id="ec99816" data-element_type="container">
-                        <div class="e-con-inner">
-                            <div class="elementor-element elementor-element-c9e0b33 e-flex e-con-boxed e-con e-child"
-                                data-id="c9e0b33" data-element_type="container">
-                                <div class="e-con-inner">
-                                    <div class="elementor-element elementor-element-7552bdf e-con-full e-flex e-con e-child"
-                                        data-id="7552bdf" data-element_type="container">
-                                        <div class="elementor-element elementor-element-9c43c61 heading-effects-yes elementor-mobile-align-center subtitle-position-above elementor-widget elementor-widget-heading"
-                                            data-id="9c43c61" data-element_type="widget"
-                                            data-widget_type="heading.default">
-                                            <div class="elementor-widget-container">
-                                                <div class="elementor-heading-wrapper-inner">
-                                                    <div class="elementor-sub-title">
-                                                        <span class="sub-title">WHO WE ARE</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="elementor-element elementor-element-64dfd24 elementor-widget__width-initial insul-elementor-headline--style-highlight elementor-widget elementor-widget-insul-animated-headline"
-                                            data-id="64dfd24" data-element_type="widget"
-                                            data-settings="{&quot;marker&quot;:&quot;underline&quot;,&quot;highlighted_text&quot;:&quot;we work&quot;,&quot;headline_style&quot;:&quot;highlight&quot;,&quot;loop&quot;:&quot;yes&quot;,&quot;highlight_animation_duration&quot;:1200,&quot;highlight_iteration_delay&quot;:8000}"
-                                            data-widget_type="insul-animated-headline.default">
-                                            <div class="elementor-widget-container">
-                                                <h3 class="elementor-headline">
-                                                    <span
-                                                        class="insul-elementor-headline-plain-text insul-elementor-headline-text-wrapper">How</span>
-                                                    <span
-                                                        class="insul-elementor-headline-dynamic-wrapper insul-elementor-headline-text-wrapper">
-                                                        <span
-                                                            class="insul-elementor-headline-dynamic-text insul-elementor-headline-text-active">we
-                                                            work</span>
-                                                    </span>
-                                                    <span
-                                                        class="insul-elementor-headline-after-text insul-elementor-headline-text-wrapper">for
-                                                        solving all your financial needs</span>
-                                                </h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="elementor-element elementor-element-bec3d46 e-con-full e-flex e-con e-child"
-                                        data-id="bec3d46" data-element_type="container">
-                                        <div class="elementor-element elementor-element-b6b1a16 rotate-animation  elementor-absolute elementor-hidden-mobile elementor-widget elementor-widget-text-path"
-                                            data-id="b6b1a16" data-element_type="widget"
-                                            data-settings="{&quot;text&quot;:&quot;get in touch - get in touch - &quot;,&quot;_position&quot;:&quot;absolute&quot;,&quot;link&quot;:{&quot;url&quot;:&quot;&quot;,&quot;is_external&quot;:&quot;&quot;,&quot;nofollow&quot;:&quot;&quot;,&quot;custom_attributes&quot;:&quot;&quot;},&quot;start_point&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:0,&quot;sizes&quot;:[]}}"
-                                            data-widget_type="text-path.default">
-                                            <div class="elementor-widget-container">
-                                                <div class="e-text-path" data-text="get in touch - get in touch - "
-                                                    data-url="//demo2.pavothemes.com/insul/wp-content/plugins/elementor/assets/svg-paths/circle.svg"
-                                                    data-link-url=""></div>
-                                            </div>
-                                        </div>
-                                        <div class="elementor-element elementor-element-d4b5425 elementor-widget__width-initial elementor-widget elementor-widget-text-editor"
-                                            data-id="d4b5425" data-element_type="widget"
-                                            data-widget_type="text-editor.default">
-                                            <div class="elementor-widget-container">
-                                                By doing a detailed financial review, you can see whether your
-                                                protection and investments are truly aligned. </div>
-                                        </div>
-                                    </div>
+                    <section class="home-about" aria-labelledby="home-about-title">
+                        <div class="home-about__inner">
+                            <div class="home-about__top">
+                                <header>
+                                    <p class="home-about__eyebrow">Who We Are</p>
+                                    <h2 id="home-about-title" class="home-about__title">
+                                        How <span class="home-about__highlight">we work</span> for solving all your financial needs
+                                    </h2>
+                                </header>
+                                <div class="home-about__intro">
+                                    <p>By doing a detailed financial review, you can see whether your protection and investments are truly aligned.</p>
+                                    <a href="{{ url('/contact-01') }}" class="home-about__link">
+                                        Get in touch
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
+                                    </a>
                                 </div>
                             </div>
-                            <div class="elementor-element elementor-element-68dd0f9 e-flex e-con-boxed e-con e-child"
-                                data-id="68dd0f9" data-element_type="container">
-                                <div class="e-con-inner">
-                                    <div class="elementor-element elementor-element-963f591 e-con-full e-flex elementor-invisible e-con e-child"
-                                        data-id="963f591" data-element_type="container"
-                                        data-settings="{&quot;animation&quot;:&quot;slideInUp&quot;}">
-                                        <div class="elementor-element elementor-element-ef2b538 elementor-widget__width-initial counter-style-default elementor-alignment-left elementor-vertical-align-top elementor-widget elementor-widget-counter"
-                                            data-id="ef2b538" data-element_type="widget"
-                                            data-widget_type="counter.default">
-                                            <div class="elementor-widget-container">
-                                                <div class="elementor-counter">
-                                                    <div class="elementor-counter-wrapper">
-                                                        <div class="counter-subtitle">
-                                                            <div class="elementor-counter-sub-title">Industry Experience
-                                                            </div>
-                                                        </div>
-                                                        <div class="elementor-counter-number-wrapper">
-                                                            <span class="elementor-counter-number-prefix"></span>
-                                                            <span class="elementor-counter-number" data-duration="2000"
-                                                                data-to-value="20" data-delimiter=",">0</span>
-                                                            <span class="elementor-counter-number-suffix">+ Years</span>
-                                                        </div>
-
-                                                        <div class="elementor-counter-title-wrap">
-                                                            <div class="elementor-counter-description">Strong expertise
-                                                                across insurance, investments, and long-term financial
-                                                                planning for evolving needs.</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="elementor-element elementor-element-632fade e-con-full e-flex elementor-invisible e-con e-child"
-                                        data-id="632fade" data-element_type="container"
-                                        data-settings="{&quot;animation&quot;:&quot;slideInUp&quot;,&quot;animation_delay&quot;:300}">
-                                        <div class="elementor-element elementor-element-76ab287 elementor-widget__width-initial counter-style-default elementor-alignment-left elementor-vertical-align-top elementor-widget elementor-widget-counter"
-                                            data-id="76ab287" data-element_type="widget"
-                                            data-widget_type="counter.default">
-                                            <div class="elementor-widget-container">
-                                                <div class="elementor-counter">
-                                                    <div class="elementor-counter-wrapper">
-                                                        <div class="counter-subtitle">
-                                                            <div class="elementor-counter-sub-title">Client Relationship
-                                                            </div>
-                                                        </div>
-                                                        <div class="elementor-counter-number-wrapper">
-                                                            <span class="elementor-counter-number-prefix"></span>
-                                                            <span class="elementor-counter-number" data-duration="2000"
-                                                                data-to-value="1000" data-delimiter=",">0</span>
-                                                            <span class="elementor-counter-number-suffix">+</span>
-                                                        </div>
-
-                                                        <div class="elementor-counter-title-wrap">
-                                                            <div class="elementor-counter-description">Built on
-                                                                transparent advice, zero mis-selling, and disciplined
-                                                                six-month portfolio review processes.</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="elementor-element elementor-element-13c5012 e-con-full e-flex elementor-invisible e-con e-child"
-                                        data-id="13c5012" data-element_type="container"
-                                        data-settings="{&quot;animation&quot;:&quot;slideInUp&quot;,&quot;animation_delay&quot;:500}">
-                                        <div class="elementor-element elementor-element-402e50d elementor-widget__width-initial counter-style-default elementor-alignment-left elementor-vertical-align-top elementor-widget elementor-widget-counter"
-                                            data-id="402e50d" data-element_type="widget"
-                                            data-widget_type="counter.default">
-                                            <div class="elementor-widget-container">
-                                                <div class="elementor-counter">
-                                                    <div class="elementor-counter-wrapper">
-                                                        <div class="counter-subtitle">
-                                                            <div class="elementor-counter-sub-title">Claim Assitance
-                                                            </div>
-                                                        </div>
-                                                        <div class="elementor-counter-number-wrapper">
-                                                            <span class="elementor-counter-number-prefix"></span>
-                                                            <span class="elementor-counter-number" data-duration="2000"
-                                                                data-to-value="500">0</span>
-                                                            <span class="elementor-counter-number-suffix">+</span>
-                                                        </div>
-
-                                                        <div class="elementor-counter-title-wrap">
-                                                            <div class="elementor-counter-description">Handled
-                                                                end-to-end with clarity, efficiency, and complete client
-                                                                support throughout every claim.</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                            <div class="home-about__stats">
+                                <div class="home-about__stat">
+                                    <p class="home-about__stat-label">Industry Experience</p>
+                                    <p class="home-about__stat-value">20+ Years</p>
+                                    <p class="home-about__stat-desc">Strong expertise across insurance, investments, and long-term financial planning for evolving needs.</p>
+                                </div>
+                                <div class="home-about__stat">
+                                    <p class="home-about__stat-label">Client Relationship</p>
+                                    <p class="home-about__stat-value">1,000+</p>
+                                    <p class="home-about__stat-desc">Built on transparent advice, zero mis-selling, and disciplined six-month portfolio review processes.</p>
+                                </div>
+                                <div class="home-about__stat">
+                                    <p class="home-about__stat-label">Claim Assistance</p>
+                                    <p class="home-about__stat-value">500+</p>
+                                    <p class="home-about__stat-desc">Handled end-to-end with clarity, efficiency, and complete client support throughout every claim.</p>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="elementor-element elementor-element-8e9a838 e-con-full e-flex e-con e-parent"
-                        data-id="8e9a838" data-element_type="container">
-                        <div class="elementor-element elementor-element-113fc82 e-con-full e-flex e-con e-child"
-                            data-id="113fc82" data-element_type="container">
-                            <div class="elementor-element elementor-element-4e23fa6 heading-effects-yes elementor-mobile-align-center subtitle-position-above elementor-widget elementor-widget-heading"
-                                data-id="4e23fa6" data-element_type="widget" data-widget_type="heading.default">
-                                <div class="elementor-widget-container">
-                                    <div class="elementor-heading-wrapper-inner">
-                                        <div class="elementor-sub-title">
-                                            <span class="sub-title">EXPERT GUIDANCE</span>
-                                        </div>
-                                    </div>
-                                </div>
+                    </section>
+                    <section class="home-guidance" aria-labelledby="home-guidance-title">
+                        <div class="home-guidance__inner">
+                            <div class="home-guidance__content">
+                                <p class="home-guidance__eyebrow">Expert Guidance</p>
+                                <h2 id="home-guidance-title" class="home-guidance__title">
+                                    <span class="home-guidance__highlight">Expert Perspectives</span> on Personal Finance
+                                </h2>
+                                <p class="home-guidance__text">People face mis-selling, weak claim support, and confusing advice. Witan Finsure solves this with transparent guidance, six-month reviews, strong insurer ties, and end-to-end claim assistance so decisions stay clear, protected, and long-term.</p>
+                                <a href="{{ url('/contact-01') }}" class="home-guidance__btn">
+                                    Explore more
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
+                                </a>
                             </div>
-                            <div class="elementor-element elementor-element-91e1786 elementor-widget__width-initial insul-elementor-headline--style-highlight elementor-widget elementor-widget-insul-animated-headline"
-                                data-id="91e1786" data-element_type="widget"
-                                data-settings="{&quot;marker&quot;:&quot;underline&quot;,&quot;highlighted_text&quot;:&quot;our expert&quot;,&quot;headline_style&quot;:&quot;highlight&quot;,&quot;loop&quot;:&quot;yes&quot;,&quot;highlight_animation_duration&quot;:1200,&quot;highlight_iteration_delay&quot;:8000}"
-                                data-widget_type="insul-animated-headline.default">
-                                <div class="elementor-widget-container">
-                                    <h3 class="elementor-headline">
-                                        <span
-                                            class="insul-elementor-headline-plain-text insul-elementor-headline-text-wrapper"></span>
-                                        <span
-                                            class="insul-elementor-headline-dynamic-wrapper insul-elementor-headline-text-wrapper">
-                                            <span
-                                                class="insul-elementor-headline-dynamic-text insul-elementor-headline-text-active">Expert
-                                                Perspectives</span>
+                            <div class="home-guidance__visual">
+                                <figure class="home-guidance__image-wrap">
+                                    <img src="/wp-content/uploads/2026/05/expert-guidance-finance.jpg"
+                                         alt="Financial advisor reviewing charts and investment data on a tablet"
+                                         loading="lazy"
+                                         decoding="async"
+                                         width="1200"
+                                         height="801">
+                                </figure>
+                                <ul class="home-guidance__points">
+                                    <li class="home-guidance__point">
+                                        <span class="home-guidance__point-icon" aria-hidden="true">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
                                         </span>
-                                        <span
-                                            class="insul-elementor-headline-after-text insul-elementor-headline-text-wrapper">on
-                                            Personal Finance</span>
-                                    </h3>
-                                </div>
-                            </div>
-                            <div class="elementor-element elementor-element-e509257 elementor-widget__width-initial elementor-widget elementor-widget-text-editor"
-                                data-id="e509257" data-element_type="widget" data-widget_type="text-editor.default">
-                                <div class="elementor-widget-container">
-                                    People face mis-selling, weak claim support, and confusing advice. Witan Finsure
-                                    solves this with transparent guidance, six-month reviews, strong insurer ties, and
-                                    end-to-end claim assistance so decisions stay clear, protected, and long-term.
-                            </div>
-                            </div>
-                            <div class="elementor-element elementor-element-256dffa elementor-mobile-align-center elementor-button-default elementor-widget elementor-widget-button"
-                                data-id="256dffa" data-element_type="widget" data-widget_type="button.default">
-                                <div class="elementor-widget-container">
-                                    <div class="elementor-button-wrapper">
-                                        <a class="elementor-button elementor-button-link elementor-size-md"
-                                            href="{{ url('/contact-01') }}">
-                                            <span class="elementor-button-content-wrapper">
-                                                <span class="elementor-button-icon">
-                                                    <i aria-hidden="true"
-                                                        class="insul-icon- insul-icon-arrow-up-right-1"></i>
-                                                </span>
-                                                <span class="elementor-button-text">EXPLORE MORE</span>
-                                            </span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="elementor-element elementor-element-d8b2542 e-con-full e-flex e-con e-child"
-                            data-id="d8b2542" data-element_type="container"
-                            data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-                            <div class="elementor-element elementor-element-3e07168 elementor-position-left elementor-widget__width-initial elementor-view-default elementor-mobile-position-top elementor-vertical-align-top elementor-invisible elementor-widget elementor-widget-insul-icon-box"
-                                data-id="3e07168" data-element_type="widget"
-                                data-settings="{&quot;_animation&quot;:&quot;slideInRight&quot;}"
-                                data-widget_type="insul-icon-box.default">
-                                <div class="elementor-widget-container">
-                                    <div class="elementor-icon-box-wrapper">
-                                        <div class="elementor-icon-box-icon">
-                                            <span class="elementor-icon elementor-animation-">
-                                                <i aria-hidden="true" class="fas fa-check-circle"></i>
-                                            </span>
-                                        </div>
-                                        <div class="elementor-icon-box-content">
-                                            <div class="title-content">
-                                                <h3 class="elementor-icon-box-title">
-                                                    <span></span>
-                                                </h3>
-                                                <p class="elementor-icon-box-description">
-                                                    Direct discussion on clarity, priorities. </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="elementor-element elementor-element-78c0ae4 elementor-position-left elementor-widget__width-initial elementor-view-default elementor-mobile-position-top elementor-vertical-align-top elementor-invisible elementor-widget elementor-widget-insul-icon-box"
-                                data-id="78c0ae4" data-element_type="widget"
-                                data-settings="{&quot;_animation&quot;:&quot;slideInRight&quot;,&quot;_animation_delay&quot;:100}"
-                                data-widget_type="insul-icon-box.default">
-                                <div class="elementor-widget-container">
-                                    <div class="elementor-icon-box-wrapper">
-                                        <div class="elementor-icon-box-icon">
-                                            <span class="elementor-icon elementor-animation-">
-                                                <i aria-hidden="true" class="fas fa-check-circle"></i>
-                                            </span>
-                                        </div>
-                                        <div class="elementor-icon-box-content">
-                                            <div class="title-content">
-                                                <h3 class="elementor-icon-box-title">
-                                                    <span></span>
-                                                </h3>
-                                                <p class="elementor-icon-box-description">
-                                                    Understand risks, goals, gaps clearly today. </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="elementor-element elementor-element-b724e85 elementor-position-left elementor-widget__width-initial elementor-view-default elementor-mobile-position-top elementor-vertical-align-top elementor-invisible elementor-widget elementor-widget-insul-icon-box"
-                                data-id="b724e85" data-element_type="widget"
-                                data-settings="{&quot;_animation&quot;:&quot;slideInRight&quot;,&quot;_animation_delay&quot;:200}"
-                                data-widget_type="insul-icon-box.default">
-                                <div class="elementor-widget-container">
-                                    <div class="elementor-icon-box-wrapper">
-                                        <div class="elementor-icon-box-icon">
-                                            <span class="elementor-icon elementor-animation-">
-                                                <i aria-hidden="true" class="fas fa-check-circle"></i>
-                                            </span>
-                                        </div>
-                                        <div class="elementor-icon-box-content">
-                                            <div class="title-content">
-                                                <h3 class="elementor-icon-box-title">
-                                                    <span></span>
-                                                </h3>
-                                                <p class="elementor-icon-box-description">
-                                                    Clear direction, honest advice, next-steps. </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="elementor-element elementor-element-b321da1 e-con-full e-flex e-con e-parent"
-                        data-id="b321da1" data-element_type="container">
-                        <div class="elementor-element elementor-element-5ccc586 e-con-full elementor-hidden-mobile_extra elementor-hidden-mobile e-flex e-con e-child"
-                            data-id="5ccc586" data-element_type="container"
-                            data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-                            <div class="elementor-element elementor-element-4c90f41 elementor-invisible elementor-widget elementor-widget-image"
-                                data-id="4c90f41" data-element_type="widget"
-                                data-settings="{&quot;_animation&quot;:&quot;slideInLeft&quot;}"
-                                data-widget_type="image.default">
-                                <div class="elementor-widget-container">
-                                    <img loading="lazy" decoding="async" width="600" height="692"
-                                        src="https://demo2.pavothemes.com/insul/wp-content/uploads/2024/04/h1-choose.jpg"
-                                        class="attachment-full size-full wp-image-364" alt=""
-                                        srcset="https://demo2.pavothemes.com/insul/wp-content/uploads/2024/04/h1-choose.jpg 600w, https://demo2.pavothemes.com/insul/wp-content/uploads/2024/04/h1-choose-260x300.jpg 260w"
-                                        sizes="(max-width: 600px) 100vw, 600px" />
-                                </div>
-                            </div>
-                        </div>
-                        <div class="elementor-element elementor-element-1d19a3b e-con-full e-flex e-con e-child"
-                            data-id="1d19a3b" data-element_type="container">
-                            <div class="elementor-element elementor-element-f23e411 heading-effects-yes elementor-mobile-align-center subtitle-position-above elementor-widget elementor-widget-heading"
-                                data-id="f23e411" data-element_type="widget" data-widget_type="heading.default">
-                                <div class="elementor-widget-container">
-                                    <div class="elementor-heading-wrapper-inner">
-                                        <div class="elementor-sub-title">
-                                            <span class="sub-title">WHY CHOOSE US</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="elementor-element elementor-element-78fdf8f elementor-widget__width-initial insul-elementor-headline--style-highlight elementor-widget elementor-widget-insul-animated-headline"
-                                data-id="78fdf8f" data-element_type="widget"
-                                data-settings="{&quot;marker&quot;:&quot;underline&quot;,&quot;highlighted_text&quot;:&quot;Success&quot;,&quot;headline_style&quot;:&quot;highlight&quot;,&quot;loop&quot;:&quot;yes&quot;,&quot;highlight_animation_duration&quot;:1200,&quot;highlight_iteration_delay&quot;:8000}"
-                                data-widget_type="insul-animated-headline.default">
-                                <div class="elementor-widget-container">
-                                    <h3 class="elementor-headline">
-                                        <span
-                                            class="insul-elementor-headline-plain-text insul-elementor-headline-text-wrapper">Solutions
-                                            Today for Tomorrow’s</span>
-                                        <span
-                                            class="insul-elementor-headline-dynamic-wrapper insul-elementor-headline-text-wrapper">
-                                            <span
-                                                class="insul-elementor-headline-dynamic-text insul-elementor-headline-text-active">Success</span>
+                                        Direct discussion on clarity, priorities.
+                                    </li>
+                                    <li class="home-guidance__point">
+                                        <span class="home-guidance__point-icon" aria-hidden="true">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
                                         </span>
-                                    </h3>
-                                </div>
-                            </div>
-                            <div class="elementor-element elementor-element-c0777aa elementor-widget__width-initial elementor-widget elementor-widget-text-editor"
-                                data-id="c0777aa" data-element_type="widget" data-widget_type="text-editor.default">
-                                <div class="elementor-widget-container">
-                                    Witan Finsure combines experience, honest advice, strong claim support, and regular
-                                    reviews, ensuring insurance and investments work together, adapt over time, and
-                                    protect your financial future with confidence. </div>
-                            </div>
-                            <div class="elementor-element elementor-element-c6ee56c e-flex e-con-boxed e-con e-child"
-                                data-id="c6ee56c" data-element_type="container">
-                                <div class="e-con-inner">
-                                    <div class="elementor-element elementor-element-eded78c e-n-tabs-mobile elementor-widget elementor-widget-n-tabs"
-                                        data-id="eded78c" data-element_type="widget"
-                                        data-settings="{&quot;tabs_justify_horizontal&quot;:&quot;start&quot;,&quot;horizontal_scroll&quot;:&quot;disable&quot;}"
-                                        data-widget_type="nested-tabs.default">
-                                        <div class="elementor-widget-container">
-                                            <div class="e-n-tabs" data-widget-number="249485196"
-                                                aria-label="Tabs. Open items with Enter or Space, close with Escape and navigate using the Arrow keys.">
-                                                <div class="e-n-tabs-heading" role="tablist">
-                                                    <button id="e-n-tab-title-2494851961" class="e-n-tab-title"
-                                                        aria-selected="true" data-tab-index="1" role="tab" tabindex="0"
-                                                        aria-controls="e-n-tab-content-2494851961"
-                                                        style="--n-tabs-title-order: 1;">
-                                                        <span class="e-n-tab-title-text">
-                                                            FOUNDER INSIGHT </span>
-                                                    </button>
-                                                    <button id="e-n-tab-title-2494851962" class="e-n-tab-title"
-                                                        aria-selected="false" data-tab-index="2" role="tab"
-                                                        tabindex="-1" aria-controls="e-n-tab-content-2494851962"
-                                                        style="--n-tabs-title-order: 2;">
-                                                        <span class="e-n-tab-title-text">
-                                                            MISSION &amp; VISION </span>
-                                                    </button>
-                                                </div>
-                                                <div class="e-n-tabs-content">
-                                                    <div id="e-n-tab-content-2494851961" role="tabpanel"
-                                                        aria-labelledby="e-n-tab-title-2494851961" data-tab-index="1"
-                                                        style="--n-tabs-title-order: 1;"
-                                                        class="e-active elementor-element elementor-element-c186578 e-con-full e-flex e-con e-child"
-                                                        data-id="c186578" data-element_type="container">
-                                                        <div class="elementor-element elementor-element-539699e elementor-widget__width-initial elementor-widget elementor-widget-text-editor"
-                                                            data-id="539699e" data-element_type="widget"
-                                                            data-widget_type="text-editor.default">
-                                                            <div class="elementor-widget-container">
-                                                                Built by a founder focused on clarity, ethics, and
-                                                                long-term thinking, active BNI member, Witan Finsure
-                                                                leads with experience, calm judgment, and disciplined
-                                                                processes ensuring decisions balance protection, growth
-                                                                and accountability consistently. </div>
-                                                        </div>
-                                                        <div class="elementor-element elementor-element-57725a1 elementor-widget__width-initial elementor-widget elementor-widget-text-editor"
-                                                            data-id="57725a1" data-element_type="widget"
-                                                            data-widget_type="text-editor.default">
-                                                            <div class="elementor-widget-container">
-                                                                Supported by a highly efficient team, we ensure claims
-                                                                are settled end-to-end, portfolios reviewed regularly,
-                                                                and clients guided responsibly, protecting wealth,
-                                                                enabling growth, without mis-selling or confusion. 
-                                                        </div>
-                                                    </div>
-                                                    </div>
-                                                    <div id="e-n-tab-content-2494851962" role="tabpanel"
-                                                        aria-labelledby="e-n-tab-title-2494851962" data-tab-index="2"
-                                                        style="--n-tabs-title-order: 2;"
-                                                        class=" elementor-element elementor-element-e1f9459 e-con-full e-flex e-con e-child"
-                                                        data-id="e1f9459" data-element_type="container">
-                                                        <div class="elementor-element elementor-element-d10e56a elementor-widget__width-initial elementor-widget elementor-widget-text-editor"
-                                                            data-id="d10e56a" data-element_type="widget"
-                                                            data-widget_type="text-editor.default">
-                                                            <div class="elementor-widget-container">
-                                                                Our mission is to deliver honest, transparent financial
-                                                                guidance across insurance and investments, simplifying
-                                                                decisions, building trust, ensuring protection, growth,
-                                                                and long-term confidence through clear communication,
-                                                                regular reviews, and client-first advice. </div>
-                                                        </div>
-                                                        <div class="elementor-element elementor-element-2960c79 elementor-widget__width-initial elementor-widget elementor-widget-text-editor"
-                                                            data-id="2960c79" data-element_type="widget"
-                                                            data-widget_type="text-editor.default">
-                                                            <div class="elementor-widget-container">
-                                                                Our vision is to become the most trusted financial
-                                                                partner, known for integrity, consistency, and clarity,
-                                                                helping families and businesses make confident, informed
-                                                                decisions across generations.  </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="elementor-element elementor-element-41c0c29 elementor-mobile-align-center elementor-button-default elementor-widget elementor-widget-button"
-                                data-id="41c0c29" data-element_type="widget" data-widget_type="button.default">
-                                <div class="elementor-widget-container">
-                                    <div class="elementor-button-wrapper">
-                                        <a class="elementor-button elementor-button-link elementor-size-md"
-                                            href="{{ url('/contact-01') }}">
-                                            <span class="elementor-button-content-wrapper">
-                                                <span class="elementor-button-icon">
-                                                    <i aria-hidden="true"
-                                                        class="insul-icon- insul-icon-arrow-up-right-1"></i>
-                                                </span>
-                                                <span class="elementor-button-text">GET IN TOUCH</span>
-                                            </span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="elementor-element elementor-element-b6fd2bb elementor-absolute elementor-widget elementor-widget-image"
-                            data-id="b6fd2bb" data-element_type="widget"
-                            data-settings="{&quot;_position&quot;:&quot;absolute&quot;}"
-                            data-widget_type="image.default">
-                            <div class="elementor-widget-container">
-                                <img loading="lazy" decoding="async" width="397" height="507"
-                                    src="https://demo2.pavothemes.com/insul/wp-content/uploads/2024/05/h2-ready01.png"
-                                    class="attachment-large size-large wp-image-3329" alt=""
-                                    srcset="https://demo2.pavothemes.com/insul/wp-content/uploads/2024/05/h2-ready01.png 397w, https://demo2.pavothemes.com/insul/wp-content/uploads/2024/05/h2-ready01-235x300.png 235w"
-                                    sizes="(max-width: 397px) 100vw, 397px" />
-                            </div>
-                        </div>
-                    </div>
-                    <div id="our-services" class="elementor-element elementor-element-a946d84 e-flex e-con-boxed e-con e-parent"
-                        data-id="a946d84" data-element_type="container">
-                        <div class="e-con-inner">
-                            <div class="elementor-element elementor-element-31477fa heading-effects-yes elementor-mobile-align-center subtitle-position-above elementor-widget elementor-widget-heading"
-                                data-id="31477fa" data-element_type="widget" data-widget_type="heading.default">
-                                <div class="elementor-widget-container">
-                                    <div class="elementor-heading-wrapper-inner">
-                                        <div class="elementor-sub-title">
-                                            <span class="sub-title">OUR SERVICES</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="elementor-element elementor-element-709249d elementor-widget__width-initial insul-elementor-headline--style-highlight elementor-widget elementor-widget-insul-animated-headline"
-                                data-id="709249d" data-element_type="widget"
-                                data-settings="{&quot;marker&quot;:&quot;underline&quot;,&quot;highlighted_text&quot;:&quot;business&quot;,&quot;headline_style&quot;:&quot;highlight&quot;,&quot;loop&quot;:&quot;yes&quot;,&quot;highlight_animation_duration&quot;:1200,&quot;highlight_iteration_delay&quot;:8000}"
-                                data-widget_type="insul-animated-headline.default">
-                                <div class="elementor-widget-container">
-                                    <h3 class="elementor-headline">
-                                        <span
-                                            class="insul-elementor-headline-plain-text insul-elementor-headline-text-wrapper">We
-                                            provide complete insurance and investment</span>
-                                        <span
-                                            class="insul-elementor-headline-dynamic-wrapper insul-elementor-headline-text-wrapper">
-                                            <span
-                                                class="insul-elementor-headline-dynamic-text insul-elementor-headline-text-active">solutions</span>
+                                        Understand risks, goals, gaps clearly today.
+                                    </li>
+                                    <li class="home-guidance__point">
+                                        <span class="home-guidance__point-icon" aria-hidden="true">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
                                         </span>
-                                    </h3>
-                                </div>
-                            </div>
-                            <div class="elementor-element elementor-element-3020abc elementor-widget elementor-widget-insul-our-service"
-                                data-id="3020abc" data-element_type="widget"
-                                data-widget_type="insul-our-service.default">
-                                <div class="elementor-widget-container">
-
-                                    <div class="insul_service-wrapper service-default">
-                                        <div>
-                                            <div class="service-layout-1">
-
-                                                <div class="elementor-service-item elementor-repeater-item-9c99c35">
-                                                    <div class="service-inner">
-                                                        <div class="service-post-thumbnail">
-
-                                                        </div>
-                                                        <div class="service-content">
-                                                            <div class="service-title">
-                                                                <div class="title-number">
-                                                                    <div class="entry-number">
-                                                                        <span class="number">01</span>
-                                                                    </div>
-                                                                    <h2 class="entry-title">
-                                                                        <a
-                                                                        href="{{ url('/services/general-insurance') }}">
-                                                                            General Insurance </a>
-                                                                    </h2>
-                                                                </div>
-                                                                <div class="excerpt-content">We provide motor, health,
-                                                                    property, travel, marine, and business insurance
-                                                                    solutions for individuals and corporates, offering
-                                                                    tailored coverage, compliance, and dependable claims
-                                                                    support across risk needs.</div>
-                                                            </div>
-                                                            <div class="button-service">
-                                                                <a class="btn-link"
-                                                                href="{{ url('/services/general-insurance') }}">
-
-                                                                                                                        Read more                                                    
-                                                                    <i class="insul-icon-arrow-up-right-1"></i>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="elementor-service-item elementor-repeater-item-0fa1992">
-                                                    <div class="service-inner">
-                                                        <div class="service-post-thumbnail">
-
-                                                        </div>
-                                                        <div class="service-content">
-                                                            <div class="service-title">
-                                                                <div class="title-number">
-                                                                    <div class="entry-number">
-                                                                        <span class="number">02</span>
-                                                                    </div>
-                                                                    <h2 class="entry-title">
-                                                                        <a
-                                                                        href="{{ url('/services/life-insurance') }}">
-                                                                            Life Insurance </a>
-                                                                    </h2>
-                                                                </div>
-                                                                <div class="excerpt-content">We provide life insurance
-                                                                    planning covering term, savings, retirement, and
-                                                                    protection needs for individuals and families,
-                                                                    ensuring financial security, continuity, and
-                                                                    long-term confidence across life stages.</div>
-                                                            </div>
-                                                            <div class="button-service">
-                                                                <a class="btn-link"
-                                                                href="{{ url('/services/life-insurance') }}">
-
-                                                                                                                        Read more                                                    
-                                                                    <i class="insul-icon-arrow-up-right-1"></i>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="elementor-service-item elementor-repeater-item-800877f">
-                                                    <div class="service-inner">
-                                                        <div class="service-post-thumbnail">
-
-                                                        </div>
-                                                        <div class="service-content">
-                                                            <div class="service-title">
-                                                                <div class="title-number">
-                                                                    <div class="entry-number">
-                                                                        <span class="number">03</span>
-                                                                    </div>
-                                                                    <h2 class="entry-title">
-                                                                        <a
-                                                                            href="{{ url('/services/mutual-funds') }}">
-                                                                            Mutual Funds </a>
-                                                                    </h2>
-                                                                </div>
-                                                                <div class="excerpt-content">We determine suitable
-                                                                    mutual fund allocation based on risk appetite, time
-                                                                    horizon, and goals, constructing diversified
-                                                                    portfolios that balance growth, stability,
-                                                                    liquidity, and long-term wealth creation.</div>
-                                                            </div>
-                                                            <div class="button-service">
-                                                                <a class="btn-link"
-                                                                href="{{ url('/services/mutual-funds') }}">
-
-                                                                                                                        Read more                                                    
-                                                                    <i class="insul-icon-arrow-up-right-1"></i>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                        Clear direction, honest advice, next-steps.
+                                    </li>
+                                </ul>
                             </div>
                         </div>
-                    </div>
-                    <div class="elementor-element elementor-element-cb323f6 e-flex e-con-boxed e-con e-parent"
-                        data-id="cb323f6" data-element_type="container">
-                        <div class="e-con-inner">
-                            <div class="elementor-element elementor-element-e676d21 e-con-full e-flex e-con e-child"
-                                data-id="e676d21" data-element_type="container">
-                                <div class="elementor-element elementor-element-87c0bb5 e-con-full e-flex e-con e-child"
-                                    data-id="87c0bb5" data-element_type="container">
-                                    <div class="elementor-element elementor-element-60458c6 heading-effects-yes elementor-mobile-align-center subtitle-position-above elementor-widget elementor-widget-heading"
-                                        data-id="60458c6" data-element_type="widget" data-widget_type="heading.default">
-                                        <div class="elementor-widget-container">
-                                            <div class="elementor-heading-wrapper-inner">
-                                                <div class="elementor-sub-title">
-                                                    <span class="sub-title">OUR LASTEST ARTICLE</span>
-                                                </div>
-                                            </div>
+                    </section>
+                    <section class="home-why" aria-labelledby="home-why-title">
+                        <div class="home-why__inner">
+                            <header class="home-why__header">
+                                <p class="home-why__eyebrow">Why Choose Us</p>
+                                <h2 id="home-why-title" class="home-why__title">
+                                    Solutions Today for Tomorrow's <span class="home-why__highlight">Success</span>
+                                </h2>
+                                <p class="home-why__intro">Witan Finsure combines experience, honest advice, strong claim support, and regular reviews, ensuring insurance and investments work together, adapt over time, and protect your financial future with confidence.</p>
+                            </header>
+                            <ul class="home-why__pillars" aria-label="Key differentiators">
+                                <li class="home-why__pillar">
+                                    <span class="home-why__pillar-icon" aria-hidden="true">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                                    </span>
+                                    Zero mis-selling
+                                </li>
+                                <li class="home-why__pillar">
+                                    <span class="home-why__pillar-icon" aria-hidden="true">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                                    </span>
+                                    Six-month reviews
+                                </li>
+                                <li class="home-why__pillar">
+                                    <span class="home-why__pillar-icon" aria-hidden="true">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                                    </span>
+                                    End-to-end claims
+                                </li>
+                                <li class="home-why__pillar">
+                                    <span class="home-why__pillar-icon" aria-hidden="true">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                    </span>
+                                    20+ years experience
+                                </li>
+                            </ul>
+                            <div class="home-why__grid">
+                                <article class="home-why__panel">
+                                    <div class="home-why__panel-head">
+                                        <span class="home-why__panel-icon" aria-hidden="true">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                                        </span>
+                                        <h3 class="home-why__panel-title">Founder Insight</h3>
+                                    </div>
+                                    <blockquote class="home-why__quote">"Clients deserve honest guidance, not sales pressure."</blockquote>
+                                    <p>Witan Finsure was built by Rishabh, who believes financial advice should be clear, ethical, and grounded in long-term thinking. As an active BNI member with deep experience across insurance and investments, the firm was shaped by a simple conviction that still guides every decision today.</p>
+                                    <p>Every recommendation reflects calm judgment and disciplined processes, balancing protection, growth, and accountability so decisions hold up over years, not just at the point of sale.</p>
+                                    <p>Behind that approach is a highly efficient team dedicated to end-to-end claim settlement, regular portfolio reviews, and responsible client guidance, protecting wealth, enabling growth, and avoiding the confusion common across the industry.</p>
+                                    <ul class="home-why__tags">
+                                        <li class="home-why__tag">BNI Member</li>
+                                        <li class="home-why__tag">Founder-led</li>
+                                        <li class="home-why__tag">Client-first</li>
+                                    </ul>
+                                </article>
+                                <article class="home-why__panel">
+                                    <div class="home-why__panel-head">
+                                        <span class="home-why__panel-icon" aria-hidden="true">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+                                        </span>
+                                        <h3 class="home-why__panel-title">Mission &amp; Vision</h3>
+                                    </div>
+                                    <div class="home-why__mv">
+                                        <div class="home-why__mv-block">
+                                            <h4 class="home-why__mv-heading">Our Mission</h4>
+                                            <p>Deliver honest, transparent financial guidance across insurance and investments, simplifying complex decisions, building lasting trust, and ensuring every client feels protected, informed, and confident through clear communication and disciplined six-month reviews.</p>
+                                        </div>
+                                        <div class="home-why__mv-block">
+                                            <h4 class="home-why__mv-heading">Our Vision</h4>
+                                            <p>Become the most trusted financial partner for families and businesses, known for integrity, consistency, and clarity, helping clients make confident, informed decisions across generations as life, markets, and priorities evolve.</p>
                                         </div>
                                     </div>
-                                    <div class="elementor-element elementor-element-1482592 elementor-widget__width-initial insul-elementor-headline--style-highlight elementor-widget elementor-widget-insul-animated-headline"
-                                        data-id="1482592" data-element_type="widget"
-                                        data-settings="{&quot;marker&quot;:&quot;underline&quot;,&quot;highlighted_text&quot;:&quot;Lastest&quot;,&quot;headline_style&quot;:&quot;highlight&quot;,&quot;loop&quot;:&quot;yes&quot;,&quot;highlight_animation_duration&quot;:1200,&quot;highlight_iteration_delay&quot;:8000}"
-                                        data-widget_type="insul-animated-headline.default">
-                                        <div class="elementor-widget-container">
-                                            <h3 class="elementor-headline">
-                                                <span
-                                                    class="insul-elementor-headline-plain-text insul-elementor-headline-text-wrapper">Check
-                                                    Our</span>
-                                                <span
-                                                    class="insul-elementor-headline-dynamic-wrapper insul-elementor-headline-text-wrapper">
-                                                    <span
-                                                        class="insul-elementor-headline-dynamic-text insul-elementor-headline-text-active">Lastest</span>
-                                                </span>
-                                                <span
-                                                    class="insul-elementor-headline-after-text insul-elementor-headline-text-wrapper">News</span>
-                                            </h3>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="elementor-element elementor-element-bb3e8d9 e-con-full e-flex e-con e-child"
-                                    data-id="bb3e8d9" data-element_type="container">
-                                    <div class="elementor-element elementor-element-2da6810 elementor-align-right elementor-mobile-align-center elementor-button-default elementor-widget elementor-widget-button"
-                                        data-id="2da6810" data-element_type="widget" data-widget_type="button.default">
-                                        <div class="elementor-widget-container">
-                                            <div class="elementor-button-wrapper">
-                                                <a class="elementor-button elementor-button-link elementor-size-md"
-                                                    href="/blog">
-                                                    <span class="elementor-button-content-wrapper">
-                                                        <span class="elementor-button-icon">
-                                                            <i aria-hidden="true"
-                                                                class="insul-icon- insul-icon-arrow-up-right-1"></i>
-                                                        </span>
-                                                        <span class="elementor-button-text">SEE ALL POSTS</span>
-                                                    </span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                </article>
                             </div>
-                            <div class="elementor-element elementor-element-aec2887 elementor-grid-laptop-3 elementor-grid-4 overflow-to-none elementor-widget elementor-widget-insul-post-grid"
-                                data-id="aec2887" data-element_type="widget"
-                                data-settings="{&quot;navigation&quot;:&quot;none&quot;,&quot;autoplay&quot;:&quot;no&quot;,&quot;column_laptop&quot;:&quot;3&quot;,&quot;column&quot;:4,&quot;column_spacing&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:30,&quot;sizes&quot;:[]},&quot;swiper_overflow&quot;:&quot;none&quot;,&quot;infinite&quot;:&quot;yes&quot;,&quot;speed&quot;:500}"
-                                data-widget_type="insul-post-grid.default">
-                                <div class="elementor-widget-container">
-                                    <div
-                                        class="elementor-post-wrapper layout-post-style-1 insul-wrapper insul-swiper-wrapper swiper">
-                                        <div class="insul-con swiper insul-swiper" data-center="false">
-                                            <div class="insul-con-inner swiper-wrapper" aria-live="polite">
-                                                <div class="elementor-posts-item swiper-slide elementor-item">
-                                                    <article class="post-style-1">
-                                                        <div class="post-inner">
-                                                            <div class="post-image">
-
-                                                                <!--            <div class="entry-thumbnail">-->
-                                                                <div class="post-thumbnail">
-                                                                    <img loading="lazy" decoding="async" width="930"
-                                                                        height="560"
-                                                                        src="https://demo2.pavothemes.com/insul/wp-content/uploads/2024/04/blog-1.jpg"
-                                                                        class="attachment-insul-post-grid-2 size-insul-post-grid-2 wp-post-image"
-                                                                        alt=""
-                                                                        srcset="https://demo2.pavothemes.com/insul/wp-content/uploads/2024/04/blog-1.jpg 930w, https://demo2.pavothemes.com/insul/wp-content/uploads/2024/04/blog-1-300x181.jpg 300w, https://demo2.pavothemes.com/insul/wp-content/uploads/2024/04/blog-1-768x462.jpg 768w"
-                                                                        sizes="(max-width: 930px) 100vw, 930px" />
-                                                                </div>
-                                                            </div>
-                                                            <div class="post-content">
-                                                                <div class="entry-content">
-                                                                    <h5 class="entry-title">
-                                                                        <a href="https://demo2.pavothemes.com/insul/embracing-change-transformative-insights-from-insul-business-experts/"
-                                                                            rel="bookmark">Embracing Change:
-                                                                            Transformative Insights from Insul Business
-                                                                            Experts</a>
-                                                                    </h5>
-                                                                </div>
-                                                                <div class="entry-meta">
-                                                                    <div class="categories-link">
-                                                                        <span
-                                                                            class="screen-reader-text">Categories</span>
-                                                                        <a href="https://demo2.pavothemes.com/insul/category/finance-saving/"
-                                                                            rel="category tag">Finance &amp; Saving</a>
-                                                                    </div>
-                                                                    <div class="posted-on">
-                                                                        <a href="https://demo2.pavothemes.com/insul/embracing-change-transformative-insights-from-insul-business-experts/"
-                                                                            rel="bookmark">22 Apr 2024</a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </article>
-                                                </div>
-                                                <div class="elementor-posts-item swiper-slide elementor-item">
-                                                    <article class="post-style-1">
-                                                        <div class="post-inner">
-                                                            <div class="post-image">
-
-                                                                <!--            <div class="entry-thumbnail">-->
-                                                                <div class="post-thumbnail">
-                                                                    <img loading="lazy" decoding="async" width="930"
-                                                                        height="560"
-                                                                        src="https://demo2.pavothemes.com/insul/wp-content/uploads/2024/04/blog-2.jpg"
-                                                                        class="attachment-insul-post-grid-2 size-insul-post-grid-2 wp-post-image"
-                                                                        alt=""
-                                                                        srcset="https://demo2.pavothemes.com/insul/wp-content/uploads/2024/04/blog-2.jpg 930w, https://demo2.pavothemes.com/insul/wp-content/uploads/2024/04/blog-2-300x181.jpg 300w, https://demo2.pavothemes.com/insul/wp-content/uploads/2024/04/blog-2-768x462.jpg 768w"
-                                                                        sizes="(max-width: 930px) 100vw, 930px" />
-                                                                </div>
-                                                            </div>
-                                                            <div class="post-content">
-                                                                <div class="entry-content">
-                                                                    <h5 class="entry-title">
-                                                                        <a href="https://demo2.pavothemes.com/insul/building-bridges-strengthening-partnerships-with-insul-strategies/"
-                                                                            rel="bookmark">Building Bridges:
-                                                                            Strengthening Partnerships with Insul
-                                                                            Strategies</a>
-                                                                    </h5>
-                                                                </div>
-                                                                <div class="entry-meta">
-                                                                    <div class="categories-link">
-                                                                        <span
-                                                                            class="screen-reader-text">Categories</span>
-                                                                        <a href="https://demo2.pavothemes.com/insul/category/insurance/"
-                                                                            rel="category tag">Insurance</a>
-                                                                    </div>
-                                                                    <div class="posted-on">
-                                                                        <a href="https://demo2.pavothemes.com/insul/building-bridges-strengthening-partnerships-with-insul-strategies/"
-                                                                            rel="bookmark">22 Apr 2024</a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </article>
-                                                </div>
-                                                <div class="elementor-posts-item swiper-slide elementor-item">
-                                                    <article class="post-style-1">
-                                                        <div class="post-inner">
-                                                            <div class="post-image">
-
-                                                                <!--            <div class="entry-thumbnail">-->
-                                                                <div class="post-thumbnail">
-                                                                    <img loading="lazy" decoding="async" width="930"
-                                                                        height="560"
-                                                                        src="https://demo2.pavothemes.com/insul/wp-content/uploads/2024/04/blog-3.jpg"
-                                                                        class="attachment-insul-post-grid-2 size-insul-post-grid-2 wp-post-image"
-                                                                        alt=""
-                                                                        srcset="https://demo2.pavothemes.com/insul/wp-content/uploads/2024/04/blog-3.jpg 930w, https://demo2.pavothemes.com/insul/wp-content/uploads/2024/04/blog-3-300x181.jpg 300w, https://demo2.pavothemes.com/insul/wp-content/uploads/2024/04/blog-3-768x462.jpg 768w"
-                                                                        sizes="(max-width: 930px) 100vw, 930px" />
-                                                                </div>
-                                                            </div>
-                                                            <div class="post-content">
-                                                                <div class="entry-content">
-                                                                    <h5 class="entry-title">
-                                                                        <a href="https://demo2.pavothemes.com/insul/financial-fitness-tips-for-business-success-from-insul-consulting/"
-                                                                            rel="bookmark">Financial Fitness: Tips for
-                                                                            Business Success from Insul Consulting</a>
-                                                                    </h5>
-                                                                </div>
-                                                                <div class="entry-meta">
-                                                                    <div class="categories-link">
-                                                                        <span
-                                                                            class="screen-reader-text">Categories</span>
-                                                                        <a href="https://demo2.pavothemes.com/insul/category/new-services/"
-                                                                            rel="category tag">New Services</a>
-                                                                    </div>
-                                                                    <div class="posted-on">
-                                                                        <a href="https://demo2.pavothemes.com/insul/financial-fitness-tips-for-business-success-from-insul-consulting/"
-                                                                            rel="bookmark">22 Apr 2024</a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </article>
-                                                </div>
-                                                <div class="elementor-posts-item swiper-slide elementor-item">
-                                                    <article class="post-style-1">
-                                                        <div class="post-inner">
-                                                            <div class="post-image">
-
-                                                                <!--            <div class="entry-thumbnail">-->
-                                                                <div class="post-thumbnail">
-                                                                    <img loading="lazy" decoding="async" width="930"
-                                                                        height="560"
-                                                                        src="https://demo2.pavothemes.com/insul/wp-content/uploads/2024/04/blog-4.jpg"
-                                                                        class="attachment-insul-post-grid-2 size-insul-post-grid-2 wp-post-image"
-                                                                        alt=""
-                                                                        srcset="https://demo2.pavothemes.com/insul/wp-content/uploads/2024/04/blog-4.jpg 930w, https://demo2.pavothemes.com/insul/wp-content/uploads/2024/04/blog-4-300x181.jpg 300w, https://demo2.pavothemes.com/insul/wp-content/uploads/2024/04/blog-4-768x462.jpg 768w"
-                                                                        sizes="(max-width: 930px) 100vw, 930px" />
-                                                                </div>
-                                                            </div>
-                                                            <div class="post-content">
-                                                                <div class="entry-content">
-                                                                    <h5 class="entry-title">
-                                                                        <a href="https://demo2.pavothemes.com/insul/navigating-uncertainty-strategies-for-business-resilience-with-insul/"
-                                                                            rel="bookmark">Navigating Uncertainty:
-                                                                            Strategies for Business Resilience with
-                                                                            Insul</a>
-                                                                    </h5>
-                                                                </div>
-                                                                <div class="entry-meta">
-                                                                    <div class="categories-link">
-                                                                        <span
-                                                                            class="screen-reader-text">Categories</span>
-                                                                        <a href="https://demo2.pavothemes.com/insul/category/tips-tricks/"
-                                                                            rel="category tag">Tips &amp; Tricks</a>
-                                                                    </div>
-                                                                    <div class="posted-on">
-                                                                        <a href="https://demo2.pavothemes.com/insul/navigating-uncertainty-strategies-for-business-resilience-with-insul/"
-                                                                            rel="bookmark">22 Apr 2024</a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </article>
-                                                </div>
-                                                <div class="elementor-posts-item swiper-slide elementor-item">
-                                                    <article class="post-style-1">
-                                                        <div class="post-inner">
-                                                            <div class="post-image">
-
-                                                                <!--            <div class="entry-thumbnail">-->
-                                                                <div class="post-thumbnail">
-                                                                    <img loading="lazy" decoding="async" width="930"
-                                                                        height="560"
-                                                                        src="https://demo2.pavothemes.com/insul/wp-content/uploads/2024/04/blog-5.jpg"
-                                                                        class="attachment-insul-post-grid-2 size-insul-post-grid-2 wp-post-image"
-                                                                        alt=""
-                                                                        srcset="https://demo2.pavothemes.com/insul/wp-content/uploads/2024/04/blog-5.jpg 930w, https://demo2.pavothemes.com/insul/wp-content/uploads/2024/04/blog-5-300x181.jpg 300w, https://demo2.pavothemes.com/insul/wp-content/uploads/2024/04/blog-5-768x462.jpg 768w"
-                                                                        sizes="(max-width: 930px) 100vw, 930px" />
-                                                                </div>
-                                                            </div>
-                                                            <div class="post-content">
-                                                                <div class="entry-content">
-                                                                    <h5 class="entry-title">
-                                                                        <a href="https://demo2.pavothemes.com/insul/strategic-planning-made-simple-expert-advice-from-insul-consultants/"
-                                                                            rel="bookmark">Strategic Planning Made
-                                                                            Simple: Expert Advice from Insul
-                                                                            Consultants</a>
-                                                                    </h5>
-                                                                </div>
-                                                                <div class="entry-meta">
-                                                                    <div class="categories-link">
-                                                                        <span
-                                                                            class="screen-reader-text">Categories</span>
-                                                                        <a href="https://demo2.pavothemes.com/insul/category/uncategorized/"
-                                                                            rel="category tag">Uncategorized</a>
-                                                                    </div>
-                                                                    <div class="posted-on">
-                                                                        <a href="https://demo2.pavothemes.com/insul/strategic-planning-made-simple-expert-advice-from-insul-consultants/"
-                                                                            rel="bookmark">22 Apr 2024</a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </article>
-                                                </div>
-                                                <div class="elementor-posts-item swiper-slide elementor-item">
-                                                    <article class="post-style-1">
-                                                        <div class="post-inner">
-                                                            <div class="post-image">
-
-                                                                <!--            <div class="entry-thumbnail">-->
-                                                                <div class="post-thumbnail">
-                                                                    <img loading="lazy" decoding="async" width="930"
-                                                                        height="560"
-                                                                        src="https://demo2.pavothemes.com/insul/wp-content/uploads/2024/04/blog-6.jpg"
-                                                                        class="attachment-insul-post-grid-2 size-insul-post-grid-2 wp-post-image"
-                                                                        alt=""
-                                                                        srcset="https://demo2.pavothemes.com/insul/wp-content/uploads/2024/04/blog-6.jpg 930w, https://demo2.pavothemes.com/insul/wp-content/uploads/2024/04/blog-6-300x181.jpg 300w, https://demo2.pavothemes.com/insul/wp-content/uploads/2024/04/blog-6-768x462.jpg 768w"
-                                                                        sizes="(max-width: 930px) 100vw, 930px" />
-                                                                </div>
-                                                            </div>
-                                                            <div class="post-content">
-                                                                <div class="entry-content">
-                                                                    <h5 class="entry-title">
-                                                                        <a href="https://demo2.pavothemes.com/insul/empowering-leadership-insights-for-effective-management-with-insul/"
-                                                                            rel="bookmark">Empowering Leadership:
-                                                                            Insights for Effective Management with
-                                                                            Insul</a>
-                                                                    </h5>
-                                                                </div>
-                                                                <div class="entry-meta">
-                                                                    <div class="categories-link">
-                                                                        <span
-                                                                            class="screen-reader-text">Categories</span>
-                                                                        <a href="https://demo2.pavothemes.com/insul/category/finance-saving/"
-                                                                            rel="category tag">Finance &amp; Saving</a>
-                                                                    </div>
-                                                                    <div class="posted-on">
-                                                                        <a href="https://demo2.pavothemes.com/insul/empowering-leadership-insights-for-effective-management-with-insul/"
-                                                                            rel="bookmark">22 Apr 2024</a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </article>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
+                            <div class="home-why__cta-wrap">
+                                <p class="home-why__cta-text">
+                                    <strong>Ready to plan with clarity?</strong>
+                                    Speak with our team for honest advice on insurance and investments.
+                                </p>
+                                <a href="{{ url('/contact-01') }}" class="home-why__btn">
+                                    Get in touch
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
+                                </a>
                             </div>
                         </div>
-                    </div>
+                    </section>
+                    <section id="our-services" class="home-services" aria-labelledby="home-services-title">
+                        <div class="home-services__inner">
+                            <header class="home-services__header">
+                                <p class="home-services__eyebrow">Our Services</p>
+                                <h2 id="home-services-title" class="home-services__title">
+                                    We provide complete insurance and investment
+                                    <span class="home-services__highlight">solutions</span>
+                                </h2>
+                            </header>
+                            <ul class="home-services__grid">
+                                <li>
+                                    <a class="home-services__box" href="{{ url('/services/general-insurance') }}">
+                                        <p class="home-services__num">01</p>
+                                        <h3 class="home-services__name">General Insurance</h3>
+                                        <p class="home-services__desc">We provide motor, health, property, travel, marine, and business insurance solutions for individuals and corporates, offering tailored coverage, compliance, and dependable claims support across risk needs.</p>
+                                        <div class="home-services__footer">
+                                            <span class="home-services__cta-text">Learn more</span>
+                                            <span class="home-services__icon" aria-hidden="true">
+                                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
+                                            </span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="home-services__box" href="{{ url('/services/life-insurance') }}">
+                                        <p class="home-services__num">02</p>
+                                        <h3 class="home-services__name">Life Insurance</h3>
+                                        <p class="home-services__desc">We provide life insurance planning covering term, savings, retirement, and protection needs for individuals and families, ensuring financial security, continuity, and long-term confidence across life stages.</p>
+                                        <div class="home-services__footer">
+                                            <span class="home-services__cta-text">Learn more</span>
+                                            <span class="home-services__icon" aria-hidden="true">
+                                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
+                                            </span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="home-services__box" href="{{ url('/services/mutual-funds') }}">
+                                        <p class="home-services__num">03</p>
+                                        <h3 class="home-services__name">Mutual Funds</h3>
+                                        <p class="home-services__desc">We determine suitable mutual fund allocation based on risk appetite, time horizon, and goals, constructing diversified portfolios that balance growth, stability, liquidity, and long-term wealth creation.</p>
+                                        <div class="home-services__footer">
+                                            <span class="home-services__cta-text">Learn more</span>
+                                            <span class="home-services__icon" aria-hidden="true">
+                                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
+                                            </span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
                     <div class="elementor-element elementor-element-a840e06 e-con-full e-flex e-con e-parent"
                         data-id="a840e06" data-element_type="container">
                         <div class="elementor-element elementor-element-290fc88 heading-effects-yes elementor-align-center subtitle-position-above elementor-widget elementor-widget-heading"
@@ -2641,9 +2434,13 @@
                                 </h3>
                             </div>
                         </div>
+                        <div class="home-testimonials-outer">
+                        <button type="button" class="home-testimonials-nav__btn home-testimonials-nav__prev" aria-label="Previous review">
+                            <i aria-hidden="true" class="insul-icon- insul-icon-angle-left"></i>
+                        </button>
                         <div class="elementor-element elementor-element-c449d47 elementor-grid-5 elementor-pagination-style-2 elementor-grid-laptop-4 elementor-grid-tablet_extra-2 elementor-view-default overflow-to-none elementor-pagination-position-outside elementor-widget elementor-widget-insul-testimonials"
                             data-id="c449d47" data-element_type="widget"
-                            data-settings="{&quot;column&quot;:&quot;5&quot;,&quot;navigation&quot;:&quot;dots&quot;,&quot;autoplay&quot;:&quot;no&quot;,&quot;column_laptop&quot;:&quot;4&quot;,&quot;column_tablet_extra&quot;:&quot;2&quot;,&quot;column_spacing&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:30,&quot;sizes&quot;:[]},&quot;swiper_overflow&quot;:&quot;none&quot;,&quot;infinite&quot;:&quot;yes&quot;,&quot;speed&quot;:500}"
+                            data-settings="{&quot;column&quot;:&quot;5&quot;,&quot;navigation&quot;:&quot;both&quot;,&quot;autoplay&quot;:&quot;no&quot;,&quot;column_laptop&quot;:&quot;4&quot;,&quot;column_tablet_extra&quot;:&quot;2&quot;,&quot;column_spacing&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:30,&quot;sizes&quot;:[]},&quot;swiper_overflow&quot;:&quot;none&quot;,&quot;infinite&quot;:&quot;yes&quot;,&quot;speed&quot;:500}"
                             data-widget_type="insul-testimonials.default">
                             <div class="elementor-widget-container">
                                 <div
@@ -2660,10 +2457,10 @@
                                                                 <div class="elementor-testimonial-image">
                                                                     <img loading="lazy" decoding="async" width="768"
                                                                         height="816"
-                                                                        src="https://demo2.pavothemes.com/insul/wp-content/uploads/2024/04/h1-testi01.png"
+                                                                        src="/wp-content/uploads/2024/04/h1-testi01.png"
                                                                         class="attachment-full size-full wp-image-464"
                                                                         alt=""
-                                                                        srcset="https://demo2.pavothemes.com/insul/wp-content/uploads/2024/04/h1-testi01.png 768w, https://demo2.pavothemes.com/insul/wp-content/uploads/2024/04/h1-testi01-282x300.png 282w"
+                                                                        srcset="/wp-content/uploads/2024/04/h1-testi01.png 768w, /wp-content/uploads/2024/04/h1-testi01-282x300.png 282w"
                                                                         sizes="(max-width: 768px) 100vw, 768px" />
                                                                 </div>
                                                                 <div class="details">
@@ -2677,10 +2474,8 @@
                                                             </div>
                                                         </div>
 
-                                                        <h3 class="title">Quick &amp; Easy To Deal With</h3>
-                                                        <div class="content">“I want to give a shout out to the team
-                                                            over at Your Finance Company, as it was a great and
-                                                            efficient effort in getting my funding approved.”</div>
+                                                        <h3 class="title">Clear advice on health and term insurance</h3>
+                                                        <div class="content">"I had three policies from different agents and no clear picture of what I actually needed. Rishabh walked me through each one patiently and helped me trim overlap without losing cover. No pressure to buy something new on the spot, which was refreshing."</div>
                                                         <div class="elementor-testimonial-rating">
                                                             <i class="insul-icon-star-o active" aria-hidden="true"></i>
                                                             <i class="insul-icon-star-o active" aria-hidden="true"></i>
@@ -2700,10 +2495,10 @@
                                                                 <div class="elementor-testimonial-image">
                                                                     <img loading="lazy" decoding="async" width="752"
                                                                         height="800"
-                                                                        src="https://demo2.pavothemes.com/insul/wp-content/uploads/2024/04/h1-testi02.jpg"
+                                                                        src="/wp-content/uploads/2024/04/h1-testi02.jpg"
                                                                         class="attachment-full size-full wp-image-465"
                                                                         alt=""
-                                                                        srcset="https://demo2.pavothemes.com/insul/wp-content/uploads/2024/04/h1-testi02.jpg 752w, https://demo2.pavothemes.com/insul/wp-content/uploads/2024/04/h1-testi02-282x300.jpg 282w"
+                                                                        srcset="/wp-content/uploads/2024/04/h1-testi02.jpg 752w, /wp-content/uploads/2024/04/h1-testi02-282x300.jpg 282w"
                                                                         sizes="(max-width: 752px) 100vw, 752px" />
                                                                 </div>
                                                                 <div class="details">
@@ -2717,10 +2512,8 @@
                                                             </div>
                                                         </div>
 
-                                                        <h3 class="title">Great Company! Great People</h3>
-                                                        <div class="content">“Justin is great to work with. He is
-                                                            responsive and is very knowledgeable in the equipment
-                                                            finance field.”</div>
+                                                        <h3 class="title">Honest portfolio review every six months</h3>
+                                                        <div class="content">"As a CA I am cautious about who I trust with investments. Witan Finsure's six-month review process is structured and documented. Rishabh explains the why behind every allocation change, which is rare in this industry."</div>
                                                         <div class="elementor-testimonial-rating">
                                                             <i class="insul-icon-star-o active" aria-hidden="true"></i>
                                                             <i class="insul-icon-star-o active" aria-hidden="true"></i>
@@ -2740,10 +2533,10 @@
                                                                 <div class="elementor-testimonial-image">
                                                                     <img loading="lazy" decoding="async" width="752"
                                                                         height="800"
-                                                                        src="https://demo2.pavothemes.com/insul/wp-content/uploads/2024/04/h1-testi03.jpg"
+                                                                        src="/wp-content/uploads/2024/04/h1-testi03.jpg"
                                                                         class="attachment-full size-full wp-image-466"
                                                                         alt=""
-                                                                        srcset="https://demo2.pavothemes.com/insul/wp-content/uploads/2024/04/h1-testi03.jpg 752w, https://demo2.pavothemes.com/insul/wp-content/uploads/2024/04/h1-testi03-282x300.jpg 282w"
+                                                                        srcset="/wp-content/uploads/2024/04/h1-testi03.jpg 752w, /wp-content/uploads/2024/04/h1-testi03-282x300.jpg 282w"
                                                                         sizes="(max-width: 752px) 100vw, 752px" />
                                                                 </div>
                                                                 <div class="details">
@@ -2757,10 +2550,8 @@
                                                             </div>
                                                         </div>
 
-                                                        <h3 class="title">It’s just increable!</h3>
-                                                        <div class="content">“It is such a pleasure to deal with people
-                                                            who are honest, truly interested in helping their customers,
-                                                            and willing to go the extra mile.”</div>
+                                                        <h3 class="title">Claim support when it mattered</h3>
+                                                        <div class="content">"When my mother was hospitalised, the last thing I wanted was chasing paperwork. Rishabh's team handled the health claim end to end and kept us updated at each stage. The settlement came through without the usual back-and-forth."</div>
                                                         <div class="elementor-testimonial-rating">
                                                             <i class="insul-icon-star-o active" aria-hidden="true"></i>
                                                             <i class="insul-icon-star-o active" aria-hidden="true"></i>
@@ -2780,10 +2571,10 @@
                                                                 <div class="elementor-testimonial-image">
                                                                     <img loading="lazy" decoding="async" width="1707"
                                                                         height="2560"
-                                                                        src="https://demo2.pavothemes.com/insul/wp-content/uploads/2024/04/h1-testi04-scaled.jpeg"
+                                                                        src="/wp-content/uploads/2024/04/h1-testi04-scaled.jpeg"
                                                                         class="attachment-full size-full wp-image-467"
                                                                         alt=""
-                                                                        srcset="https://demo2.pavothemes.com/insul/wp-content/uploads/2024/04/h1-testi04-scaled.jpeg 1707w, https://demo2.pavothemes.com/insul/wp-content/uploads/2024/04/h1-testi04-200x300.jpeg 200w, https://demo2.pavothemes.com/insul/wp-content/uploads/2024/04/h1-testi04-683x1024.jpeg 683w, https://demo2.pavothemes.com/insul/wp-content/uploads/2024/04/h1-testi04-768x1152.jpeg 768w, https://demo2.pavothemes.com/insul/wp-content/uploads/2024/04/h1-testi04-1024x1536.jpeg 1024w, https://demo2.pavothemes.com/insul/wp-content/uploads/2024/04/h1-testi04-1365x2048.jpeg 1365w"
+                                                                        srcset="/wp-content/uploads/2024/04/h1-testi04-scaled.jpeg 1707w, /wp-content/uploads/2024/04/h1-testi04-200x300.jpeg 200w, /wp-content/uploads/2024/04/h1-testi04-683x1024.jpeg 683w, /wp-content/uploads/2024/04/h1-testi04-768x1152.jpeg 768w, /wp-content/uploads/2024/04/h1-testi04-1024x1536.jpeg 1024w, /wp-content/uploads/2024/04/h1-testi04-1365x2048.jpeg 1365w"
                                                                         sizes="(max-width: 1707px) 100vw, 1707px" />
                                                                 </div>
                                                                 <div class="details">
@@ -2797,10 +2588,8 @@
                                                             </div>
                                                         </div>
 
-                                                        <h3 class="title">Quick &amp; Easy To Deal With</h3>
-                                                        <div class="content">“It is such a pleasure to deal with people
-                                                            who are honest, truly interested in helping their customers,
-                                                            and willing to go the extra mile.”</div>
+                                                        <h3 class="title">Motor and home insurance sorted properly</h3>
+                                                        <div class="content">"I run a small contracting firm and needed fleet cover plus personal policies. Rishabh mapped our business exposure clearly and did not upsell products we did not need. Premiums are fair and I know exactly what is covered."</div>
                                                         <div class="elementor-testimonial-rating">
                                                             <i class="insul-icon-star-o active" aria-hidden="true"></i>
                                                             <i class="insul-icon-star-o active" aria-hidden="true"></i>
@@ -2820,10 +2609,10 @@
                                                                 <div class="elementor-testimonial-image">
                                                                     <img loading="lazy" decoding="async" width="2560"
                                                                         height="1707"
-                                                                        src="https://demo2.pavothemes.com/insul/wp-content/uploads/2024/04/h1-testi05-scaled.jpeg"
+                                                                        src="/wp-content/uploads/2024/04/h1-testi05-scaled.jpeg"
                                                                         class="attachment-full size-full wp-image-468"
                                                                         alt=""
-                                                                        srcset="https://demo2.pavothemes.com/insul/wp-content/uploads/2024/04/h1-testi05-scaled.jpeg 2560w, https://demo2.pavothemes.com/insul/wp-content/uploads/2024/04/h1-testi05-300x200.jpeg 300w, https://demo2.pavothemes.com/insul/wp-content/uploads/2024/04/h1-testi05-1024x683.jpeg 1024w, https://demo2.pavothemes.com/insul/wp-content/uploads/2024/04/h1-testi05-768x512.jpeg 768w, https://demo2.pavothemes.com/insul/wp-content/uploads/2024/04/h1-testi05-1536x1024.jpeg 1536w, https://demo2.pavothemes.com/insul/wp-content/uploads/2024/04/h1-testi05-2048x1366.jpeg 2048w"
+                                                                        srcset="/wp-content/uploads/2024/04/h1-testi05-scaled.jpeg 2560w, /wp-content/uploads/2024/04/h1-testi05-300x200.jpeg 300w, /wp-content/uploads/2024/04/h1-testi05-1024x683.jpeg 1024w, /wp-content/uploads/2024/04/h1-testi05-768x512.jpeg 768w, /wp-content/uploads/2024/04/h1-testi05-1536x1024.jpeg 1536w, /wp-content/uploads/2024/04/h1-testi05-2048x1366.jpeg 2048w"
                                                                         sizes="(max-width: 2560px) 100vw, 2560px" />
                                                                 </div>
                                                                 <div class="details">
@@ -2837,10 +2626,8 @@
                                                             </div>
                                                         </div>
 
-                                                        <h3 class="title">Very Supportive! Good Company</h3>
-                                                        <div class="content">“It has helped ,me from the beginning of my
-                                                            Australian journey. From being a tourist then applying for
-                                                            student visa.”</div>
+                                                        <h3 class="title">Long-term thinking, not quick sales</h3>
+                                                        <div class="content">"I switched to Witan Finsure after a bad experience with mis-selling elsewhere. Rishabh took time to understand my family's goals before recommending anything. Two years in, our insurance and SIP plan still feel aligned."</div>
                                                         <div class="elementor-testimonial-rating">
                                                             <i class="insul-icon-star-o active" aria-hidden="true"></i>
                                                             <i class="insul-icon-star-o active" aria-hidden="true"></i>
@@ -2856,9 +2643,12 @@
                                     </div>
 
                                     <div class="swiper-pagination swiper-pagination-c449d47"></div>
-
                                 </div>
                             </div>
+                        </div>
+                        <button type="button" class="home-testimonials-nav__btn home-testimonials-nav__next" aria-label="Next review">
+                            <i aria-hidden="true" class="insul-icon- insul-icon-angle-right"></i>
+                        </button>
                         </div>
                         <div class="elementor-element elementor-element-5088cfd elementor-absolute elementor-widget elementor-widget-image"
                             data-id="5088cfd" data-element_type="widget"
@@ -2866,9 +2656,9 @@
                             data-widget_type="image.default">
                             <div class="elementor-widget-container">
                                 <img loading="lazy" decoding="async" width="397" height="507"
-                                    src="https://demo2.pavothemes.com/insul/wp-content/uploads/2024/05/h2-ready01.png"
+                                    src="/wp-content/uploads/2024/05/h2-ready01.png"
                                     class="attachment-large size-large wp-image-3329" alt=""
-                                    srcset="https://demo2.pavothemes.com/insul/wp-content/uploads/2024/05/h2-ready01.png 397w, https://demo2.pavothemes.com/insul/wp-content/uploads/2024/05/h2-ready01-235x300.png 235w"
+                                    srcset="/wp-content/uploads/2024/05/h2-ready01.png 397w, /wp-content/uploads/2024/05/h2-ready01-235x300.png 235w"
                                     sizes="(max-width: 397px) 100vw, 397px" />
                             </div>
                         </div>
@@ -2880,263 +2670,7 @@
         </div>
         <!-- #content -->
 
-        <div class='footer-width-fixer'>
-        </div>
-        <footer itemtype="https://schema.org/WPFooter" itemscope="itemscope" id="colophon" role="contentinfo">
-            <div class='footer-width-fixer'>
-                <div data-elementor-type="wp-post" data-elementor-id="144" class="elementor elementor-144">
-                    <div class="elementor-element elementor-element-440e111 e-flex e-con-boxed e-con e-parent"
-                        data-id="440e111" data-element_type="container"
-                        data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-                        <div class="e-con-inner">
-                            <div class="elementor-element elementor-element-671360b e-con-full e-flex e-con e-child"
-                                data-id="671360b" data-element_type="container">
-                                <div class="elementor-element elementor-element-f31880d e-con-full e-flex e-con e-child"
-                                    data-id="f31880d" data-element_type="container">
-                                    <div class="elementor-element elementor-element-1cd07ac elementor-widget elementor-widget-site-logo"
-                                        data-id="1cd07ac" data-element_type="widget"
-                                        data-widget_type="site-logo.default">
-                                        <div class="elementor-widget-container">
-                                            <div class="hfe-site-logo">
-                                                <a data-elementor-open-lightbox="" class='elementor-clickable' href="/">
-                                                    <div class="hfe-site-logo-set">
-                                                        <div class="hfe-site-logo-container">
-                                                            <img class="hfe-site-logo-img elementor-animation-"
-                                                                src="{{ asset('images/whitelogo.png') }}"
-                                                                alt="Witan Fincare" />
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="elementor-element elementor-element-f972c8e elementor-widget__width-initial elementor-widget elementor-widget-text-editor"
-                                        data-id="f972c8e" data-element_type="widget"
-                                        data-widget_type="text-editor.default">
-                                        <div class="elementor-widget-container">
-                                            Subscribe to our newsletter to get the latest news and updates. </div>
-                                    </div>
-                                    <div class="elementor-element elementor-element-782dd39 elementor-widget__width-initial elementor-widget-mobile__width-inherit form-mailchimp-style-default elementor-widget elementor-widget-insul-mailchmip"
-                                        data-id="782dd39" data-element_type="widget"
-                                        data-widget_type="insul-mailchmip.default">
-                                        <div class="elementor-widget-container">
-                                            <div class="form-style">
-                                                <script>
-                                                    (function () {
-                                                    window.mc4wp = window.mc4wp || {
-                                                        listeners: [],
-                                                        forms: {
-                                                                on: function (evt, cb) {
-                                                                window.mc4wp.listeners.push(
-                                                                {
-                                                                    event: evt,
-                                                                    callback: cb
-                                                                }
-                                                                );
-                                                            }
-                                                        }
-                                                    }
-                                                })();
-                                                </script>
-                                                <!-- Mailchimp for WordPress v4.9.19 - https://wordpress.org/plugins/mailchimp-for-wp/ -->
-                                                <form id="mc4wp-form-1" class="mc4wp-form mc4wp-form-521" method="post"
-                                                    data-id="521" data-name="">
-                                                    <div class="mc4wp-form-fields">
-                                                        <p>
-                                                            <input type="email" name="EMAIL"
-                                                                placeholder="Your email address" required />
-                                                        </p>
-
-                                                        <p>
-                                                            <button type="submit">
-                                                                <i class="insul-icon-mail-plane"></i>
-                                                            </button>
-                                                        </p>
-                                                    </div>
-                                                    <label style="display: none !important;">
-                                                        Leave this field empty if you're human: 
-                                                        <input type="text" name="_mc4wp_honeypot" value="" tabindex="-1"
-                                                            autocomplete="off" />
-                                                    </label>
-                                                    <input type="hidden" name="_mc4wp_timestamp" value="1766778524" />
-                                                    <input type="hidden" name="_mc4wp_form_id" value="521" />
-                                                    <input type="hidden" name="_mc4wp_form_element_id"
-                                                        value="mc4wp-form-1" />
-                                                    <div class="mc4wp-response"></div>
-                                                </form>
-                                                <!-- / Mailchimp for WordPress Plugin -->
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="elementor-element elementor-element-7cd8a99 elementor-widget elementor-widget-text-editor"
-                                    data-id="7cd8a99" data-element_type="widget" data-widget_type="text-editor.default">
-                                    <div class="elementor-widget-container">
-                                        Copyright © 2026 Witan Finsure. Designed by <a href="https://www.margx.in" target="_blank" rel="noopener">MargX</a>. All right reserved. </div>
-                                </div>
-                            </div>
-                            <div class="elementor-element elementor-element-d49fe94 e-con-full e-flex e-con e-child"
-                                data-id="d49fe94" data-element_type="container">
-                                <div class="elementor-element elementor-element-5803901 subtitle-position-above elementor-widget elementor-widget-heading"
-                                    data-id="5803901" data-element_type="widget" data-widget_type="heading.default">
-                                    <div class="elementor-widget-container">
-                                        <div class="elementor-heading-wrapper-inner">
-                                            <h2 class="elementor-heading-title elementor-size-xxl">Contact Info</h2>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="elementor-element elementor-element-607b350 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
-                                    data-id="607b350" data-element_type="widget" data-widget_type="icon-list.default">
-                                    <div class="elementor-widget-container">
-                                        <ul class="elementor-icon-list-items">
-                                            <li class="elementor-icon-list-item">
-                                                <a href="{{ url('/contact-01') }}">
-
-                                                    <span class="elementor-icon-list-text">Contact us</span>
-                                                </a>
-                                            </li>
-                                            <li class="elementor-icon-list-item">
-                                                <a href="/about-us">
-
-                                                    <span class="elementor-icon-list-text">About us</span>
-                                                </a>
-                                            </li>
-                                            <li class="elementor-icon-list-item">
-                                                <a href="{{ url('/services/mutual-funds') }}">
-
-                                                    <span class="elementor-icon-list-text">Our impact</span>
-                                                </a>
-                                            </li>
-                                            <li class="elementor-icon-list-item">
-                                                <a href="{{ url('/about-us') }}">
-
-                                                    <span class="elementor-icon-list-text">Our values</span>
-                                                </a>
-                                            </li>
-                                            <li class="elementor-icon-list-item">
-                                                <a href="{{ url('/blog') }}">
-
-                                                    <span class="elementor-icon-list-text">Resources</span>
-                                                </a>
-                                            </li>
-                                            <li class="elementor-icon-list-item">
-                                                <a href="{{ url('/blog') }}">
-
-                                                    <span class="elementor-icon-list-text">Videos</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="elementor-element elementor-element-c963be7 e-con-full e-flex e-con e-child"
-                                data-id="c963be7" data-element_type="container">
-                                <div class="elementor-element elementor-element-4089f4a subtitle-position-above elementor-widget elementor-widget-heading"
-                                    data-id="4089f4a" data-element_type="widget" data-widget_type="heading.default">
-                                    <div class="elementor-widget-container">
-                                        <div class="elementor-heading-wrapper-inner">
-                                            <h2 class="elementor-heading-title elementor-size-xxl">Useful Links</h2>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="elementor-element elementor-element-c7c2ff7 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
-                                    data-id="c7c2ff7" data-element_type="widget" data-widget_type="icon-list.default">
-                                    <div class="elementor-widget-container">
-                                        <ul class="elementor-icon-list-items">
-                                            <li class="elementor-icon-list-item">
-                                                <a href="{{ url('/services/general-insurance') }}">
-
-                                                    <span class="elementor-icon-list-text">Audit & Assurance</span>
-                                                </a>
-                                            </li>
-                                            <li class="elementor-icon-list-item">
-                                                <a href="{{ url('/services/mutual-funds') }}">
-
-                                                    <span class="elementor-icon-list-text">Consulting</span>
-                                                </a>
-                                            </li>
-                                            <li class="elementor-icon-list-item">
-                                                <a href="{{ url('/services/general-insurance') }}">
-
-                                                    <span class="elementor-icon-list-text">Risk Advisory</span>
-                                                </a>
-                                            </li>
-                                            <li class="elementor-icon-list-item">
-                                                <a href="{{ url('/services/mutual-funds') }}">
-
-                                                    <span class="elementor-icon-list-text">Financial Advisory</span>
-                                                </a>
-                                            </li>
-                                            <li class="elementor-icon-list-item">
-                                                <a href="{{ url('/services/life-insurance') }}">
-
-                                                    <span class="elementor-icon-list-text">Legal</span>
-                                                </a>
-                                            </li>
-                                            <li class="elementor-icon-list-item">
-                                                <a href="{{ url('/services/life-insurance') }}">
-
-                                                    <span class="elementor-icon-list-text">Tax</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="elementor-element elementor-element-9eaab65 e-con-full e-flex e-con e-child"
-                                data-id="9eaab65" data-element_type="container">
-                                <div class="elementor-element elementor-element-d8479ec subtitle-position-above elementor-widget elementor-widget-heading"
-                                    data-id="d8479ec" data-element_type="widget" data-widget_type="heading.default">
-                                    <div class="elementor-widget-container">
-                                        <div class="elementor-heading-wrapper-inner">
-                                            <h2 class="elementor-heading-title elementor-size-xxl">Connect</h2>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="elementor-element elementor-element-82f6bcc e-con-full e-flex e-con e-child"
-                                    data-id="82f6bcc" data-element_type="container">
-                                    <div class="elementor-element elementor-element-de43528 elementor-widget__width-initial elementor-widget elementor-widget-text-editor"
-                                        data-id="de43528" data-element_type="widget"
-                                        data-widget_type="text-editor.default">
-                                        <div class="elementor-widget-container">
-                                            Connect to us to update more information that help you </div>
-                                    </div>
-                                    <div class="elementor-element elementor-element-3d74694 e-grid-align-left elementor-shape-rounded elementor-grid-0 elementor-widget elementor-widget-social-icons"
-                                        data-id="3d74694" data-element_type="widget"
-                                        data-widget_type="social-icons.default">
-                                        <div class="elementor-widget-container">
-                                            <div class="elementor-social-icons-wrapper elementor-grid">
-                                                <span class="elementor-grid-item">
-                                                    <a class="elementor-icon elementor-social-icon elementor-social-icon-instagram elementor-animation-shrink elementor-repeater-item-af8687e"
-                                                        href="https://www.facebook.com/PavoThemes/" target="_blank">
-                                                        <span class="elementor-screen-only">Instagram</span>
-                                                        <i class="fab fa-instagram"></i>
-                                                    </a>
-                                                </span>
-                                                <span class="elementor-grid-item">
-                                                    <a class="elementor-icon elementor-social-icon elementor-social-icon-x-twitter elementor-animation-shrink elementor-repeater-item-692487f"
-                                                        href="https://twitter.com/PavoThemes/" target="_blank">
-                                                        <span class="elementor-screen-only">X-twitter</span>
-                                                        <i class="fab fa-x-twitter"></i>
-                                                    </a>
-                                                </span>
-                                                <span class="elementor-grid-item">
-                                                    <a class="elementor-icon elementor-social-icon elementor-social-icon-slack elementor-animation-shrink elementor-repeater-item-c314380"
-                                                        href="https://slack.com/" target="_blank">
-                                                        <span class="elementor-screen-only">Slack</span>
-                                                        <i class="fab fa-slack"></i>
-                                                    </a>
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
+        @include('partials.site-footer')
 
     </div>
     <!-- #page -->
@@ -3146,7 +2680,7 @@
             <div class="login-form-head">
                 <span class="login-form-title">Sign in</span>
                 <span class="pull-right">
-                    <a class="register-link" href="https://demo2.pavothemes.com/insul/wp-login.php?action=register"
+                    <a class="register-link" href="/wp-login.php?action=register"
                         title="Register">Create an Account</a>
                 </span>
             </div>
@@ -3171,8 +2705,7 @@
                 <input type="hidden" name="_wp_http_referer" value="/insul/" />
             </form>
             <div class="login-form-bottom">
-                <a href="https://demo2.pavothemes.com/insul/wp-login.php?action=lostpassword&redirect_to=https%3A%2F%2Fdemo2.pavothemes.com%2Finsul%2F"
-                    class="lostpass-link" title="Lost your password?">Lost your password?</a>
+                
             </div>
         </div>
     </div>
@@ -3287,7 +2820,7 @@
                 <div class="menu">
                     <ul>
                         <li class="current_page_item">
-                            <a href="https://demo2.pavothemes.com/insul/">Home</a>
+                            <a href="/">Home</a>
                         </li>
                         <li class="page_item page-item-104">
                             <a href="/about-us">About us</a>
@@ -3296,28 +2829,28 @@
                             <a href="/blog">Blog</a>
                         </li>
                         <li class="page_item page-item-134">
-                            <a href="https://demo2.pavothemes.com/insul/contact-01/">Contact 01</a>
+                            <a href="/contact-01/">Contact 01</a>
                         </li>
                         <li class="page_item page-item-136">
-                            <a href="https://demo2.pavothemes.com/insul/contact-02/">Contact 02</a>
+                            <a href="/contact-02/">Contact 02</a>
                         </li>
                         <li class="page_item page-item-127">
-                            <a href="https://demo2.pavothemes.com/insul/faqs-page/">FAQs Page</a>
+                            <a href="/faqs-page/">FAQs Page</a>
                         </li>
                         <li class="page_item page-item-100">
-                            <a href="https://demo2.pavothemes.com/insul/home-2/">Home 2</a>
+                            <a href="/home-2/">Home 2</a>
                         </li>
                         <li class="page_item page-item-102">
-                            <a href="https://demo2.pavothemes.com/insul/home-3/">Home 3</a>
+                            <a href="/home-3/">Home 3</a>
                         </li>
                         <li class="page_item page-item-131">
-                            <a href="https://demo2.pavothemes.com/insul/icons/">Icons</a>
+                            <a href="/icons/">Icons</a>
                         </li>
                         <li class="page_item page-item-123">
-                            <a href="https://demo2.pavothemes.com/insul/our-pricing/">Our Pricing</a>
+                            <a href="/our-pricing/">Our Pricing</a>
                         </li>
                         <li class="page_item page-item-118">
-                            <a href="https://demo2.pavothemes.com/insul/our-projects/">Our Projects</a>
+                            <a href="/our-projects/">Our Projects</a>
                         </li>
                         <li class="page_item page-item-107">
                             <a href="/services/mutual-funds/">Mutual Funds</a>
@@ -3326,13 +2859,13 @@
                             <a href="/services/general-insurance/">General Insurance</a>
                         </li>
                         <li class="page_item page-item-125">
-                            <a href="https://demo2.pavothemes.com/insul/our-team/">Our Team</a>
+                            <a href="/our-team/">Our Team</a>
                         </li>
                         <li class="page_item page-item-2">
-                            <a href="https://demo2.pavothemes.com/insul/sample-page/">Sample Page</a>
+                            <a href="/sample-page/">Sample Page</a>
                         </li>
                         <li class="page_item page-item-121">
-                            <a href="https://demo2.pavothemes.com/insul/testimonial/">Testimonial</a>
+                            <a href="/testimonial/">Testimonial</a>
                         </li>
                     </ul>
                 </div>
@@ -3342,14 +2875,14 @@
             <ul class="menu">
                 <li class="item">
                     <div class="language-switcher-head">
-                        <img src="https://demo2.pavothemes.com/insul/wp-content/themes/insul/assets/images/language-switcher/en.jpg"
+                        <img src="/wp-content/themes/insul/assets/images/language-switcher/en.jpg"
                             alt="WPML">
                     </div>
                 </li>
                 <li class="item">
                     <div class="language-switcher-img">
                         <a href="#">
-                            <img src="https://demo2.pavothemes.com/insul/wp-content/themes/insul/assets/images/language-switcher/de.jpg"
+                            <img src="/wp-content/themes/insul/assets/images/language-switcher/de.jpg"
                                 alt="WPML">
                         </a>
                     </div>
@@ -3357,7 +2890,7 @@
                 <li class="item">
                     <div class="language-switcher-img">
                         <a href="#">
-                            <img src="https://demo2.pavothemes.com/insul/wp-content/themes/insul/assets/images/language-switcher/it.jpg"
+                            <img src="/wp-content/themes/insul/assets/images/language-switcher/it.jpg"
                                 alt="WPML">
                         </a>
                     </div>
@@ -3365,7 +2898,7 @@
                 <li class="item">
                     <div class="language-switcher-img">
                         <a href="#">
-                            <img src="https://demo2.pavothemes.com/insul/wp-content/themes/insul/assets/images/language-switcher/hi.jpg"
+                            <img src="/wp-content/themes/insul/assets/images/language-switcher/hi.jpg"
                                 alt="WPML">
                         </a>
                     </div>
@@ -3433,41 +2966,24 @@
     <link href="//fonts.googleapis.com/css?family=Roboto:400%7CSora:600%7CDM+Sans:400%2C700%2C500&display=swap"
         rel="stylesheet" property="stylesheet" media="all" type="text/css">
 
-    <script>
-    if (typeof revslider_showDoubleJqueryError === "undefined") {
-        function revslider_showDoubleJqueryError(sliderID) {
-            console.log("You have some jquery.js library include that comes after the Slider Revolution files js inclusion.");
-            console.log("To fix this, you can:");
-            console.log("1. Set 'Module General Options' -> 'Advanced' -> 'jQuery & OutPut Filters' -> 'Put JS to Body' to on");
-            console.log("2. Find the double jQuery.js inclusion and remove it");
-            return "Double Included jQuery Library";
-        }
-    }
-    </script>
     <link rel='stylesheet' id='magnific-popup-css'
-        href='https://demo2.pavothemes.com/insul/wp-content/themes/insul/assets/css/libs/magnific-popup.css?ver=1.0.4'
+        href='/css/magnific-popup.css?ver=1.0.4'
         media='all' />
     <link rel='stylesheet' id='widget-icon-list-css'
-        href='https://demo2.pavothemes.com/insul/wp-content/uploads/elementor/css/custom-widget-icon-list.min.css?ver=1733908100'
+        href='/wp-content/uploads/elementor/css/custom-widget-icon-list.min.css?ver=1733908100'
         media='all' />
     <link rel='stylesheet' id='e-animation-shrink-css'
-        href='https://demo2.pavothemes.com/insul/wp-content/plugins/elementor/assets/lib/animations/styles/e-animation-shrink.min.css?ver=3.25.11'
+        href='/css/e-animation-shrink.min.css?ver=3.25.11'
         media='all' />
     <link rel='stylesheet' id='widget-social-icons-css'
-        href='https://demo2.pavothemes.com/insul/wp-content/plugins/elementor/assets/css/widget-social-icons.min.css?ver=3.25.11'
+        href='/wp-content/plugins/elementor/assets/css/widget-social-icons.min.css?ver=3.25.11'
         media='all' />
     <link rel='stylesheet' id='e-apple-webkit-css'
-        href='https://demo2.pavothemes.com/insul/wp-content/uploads/elementor/css/custom-apple-webkit.min.css?ver=1733908100'
+        href='/wp-content/uploads/elementor/css/custom-apple-webkit.min.css?ver=1733908100'
         media='all' />
-    <link rel='stylesheet' id='rs-plugin-settings-css'
-        href='//demo2.pavothemes.com/insul/wp-content/plugins/revslider/sr6/assets/css/rs6.css?ver=6.7.23'
-        media='all' />
-    <style id='rs-plugin-settings-inline-css'>
-        #rs-demo-id {}
-    </style>
-    <script src="https://demo2.pavothemes.com/insul/wp-includes/js/dist/hooks.min.js?ver=4d63a3d491d11ffd8ac6"
+    <script src="/wp-includes/js/dist/hooks.min.js?ver=4d63a3d491d11ffd8ac6"
         id="wp-hooks-js"></script>
-    <script src="https://demo2.pavothemes.com/insul/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6"
+    <script src="/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6"
         id="wp-i18n-js"></script>
     <script id="wp-i18n-js-after">
     wp.i18n.setLocaleData({
@@ -3475,29 +2991,25 @@
     });
     </script>
     <script
-        src="https://demo2.pavothemes.com/insul/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=6.0.1"
+        src="/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=6.0.1"
         id="swv-js"></script>
     <script id="contact-form-7-js-before">
     var wpcf7 = {
         "api": {
-            "root": "https:\/\/demo2.pavothemes.com\/insul\/wp-json\/",
+            "root": "\/wp-json\/",
             "namespace": "contact-form-7\/v1"
         }
     };
     </script>
-    <script src="https://demo2.pavothemes.com/insul/wp-content/plugins/contact-form-7/includes/js/index.js?ver=6.0.1"
+    <script src="/wp-content/plugins/contact-form-7/includes/js/index.js?ver=6.0.1"
         id="contact-form-7-js"></script>
-    <script src="//demo2.pavothemes.com/insul/wp-content/plugins/revslider/sr6/assets/js/rbtools.min.js?ver=6.7.23"
-        defer async id="tp-tools-js"></script>
-    <script src="//demo2.pavothemes.com/insul/wp-content/plugins/revslider/sr6/assets/js/rs6.min.js?ver=6.7.23" defer
-        async id="revmin-js"></script>
     <script
-        src="https://demo2.pavothemes.com/insul/wp-content/plugins/elementor/assets/lib/jquery-numerator/jquery-numerator.min.js?ver=0.2.1"
+        src="/wp-content/plugins/elementor/assets/lib/jquery-numerator/jquery-numerator.min.js?ver=0.2.1"
         id="jquery-numerator-js"></script>
     <script
-        src="https://demo2.pavothemes.com/insul/wp-content/themes/insul/assets/js/libs/isotope.pkgd.min.js?ver=1.0.4"
+        src="/wp-content/themes/insul/assets/js/libs/isotope.pkgd.min.js?ver=1.0.4"
         id="isotope-js"></script>
-    <script src="https://demo2.pavothemes.com/insul/wp-includes/js/imagesloaded.min.js?ver=5.0.0"
+    <script src="/wp-includes/js/imagesloaded.min.js?ver=5.0.0"
         id="imagesloaded-js"></script>
     <script id="rocket-browser-checker-js-after">
     "use strict";
@@ -3577,17 +3089,6 @@
             }
         }]), RocketBrowserCompatibilityChecker
     }();
-    </script>
-    <script id="rocket-preload-links-js-extra">
-    var RocketPreloadLinksConfig = {
-        "excludeUris": "\/insul(\/(.+\/)?feed\/?.+\/?|\/(?:.+\/)?embed\/|\/(index\\.php\/)?wp\\-json(\/.*|$))|\/wp-admin\/|\/logout\/|\/wp-login.php",
-        "usesTrailingSlash": "1",
-        "imageExt": "jpg|jpeg|gif|png|tiff|bmp|webp|avif",
-        "fileExt": "jpg|jpeg|gif|png|tiff|bmp|webp|avif|php|pdf|html|htm",
-        "siteUrl": "https:\/\/demo2.pavothemes.com\/insul",
-        "onHoverDelay": "100",
-        "rateThrottle": "3"
-    };
     </script>
     <script id="rocket-preload-links-js-after">
         (function () {
@@ -3738,9 +3239,9 @@
     }());
     </script>
     <script
-        src="https://demo2.pavothemes.com/insul/wp-content/themes/insul/assets/js/libs/jquery.sticky-kit.min.js?ver=1.0.4"
+        src="/wp-content/themes/insul/assets/js/libs/jquery.sticky-kit.min.js?ver=1.0.4"
         id="sticky-kit-js"></script>
-    <script src="https://demo2.pavothemes.com/insul/wp-includes/js/underscore.min.js?ver=1.13.7"
+    <script src="/wp-includes/js/underscore.min.js?ver=1.13.7"
         id="underscore-js"></script>
     <script id="wp-util-js-extra">
     var _wpUtilSettings = {
@@ -3749,48 +3250,48 @@
         }
     };
     </script>
-    <script src="https://demo2.pavothemes.com/insul/wp-includes/js/wp-util.min.js?ver=6.7.1" id="wp-util-js"></script>
-    <script src="https://demo2.pavothemes.com/insul/wp-content/themes/insul/assets/js/libs/swiper.js?ver=1.0.4"
+    <script src="/wp-includes/js/wp-util.min.js?ver=6.7.1" id="wp-util-js"></script>
+    <script src="/wp-content/themes/insul/assets/js/libs/swiper.js?ver=1.0.4"
         id="swiper-js"></script>
     <script id="insul-theme-js-extra">
     var insulAjax = {
-        "ajaxurl": "https:\/\/demo2.pavothemes.com\/insul\/wp-admin\/admin-ajax.php"
+        "ajaxurl": "\/wp-admin\/admin-ajax.php"
     };
     </script>
-    <script src="https://demo2.pavothemes.com/insul/wp-content/themes/insul/assets/js/frontend/main.js?ver=1.0.4"
+    <script src="/wp-content/themes/insul/assets/js/frontend/main.js?ver=1.0.4"
         id="insul-theme-js"></script>
     <script
-        src="https://demo2.pavothemes.com/insul/wp-content/themes/insul/assets/js/skip-link-focus-fix.min.js?ver=1.0.4"
+        src="/wp-content/themes/insul/assets/js/skip-link-focus-fix.min.js?ver=1.0.4"
         id="insul-skip-link-focus-fix-js"></script>
     <script
-        src="https://demo2.pavothemes.com/insul/wp-content/themes/insul/assets/js/frontend/search-popup.js?ver=1.0.4"
+        src="/wp-content/themes/insul/assets/js/frontend/search-popup.js?ver=1.0.4"
         id="insul-search-popup-js"></script>
-    <script src="https://demo2.pavothemes.com/insul/wp-content/themes/insul/assets/js/frontend/text-editor.js?ver=1.0.4"
+    <script src="/wp-content/themes/insul/assets/js/frontend/text-editor.js?ver=1.0.4"
         id="insul-text-editor-js"></script>
-    <script src="https://demo2.pavothemes.com/insul/wp-content/themes/insul/assets/js/frontend/nav-mobile.js?ver=1.0.4"
+    <script src="/wp-content/themes/insul/assets/js/frontend/nav-mobile.js?ver=1.0.4"
         id="insul-nav-mobile-js"></script>
     <script
-        src="https://demo2.pavothemes.com/insul/wp-content/themes/insul/inc/megamenu/assets/js/frontend.js?ver=1.0.4"
+        src="/wp-content/themes/insul/inc/megamenu/assets/js/frontend.js?ver=1.0.4"
         id="insul-megamenu-frontend-js"></script>
-    <script src="https://demo2.pavothemes.com/insul/wp-content/themes/insul/assets/js/frontend/login.js?ver=1.0.4"
+    <script src="/wp-content/themes/insul/assets/js/frontend/login.js?ver=1.0.4"
         id="insul-ajax-login-js"></script>
-    <script src="https://demo2.pavothemes.com/insul/wp-content/themes/insul/assets/js/libs/TweenMax.min.js?ver=1.11.1"
+    <script src="/wp-content/themes/insul/assets/js/libs/TweenMax.min.js?ver=1.11.1"
         id="tweenmax-js"></script>
-    <script src="https://demo2.pavothemes.com/insul/wp-content/themes/insul/assets/js/libs/jquery-parallax.js?ver=1.0.4"
+    <script src="/wp-content/themes/insul/assets/js/libs/jquery-parallax.js?ver=1.0.4"
         id="parallaxmouse-js"></script>
     <script
-        src="https://demo2.pavothemes.com/insul/wp-content/themes/insul/assets/js/libs/jquery.magnific-popup.min.js?ver=1.0.4"
+        src="/wp-content/themes/insul/assets/js/libs/jquery.magnific-popup.min.js?ver=1.0.4"
         id="magnific-popup-js"></script>
     <script defer
-        src="https://demo2.pavothemes.com/insul/wp-content/plugins/mailchimp-for-wp/assets/js/forms.js?ver=4.9.19"
+        src="/wp-content/plugins/mailchimp-for-wp/assets/js/forms.js?ver=4.9.19"
         id="mc4wp-forms-api-js"></script>
     <script
-        src="https://demo2.pavothemes.com/insul/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.25.11"
+        src="/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.25.11"
         id="elementor-webpack-runtime-js"></script>
     <script
-        src="https://demo2.pavothemes.com/insul/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.25.11"
+        src="/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.25.11"
         id="elementor-frontend-modules-js"></script>
-    <script src="https://demo2.pavothemes.com/insul/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3"
+    <script src="/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3"
         id="jquery-ui-core-js"></script>
     <script id="elementor-frontend-js-before">
     var elementorFrontendConfig = {
@@ -3893,9 +3394,9 @@
             "floating-buttons": true
         },
         "urls": {
-            "assets": "https:\/\/demo2.pavothemes.com\/insul\/wp-content\/plugins\/elementor\/assets\/",
-            "ajaxurl": "https:\/\/demo2.pavothemes.com\/insul\/wp-admin\/admin-ajax.php",
-            "uploadUrl": "https:\/\/demo2.pavothemes.com\/insul\/wp-content\/uploads"
+            "assets": "\/wp-content\/plugins\/elementor\/assets\/",
+            "ajaxurl": "\/wp-admin\/admin-ajax.php",
+            "uploadUrl": "\/wp-content\/uploads"
         },
         "nonces": {
             "floatingButtonsClickTracking": "e44bf9c3ae"
@@ -3925,211 +3426,149 @@
         }
     };
     </script>
-    <script src="https://demo2.pavothemes.com/insul/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.25.11"
-        id="elementor-frontend-js"></script>
-    <script src="https://demo2.pavothemes.com/insul/wp-content/themes/insul/assets/js/elementor/accordion.js?ver=1.0.4"
-        id="insul-elementor-accordion-js"></script>
-    <script
-        src="https://demo2.pavothemes.com/insul/wp-content/themes/insul/assets/js/elementor/animated-headline.js?ver=1.0.4"
-        id="insul-elementor-animated-headline-js"></script>
-    <script src="https://demo2.pavothemes.com/insul/wp-content/themes/insul/assets/js/elementor/brand.js?ver=1.0.4"
-        id="insul-elementor-brand-js"></script>
-    <script
-        src="https://demo2.pavothemes.com/insul/wp-content/themes/insul/assets/js/elementor/our-project.js?ver=1.0.4"
-        id="insul-elementor-our-project-js"></script>
-    <script
-        src="https://demo2.pavothemes.com/insul/wp-content/themes/insul/assets/js/elementor/our-service.js?ver=1.0.4"
-        id="insul-elementor-our-service-js"></script>
-    <script src="https://demo2.pavothemes.com/insul/wp-content/themes/insul/assets/js/elementor/posts-grid.js?ver=1.0.4"
-        id="insul-elementor-posts-grid-js"></script>
-    <script
-        src="https://demo2.pavothemes.com/insul/wp-content/themes/insul/assets/js/elementor/slider-scrolling.js?ver=1.0.4"
-        id="insul-elementor-slider-scrolling-js"></script>
-    <script
-        src="https://demo2.pavothemes.com/insul/wp-content/themes/insul/assets/js/elementor/testimonial.js?ver=1.0.4"
-        id="insul-elementor-testimonial-js"></script>
-    <script src="https://demo2.pavothemes.com/insul/wp-content/themes/insul/assets/js/elementor-frontend.js?ver=1.0.4"
+    <script src="/wp-content/themes/insul/assets/js/elementor-frontend.js?ver=1.0.4"
         id="insul-elementor-frontend-js"></script>
     <script
-        src="https://demo2.pavothemes.com/insul/wp-content/themes/insul/assets/js/frontend/jquery-sticky.js?ver=1.0.4"
+        src="/wp-content/themes/insul/assets/js/elementor/testimonial.js?ver=1.0.4"
+        id="insul-elementor-testimonial-js"></script>
+    <script src="/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.25.11"
+        id="elementor-frontend-js"></script>
+    <script src="/wp-content/themes/insul/assets/js/elementor/accordion.js?ver=1.0.4"
+        id="insul-elementor-accordion-js"></script>
+    <script
+        src="/wp-content/themes/insul/assets/js/elementor/animated-headline.js?ver=1.0.4"
+        id="insul-elementor-animated-headline-js"></script>
+    <script src="/wp-content/themes/insul/assets/js/elementor/brand.js?ver=1.0.4"
+        id="insul-elementor-brand-js"></script>
+    <script
+        src="/wp-content/themes/insul/assets/js/elementor/our-project.js?ver=1.0.4"
+        id="insul-elementor-our-project-js"></script>
+    <script
+        src="/wp-content/themes/insul/assets/js/elementor/our-service.js?ver=1.0.4"
+        id="insul-elementor-our-service-js"></script>
+    <script src="/wp-content/themes/insul/assets/js/elementor/posts-grid.js?ver=1.0.4"
+        id="insul-elementor-posts-grid-js"></script>
+    <script
+        src="/wp-content/themes/insul/assets/js/elementor/slider-scrolling.js?ver=1.0.4"
+        id="insul-elementor-slider-scrolling-js"></script>
+    <script
+        src="/wp-content/themes/insul/assets/js/frontend/jquery-sticky.js?ver=1.0.4"
         id="elementor-sticky-js"></script>
-    <script src="https://demo2.pavothemes.com/insul/wp-content/themes/insul/assets/js/libs/sticky.js?ver=1.0.4"
+    <script src="/wp-content/themes/insul/assets/js/libs/sticky.js?ver=1.0.4"
         id="insul-elementor-sticky-js"></script>
-    <script id="rs-initialisation-scripts">
-    var tpj = jQuery;
-
-    var revapi1;
-
-    if (window.RS_MODULES === undefined)
-        window.RS_MODULES = {};
-    if (RS_MODULES.modules === undefined)
-        RS_MODULES.modules = {};
-    RS_MODULES.modules["revslider11"] = {
-        once: RS_MODULES.modules["revslider11"] !== undefined ? RS_MODULES.modules["revslider11"].once : undefined,
-            init: function () {
-            window.revapi1 = window.revapi1 === undefined || window.revapi1 === null || window.revapi1.length === 0 ? document.getElementById("rev_slider_1_1") : window.revapi1;
-            if (window.revapi1 === null || window.revapi1 === undefined || window.revapi1.length == 0) {
-                window.revapi1initTry = window.revapi1initTry === undefined ? 0 : window.revapi1initTry + 1;
-                if (window.revapi1initTry < 20)
-                        requestAnimationFrame(function () {
-                        RS_MODULES.modules["revslider11"].init()
-                    });
-                return;
-            }
-            window.revapi1 = jQuery(window.revapi1);
-            if (window.revapi1.revolution == undefined) {
-                revslider_showDoubleJqueryError("rev_slider_1_1");
-                return;
-            }
-            revapi1.revolutionInit({
-                revapi: "revapi1",
-                DPR: "dpr",
-                sliderLayout: "fullwidth",
-                visibilityLevels: "1240,1025,778,480",
-                gridwidth: "1470,1024,778,480",
-                gridheight: "900,750,650,600",
-                lazyType: "smart",
-                perspective: 600,
-                perspectiveType: "global",
-                editorheight: "900,750,650,600",
-                responsiveLevels: "1240,1025,778,480",
-                progressBar: {
-                    disableProgressBar: true
-                },
-                navigation: {
-                    onHoverStop: false
-                },
-                parallax: {
-                    levels: [5, 10, 15, 20, 25, 30, -5, 40, 45, 46, 47, 48, 49, 50, 51, 30],
-                    type: "mousescroll",
-                    origo: "slidercenter",
-                    speed: 0,
-                    disable_onmobile: true
-                },
-                viewPort: {
-                    global: true,
-                    globalDist: "-200px",
-                    enable: false
-                },
-                fallbacks: {
-                    allowHTML5AutoPlayOnAndroid: true
-                },
-            });
-
-        }
-    } // End of RevInitScript
-
-    if (window.RS_MODULES.checkMinimal !== undefined) {
-        window.RS_MODULES.checkMinimal();
-    }
-    ;
-    </script>
     <script>
-    window.lazyLoadOptions = {
-        elements_selector: "img[data-lazy-src],.rocket-lazyload",
-        data_src: "lazy-src",
-        data_srcset: "lazy-srcset",
-        data_sizes: "lazy-sizes",
-        class_loading: "lazyloading",
-        class_loaded: "lazyloaded",
-        threshold: 300,
-            callback_loaded: function (element) {
-            if (element.tagName === "IFRAME" && element.dataset.rocketLazyload == "fitvidscompatible") {
-                if (element.classList.contains("lazyloaded")) {
-                    if (typeof window.jQuery != "undefined") {
-                        if (jQuery.fn.fitVids) {
-                            jQuery(element).parent().fitVids()
-                        }
-                    }
-                }
-            }
+    (function ($) {
+        function runCounters() {
+            if (!$.fn.numerator) return;
+            $('.elementor-counter-number[data-to-value]').each(function () {
+                var $el = $(this);
+                if ($el.data('plugin_numerator') || $el.data('counter-started')) return;
+                if (!$el.is(':visible')) return;
+                $el.data('counter-started', true);
+                var settings = $.extend({}, $el.data());
+                var match = String(settings.toValue).match(/\.(.*)/);
+                if (match) settings.rounding = match[1].length;
+                $el.numerator(settings);
+            });
         }
-    };
-        window.addEventListener('LazyLoad::Initialized', function (e) {
-        var lazyLoadInstance = e.detail.instance;
-        if (window.MutationObserver) {
-                var observer = new MutationObserver(function (mutations) {
-                var image_count = 0;
-                var iframe_count = 0;
-                var rocketlazy_count = 0;
-                    mutations.forEach(function (mutation) {
-                    for (i = 0; i < mutation.addedNodes.length; i++) {
-                        if (typeof mutation.addedNodes[i].getElementsByTagName !== 'function') {
-                            continue
-                        }
-                        if (typeof mutation.addedNodes[i].getElementsByClassName !== 'function') {
-                            continue
-                        }
-                        images = mutation.addedNodes[i].getElementsByTagName('img');
-                        is_image = mutation.addedNodes[i].tagName == "IMG";
-                        iframes = mutation.addedNodes[i].getElementsByTagName('iframe');
-                        is_iframe = mutation.addedNodes[i].tagName == "IFRAME";
-                        rocket_lazy = mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');
-                        image_count += images.length;
-                        iframe_count += iframes.length;
-                        rocketlazy_count += rocket_lazy.length;
-                        if (is_image) {
-                            image_count += 1
-                        }
-                        if (is_iframe) {
-                            iframe_count += 1
-                        }
-                    }
+        if ('IntersectionObserver' in window) {
+            var observer = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (!entry.isIntersecting) return;
+                    var $el = $(entry.target);
+                    if ($el.data('plugin_numerator') || $el.data('counter-started')) return;
+                    $el.data('counter-started', true);
+                    var settings = $.extend({}, $el.data());
+                    var match = String(settings.toValue).match(/\.(.*)/);
+                    if (match) settings.rounding = match[1].length;
+                    if ($.fn.numerator) $el.numerator(settings);
+                    observer.unobserve(entry.target);
                 });
-                if (image_count > 0 || iframe_count > 0 || rocketlazy_count > 0) {
-                    lazyLoadInstance.update()
+            }, { threshold: 0.2 });
+            $('.elementor-counter-number[data-to-value]').each(function () {
+                observer.observe(this);
+            });
+        } else {
+            runCounters();
+        }
+        $(window).on('load', runCounters);
+    })(jQuery);
+    </script>
+    <script>
+    (function ($) {
+        function ensureTestimonialSwiper() {
+            var $widget = $('.elementor-element-c449d47');
+            var $swiperEl = $widget.find('.insul-swiper');
+            if (!$swiperEl.length || $swiperEl[0].swiper || $swiperEl.data('swiper')) {
+                return;
+            }
+
+            if (typeof insulSwiperBase !== 'undefined' && typeof elementorFrontend !== 'undefined' && elementorFrontend.elementsHandler) {
+                try {
+                    elementorFrontend.elementsHandler.addHandler(insulSwiperBase, { $element: $widget });
+                } catch (e) {
+                    /* fall through to direct Swiper init */
+                }
+                if ($swiperEl[0].swiper || $swiperEl.data('swiper')) {
+                    var inst = $swiperEl[0].swiper || $swiperEl.data('swiper');
+                    if (inst.params && inst.params.navigation && inst.navigation) {
+                        inst.params.navigation.prevEl = '.home-testimonials-nav__prev';
+                        inst.params.navigation.nextEl = '.home-testimonials-nav__next';
+                        inst.navigation.destroy();
+                        inst.navigation.init();
+                        inst.navigation.update();
+                    }
+                    return;
+                }
+            }
+
+            if (typeof Swiper === 'undefined') {
+                return;
+            }
+
+            var swiper = new Swiper($swiperEl[0], {
+                slidesPerView: 1,
+                slidesPerGroup: 1,
+                spaceBetween: 16,
+                loop: true,
+                speed: 500,
+                allowTouchMove: true,
+                grabCursor: true,
+                simulateTouch: true,
+                navigation: {
+                    prevEl: '.home-testimonials-nav__prev',
+                    nextEl: '.home-testimonials-nav__next'
+                },
+                pagination: {
+                    el: '.swiper-pagination-c449d47',
+                    clickable: true
+                },
+                breakpoints: {
+                    881: {
+                        slidesPerView: 2,
+                        spaceBetween: 20
+                    },
+                    1200: {
+                        slidesPerView: 2,
+                        spaceBetween: 30
+                    },
+                    1441: {
+                        slidesPerView: 4,
+                        spaceBetween: 30
+                    },
+                    1601: {
+                        slidesPerView: 5,
+                        spaceBetween: 30
+                    }
                 }
             });
-            var b = document.getElementsByTagName("body")[0];
-            var config = {
-                childList: !0,
-                subtree: !0
-            };
-            observer.observe(b, config)
+            $swiperEl.data('swiper', swiper);
         }
-    }, !1)
+
+        $(window).on('load', ensureTestimonialSwiper);
+    })(jQuery);
     </script>
-    <script data-no-minify="1" async
-        src="https://demo2.pavothemes.com/insul/wp-content/plugins/wp-rocket/assets/js/lazyload/16.1/lazyload.min.js"></script>
-    <script defer
-        src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015"
-        integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ=="
-        data-cf-beacon='{"version":"2024.11.0","token":"2262db23ef41480dbb281abb8b2626b5","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}'
-        crossorigin="anonymous"></script>
-    <script>
-            (function () {
-        function c() {
-            var b = a.contentDocument || a.contentWindow.document;
-            if (b) {
-                var d = b.createElement('script');
-                d.innerHTML = "window.__CF$cv$params={r:'9b4318d77af63bf8',t:'MTc2Njc3ODUyMA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";
-                b.getElementsByTagName('head')[0].appendChild(d)
-            }
-        }
-        if (document.body) {
-            var a = document.createElement('iframe');
-            a.height = 1;
-            a.width = 1;
-            a.style.position = 'absolute';
-            a.style.top = 0;
-            a.style.left = 0;
-            a.style.border = 'none';
-            a.style.visibility = 'hidden';
-            document.body.appendChild(a);
-            if ('loading' !== document.readyState)
-                c();
-            else if (window.addEventListener)
-                document.addEventListener('DOMContentLoaded', c);
-            else {
-                        var e = document.onreadystatechange || function () { };
-                        document.onreadystatechange = function (b) {
-                    e(b);
-                    'loading' !== document.readyState && (document.onreadystatechange = e, c())
-                }
-            }
-        }
-    })();
-    </script>
+@include('partials.whatsapp-float')
 </body>
 
 </html>

@@ -35,4 +35,8 @@ return [
         ],
     ],
 
+    'formspree' => [
+        'form_id' => env('FORMSPREE_FORM_ID'),
+    ],
+
 ];
