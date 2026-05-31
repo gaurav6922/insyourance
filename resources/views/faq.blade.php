@@ -7,6 +7,7 @@
     <link rel="profile" href="//gmpg.org/xfn/11">
     <title>FAQs Page &#8211; Witan Finsure</title>
     <link rel="icon" type="image/png" href="{{ asset('images/witantitle.png') }}">
+    ('partials.site-fonts')
 <meta name='robots' content='max-image-preview:large' />
 	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
 	<style>
