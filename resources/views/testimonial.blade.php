@@ -7,7 +7,7 @@
     <link rel="profile" href="//gmpg.org/xfn/11">
     <title>Testimonial &#8211; Witan Finsure</title>
     <link rel="icon" type="image/png" href="{{ asset('images/witantitle.png') }}">
-    ('partials.site-fonts')
+    @include('partials.site-fonts')
 <meta name='robots' content='max-image-preview:large' />
 	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
 	<style>
@@ -31,7 +31,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
     /*! This file is auto-generated */
 !function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83d\udc26\u200d\u2b1b","\ud83d\udc26\u200b\u2b1b")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
     </script>
-<link rel='stylesheet' id='hfe-widgets-style-css' href='/css/frontend.css?ver=2.0.3' media='all' />
+<link rel='stylesheet' id='hfe-widgets-style-css' href="{{ public_asset('css/frontend.css?ver=2.0.3') }}" media='all' />
     <style id='wp-emoji-styles-inline-css'>
 
     img.wp-smiley, img.emoji {
@@ -46,7 +46,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
         padding: 0 !important;
     }
     </style>
-<link rel='stylesheet' id='insul-gutenberg-blocks-css' href='/css/gutenberg-blocks.css?ver=1.0.4' media='all' />
+<link rel='stylesheet' id='insul-gutenberg-blocks-css' href="{{ public_asset('css/gutenberg-blocks.css?ver=1.0.4') }}" media='all' />
     <style id='classic-theme-styles-inline-css'>
     /*! This file is auto-generated */
 .wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
@@ -57,39 +57,39 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 :where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
 :root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
     </style>
-<link rel='stylesheet' id='contact-form-7-css' href='/css/contact-form-7.css?ver=6.0.1' media='all' />
-<link rel='stylesheet' id='-css' href='/css/pavo-demo.css?ver=6.7.1' media='all' />
-<link rel='stylesheet' id='hfe-style-css' href='/css/header-footer-elementor.css?ver=2.0.3' media='all' />
-<link rel='stylesheet' id='elementor-icons-css' href='/css/elementor-icons.min.css' media='all' />
-<link rel='stylesheet' id='elementor-frontend-css' href='/css/custom-frontend.min.css' media='all' />
-<link rel='stylesheet' id='swiper-css' href='/css/swiper.min.css' media='all' />
-<link rel='stylesheet' id='e-swiper-css' href='/css/e-swiper.min.css' media='all' />
-<link rel='stylesheet' id='elementor-post-7-css' href='/css/post-7.css' media='all' />
-<link rel='stylesheet' id='elementor-post-121-css' href='/css/post-121.css' media='all' />
-<link rel='stylesheet' id='elementor-post-883-css' href='/css/post-883.css' media='all' />
-<link rel='stylesheet' id='elementor-post-145-css' href='/css/post-145.css' media='all' />
-<link rel='stylesheet' id='elementor-post-3494-css' href='/css/post-3494.css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css' href="{{ public_asset('css/contact-form-7.css?ver=6.0.1') }}" media='all' />
+<link rel='stylesheet' id='-css' href="{{ public_asset('css/pavo-demo.css?ver=6.7.1') }}" media='all' />
+<link rel='stylesheet' id='hfe-style-css' href="{{ public_asset('css/header-footer-elementor.css?ver=2.0.3') }}" media='all' />
+<link rel='stylesheet' id='elementor-icons-css' href="{{ public_asset('css/elementor-icons.min.css') }}" media='all' />
+<link rel='stylesheet' id='elementor-frontend-css' href="{{ public_asset('css/custom-frontend.min.css') }}" media='all' />
+<link rel='stylesheet' id='swiper-css' href="{{ public_asset('css/swiper.min.css') }}" media='all' />
+<link rel='stylesheet' id='e-swiper-css' href="{{ public_asset('css/e-swiper.min.css') }}" media='all' />
+<link rel='stylesheet' id='elementor-post-7-css' href="{{ public_asset('css/post-7.css') }}" media='all' />
+<link rel='stylesheet' id='elementor-post-121-css' href="{{ public_asset('css/post-121.css') }}" media='all' />
+<link rel='stylesheet' id='elementor-post-883-css' href="{{ public_asset('css/post-883.css') }}" media='all' />
+<link rel='stylesheet' id='elementor-post-145-css' href="{{ public_asset('css/post-145.css') }}" media='all' />
+<link rel='stylesheet' id='elementor-post-3494-css' href="{{ public_asset('css/post-3494.css') }}" media='all' />
 <link rel='stylesheet' id='insul-fonts-css' href='//fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&#038;family=Sora:wght@100..800&#038;subset=latin%2Clatin-ext&#038;display=swap' media='all' />
-<link rel='stylesheet' id='insul-icon-css' href='/css/icons.css' media='all' />
-<link rel='stylesheet' id='insul-style-css' href='/wp-content/themes/insul/style.css' media='all' />
+<link rel='stylesheet' id='insul-icon-css' href="{{ public_asset('css/icons.css') }}" media='all' />
+<link rel='stylesheet' id='insul-style-css' href="{{ public_asset('css/insul-style.css') }}" media='all' />
     <style id='insul-style-inline-css'>
 .col-full{max-width: 1410px}body { --e-global-container-width: 1410px}.e-con { --container-max-width: 1410px}
     </style>
-<link rel='stylesheet' id='elementor-post-871-css' href='/css/post-871.css' media='all' />
-<link rel='stylesheet' id='insul-elementor-css' href='/css/insul-elementor.css' media='all' />
-<link rel='stylesheet' id='hfe-icons-list-css' href='/css/widget-icon-list.min.css' media='all' />
-<link rel='stylesheet' id='hfe-social-icons-css' href='/css/widget-social-icons.min.css' media='all' />
-<link rel='stylesheet' id='hfe-social-share-icons-brands-css' href='/css/brands.css' media='all' />
-<link rel='stylesheet' id='hfe-social-share-icons-fontawesome-css' href='/css/fontawesome.css' media='all' />
-<link rel='stylesheet' id='hfe-nav-menu-icons-css' href='/css/solid.css' media='all' />
-<link rel='stylesheet' id='insul-child-style-css' href='/css/demo-child.css?ver=1.0.0' media='all' />
+<link rel='stylesheet' id='elementor-post-871-css' href="{{ public_asset('css/post-871.css') }}" media='all' />
+<link rel='stylesheet' id='insul-elementor-css' href="{{ public_asset('css/insul-elementor.css') }}" media='all' />
+<link rel='stylesheet' id='hfe-icons-list-css' href="{{ public_asset('css/widget-icon-list.min.css') }}" media='all' />
+<link rel='stylesheet' id='hfe-social-icons-css' href="{{ public_asset('css/widget-social-icons.min.css') }}" media='all' />
+<link rel='stylesheet' id='hfe-social-share-icons-brands-css' href="{{ public_asset('css/brands.css') }}" media='all' />
+<link rel='stylesheet' id='hfe-social-share-icons-fontawesome-css' href="{{ public_asset('css/fontawesome.css') }}" media='all' />
+<link rel='stylesheet' id='hfe-nav-menu-icons-css' href="{{ public_asset('css/solid.css') }}" media='all' />
+<link rel='stylesheet' id='insul-child-style-css' href="{{ public_asset('css/demo-child.css?ver=1.0.0') }}" media='all' />
 <link rel='stylesheet' id='google-fonts-1-css' href='https://fonts.googleapis.com/css?family=DM+Sans%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CSora%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap&#038;ver=6.7.1' media='all' />
-<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin><script src="/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
-    <script src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin><script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js" id="jquery-core-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-migrate@3.4.1/dist/jquery-migrate.min.js" id="jquery-migrate-js"></script>
     <script id="jquery-js-after">
 !function($){"use strict";$(document).ready(function(){$(this).scrollTop()>100&&$(".hfe-scroll-to-top-wrap").removeClass("hfe-scroll-to-top-hide"),$(window).scroll(function(){$(this).scrollTop()<100?$(".hfe-scroll-to-top-wrap").fadeOut(300):$(".hfe-scroll-to-top-wrap").fadeIn(300)}),$(".hfe-scroll-to-top-wrap").on("click",function(){$("html, body").animate({scrollTop:0},300);return!1})})}(jQuery);
     </script>
-    <script src="/wp-content/themes/insul/assets/js/libs/jarallax.js?ver=6.7.1" id="jarallax-js"></script>
+    <script src="{{ public_asset('js/insul/assets/js/libs/jarallax.js?ver=6.7.1') }}" id="jarallax-js"></script>
 <link rel="canonical" href="/testimonial/" />
 <link rel='shortlink' href='/?p=121' />
 <meta name="generator" content="Elementor 3.25.11; features: additional_custom_breakpoints, e_optimized_control_loading; settings: css_print_method-external, google_font-enabled, font_display-swap">
@@ -361,7 +361,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
                                             <div class="testimonial-caption">
                                                 <div class="caption-top">
                                                                 <div class="elementor-testimonial-image">
-                <img fetchpriority="high" decoding="async" width="768" height="816" src="/wp-content/uploads/2024/04/h1-testi01.png" class="attachment-full size-full wp-image-464" alt="" srcset="/wp-content/uploads/2024/04/h1-testi01.png 768w, /wp-content/uploads/2024/04/h1-testi01-282x300.png 282w" sizes="(max-width: 768px) 100vw, 768px" />            </div>
+                <img fetchpriority="high" decoding="async" width="768" height="816" src="{{ public_asset('wp-content/uploads/2024/04/h1-testi01.png') }}" class="attachment-full size-full wp-image-464" alt="" srcset="{{ public_asset('wp-content/uploads/2024/04/h1-testi01.png') }} 768w, {{ public_asset('wp-content/uploads/2024/04/h1-testi01-282x300.png') }} 282w" sizes="(max-width: 768px) 100vw, 768px" />            </div>
                                                             <div class="details">
                                                         <span class="name">Mayank</span>                                                                                                                    <span class="job">IT Professional</span>
 				</div>
@@ -381,7 +381,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
                                             <div class="testimonial-caption">
                                                 <div class="caption-top">
                                                                 <div class="elementor-testimonial-image">
-                <img decoding="async" width="752" height="800" src="/wp-content/uploads/2024/04/h1-testi02.jpg" class="attachment-full size-full wp-image-465" alt="" srcset="/wp-content/uploads/2024/04/h1-testi02.jpg 752w, /wp-content/uploads/2024/04/h1-testi02-282x300.jpg 282w" sizes="(max-width: 752px) 100vw, 752px" />            </div>
+                <img decoding="async" width="752" height="800" src="{{ public_asset('wp-content/uploads/2024/04/h1-testi02.jpg') }}" class="attachment-full size-full wp-image-465" alt="" srcset="{{ public_asset('wp-content/uploads/2024/04/h1-testi02.jpg') }} 752w, {{ public_asset('wp-content/uploads/2024/04/h1-testi02-282x300.jpg') }} 282w" sizes="(max-width: 752px) 100vw, 752px" />            </div>
                                                             <div class="details">
                                                         <span class="name">Sarthak</span>                                                                                                                    <span class="job">Chartered Accountant</span>
 				</div>
@@ -401,7 +401,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
                                             <div class="testimonial-caption">
                                                 <div class="caption-top">
                                                                 <div class="elementor-testimonial-image">
-                <img decoding="async" width="752" height="800" src="/wp-content/uploads/2024/04/h1-testi03.jpg" class="attachment-full size-full wp-image-466" alt="" srcset="/wp-content/uploads/2024/04/h1-testi03.jpg 752w, /wp-content/uploads/2024/04/h1-testi03-282x300.jpg 282w" sizes="(max-width: 752px) 100vw, 752px" />            </div>
+                <img decoding="async" width="752" height="800" src="{{ public_asset('wp-content/uploads/2024/04/h1-testi03.jpg') }}" class="attachment-full size-full wp-image-466" alt="" srcset="{{ public_asset('wp-content/uploads/2024/04/h1-testi03.jpg') }} 752w, {{ public_asset('wp-content/uploads/2024/04/h1-testi03-282x300.jpg') }} 282w" sizes="(max-width: 752px) 100vw, 752px" />            </div>
                                                             <div class="details">
                                                         <span class="name">Aditya</span>                                                                                                                    <span class="job">Doctor</span>
 					</div>
@@ -421,7 +421,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
                                             <div class="testimonial-caption">
                                                 <div class="caption-top">
                                                                 <div class="elementor-testimonial-image">
-                <img loading="lazy" decoding="async" width="2560" height="1707" src="/wp-content/uploads/2024/04/h1-testi05-scaled.jpeg" class="attachment-full size-full wp-image-468" alt="" srcset="/wp-content/uploads/2024/04/h1-testi05-scaled.jpeg 2560w, /wp-content/uploads/2024/04/h1-testi05-300x200.jpeg 300w, /wp-content/uploads/2024/04/h1-testi05-1024x683.jpeg 1024w, /wp-content/uploads/2024/04/h1-testi05-768x512.jpeg 768w, /wp-content/uploads/2024/04/h1-testi05-1536x1024.jpeg 1536w, /wp-content/uploads/2024/04/h1-testi05-2048x1366.jpeg 2048w" sizes="(max-width: 2560px) 100vw, 2560px" />            </div>
+                <img loading="lazy" decoding="async" width="2560" height="1707" src="{{ public_asset('wp-content/uploads/2024/04/h1-testi05-scaled.jpeg') }}" class="attachment-full size-full wp-image-468" alt="" srcset="{{ public_asset('wp-content/uploads/2024/04/h1-testi05-scaled.jpeg') }} 2560w, {{ public_asset('wp-content/uploads/2024/04/h1-testi05-300x200.jpeg') }} 300w, {{ public_asset('wp-content/uploads/2024/04/h1-testi05-1024x683.jpeg') }} 1024w, {{ public_asset('wp-content/uploads/2024/04/h1-testi05-768x512.jpeg') }} 768w, {{ public_asset('wp-content/uploads/2024/04/h1-testi05-1536x1024.jpeg') }} 1536w, {{ public_asset('wp-content/uploads/2024/04/h1-testi05-2048x1366.jpeg') }} 2048w" sizes="(max-width: 2560px) 100vw, 2560px" />            </div>
                                                             <div class="details">
                                                         <span class="name">Udit</span>                                                                                                                    <span class="job">Civil Engineer</span>
 				</div>
@@ -441,7 +441,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
                                             <div class="testimonial-caption">
                                                 <div class="caption-top">
                                                                 <div class="elementor-testimonial-image">
-                <img loading="lazy" decoding="async" width="1707" height="2560" src="/wp-content/uploads/2024/04/h1-testi04-scaled.jpeg" class="attachment-full size-full wp-image-467" alt="" srcset="/wp-content/uploads/2024/04/h1-testi04-scaled.jpeg 1707w, /wp-content/uploads/2024/04/h1-testi04-200x300.jpeg 200w, /wp-content/uploads/2024/04/h1-testi04-683x1024.jpeg 683w, /wp-content/uploads/2024/04/h1-testi04-768x1152.jpeg 768w, /wp-content/uploads/2024/04/h1-testi04-1024x1536.jpeg 1024w, /wp-content/uploads/2024/04/h1-testi04-1365x2048.jpeg 1365w" sizes="(max-width: 1707px) 100vw, 1707px" />            </div>
+                <img loading="lazy" decoding="async" width="1707" height="2560" src="{{ public_asset('wp-content/uploads/2024/04/h1-testi04-scaled.jpeg') }}" class="attachment-full size-full wp-image-467" alt="" srcset="{{ public_asset('wp-content/uploads/2024/04/h1-testi04-scaled.jpeg') }} 1707w, {{ public_asset('wp-content/uploads/2024/04/h1-testi04-200x300.jpeg') }} 200w, {{ public_asset('wp-content/uploads/2024/04/h1-testi04-683x1024.jpeg') }} 683w, {{ public_asset('wp-content/uploads/2024/04/h1-testi04-768x1152.jpeg') }} 768w, {{ public_asset('wp-content/uploads/2024/04/h1-testi04-1024x1536.jpeg') }} 1024w, {{ public_asset('wp-content/uploads/2024/04/h1-testi04-1365x2048.jpeg') }} 1365w" sizes="(max-width: 1707px) 100vw, 1707px" />            </div>
                                                             <div class="details">
                                                         <span class="name">Akshat</span>                                                                                                                    <span class="job">Business Owner</span>
 				</div>
@@ -461,7 +461,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
                                             <div class="testimonial-caption">
                                                 <div class="caption-top">
                                                                 <div class="elementor-testimonial-image">
-                <img loading="lazy" decoding="async" width="1061" height="1500" src="/wp-content/uploads/2024/04/tes-6-min.jpeg" class="attachment-full size-full wp-image-1128" alt="" srcset="/wp-content/uploads/2024/04/tes-6-min.jpeg 1061w, /wp-content/uploads/2024/04/tes-6-min-212x300.jpeg 212w, /wp-content/uploads/2024/04/tes-6-min-724x1024.jpeg 724w, /wp-content/uploads/2024/04/tes-6-min-768x1086.jpeg 768w" sizes="(max-width: 1061px) 100vw, 1061px" />            </div>
+                <img loading="lazy" decoding="async" width="1061" height="1500" src="{{ public_asset('wp-content/uploads/2024/04/tes-6-min.jpeg') }}" class="attachment-full size-full wp-image-1128" alt="" srcset="{{ public_asset('wp-content/uploads/2024/04/tes-6-min.jpeg') }} 1061w, {{ public_asset('wp-content/uploads/2024/04/tes-6-min-212x300.jpeg') }} 212w, {{ public_asset('wp-content/uploads/2024/04/tes-6-min-724x1024.jpeg') }} 724w, {{ public_asset('wp-content/uploads/2024/04/tes-6-min-768x1086.jpeg') }} 768w" sizes="(max-width: 1061px) 100vw, 1061px" />            </div>
                                                             <div class="details">
                                                         <span class="name">Himanshu</span>                                                                                                                    <span class="job">Bank Manager</span>
 				</div>
@@ -481,7 +481,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
                                             <div class="testimonial-caption">
                                                 <div class="caption-top">
                                                                 <div class="elementor-testimonial-image">
-                <img loading="lazy" decoding="async" width="1000" height="1500" src="/wp-content/uploads/2024/04/tes-7-min.jpeg" class="attachment-full size-full wp-image-1129" alt="" srcset="/wp-content/uploads/2024/04/tes-7-min.jpeg 1000w, /wp-content/uploads/2024/04/tes-7-min-200x300.jpeg 200w, /wp-content/uploads/2024/04/tes-7-min-683x1024.jpeg 683w, /wp-content/uploads/2024/04/tes-7-min-768x1152.jpeg 768w" sizes="(max-width: 1000px) 100vw, 1000px" />            </div>
+                <img loading="lazy" decoding="async" width="1000" height="1500" src="{{ public_asset('wp-content/uploads/2024/04/tes-7-min.jpeg') }}" class="attachment-full size-full wp-image-1129" alt="" srcset="{{ public_asset('wp-content/uploads/2024/04/tes-7-min.jpeg') }} 1000w, {{ public_asset('wp-content/uploads/2024/04/tes-7-min-200x300.jpeg') }} 200w, {{ public_asset('wp-content/uploads/2024/04/tes-7-min-683x1024.jpeg') }} 683w, {{ public_asset('wp-content/uploads/2024/04/tes-7-min-768x1152.jpeg') }} 768w" sizes="(max-width: 1000px) 100vw, 1000px" />            </div>
                                                             <div class="details">
                                                         <span class="name">Shivam</span>                                                                                                                    <span class="job">Government Employee</span>
                                     </div>
@@ -501,7 +501,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
                                             <div class="testimonial-caption">
                                                 <div class="caption-top">
                                                                 <div class="elementor-testimonial-image">
-                <img loading="lazy" decoding="async" width="1072" height="1500" src="/wp-content/uploads/2024/04/tes-8-min.jpeg" class="attachment-full size-full wp-image-1130" alt="" srcset="/wp-content/uploads/2024/04/tes-8-min.jpeg 1072w, /wp-content/uploads/2024/04/tes-8-min-214x300.jpeg 214w, /wp-content/uploads/2024/04/tes-8-min-732x1024.jpeg 732w, /wp-content/uploads/2024/04/tes-8-min-768x1075.jpeg 768w" sizes="(max-width: 1072px) 100vw, 1072px" />            </div>
+                <img loading="lazy" decoding="async" width="1072" height="1500" src="{{ public_asset('wp-content/uploads/2024/04/tes-8-min.jpeg') }}" class="attachment-full size-full wp-image-1130" alt="" srcset="{{ public_asset('wp-content/uploads/2024/04/tes-8-min.jpeg') }} 1072w, {{ public_asset('wp-content/uploads/2024/04/tes-8-min-214x300.jpeg') }} 214w, {{ public_asset('wp-content/uploads/2024/04/tes-8-min-732x1024.jpeg') }} 732w, {{ public_asset('wp-content/uploads/2024/04/tes-8-min-768x1075.jpeg') }} 768w" sizes="(max-width: 1072px) 100vw, 1072px" />            </div>
                                                             <div class="details">
                                                         <span class="name">Mehak</span>                                                                                                                    <span class="job">School Teacher</span>
                                     </div>
@@ -616,7 +616,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
                 <li class="item">
                     <div class="language-switcher-head">
                         <img
-                                src="/wp-content/themes/insul/assets/images/language-switcher/en.jpg"
+                                src="{{ public_asset('js/insul/assets/images/language-switcher/en.jpg') }}"
                                 alt="WPML">
                     </div>
                 </li>
@@ -624,7 +624,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
                     <div class="language-switcher-img">
                         <a href="#">
                             <img
-                                    src="/wp-content/themes/insul/assets/images/language-switcher/de.jpg"
+                                    src="{{ public_asset('js/insul/assets/images/language-switcher/de.jpg') }}"
                                     alt="WPML">
                         </a>
                     </div>
@@ -633,7 +633,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
                     <div class="language-switcher-img">
                         <a href="#">
                             <img
-                                    src="/wp-content/themes/insul/assets/images/language-switcher/it.jpg"
+                                    src="{{ public_asset('js/insul/assets/images/language-switcher/it.jpg') }}"
                                     alt="WPML">
                         </a>
                     </div>
@@ -642,7 +642,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
                     <div class="language-switcher-img">
                         <a href="#">
                             <img
-                                    src="/wp-content/themes/insul/assets/images/language-switcher/hi.jpg"
+                                    src="{{ public_asset('js/insul/assets/images/language-switcher/hi.jpg') }}"
                                     alt="WPML">
                         </a>
                     </div>
@@ -719,19 +719,19 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 					document.addEventListener( event, lazyloadRunObserver );
 				} );
     </script>
-			<link rel='stylesheet' id='widget-icon-list-css' href='/css/custom-widget-icon-list.min.css' media='all' />
-<link rel='stylesheet' id='widget-text-editor-css' href='/css/widget-text-editor.min.css?ver=3.25.11' media='all' />
-<link rel='stylesheet' id='magnific-popup-css' href='/css/magnific-popup.css?ver=1.0.4' media='all' />
-<link rel='stylesheet' id='rs-plugin-settings-css' href='/css/rs6.css?ver=6.7.23' media='all' />
+			<link rel='stylesheet' id='widget-icon-list-css' href="{{ public_asset('css/custom-widget-icon-list.min.css') }}" media='all' />
+<link rel='stylesheet' id='widget-text-editor-css' href="{{ public_asset('css/widget-text-editor.min.css?ver=3.25.11') }}" media='all' />
+<link rel='stylesheet' id='magnific-popup-css' href="{{ public_asset('css/magnific-popup.css?ver=1.0.4') }}" media='all' />
+<link rel='stylesheet' id='rs-plugin-settings-css' href="{{ public_asset('css/rs6.css?ver=6.7.23') }}" media='all' />
     <style id='rs-plugin-settings-inline-css'>
 #rs-demo-id {}
     </style>
-    <script src="/wp-includes/js/dist/hooks.min.js?ver=4d63a3d491d11ffd8ac6" id="wp-hooks-js"></script>
-    <script src="/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6" id="wp-i18n-js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/wordpress/wordpress@6.7/wp-includes/js/dist/hooks.min.js" id="wp-hooks-js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/wordpress/wordpress@6.7/wp-includes/js/dist/i18n.min.js" id="wp-i18n-js"></script>
     <script id="wp-i18n-js-after">
 wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
     </script>
-    <script src="/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=6.0.1" id="swv-js"></script>
+    <script src="{{ public_asset('js/contact-form-7/includes/swv/js/index.js?ver=6.0.1') }}" id="swv-js"></script>
     <script id="contact-form-7-js-before">
     var wpcf7 = {
         "api": {
@@ -740,45 +740,45 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
         }
     };
     </script>
-    <script src="/wp-content/plugins/contact-form-7/includes/js/index.js?ver=6.0.1" id="contact-form-7-js"></script>
-    <script src="/wp-content/plugins/revslider/sr6/assets/js/rbtools.min.js?ver=6.7.23" defer async id="tp-tools-js"></script>
-    <script src="/wp-content/plugins/revslider/sr6/assets/js/rs6.min.js?ver=6.7.23" defer async id="revmin-js"></script>
-<script src="/wp-content/themes/insul/assets/js/libs/jquery.sticky-kit.min.js?ver=1.0.4" id="sticky-kit-js"></script>
-<script src="/wp-includes/js/underscore.min.js?ver=1.13.7" id="underscore-js"></script>
+    <script src="{{ public_asset('js/contact-form-7/includes/js/index.js?ver=6.0.1') }}" id="contact-form-7-js"></script>
+    <script src="{{ public_asset('js/revslider/sr6/assets/js/rbtools.min.js?ver=6.7.23') }}" defer async id="tp-tools-js"></script>
+    <script src="{{ public_asset('js/revslider/sr6/assets/js/rs6.min.js?ver=6.7.23') }}" defer async id="revmin-js"></script>
+<script src="{{ public_asset('js/insul/assets/js/libs/jquery.sticky-kit.min.js?ver=1.0.4') }}" id="sticky-kit-js"></script>
+<script src="https://cdn.jsdelivr.net/npm/underscore@1.13.7/underscore-min.js" id="underscore-js"></script>
 <script id="wp-util-js-extra">
 var _wpUtilSettings = {"ajax":{"url":"\/insul\/wp-admin\/admin-ajax.php"}};
 </script>
-<script src="/wp-includes/js/wp-util.min.js?ver=6.7.1" id="wp-util-js"></script>
-<script src="/wp-content/themes/insul/assets/js/libs/swiper.js?ver=1.0.4" id="swiper-js"></script>
+<script src="https://cdn.jsdelivr.net/gh/wordpress/wordpress@6.7/wp-includes/js/wp-util.min.js" id="wp-util-js"></script>
+<script src="{{ public_asset('js/insul/assets/js/libs/swiper.js?ver=1.0.4') }}" id="swiper-js"></script>
 <script id="insul-theme-js-extra">
 var insulAjax = {"ajaxurl":"\/wp-admin\/admin-ajax.php"};
 </script>
-<script src="/wp-content/themes/insul/assets/js/frontend/main.js?ver=1.0.4" id="insul-theme-js"></script>
-<script src="/wp-includes/js/imagesloaded.min.js?ver=5.0.0" id="imagesloaded-js"></script>
-<script src="/wp-content/themes/insul/assets/js/skip-link-focus-fix.min.js?ver=1.0.4" id="insul-skip-link-focus-fix-js"></script>
-<script src="/wp-content/themes/insul/assets/js/frontend/search-popup.js?ver=1.0.4" id="insul-search-popup-js"></script>
-<script src="/wp-content/themes/insul/assets/js/frontend/text-editor.js?ver=1.0.4" id="insul-text-editor-js"></script>
-<script src="/wp-content/themes/insul/assets/js/frontend/nav-mobile.js?ver=1.0.4" id="insul-nav-mobile-js"></script>
-<script src="/wp-content/themes/insul/inc/megamenu/assets/js/frontend.js?ver=1.0.4" id="insul-megamenu-frontend-js"></script>
-<script src="/wp-content/themes/insul/assets/js/frontend/login.js?ver=1.0.4" id="insul-ajax-login-js"></script>
-<script src="/wp-content/themes/insul/assets/js/libs/TweenMax.min.js?ver=1.11.1" id="tweenmax-js"></script>
-<script src="/wp-content/themes/insul/assets/js/libs/jquery-parallax.js?ver=1.0.4" id="parallaxmouse-js"></script>
-<script src="/wp-content/themes/insul/assets/js/libs/jquery.magnific-popup.min.js?ver=1.0.4" id="magnific-popup-js"></script>
-<script defer src="/wp-content/plugins/mailchimp-for-wp/assets/js/forms.js?ver=4.9.19" id="mc4wp-forms-api-js"></script>
-<script src="/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.25.11" id="elementor-webpack-runtime-js"></script>
-<script src="/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.25.11" id="elementor-frontend-modules-js"></script>
-<script src="/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3" id="jquery-ui-core-js"></script>
+<script src="{{ public_asset('js/insul/assets/js/frontend/main.js?ver=1.0.4') }}" id="insul-theme-js"></script>
+<script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" id="imagesloaded-js"></script>
+<script src="{{ public_asset('js/insul/assets/js/skip-link-focus-fix.min.js?ver=1.0.4') }}" id="insul-skip-link-focus-fix-js"></script>
+<script src="{{ public_asset('js/insul/assets/js/frontend/search-popup.js?ver=1.0.4') }}" id="insul-search-popup-js"></script>
+<script src="{{ public_asset('js/insul/assets/js/frontend/text-editor.js?ver=1.0.4') }}" id="insul-text-editor-js"></script>
+<script src="{{ public_asset('js/insul/assets/js/frontend/nav-mobile.js?ver=1.0.4') }}" id="insul-nav-mobile-js"></script>
+<script src="{{ public_asset('js/insul/inc/megamenu/assets/js/frontend.js?ver=1.0.4') }}" id="insul-megamenu-frontend-js"></script>
+<script src="{{ public_asset('js/insul/assets/js/frontend/login.js?ver=1.0.4') }}" id="insul-ajax-login-js"></script>
+<script src="{{ public_asset('js/insul/assets/js/libs/TweenMax.min.js?ver=1.11.1') }}" id="tweenmax-js"></script>
+<script src="{{ public_asset('js/insul/assets/js/libs/jquery-parallax.js?ver=1.0.4') }}" id="parallaxmouse-js"></script>
+<script src="{{ public_asset('js/insul/assets/js/libs/jquery.magnific-popup.min.js?ver=1.0.4') }}" id="magnific-popup-js"></script>
+<script defer src="{{ public_asset('js/mailchimp/assets/js/forms.js?ver=4.9.19') }}" id="mc4wp-forms-api-js"></script>
+<script src="{{ public_asset('js/elementor/assets/js/webpack.runtime.min.js?ver=3.25.11') }}" id="elementor-webpack-runtime-js"></script>
+<script src="{{ public_asset('js/elementor/assets/js/frontend-modules.min.js?ver=3.25.11') }}" id="elementor-frontend-modules-js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-ui@1.13.3/dist/jquery-ui.min.js" id="jquery-ui-core-js"></script>
 <script id="elementor-frontend-js-before">
 var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close","a11yCarouselWrapperAriaLabel":"Carousel | Horizontal scrolling: Arrow Left & Right","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":true},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":true},"laptop":{"label":"Laptop","value":1440,"default_value":1366,"direction":"max","is_enabled":true},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}},"hasCustomBreakpoints":true},"version":"3.25.11","is_static":false,"experimentalFeatures":{"additional_custom_breakpoints":true,"container":true,"e_swiper_latest":true,"e_nested_atomic_repeaters":true,"e_optimized_control_loading":true,"e_onboarding":true,"e_css_smooth_scroll":true,"home_screen":true,"landing-pages":true,"nested-elements":true,"editor_v2":true,"link-in-bio":true,"floating-buttons":true},"urls":{"assets":"\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"\/wp-admin\/admin-ajax.php","uploadUrl":"\/wp-content\/uploads"},"nonces":{"floatingButtonsClickTracking":"db1146ad56"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_mobile_extra","viewport_tablet","viewport_tablet_extra","viewport_laptop"],"body_background_background":"classic","viewport_laptop":1440,"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":127,"title":"FAQs%20Page%20%E2%80%93%20Insul","excerpt":"","featuredImage":false}};
 </script>
-<script src="/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.25.11" id="elementor-frontend-js"></script>
-<script src="/wp-content/themes/insul/assets/js/elementor/accordion.js?ver=1.0.4" id="insul-elementor-accordion-js"></script>
-<script src="/wp-content/themes/insul/assets/js/elementor/animated-headline.js?ver=1.0.4" id="insul-elementor-animated-headline-js"></script>
-<script src="/wp-content/themes/insul/assets/js/elementor/image-carousel.js?ver=1.0.4" id="insul-elementor-image-carousel-js"></script>
-<script src="/wp-content/themes/insul/assets/js/elementor/slider-scrolling.js?ver=1.0.4" id="insul-elementor-slider-scrolling-js"></script>
-<script src="/wp-content/themes/insul/assets/js/elementor-frontend.js?ver=1.0.4" id="insul-elementor-frontend-js"></script>
-<script src="/wp-content/themes/insul/assets/js/frontend/jquery-sticky.js?ver=1.0.4" id="elementor-sticky-js"></script>
-<script src="/wp-content/themes/insul/assets/js/libs/sticky.js?ver=1.0.4" id="insul-elementor-sticky-js"></script>
+<script src="{{ public_asset('js/elementor/assets/js/frontend.min.js?ver=3.25.11') }}" id="elementor-frontend-js"></script>
+<script src="{{ public_asset('js/insul/assets/js/elementor/accordion.js?ver=1.0.4') }}" id="insul-elementor-accordion-js"></script>
+<script src="{{ public_asset('js/insul/assets/js/elementor/animated-headline.js?ver=1.0.4') }}" id="insul-elementor-animated-headline-js"></script>
+<script src="{{ public_asset('js/insul/assets/js/elementor/image-carousel.js?ver=1.0.4') }}" id="insul-elementor-image-carousel-js"></script>
+<script src="{{ public_asset('js/insul/assets/js/elementor/slider-scrolling.js?ver=1.0.4') }}" id="insul-elementor-slider-scrolling-js"></script>
+<script src="{{ public_asset('js/insul/assets/js/elementor-frontend.js?ver=1.0.4') }}" id="insul-elementor-frontend-js"></script>
+<script src="{{ public_asset('js/insul/assets/js/frontend/jquery-sticky.js?ver=1.0.4') }}" id="elementor-sticky-js"></script>
+<script src="{{ public_asset('js/insul/assets/js/libs/sticky.js?ver=1.0.4') }}" id="insul-elementor-sticky-js"></script>
     
     @include('partials.whatsapp-float')
 </body>

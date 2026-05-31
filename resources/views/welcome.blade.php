@@ -2876,14 +2876,14 @@
             <ul class="menu">
                 <li class="item">
                     <div class="language-switcher-head">
-                        <img src="/wp-content/themes/insul/assets/images/language-switcher/en.jpg"
+                        <img src="{{ public_asset('js/insul/assets/images/language-switcher/en.jpg') }}"
                             alt="WPML">
                     </div>
                 </li>
                 <li class="item">
                     <div class="language-switcher-img">
                         <a href="#">
-                            <img src="/wp-content/themes/insul/assets/images/language-switcher/de.jpg"
+                            <img src="{{ public_asset('js/insul/assets/images/language-switcher/de.jpg') }}"
                                 alt="WPML">
                         </a>
                     </div>
@@ -2891,7 +2891,7 @@
                 <li class="item">
                     <div class="language-switcher-img">
                         <a href="#">
-                            <img src="/wp-content/themes/insul/assets/images/language-switcher/it.jpg"
+                            <img src="{{ public_asset('js/insul/assets/images/language-switcher/it.jpg') }}"
                                 alt="WPML">
                         </a>
                     </div>
@@ -2899,7 +2899,7 @@
                 <li class="item">
                     <div class="language-switcher-img">
                         <a href="#">
-                            <img src="/wp-content/themes/insul/assets/images/language-switcher/hi.jpg"
+                            <img src="{{ public_asset('js/insul/assets/images/language-switcher/hi.jpg') }}"
                                 alt="WPML">
                         </a>
                     </div>

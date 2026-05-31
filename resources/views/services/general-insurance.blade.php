@@ -7,7 +7,7 @@
     <link rel="profile" href="//gmpg.org/xfn/11">
     <title>General Insurance Solutions &#8211; Witan Finsure</title>
     <link rel="icon" type="image/png" href="{{ asset('images/witantitle.png') }}">
-    ('partials.site-fonts')
+    @include('partials.site-fonts')
     <meta name='robots' content='max-image-preview:large' />
     <style>
         img:is([sizes="auto" i], [sizes^="auto," i]) {
@@ -317,7 +317,7 @@
         }((window, document), window._wpemojiSettings);
     </script>
     <link rel='stylesheet' id='hfe-widgets-style-css'
-        href='/css/frontend.css?ver=2.0.3'
+        href="{{ public_asset('css/frontend.css?ver=2.0.3') }}"
         media='all' />
     <style id='wp-emoji-styles-inline-css'>
         img.wp-smiley,
@@ -334,7 +334,7 @@
         }
     </style>
     <link rel='stylesheet' id='insul-gutenberg-blocks-css'
-        href='/css/gutenberg-blocks.css?ver=1.0.4'
+        href="{{ public_asset('css/gutenberg-blocks.css?ver=1.0.4') }}"
         media='all' />
     <style id='classic-theme-styles-inline-css'>
         /*! This file is auto-generated */
@@ -682,58 +682,58 @@
         }
     </style>
     <link rel='stylesheet' id='contact-form-7-css'
-        href='/css/contact-form-7.css?ver=6.0.1'
+        href="{{ public_asset('css/contact-form-7.css?ver=6.0.1') }}"
         media='all' />
     <link rel='stylesheet' id='-css'
-        href='/css/pavo-demo.css?ver=6.7.1' media='all' />
+        href="{{ public_asset('css/pavo-demo.css?ver=6.7.1') }}" media='all' />
     <link rel='stylesheet' id='hfe-style-css'
-        href='/css/header-footer-elementor.css?ver=2.0.3'
+        href="{{ public_asset('css/header-footer-elementor.css?ver=2.0.3') }}"
         media='all' />
-    <link rel='stylesheet' id='elementor-icons-css' href='/css/elementor-icons.min.css' media='all' />
+    <link rel='stylesheet' id='elementor-icons-css' href="{{ public_asset('css/elementor-icons.min.css') }}" media='all' />
     <link rel='stylesheet' id='elementor-frontend-css'
-        href='/wp-content/uploads/elementor/css/custom-frontend.min.css?ver=1733908100'
+        href="{{ public_asset('css/custom-frontend.min.css?ver=1733908100') }}"
         media='all' />
     <link rel='stylesheet' id='swiper-css'
-        href='/wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css?ver=8.4.5'
+        href="{{ public_asset('css/swiper.min.css?ver=8.4.5') }}"
         media='all' />
     <link rel='stylesheet' id='e-swiper-css'
-        href='/wp-content/plugins/elementor/assets/css/conditionals/e-swiper.min.css?ver=3.25.11'
+        href="{{ public_asset('css/e-swiper.min.css?ver=3.25.11') }}"
         media='all' />
     <link rel='stylesheet' id='elementor-post-7-css'
-        href='/wp-content/uploads/elementor/css/post-7.css?ver=1733908100'
+        href="{{ public_asset('css/post-7.css?ver=1733908100') }}"
         media='all' />
     <link rel='stylesheet' id='widget-image-css'
-        href='/css/widget-image.min.css?ver=3.25.11'
+        href="{{ public_asset('css/widget-image.min.css?ver=3.25.11') }}"
         media='all' />
     <link rel='stylesheet' id='widget-text-editor-css'
-        href='/css/widget-text-editor.min.css?ver=3.25.11'
+        href="{{ public_asset('css/widget-text-editor.min.css?ver=3.25.11') }}"
         media='all' />
     <link rel='stylesheet' id='widget-icon-box-css'
-        href='/wp-content/uploads/elementor/css/custom-widget-icon-box.min.css?ver=1733908100'
+        href="{{ public_asset('css/custom-widget-icon-box.min.css?ver=1733908100') }}"
         media='all' />
     <link rel='stylesheet' id='widget-icon-list-css'
-        href='/wp-content/uploads/elementor/css/custom-widget-icon-list.min.css?ver=1733908100'
+        href="{{ public_asset('css/custom-widget-icon-list.min.css?ver=1733908100') }}"
         media='all' />
     <link rel='stylesheet' id='widget-nested-accordion-css'
-        href='/wp-content/plugins/elementor/assets/css/widget-nested-accordion.min.css?ver=3.25.11'
+        href="{{ public_asset('css/widget-nested-accordion.min.css?ver=3.25.11') }}"
         media='all' />
     <link rel='stylesheet' id='elementor-post-84-css'
-        href='/wp-content/uploads/elementor/css/post-84.css?ver=1734512883'
+        href="{{ public_asset('css/post-84.css?ver=1734512883') }}"
         media='all' />
     <link rel='stylesheet' id='elementor-post-883-css'
-        href='/wp-content/uploads/elementor/css/post-883.css?ver=1733908470'
+        href="{{ public_asset('css/post-883.css?ver=1733908470') }}"
         media='all' />
     <link rel='stylesheet' id='elementor-post-145-css'
-        href='/wp-content/uploads/elementor/css/post-145.css?ver=1733908470'
+        href="{{ public_asset('css/post-145.css?ver=1733908470') }}"
         media='all' />
     <link rel='stylesheet' id='elementor-post-3494-css'
-        href='/wp-content/uploads/elementor/css/post-3494.css?ver=1733908101'
+        href="{{ public_asset('css/post-3494.css?ver=1733908101') }}"
         media='all' />
     <link rel='stylesheet' id='insul-fonts-css'
         href='//fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&#038;family=Sora:wght@100..800&#038;subset=latin%2Clatin-ext&#038;display=swap'
         media='all' />
-    <link rel='stylesheet' id='insul-icon-css' href='/css/icons.css' media='all' />
-    <link rel='stylesheet' id='insul-style-css' href='/wp-content/themes/insul/style.css' media='all' />
+    <link rel='stylesheet' id='insul-icon-css' href="{{ public_asset('css/icons.css') }}" media='all' />
+    <link rel='stylesheet' id='insul-style-css' href="{{ public_asset('css/insul-style.css') }}" media='all' />
     <style id='insul-style-inline-css'>
         .col-full {
             max-width: 1410px
@@ -747,26 +747,24 @@
             --container-max-width: 1410px
         }
     </style>
-    <link rel='stylesheet' id='calculator-hero-css' href='/css/calculator-hero.css' media='all' />
-    <link rel='stylesheet' id='insul-elementor-css' href='/css/insul-elementor.css' media='all' />
-    <link rel='stylesheet' id='hfe-icons-list-css' href='/css/widget-icon-list.min.css' media='all' />
-    <link rel='stylesheet' id='hfe-social-icons-css' href='/css/widget-social-icons.min.css' media='all' />
-    <link rel='stylesheet' id='hfe-social-share-icons-brands-css' href='/css/font-awesome-brands.min.css' media='all' />
-    <link rel='stylesheet' id='hfe-social-share-icons-fontawesome-css' href='/css/font-awesome.min.css' media='all' />
-    <link rel='stylesheet' id='hfe-nav-menu-icons-css' href='/css/font-awesome-solid.min.css' media='all' />
+    <link rel='stylesheet' id='calculator-hero-css' href="{{ public_asset('css/calculator-hero.css') }}" media='all' />
+    <link rel='stylesheet' id='insul-elementor-css' href="{{ public_asset('css/insul-elementor.css') }}" media='all' />
+    <link rel='stylesheet' id='hfe-icons-list-css' href="{{ public_asset('css/widget-icon-list.min.css') }}" media='all' />
+    <link rel='stylesheet' id='hfe-social-icons-css' href="{{ public_asset('css/widget-social-icons.min.css') }}" media='all' />
+    <link rel='stylesheet' id='hfe-social-share-icons-brands-css' href="{{ public_asset('css/font-awesome-brands.min.css') }}" media='all' />
+    <link rel='stylesheet' id='hfe-social-share-icons-fontawesome-css' href="{{ public_asset('css/font-awesome.min.css') }}" media='all' />
+    <link rel='stylesheet' id='hfe-nav-menu-icons-css' href="{{ public_asset('css/font-awesome-solid.min.css') }}" media='all' />
     <link rel='stylesheet' id='insul-child-style-css'
-        href='/css/demo-child.css?ver=1.0.0' media='all' />
+        href="{{ public_asset('css/demo-child.css?ver=1.0.0') }}" media='all' />
     <link rel='stylesheet' id='google-fonts-1-css'
         href='https://fonts.googleapis.com/css?family=DM+Sans%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CSora%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap&#038;ver=6.7.1'
         media='all' />
-    <link rel='stylesheet' id='elementor-icons-shared-0-css' href='/css/font-awesome.min.css' media='all' />
-    <link rel='stylesheet' id='elementor-icons-fa-solid-css' href='/css/font-awesome-solid.min.css' media='all' />
-    <link rel='stylesheet' id='elementor-icons-fa-brands-css' href='/css/font-awesome-brands.min.css' media='all' />
+    <link rel='stylesheet' id='elementor-icons-shared-0-css' href="{{ public_asset('css/font-awesome.min.css') }}" media='all' />
+    <link rel='stylesheet' id='elementor-icons-fa-solid-css' href="{{ public_asset('css/font-awesome-solid.min.css') }}" media='all' />
+    <link rel='stylesheet' id='elementor-icons-fa-brands-css' href="{{ public_asset('css/font-awesome-brands.min.css') }}" media='all' />
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-    <script src="/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"
-        id="jquery-core-js"></script>
-    <script src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1"
-        id="jquery-migrate-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js" id="jquery-core-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-migrate@3.4.1/dist/jquery-migrate.min.js" id="jquery-migrate-js"></script>
     <script id="jquery-js-after">
         !function ($) {
             "use strict";
@@ -784,7 +782,7 @@
             })
         }(jQuery);
     </script>
-    <script src="/wp-content/themes/insul/assets/js/libs/jarallax.js?ver=6.7.1"
+    <script src="{{ public_asset('js/insul/assets/js/libs/jarallax.js?ver=6.7.1') }}"
         id="jarallax-js"></script>
     <link rel="canonical" href="/services/financial-advices/" />
     <link rel='shortlink' href='/?p=84' />
@@ -1128,7 +1126,7 @@
         @include('partials.service-hero', [
             'title' => 'General Insurance Solutions',
             'url' => url('/services/general-insurance'),
-            'image' => asset('wp-content/uploads/2026/05/general-insurance-hero.jpg'),
+            'image' => public_asset('wp-content/uploads/2026/05/general-insurance-hero.jpg'),
         ])
 
         <div id="content" class="site-content" tabindex="-1">
@@ -1154,9 +1152,9 @@
                                     data-id="003a387" data-element_type="widget" data-widget_type="image.default">
                                     <div class="elementor-widget-container">
                                         <img fetchpriority="high" decoding="async" width="900" height="599"
-                                            src="/wp-content/uploads/2024/04/brc-4-1024x681.jpg"
+                                            src="{{ public_asset('wp-content/uploads/2024/04/brc-4-1024x681.jpg') }}"
                                             class="attachment-large size-large wp-image-880" alt=""
-                                            srcset="/wp-content/uploads/2024/04/brc-4-1024x681.jpg 1024w, /wp-content/uploads/2024/04/brc-4-300x200.jpg 300w, /wp-content/uploads/2024/04/brc-4-768x511.jpg 768w, /wp-content/uploads/2024/04/brc-4-1536x1022.jpg 1536w, /wp-content/uploads/2024/04/brc-4-2048x1363.jpg 2048w"
+                                            srcset="{{ public_asset('wp-content/uploads/2024/04/brc-4-1024x681.jpg') }} 1024w, {{ public_asset('wp-content/uploads/2024/04/brc-4-300x200.jpg') }} 300w, {{ public_asset('wp-content/uploads/2024/04/brc-4-768x511.jpg') }} 768w, {{ public_asset('wp-content/uploads/2024/04/brc-4-1536x1022.jpg') }} 1536w, {{ public_asset('wp-content/uploads/2024/04/brc-4-2048x1363.jpg') }} 2048w"
                                             sizes="(max-width: 900px) 100vw, 900px" />
                                     </div>
                                 </div>
@@ -1196,9 +1194,9 @@
                                                 data-widget_type="image.default">
                                                 <div class="elementor-widget-container">
                                                     <img decoding="async" width="510" height="320"
-                                                        src="/wp-content/uploads/2024/04/h2-business.png"
+                                                        src="{{ public_asset('wp-content/uploads/2024/04/h2-business.png') }}"
                                                         class="attachment-large size-large wp-image-528" alt=""
-                                                        srcset="/wp-content/uploads/2024/04/h2-business.png 510w, /wp-content/uploads/2024/04/h2-business-300x188.png 300w"
+                                                        srcset="{{ public_asset('wp-content/uploads/2024/04/h2-business.png') }} 510w, {{ public_asset('wp-content/uploads/2024/04/h2-business-300x188.png') }} 300w"
                                                         sizes="(max-width: 510px) 100vw, 510px" />
                                                 </div>
                                             </div>
@@ -1546,9 +1544,9 @@
                                                 data-widget_type="image.default">
                                                 <div class="elementor-widget-container">
                                                     <img decoding="async" width="640" height="427"
-                                                        src="/wp-content/uploads/2024/04/bg-pricing-min.jpeg"
+                                                        src="{{ public_asset('wp-content/uploads/2024/04/bg-pricing-min.jpeg') }}"
                                                         class="attachment-full size-full wp-image-1155" alt=""
-                                                        srcset="/wp-content/uploads/2024/04/bg-pricing-min.jpeg 640w, /wp-content/uploads/2024/04/bg-pricing-min-300x200.jpeg 300w"
+                                                        srcset="{{ public_asset('wp-content/uploads/2024/04/bg-pricing-min.jpeg') }} 640w, {{ public_asset('wp-content/uploads/2024/04/bg-pricing-min-300x200.jpeg') }} 300w"
                                                         sizes="(max-width: 640px) 100vw, 640px" />
                                                 </div>
                                             </div>
@@ -1724,10 +1722,10 @@
                                                                     <div class="elementor-testimonial-image">
                                                                         <img loading="lazy" decoding="async" width="752"
                                                                             height="800"
-                                                                            src="/wp-content/uploads/2024/04/h1-testi03.jpg"
+                                                                            src="{{ public_asset('wp-content/uploads/2024/04/h1-testi03.jpg') }}"
                                                                             class="attachment-full size-full wp-image-466"
                                                                             alt=""
-                                                                            srcset="/wp-content/uploads/2024/04/h1-testi03.jpg 752w, /wp-content/uploads/2024/04/h1-testi03-282x300.jpg 282w"
+                                                                            srcset="{{ public_asset('wp-content/uploads/2024/04/h1-testi03.jpg') }} 752w, {{ public_asset('wp-content/uploads/2024/04/h1-testi03-282x300.jpg') }} 282w"
                                                                             sizes="(max-width: 752px) 100vw, 752px" />
                                                                     </div>
                                                                 </div>
@@ -1880,10 +1878,10 @@
                                                         <div class="service-post-thumbnail">
                                                             <img loading="lazy" decoding="async" width="1410"
                                                                 height="740"
-                                                                src="/wp-content/uploads/2024/04/project-2.jpg"
+                                                                src="{{ public_asset('wp-content/uploads/2024/04/project-2.jpg') }}"
                                                                 class="attachment-insul-post-grid size-insul-post-grid wp-post-image"
                                                                 alt=""
-                                                                srcset="/wp-content/uploads/2024/04/project-2.jpg 1410w, /wp-content/uploads/2024/04/project-2-300x157.jpg 300w, /wp-content/uploads/2024/04/project-2-1024x537.jpg 1024w, /wp-content/uploads/2024/04/project-2-768x403.jpg 768w"
+                                                                srcset="{{ public_asset('wp-content/uploads/2024/04/project-2.jpg') }} 1410w, {{ public_asset('wp-content/uploads/2024/04/project-2-300x157.jpg') }} 300w, {{ public_asset('wp-content/uploads/2024/04/project-2-1024x537.jpg') }} 1024w, {{ public_asset('wp-content/uploads/2024/04/project-2-768x403.jpg') }} 768w"
                                                                 sizes="(max-width: 1410px) 100vw, 1410px" />
                                                         </div>
                                                         <div class="service-content">
@@ -1902,10 +1900,10 @@
                                                         <div class="service-post-thumbnail">
                                                             <img loading="lazy" decoding="async" width="1410"
                                                                 height="740"
-                                                                src="/wp-content/uploads/2024/04/project-6.jpg"
+                                                                src="{{ public_asset('wp-content/uploads/2024/04/project-6.jpg') }}"
                                                                 class="attachment-insul-post-grid size-insul-post-grid wp-post-image"
                                                                 alt=""
-                                                                srcset="/wp-content/uploads/2024/04/project-6.jpg 1410w, /wp-content/uploads/2024/04/project-6-300x157.jpg 300w, /wp-content/uploads/2024/04/project-6-1024x537.jpg 1024w, /wp-content/uploads/2024/04/project-6-768x403.jpg 768w"
+                                                                srcset="{{ public_asset('wp-content/uploads/2024/04/project-6.jpg') }} 1410w, {{ public_asset('wp-content/uploads/2024/04/project-6-300x157.jpg') }} 300w, {{ public_asset('wp-content/uploads/2024/04/project-6-1024x537.jpg') }} 1024w, {{ public_asset('wp-content/uploads/2024/04/project-6-768x403.jpg') }} 768w"
                                                                 sizes="(max-width: 1410px) 100vw, 1410px" />
                                                         </div>
                                                         <div class="service-content">
@@ -1924,10 +1922,10 @@
                                                         <div class="service-post-thumbnail">
                                                             <img loading="lazy" decoding="async" width="1410"
                                                                 height="740"
-                                                                src="/wp-content/uploads/2024/04/project-4.jpg"
+                                                                src="{{ public_asset('wp-content/uploads/2024/04/project-4.jpg') }}"
                                                                 class="attachment-insul-post-grid size-insul-post-grid wp-post-image"
                                                                 alt=""
-                                                                srcset="/wp-content/uploads/2024/04/project-4.jpg 1410w, /wp-content/uploads/2024/04/project-4-300x157.jpg 300w, /wp-content/uploads/2024/04/project-4-1024x537.jpg 1024w, /wp-content/uploads/2024/04/project-4-768x403.jpg 768w"
+                                                                srcset="{{ public_asset('wp-content/uploads/2024/04/project-4.jpg') }} 1410w, {{ public_asset('wp-content/uploads/2024/04/project-4-300x157.jpg') }} 300w, {{ public_asset('wp-content/uploads/2024/04/project-4-1024x537.jpg') }} 1024w, {{ public_asset('wp-content/uploads/2024/04/project-4-768x403.jpg') }} 768w"
                                                                 sizes="(max-width: 1410px) 100vw, 1410px" />
                                                         </div>
                                                         <div class="service-content">
@@ -2176,25 +2174,23 @@
         });
     </script>
     <link rel='stylesheet' id='magnific-popup-css'
-        href='/css/magnific-popup.css?ver=1.0.4'
+        href="{{ public_asset('css/magnific-popup.css?ver=1.0.4') }}"
         media='all' />
     <link rel='stylesheet' id='rs-plugin-settings-css'
-        href='/css/rs6.css?ver=6.7.23'
+        href="{{ public_asset('css/rs6.css?ver=6.7.23') }}"
         media='all' />
     <style id='rs-plugin-settings-inline-css'>
         #rs-demo-id {}
     </style>
-    <script src="/wp-includes/js/dist/hooks.min.js?ver=4d63a3d491d11ffd8ac6"
-        id="wp-hooks-js"></script>
-    <script src="/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6"
-        id="wp-i18n-js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/wordpress/wordpress@6.7/wp-includes/js/dist/hooks.min.js" id="wp-hooks-js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/wordpress/wordpress@6.7/wp-includes/js/dist/i18n.min.js" id="wp-i18n-js"></script>
     <script id="wp-i18n-js-after">
         wp.i18n.setLocaleData({
             'text direction\u0004ltr': ['ltr']
         });
     </script>
     <script
-        src="/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=6.0.1"
+        src="{{ public_asset('js/contact-form-7/includes/swv/js/index.js?ver=6.0.1') }}"
         id="swv-js"></script>
     <script id="contact-form-7-js-before">
         var wpcf7 = {
@@ -2204,11 +2200,11 @@
             }
         };
     </script>
-    <script src="/wp-content/plugins/contact-form-7/includes/js/index.js?ver=6.0.1"
+    <script src="{{ public_asset('js/contact-form-7/includes/js/index.js?ver=6.0.1') }}"
         id="contact-form-7-js"></script>
-    <script src="/wp-content/plugins/revslider/sr6/assets/js/rbtools.min.js?ver=6.7.23"
+    <script src="{{ public_asset('js/revslider/sr6/assets/js/rbtools.min.js?ver=6.7.23') }}"
         defer async id="tp-tools-js"></script>
-    <script src="/wp-content/plugins/revslider/sr6/assets/js/rs6.min.js?ver=6.7.23" defer
+    <script src="{{ public_asset('js/revslider/sr6/assets/js/rs6.min.js?ver=6.7.23') }}" defer
         async id="revmin-js"></script>
     <script id="rocket-browser-checker-js-after">
         "use strict";
@@ -2438,10 +2434,9 @@
         }());
     </script>
     <script
-        src="/wp-content/themes/insul/assets/js/libs/jquery.sticky-kit.min.js?ver=1.0.4"
+        src="{{ public_asset('js/insul/assets/js/libs/jquery.sticky-kit.min.js?ver=1.0.4') }}"
         id="sticky-kit-js"></script>
-    <script src="/wp-includes/js/underscore.min.js?ver=1.13.7"
-        id="underscore-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/underscore@1.13.7/underscore-min.js" id="underscore-js"></script>
     <script id="wp-util-js-extra">
         var _wpUtilSettings = {
             "ajax": {
@@ -2449,51 +2444,49 @@
             }
         };
     </script>
-    <script src="/wp-includes/js/wp-util.min.js?ver=6.7.1" id="wp-util-js"></script>
-    <script src="/wp-content/themes/insul/assets/js/libs/swiper.js?ver=1.0.4"
+    <script src="https://cdn.jsdelivr.net/gh/wordpress/wordpress@6.7/wp-includes/js/wp-util.min.js" id="wp-util-js"></script>
+    <script src="{{ public_asset('js/insul/assets/js/libs/swiper.js?ver=1.0.4') }}"
         id="swiper-js"></script>
     <script id="insul-theme-js-extra">
         var insulAjax = {
             "ajaxurl": "\/wp-admin\/admin-ajax.php"
         };
     </script>
-    <script src="/wp-content/themes/insul/assets/js/frontend/main.js?ver=1.0.4"
+    <script src="{{ public_asset('js/insul/assets/js/frontend/main.js?ver=1.0.4') }}"
         id="insul-theme-js"></script>
-    <script src="/wp-includes/js/imagesloaded.min.js?ver=5.0.0"
-        id="imagesloaded-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" id="imagesloaded-js"></script>
     <script
-        src="/wp-content/themes/insul/assets/js/skip-link-focus-fix.min.js?ver=1.0.4"
+        src="{{ public_asset('js/insul/assets/js/skip-link-focus-fix.min.js?ver=1.0.4') }}"
         id="insul-skip-link-focus-fix-js"></script>
     <script
-        src="/wp-content/themes/insul/assets/js/frontend/search-popup.js?ver=1.0.4"
+        src="{{ public_asset('js/insul/assets/js/frontend/search-popup.js?ver=1.0.4') }}"
         id="insul-search-popup-js"></script>
-    <script src="/wp-content/themes/insul/assets/js/frontend/text-editor.js?ver=1.0.4"
+    <script src="{{ public_asset('js/insul/assets/js/frontend/text-editor.js?ver=1.0.4') }}"
         id="insul-text-editor-js"></script>
-    <script src="/wp-content/themes/insul/assets/js/frontend/nav-mobile.js?ver=1.0.4"
+    <script src="{{ public_asset('js/insul/assets/js/frontend/nav-mobile.js?ver=1.0.4') }}"
         id="insul-nav-mobile-js"></script>
     <script
-        src="/wp-content/themes/insul/inc/megamenu/assets/js/frontend.js?ver=1.0.4"
+        src="{{ public_asset('js/insul/inc/megamenu/assets/js/frontend.js?ver=1.0.4') }}"
         id="insul-megamenu-frontend-js"></script>
-    <script src="/wp-content/themes/insul/assets/js/frontend/login.js?ver=1.0.4"
+    <script src="{{ public_asset('js/insul/assets/js/frontend/login.js?ver=1.0.4') }}"
         id="insul-ajax-login-js"></script>
-    <script src="/wp-content/themes/insul/assets/js/libs/TweenMax.min.js?ver=1.11.1"
+    <script src="{{ public_asset('js/insul/assets/js/libs/TweenMax.min.js?ver=1.11.1') }}"
         id="tweenmax-js"></script>
-    <script src="/wp-content/themes/insul/assets/js/libs/jquery-parallax.js?ver=1.0.4"
+    <script src="{{ public_asset('js/insul/assets/js/libs/jquery-parallax.js?ver=1.0.4') }}"
         id="parallaxmouse-js"></script>
     <script
-        src="/wp-content/themes/insul/assets/js/libs/jquery.magnific-popup.min.js?ver=1.0.4"
+        src="{{ public_asset('js/insul/assets/js/libs/jquery.magnific-popup.min.js?ver=1.0.4') }}"
         id="magnific-popup-js"></script>
     <script defer
-        src="/wp-content/plugins/mailchimp-for-wp/assets/js/forms.js?ver=4.9.19"
+        src="{{ public_asset('js/mailchimp/assets/js/forms.js?ver=4.9.19') }}"
         id="mc4wp-forms-api-js"></script>
     <script
-        src="/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.25.11"
+        src="{{ public_asset('js/elementor/assets/js/webpack.runtime.min.js?ver=3.25.11') }}"
         id="elementor-webpack-runtime-js"></script>
     <script
-        src="/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.25.11"
+        src="{{ public_asset('js/elementor/assets/js/frontend-modules.min.js?ver=3.25.11') }}"
         id="elementor-frontend-modules-js"></script>
-    <script src="/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3"
-        id="jquery-ui-core-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-ui@1.13.3/dist/jquery-ui.min.js" id="jquery-ui-core-js"></script>
     <script id="elementor-frontend-js-before">
         var elementorFrontendConfig = {
             "environmentMode": {
@@ -2627,26 +2620,26 @@
             }
         };
     </script>
-    <script src="/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.25.11"
+    <script src="{{ public_asset('js/elementor/assets/js/frontend.min.js?ver=3.25.11') }}"
         id="elementor-frontend-js"></script>
     <script
-        src="/wp-content/themes/insul/assets/js/elementor/animated-headline.js?ver=1.0.4"
+        src="{{ public_asset('js/insul/assets/js/elementor/animated-headline.js?ver=1.0.4') }}"
         id="insul-elementor-animated-headline-js"></script>
     <script
-        src="/wp-content/themes/insul/assets/js/elementor/our-service.js?ver=1.0.4"
+        src="{{ public_asset('js/insul/assets/js/elementor/our-service.js?ver=1.0.4') }}"
         id="insul-elementor-our-service-js"></script>
     <script
-        src="/wp-content/themes/insul/assets/js/elementor/slider-scrolling.js?ver=1.0.4"
+        src="{{ public_asset('js/insul/assets/js/elementor/slider-scrolling.js?ver=1.0.4') }}"
         id="insul-elementor-slider-scrolling-js"></script>
     <script
-        src="/wp-content/themes/insul/assets/js/elementor/testimonial.js?ver=1.0.4"
+        src="{{ public_asset('js/insul/assets/js/elementor/testimonial.js?ver=1.0.4') }}"
         id="insul-elementor-testimonial-js"></script>
-    <script src="/wp-content/themes/insul/assets/js/elementor-frontend.js?ver=1.0.4"
+    <script src="{{ public_asset('js/insul/assets/js/elementor-frontend.js?ver=1.0.4') }}"
         id="insul-elementor-frontend-js"></script>
     <script
-        src="/wp-content/themes/insul/assets/js/frontend/jquery-sticky.js?ver=1.0.4"
+        src="{{ public_asset('js/insul/assets/js/frontend/jquery-sticky.js?ver=1.0.4') }}"
         id="elementor-sticky-js"></script>
-    <script src="/wp-content/themes/insul/assets/js/libs/sticky.js?ver=1.0.4"
+    <script src="{{ public_asset('js/insul/assets/js/libs/sticky.js?ver=1.0.4') }}"
         id="insul-elementor-sticky-js"></script>
 <script>
 	        (function () {

@@ -6,7 +6,7 @@
     <link rel="profile" href="//gmpg.org/xfn/11">
     <title>About us &#8211; Witan Finsure</title>
     <link rel="icon" type="image/png" href="{{ asset('images/witantitle.png') }}">
-    ('partials.site-fonts')
+    @include('partials.site-fonts')
     <meta name='robots' content='max-image-preview:large'/>
     <style>
     img:is([sizes="auto" i], [sizes^="auto," i]) {
@@ -158,7 +158,7 @@
         }))
     }((window, document), window._wpemojiSettings);
     </script>
-    <link rel='stylesheet' id='hfe-widgets-style-css' href='/css/frontend.css?ver=2.0.3' media='all'/>
+    <link rel='stylesheet' id='hfe-widgets-style-css' href="{{ public_asset('css/frontend.css?ver=2.0.3') }}" media='all'/>
     <style id='wp-emoji-styles-inline-css'>
     img.wp-smiley, img.emoji {
         display: inline !important;
@@ -172,7 +172,7 @@
         padding: 0 !important;
     }
     </style>
-    <link rel='stylesheet' id='insul-gutenberg-blocks-css' href='/css/gutenberg-blocks.css?ver=1.0.4' media='all'/>
+    <link rel='stylesheet' id='insul-gutenberg-blocks-css' href="{{ public_asset('css/gutenberg-blocks.css?ver=1.0.4') }}" media='all'/>
     <style id='classic-theme-styles-inline-css'>
     /*! This file is auto-generated */
     .wp-block-button__link {
@@ -518,33 +518,33 @@
         line-height: 1.6;
     }
     </style>
-    <link rel='stylesheet' id='contact-form-7-css' href='/css/contact-form-7.css?ver=6.0.1' media='all'/>
-    <link rel='stylesheet' id='-css' href='/css/pavo-demo.css?ver=6.7.1' media='all'/>
-    <link rel='stylesheet' id='hfe-style-css' href='/css/header-footer-elementor.css?ver=2.0.3' media='all'/>
-    <link rel='stylesheet' id='elementor-icons-css' href='/css/elementor-icons.min.css' media='all'/>
-    <link rel='stylesheet' id='elementor-frontend-css' href='/css/elementor-frontend.min.css' media='all'/>
-    <link rel='stylesheet' id='swiper-css' href='/css/swiper.min.css' media='all'/>
-    <link rel='stylesheet' id='e-swiper-css' href='/css/e-swiper.min.css' media='all'/>
-    <link rel='stylesheet' id='elementor-post-7-css' href='/css/post-7.css' media='all'/>
-    <link rel='stylesheet' id='widget-text-path-css' href='/css/widget-text-path.min.css' media='all'/>
-    <link rel='stylesheet' id='widget-text-editor-css' href='/css/widget-text-editor.min.css' media='all'/>
-    <link rel='stylesheet' id='e-animation-slideInUp-css' href='/css/slideInUp.min.css' media='all'/>
-    <link rel='stylesheet' id='e-animation-slideInRight-css' href='/css/slideInRight.min.css' media='all'/>
-    <link rel='stylesheet' id='e-animation-slideInLeft-css' href='/css/slideInLeft.min.css' media='all'/>
-    <link rel='stylesheet' id='widget-image-css' href='/css/widget-image.min.css' media='all'/>
-    <link rel='stylesheet' id='widget-nested-tabs-css' href='/css/custom-widget-nested-tabs.min.css' media='all'/>
-    <link rel='stylesheet' id='widget-accordion-css' href='/css/custom-widget-accordion.min.css' media='all'/>
-    <link rel='stylesheet' id='elementor-post-98-css' href='/css/post-98.css' media='all'/>
-    <link rel='stylesheet' id='elementor-post-141-css' href='/css/post-141.css' media='all'/>
-    <link rel='stylesheet' id='elementor-post-144-css' href='/css/post-144.css' media='all'/>
-    <link rel='stylesheet' id='elementor-post-3494-css' href='/css/post-3494.css' media='all'/>
-    <link rel='stylesheet' id='elementor-post-104-css' href='/css/post-104.css' media='all'/>
-    <link rel='stylesheet' id='elementor-post-871-css' href='/css/post-871.css' media='all'/>
-    <link rel='stylesheet' id='elementor-post-883-css' href='/css/post-883.css' media='all'/>
-    <link rel='stylesheet' id='elementor-post-145-css' href='/css/post-145.css' media='all'/>
+    <link rel='stylesheet' id='contact-form-7-css' href="{{ public_asset('css/contact-form-7.css?ver=6.0.1') }}" media='all'/>
+    <link rel='stylesheet' id='-css' href="{{ public_asset('css/pavo-demo.css?ver=6.7.1') }}" media='all'/>
+    <link rel='stylesheet' id='hfe-style-css' href="{{ public_asset('css/header-footer-elementor.css?ver=2.0.3') }}" media='all'/>
+    <link rel='stylesheet' id='elementor-icons-css' href="{{ public_asset('css/elementor-icons.min.css') }}" media='all'/>
+    <link rel='stylesheet' id='elementor-frontend-css' href="{{ public_asset('css/elementor-frontend.min.css') }}" media='all'/>
+    <link rel='stylesheet' id='swiper-css' href="{{ public_asset('css/swiper.min.css') }}" media='all'/>
+    <link rel='stylesheet' id='e-swiper-css' href="{{ public_asset('css/e-swiper.min.css') }}" media='all'/>
+    <link rel='stylesheet' id='elementor-post-7-css' href="{{ public_asset('css/post-7.css') }}" media='all'/>
+    <link rel='stylesheet' id='widget-text-path-css' href="{{ public_asset('css/widget-text-path.min.css') }}" media='all'/>
+    <link rel='stylesheet' id='widget-text-editor-css' href="{{ public_asset('css/widget-text-editor.min.css') }}" media='all'/>
+    <link rel='stylesheet' id='e-animation-slideInUp-css' href="{{ public_asset('css/slideInUp.min.css') }}" media='all'/>
+    <link rel='stylesheet' id='e-animation-slideInRight-css' href="{{ public_asset('css/slideInRight.min.css') }}" media='all'/>
+    <link rel='stylesheet' id='e-animation-slideInLeft-css' href="{{ public_asset('css/slideInLeft.min.css') }}" media='all'/>
+    <link rel='stylesheet' id='widget-image-css' href="{{ public_asset('css/widget-image.min.css') }}" media='all'/>
+    <link rel='stylesheet' id='widget-nested-tabs-css' href="{{ public_asset('css/custom-widget-nested-tabs.min.css') }}" media='all'/>
+    <link rel='stylesheet' id='widget-accordion-css' href="{{ public_asset('css/custom-widget-accordion.min.css') }}" media='all'/>
+    <link rel='stylesheet' id='elementor-post-98-css' href="{{ public_asset('css/post-98.css') }}" media='all'/>
+    <link rel='stylesheet' id='elementor-post-141-css' href="{{ public_asset('css/post-141.css') }}" media='all'/>
+    <link rel='stylesheet' id='elementor-post-144-css' href="{{ public_asset('css/post-144.css') }}" media='all'/>
+    <link rel='stylesheet' id='elementor-post-3494-css' href="{{ public_asset('css/post-3494.css') }}" media='all'/>
+    <link rel='stylesheet' id='elementor-post-104-css' href="{{ public_asset('css/post-104.css') }}" media='all'/>
+    <link rel='stylesheet' id='elementor-post-871-css' href="{{ public_asset('css/post-871.css') }}" media='all'/>
+    <link rel='stylesheet' id='elementor-post-883-css' href="{{ public_asset('css/post-883.css') }}" media='all'/>
+    <link rel='stylesheet' id='elementor-post-145-css' href="{{ public_asset('css/post-145.css') }}" media='all'/>
     <link rel='stylesheet' id='insul-fonts-css' href='//fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&#038;family=Sora:wght@100..800&#038;subset=latin%2Clatin-ext&#038;display=swap' media='all'/>
-    <link rel='stylesheet' id='insul-icon-css' href='/css/icons.css' media='all'/>
-    <link rel='stylesheet' id='insul-style-css' href='/wp-content/themes/insul/style.css' media='all'/>
+    <link rel='stylesheet' id='insul-icon-css' href="{{ public_asset('css/icons.css') }}" media='all'/>
+    <link rel='stylesheet' id='insul-style-css' href="{{ public_asset('css/insul-style.css') }}" media='all'/>
     <style id='insul-style-inline-css'>
     .col-full {
         max-width: 1410px
@@ -558,20 +558,20 @@
         --container-max-width: 1410px
     }
     </style>
-    <link rel='stylesheet' id='insul-elementor-css' href='/css/insul-elementor.css' media='all'/>
-    <link rel='stylesheet' id='hfe-icons-list-css' href='/css/widget-icon-list.min.css' media='all'/>
-    <link rel='stylesheet' id='hfe-social-icons-css' href='/css/widget-social-icons.min.css' media='all'/>
-    <link rel='stylesheet' id='hfe-social-share-icons-brands-css' href='/css/font-awesome-brands.min.css' media='all'/>
-    <link rel='stylesheet' id='hfe-social-share-icons-fontawesome-css' href='/css/font-awesome.min.css' media='all'/>
-    <link rel='stylesheet' id='hfe-nav-menu-icons-css' href='/css/font-awesome-solid.min.css' media='all'/>
-    <link rel='stylesheet' id='insul-child-style-css' href='/css/demo-child.css?ver=1.0.0' media='all'/>
+    <link rel='stylesheet' id='insul-elementor-css' href="{{ public_asset('css/insul-elementor.css') }}" media='all'/>
+    <link rel='stylesheet' id='hfe-icons-list-css' href="{{ public_asset('css/widget-icon-list.min.css') }}" media='all'/>
+    <link rel='stylesheet' id='hfe-social-icons-css' href="{{ public_asset('css/widget-social-icons.min.css') }}" media='all'/>
+    <link rel='stylesheet' id='hfe-social-share-icons-brands-css' href="{{ public_asset('css/font-awesome-brands.min.css') }}" media='all'/>
+    <link rel='stylesheet' id='hfe-social-share-icons-fontawesome-css' href="{{ public_asset('css/font-awesome.min.css') }}" media='all'/>
+    <link rel='stylesheet' id='hfe-nav-menu-icons-css' href="{{ public_asset('css/font-awesome-solid.min.css') }}" media='all'/>
+    <link rel='stylesheet' id='insul-child-style-css' href="{{ public_asset('css/demo-child.css?ver=1.0.0') }}" media='all'/>
     <link rel='stylesheet' id='google-fonts-1-css' href='https://fonts.googleapis.com/css?family=DM+Sans%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CSora%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap&#038;ver=6.7.1' media='all'/>
-    <link rel='stylesheet' id='elementor-icons-shared-0-css' href='/css/font-awesome.min.css' media='all'/>
-    <link rel='stylesheet' id='elementor-icons-fa-solid-css' href='/css/font-awesome-solid.min.css' media='all'/>
-    <link rel='stylesheet' id='elementor-icons-fa-brands-css' href='/css/font-awesome-brands.min.css' media='all'/>
+    <link rel='stylesheet' id='elementor-icons-shared-0-css' href="{{ public_asset('css/font-awesome.min.css') }}" media='all'/>
+    <link rel='stylesheet' id='elementor-icons-fa-solid-css' href="{{ public_asset('css/font-awesome-solid.min.css') }}" media='all'/>
+    <link rel='stylesheet' id='elementor-icons-fa-brands-css' href="{{ public_asset('css/font-awesome-brands.min.css') }}" media='all'/>
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-    <script src="/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
-    <script src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js" id="jquery-core-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-migrate@3.4.1/dist/jquery-migrate.min.js" id="jquery-migrate-js"></script>
     <script id="jquery-js-after">
     !function($) {
         "use strict";
@@ -589,7 +589,7 @@
         })
     }(jQuery);
     </script>
-    <script src="/wp-content/themes/insul/assets/js/libs/jarallax.js?ver=6.7.1" id="jarallax-js"></script>
+    <script src="{{ public_asset('js/insul/assets/js/libs/jarallax.js?ver=6.7.1') }}" id="jarallax-js"></script>
     <meta name="generator" content="WordPress 6.7.1"/>
     <link rel="canonical" href="/"/>
     <link rel='shortlink' href='/'/>
@@ -925,7 +925,7 @@
 		<div class="elementor-element elementor-element-16e595d e-con-full e-flex e-con e-child" data-id="16e595d" data-element_type="container">
 				<div class="elementor-element elementor-element-44fafd3 elementor-widget elementor-widget-image" data-id="44fafd3" data-element_type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-													<img fetchpriority="high" decoding="async" width="480" height="440" src="/wp-content/uploads/2024/04/h3-choose01.jpg" class="attachment-full size-full wp-image-865" alt="" srcset="/wp-content/uploads/2024/04/h3-choose01.jpg 480w, /wp-content/uploads/2024/04/h3-choose01-300x275.jpg 300w" sizes="(max-width: 480px) 100vw, 480px" />													</div>
+													<img fetchpriority="high" decoding="async" width="480" height="440" src="{{ public_asset('wp-content/uploads/2024/04/h3-choose01.jpg') }}" class="attachment-full size-full wp-image-865" alt="" srcset="{{ public_asset('wp-content/uploads/2024/04/h3-choose01.jpg') }} 480w, {{ public_asset('wp-content/uploads/2024/04/h3-choose01-300x275.jpg') }} 300w" sizes="(max-width: 480px) 100vw, 480px" />													</div>
 				</div>
                 
 				</div>
@@ -977,7 +977,7 @@
                                 <div class="team-items">
                                     <div class="team-top">
                                                     <div class="team-image">
-                <img loading="lazy" decoding="async" width="330" height="330" src="/wp-content/uploads/2024/04/team-6.jpg" class="attachment-full size-full wp-image-48" alt="" srcset="/wp-content/uploads/2024/04/team-6.jpg 330w, /wp-content/uploads/2024/04/team-6-300x300.jpg 300w, /wp-content/uploads/2024/04/team-6-150x150.jpg 150w" sizes="(max-width: 330px) 100vw, 330px" />            </div>
+                <img loading="lazy" decoding="async" width="330" height="330" src="{{ public_asset('wp-content/uploads/2024/04/team-6.jpg') }}" class="attachment-full size-full wp-image-48" alt="" srcset="{{ public_asset('wp-content/uploads/2024/04/team-6.jpg') }} 330w, {{ public_asset('wp-content/uploads/2024/04/team-6-300x300.jpg') }} 300w, {{ public_asset('wp-content/uploads/2024/04/team-6-150x150.jpg') }} 150w" sizes="(max-width: 330px) 100vw, 330px" />            </div>
                                             </div>
                                     <div class="team-caption">
                                         <div class="team-name">
@@ -1011,7 +1011,7 @@
                                 <div class="team-items">
                                     <div class="team-top">
                                                     <div class="team-image">
-                <img loading="lazy" decoding="async" width="330" height="330" src="/wp-content/uploads/2024/04/team-5.jpg" class="attachment-full size-full wp-image-47" alt="" srcset="/wp-content/uploads/2024/04/team-5.jpg 330w, /wp-content/uploads/2024/04/team-5-300x300.jpg 300w, /wp-content/uploads/2024/04/team-5-150x150.jpg 150w" sizes="(max-width: 330px) 100vw, 330px" />            </div>
+                <img loading="lazy" decoding="async" width="330" height="330" src="{{ public_asset('wp-content/uploads/2024/04/team-5.jpg') }}" class="attachment-full size-full wp-image-47" alt="" srcset="{{ public_asset('wp-content/uploads/2024/04/team-5.jpg') }} 330w, {{ public_asset('wp-content/uploads/2024/04/team-5-300x300.jpg') }} 300w, {{ public_asset('wp-content/uploads/2024/04/team-5-150x150.jpg') }} 150w" sizes="(max-width: 330px) 100vw, 330px" />            </div>
                                             </div>
                                     <div class="team-caption">
                                         <div class="team-name">
@@ -1045,7 +1045,7 @@
                                 <div class="team-items">
                                     <div class="team-top">
                                                     <div class="team-image">
-                <img loading="lazy" decoding="async" width="330" height="330" src="/wp-content/uploads/2024/04/team-8.jpg" class="attachment-full size-full wp-image-50" alt="" srcset="/wp-content/uploads/2024/04/team-8.jpg 330w, /wp-content/uploads/2024/04/team-8-300x300.jpg 300w, /wp-content/uploads/2024/04/team-8-150x150.jpg 150w" sizes="(max-width: 330px) 100vw, 330px" />            </div>
+                <img loading="lazy" decoding="async" width="330" height="330" src="{{ public_asset('wp-content/uploads/2024/04/team-8.jpg') }}" class="attachment-full size-full wp-image-50" alt="" srcset="{{ public_asset('wp-content/uploads/2024/04/team-8.jpg') }} 330w, {{ public_asset('wp-content/uploads/2024/04/team-8-300x300.jpg') }} 300w, {{ public_asset('wp-content/uploads/2024/04/team-8-150x150.jpg') }} 150w" sizes="(max-width: 330px) 100vw, 330px" />            </div>
                                             </div>
                                     <div class="team-caption">
                                         <div class="team-name">
@@ -1079,7 +1079,7 @@
                                 <div class="team-items">
                                     <div class="team-top">
                                                     <div class="team-image">
-                <img loading="lazy" decoding="async" width="330" height="330" src="/wp-content/uploads/2024/04/team-1.jpg" class="attachment-full size-full wp-image-43" alt="" srcset="/wp-content/uploads/2024/04/team-1.jpg 330w, /wp-content/uploads/2024/04/team-1-300x300.jpg 300w, /wp-content/uploads/2024/04/team-1-150x150.jpg 150w" sizes="(max-width: 330px) 100vw, 330px" />            </div>
+                <img loading="lazy" decoding="async" width="330" height="330" src="{{ public_asset('wp-content/uploads/2024/04/team-1.jpg') }}" class="attachment-full size-full wp-image-43" alt="" srcset="{{ public_asset('wp-content/uploads/2024/04/team-1.jpg') }} 330w, {{ public_asset('wp-content/uploads/2024/04/team-1-300x300.jpg') }} 300w, {{ public_asset('wp-content/uploads/2024/04/team-1-150x150.jpg') }} 150w" sizes="(max-width: 330px) 100vw, 330px" />            </div>
                                             </div>
                                     <div class="team-caption">
                                         <div class="team-name">
@@ -1113,7 +1113,7 @@
                                 <div class="team-items">
                                     <div class="team-top">
                                                     <div class="team-image">
-                <img loading="lazy" decoding="async" width="330" height="330" src="/wp-content/uploads/2024/04/team-2.jpg" class="attachment-full size-full wp-image-44" alt="" srcset="/wp-content/uploads/2024/04/team-2.jpg 330w, /wp-content/uploads/2024/04/team-2-300x300.jpg 300w, /wp-content/uploads/2024/04/team-2-150x150.jpg 150w" sizes="(max-width: 330px) 100vw, 330px" />            </div>
+                <img loading="lazy" decoding="async" width="330" height="330" src="{{ public_asset('wp-content/uploads/2024/04/team-2.jpg') }}" class="attachment-full size-full wp-image-44" alt="" srcset="{{ public_asset('wp-content/uploads/2024/04/team-2.jpg') }} 330w, {{ public_asset('wp-content/uploads/2024/04/team-2-300x300.jpg') }} 300w, {{ public_asset('wp-content/uploads/2024/04/team-2-150x150.jpg') }} 150w" sizes="(max-width: 330px) 100vw, 330px" />            </div>
                                             </div>
                                     <div class="team-caption">
                                         <div class="team-name">
@@ -1147,7 +1147,7 @@
                                 <div class="team-items">
                                     <div class="team-top">
                                                     <div class="team-image">
-                <img loading="lazy" decoding="async" width="330" height="330" src="/wp-content/uploads/2024/04/team-3.jpg" class="attachment-full size-full wp-image-45" alt="" srcset="/wp-content/uploads/2024/04/team-3.jpg 330w, /wp-content/uploads/2024/04/team-3-300x300.jpg 300w, /wp-content/uploads/2024/04/team-3-150x150.jpg 150w" sizes="(max-width: 330px) 100vw, 330px" />            </div>
+                <img loading="lazy" decoding="async" width="330" height="330" src="{{ public_asset('wp-content/uploads/2024/04/team-3.jpg') }}" class="attachment-full size-full wp-image-45" alt="" srcset="{{ public_asset('wp-content/uploads/2024/04/team-3.jpg') }} 330w, {{ public_asset('wp-content/uploads/2024/04/team-3-300x300.jpg') }} 300w, {{ public_asset('wp-content/uploads/2024/04/team-3-150x150.jpg') }} 150w" sizes="(max-width: 330px) 100vw, 330px" />            </div>
                                             </div>
                                     <div class="team-caption">
                                         <div class="team-name">
@@ -1181,7 +1181,7 @@
                                 <div class="team-items">
                                     <div class="team-top">
                                                     <div class="team-image">
-                <img loading="lazy" decoding="async" width="330" height="330" src="/wp-content/uploads/2024/04/team-4.jpg" class="attachment-full size-full wp-image-46" alt="" srcset="/wp-content/uploads/2024/04/team-4.jpg 330w, /wp-content/uploads/2024/04/team-4-300x300.jpg 300w, /wp-content/uploads/2024/04/team-4-150x150.jpg 150w" sizes="(max-width: 330px) 100vw, 330px" />            </div>
+                <img loading="lazy" decoding="async" width="330" height="330" src="{{ public_asset('wp-content/uploads/2024/04/team-4.jpg') }}" class="attachment-full size-full wp-image-46" alt="" srcset="{{ public_asset('wp-content/uploads/2024/04/team-4.jpg') }} 330w, {{ public_asset('wp-content/uploads/2024/04/team-4-300x300.jpg') }} 300w, {{ public_asset('wp-content/uploads/2024/04/team-4-150x150.jpg') }} 150w" sizes="(max-width: 330px) 100vw, 330px" />            </div>
                                             </div>
                                     <div class="team-caption">
                                         <div class="team-name">
@@ -1215,7 +1215,7 @@
                                 <div class="team-items">
                                     <div class="team-top">
                                                     <div class="team-image">
-                <img loading="lazy" decoding="async" width="330" height="330" src="/wp-content/uploads/2024/04/team-7.jpg" class="attachment-full size-full wp-image-49" alt="" srcset="/wp-content/uploads/2024/04/team-7.jpg 330w, /wp-content/uploads/2024/04/team-7-300x300.jpg 300w, /wp-content/uploads/2024/04/team-7-150x150.jpg 150w" sizes="(max-width: 330px) 100vw, 330px" />            </div>
+                <img loading="lazy" decoding="async" width="330" height="330" src="{{ public_asset('wp-content/uploads/2024/04/team-7.jpg') }}" class="attachment-full size-full wp-image-49" alt="" srcset="{{ public_asset('wp-content/uploads/2024/04/team-7.jpg') }} 330w, {{ public_asset('wp-content/uploads/2024/04/team-7-300x300.jpg') }} 300w, {{ public_asset('wp-content/uploads/2024/04/team-7-150x150.jpg') }} 150w" sizes="(max-width: 330px) 100vw, 330px" />            </div>
                                             </div>
                                     <div class="team-caption">
                                         <div class="team-name">
@@ -1304,15 +1304,15 @@
 				</div>
 				<div class="elementor-element elementor-element-5f058cc elementor-absolute elementor-widget elementor-widget-image" data-id="5f058cc" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-													<img loading="lazy" decoding="async" width="885" height="776" src="/wp-content/uploads/2024/04/ab-us-vector-min.png" class="attachment-full size-full wp-image-2876" alt="" srcset="/wp-content/uploads/2024/04/ab-us-vector-min.png 885w, /wp-content/uploads/2024/04/ab-us-vector-min-300x263.png 300w, /wp-content/uploads/2024/04/ab-us-vector-min-768x673.png 768w" sizes="(max-width: 885px) 100vw, 885px" />													</div>
+													<img loading="lazy" decoding="async" width="885" height="776" src="{{ public_asset('wp-content/uploads/2024/04/ab-us-vector-min.png') }}" class="attachment-full size-full wp-image-2876" alt="" srcset="{{ public_asset('wp-content/uploads/2024/04/ab-us-vector-min.png') }} 885w, {{ public_asset('wp-content/uploads/2024/04/ab-us-vector-min-300x263.png') }} 300w, {{ public_asset('wp-content/uploads/2024/04/ab-us-vector-min-768x673.png') }} 768w" sizes="(max-width: 885px) 100vw, 885px" />													</div>
 				</div>
 				<div class="elementor-element elementor-element-47501ed elementor-absolute elementor-hidden-laptop elementor-hidden-tablet_extra elementor-hidden-tablet elementor-hidden-mobile_extra elementor-hidden-mobile elementor-widget elementor-widget-image" data-id="47501ed" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-													<img loading="lazy" decoding="async" width="92" height="203" src="/wp-content/uploads/2024/04/ab-us-vecto2-min.png" class="attachment-full size-full wp-image-2877" alt="" />													</div>
+													<img loading="lazy" decoding="async" width="92" height="203" src="{{ public_asset('wp-content/uploads/2024/04/ab-us-vecto2-min.png') }}" class="attachment-full size-full wp-image-2877" alt="" />													</div>
 				</div>
 				<div class="elementor-element elementor-element-a28f6ff elementor-absolute elementor-hidden-laptop elementor-hidden-tablet_extra elementor-hidden-tablet elementor-hidden-mobile_extra elementor-hidden-mobile elementor-widget elementor-widget-image" data-id="a28f6ff" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-													<img loading="lazy" decoding="async" width="116" height="148" src="/wp-content/uploads/2024/04/ab-us-vecto3-min.png" class="attachment-full size-full wp-image-2878" alt="" />													</div>
+													<img loading="lazy" decoding="async" width="116" height="148" src="{{ public_asset('wp-content/uploads/2024/04/ab-us-vecto3-min.png') }}" class="attachment-full size-full wp-image-2878" alt="" />													</div>
 				</div>
 		<div class="elementor-element elementor-element-604e2d2 e-flex e-con-boxed e-con e-child" data-id="604e2d2" data-element_type="container">
 					<div class="e-con-inner">
@@ -1336,7 +1336,7 @@
 		<div class="elementor-element elementor-element-03e74ab e-con-full e-flex e-con e-child" data-id="03e74ab" data-element_type="container">
 				<div class="elementor-element elementor-element-02f4dc3 elementor-widget elementor-widget-image" data-id="02f4dc3" data-element_type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-													<img loading="lazy" decoding="async" width="510" height="320" src="/wp-content/uploads/2024/04/h2-business.png" class="attachment-large size-large wp-image-528" alt="" srcset="/wp-content/uploads/2024/04/h2-business.png 510w, /wp-content/uploads/2024/04/h2-business-300x188.png 300w" sizes="(max-width: 510px) 100vw, 510px" />													</div>
+													<img loading="lazy" decoding="async" width="510" height="320" src="{{ public_asset('wp-content/uploads/2024/04/h2-business.png') }}" class="attachment-large size-large wp-image-528" alt="" srcset="{{ public_asset('wp-content/uploads/2024/04/h2-business.png') }} 510w, {{ public_asset('wp-content/uploads/2024/04/h2-business-300x188.png') }} 300w" sizes="(max-width: 510px) 100vw, 510px" />													</div>
 				</div>
 				</div>
 					</div>
@@ -1665,24 +1665,24 @@
         }
     }
     </script>
-    <link rel='stylesheet' id='magnific-popup-css' href='/css/magnific-popup.css?ver=1.0.4' media='all'/>
-    <link rel='stylesheet' id='widget-icon-list-css' href='/wp-content/uploads/elementor/css/custom-widget-icon-list.min.css?ver=1733908100' media='all'/>
-    <link rel='stylesheet' id='e-animation-shrink-css' href='/css/e-animation-shrink.min.css?ver=3.25.11' media='all'/>
-    <link rel='stylesheet' id='widget-social-icons-css' href='/wp-content/plugins/elementor/assets/css/widget-social-icons.min.css?ver=3.25.11' media='all'/>
-    <link rel='stylesheet' id='e-apple-webkit-css' href='/wp-content/uploads/elementor/css/custom-apple-webkit.min.css?ver=1733908100' media='all'/>
-    <link rel='stylesheet' id='rs-plugin-settings-css' href='/css/rs6.css?ver=6.7.23' media='all'/>
+    <link rel='stylesheet' id='magnific-popup-css' href="{{ public_asset('css/magnific-popup.css?ver=1.0.4') }}" media='all'/>
+    <link rel='stylesheet' id='widget-icon-list-css' href="{{ public_asset('css/custom-widget-icon-list.min.css?ver=1733908100') }}" media='all'/>
+    <link rel='stylesheet' id='e-animation-shrink-css' href="{{ public_asset('css/e-animation-shrink.min.css?ver=3.25.11') }}" media='all'/>
+    <link rel='stylesheet' id='widget-social-icons-css' href="{{ public_asset('css/widget-social-icons.min.css?ver=3.25.11') }}" media='all'/>
+    <link rel='stylesheet' id='e-apple-webkit-css' href="{{ public_asset('css/custom-apple-webkit.min.css?ver=1733908100') }}" media='all'/>
+    <link rel='stylesheet' id='rs-plugin-settings-css' href="{{ public_asset('css/rs6.css?ver=6.7.23') }}" media='all'/>
     <style id='rs-plugin-settings-inline-css'>
     #rs-demo-id {
     }
     </style>
-    <script src="/wp-includes/js/dist/hooks.min.js?ver=4d63a3d491d11ffd8ac6" id="wp-hooks-js"></script>
-    <script src="/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6" id="wp-i18n-js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/wordpress/wordpress@6.7/wp-includes/js/dist/hooks.min.js" id="wp-hooks-js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/wordpress/wordpress@6.7/wp-includes/js/dist/i18n.min.js" id="wp-i18n-js"></script>
     <script id="wp-i18n-js-after">
     wp.i18n.setLocaleData({
         'text direction\u0004ltr': ['ltr']
     });
     </script>
-    <script src="/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=6.0.1" id="swv-js"></script>
+    <script src="{{ public_asset('js/contact-form-7/includes/swv/js/index.js?ver=6.0.1') }}" id="swv-js"></script>
     <script id="contact-form-7-js-before">
     var wpcf7 = {
         "api": {
@@ -1691,52 +1691,52 @@
         }
     };
     </script>
-    <script src="/wp-content/plugins/contact-form-7/includes/js/index.js?ver=6.0.1" id="contact-form-7-js"></script>
-    <script src="/wp-content/plugins/revslider/sr6/assets/js/rbtools.min.js?ver=6.7.23" defer async id="tp-tools-js"></script>
-    <script src="/wp-content/plugins/revslider/sr6/assets/js/rs6.min.js?ver=6.7.23" defer async id="revmin-js"></script>
-    <script src="/wp-content/plugins/elementor/assets/lib/jquery-numerator/jquery-numerator.min.js?ver=0.2.1" id="jquery-numerator-js"></script>
-    <script src="/wp-content/themes/insul/assets/js/libs/isotope.pkgd.min.js?ver=1.0.4" id="isotope-js"></script>
-    <script src="/wp-includes/js/imagesloaded.min.js?ver=5.0.0" id="imagesloaded-js"></script>
-    <script src="/wp-content/themes/insul/assets/js/libs/jquery.sticky-kit.min.js?ver=1.0.4" id="sticky-kit-js"></script>
-    <script src="/wp-includes/js/underscore.min.js?ver=1.13.7" id="underscore-js"></script>
+    <script src="{{ public_asset('js/contact-form-7/includes/js/index.js?ver=6.0.1') }}" id="contact-form-7-js"></script>
+    <script src="{{ public_asset('js/revslider/sr6/assets/js/rbtools.min.js?ver=6.7.23') }}" defer async id="tp-tools-js"></script>
+    <script src="{{ public_asset('js/revslider/sr6/assets/js/rs6.min.js?ver=6.7.23') }}" defer async id="revmin-js"></script>
+    <script src="{{ public_asset('js/elementor/lib/jquery-numerator/jquery-numerator.min.js?ver=0.2.1') }}" id="jquery-numerator-js"></script>
+    <script src="{{ public_asset('js/insul/assets/js/libs/isotope.pkgd.min.js?ver=1.0.4') }}" id="isotope-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" id="imagesloaded-js"></script>
+    <script src="{{ public_asset('js/insul/assets/js/libs/jquery.sticky-kit.min.js?ver=1.0.4') }}" id="sticky-kit-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/underscore@1.13.7/underscore-min.js" id="underscore-js"></script>
     <script id="wp-util-js-extra">
     var _wpUtilSettings = {"ajax":{"url":"\/wp-admin\/admin-ajax.php"}};
     </script>
-    <script src="/wp-includes/js/wp-util.min.js?ver=6.7.1" id="wp-util-js"></script>
-    <script src="/wp-content/themes/insul/assets/js/libs/swiper.js?ver=1.0.4" id="swiper-js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/wordpress/wordpress@6.7/wp-includes/js/wp-util.min.js" id="wp-util-js"></script>
+    <script src="{{ public_asset('js/insul/assets/js/libs/swiper.js?ver=1.0.4') }}" id="swiper-js"></script>
     <script id="insul-theme-js-extra">
     var insulAjax = {"ajaxurl":"\/wp-admin\/admin-ajax.php"};
     </script>
-    <script src="/wp-content/themes/insul/assets/js/frontend/main.js?ver=1.0.4" id="insul-theme-js"></script>
-    <script src="/wp-content/themes/insul/assets/js/skip-link-focus-fix.min.js?ver=1.0.4" id="insul-skip-link-focus-fix-js"></script>
-    <script src="/wp-content/themes/insul/assets/js/frontend/search-popup.js?ver=1.0.4" id="insul-search-popup-js"></script>
-    <script src="/wp-content/themes/insul/assets/js/frontend/text-editor.js?ver=1.0.4" id="insul-text-editor-js"></script>
-    <script src="/wp-content/themes/insul/assets/js/frontend/nav-mobile.js?ver=1.0.4" id="insul-nav-mobile-js"></script>
-    <script src="/wp-content/themes/insul/inc/megamenu/assets/js/frontend.js?ver=1.0.4" id="insul-megamenu-frontend-js"></script>
-    <script src="/wp-content/themes/insul/assets/js/frontend/login.js?ver=1.0.4" id="insul-ajax-login-js"></script>
-    <script src="/wp-content/themes/insul/assets/js/libs/TweenMax.min.js?ver=1.11.1" id="tweenmax-js"></script>
-    <script src="/wp-content/themes/insul/assets/js/libs/jquery-parallax.js?ver=1.0.4" id="parallaxmouse-js"></script>
-    <script src="/wp-content/themes/insul/assets/js/libs/jquery.magnific-popup.min.js?ver=1.0.4" id="magnific-popup-js"></script>
-    <script defer src="/wp-content/plugins/mailchimp-for-wp/assets/js/forms.js?ver=4.9.19" id="mc4wp-forms-api-js"></script>
-    <script src="/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.25.11" id="elementor-webpack-runtime-js"></script>
-    <script src="/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.25.11" id="elementor-frontend-modules-js"></script>
-    <script src="/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3" id="jquery-ui-core-js"></script>
+    <script src="{{ public_asset('js/insul/assets/js/frontend/main.js?ver=1.0.4') }}" id="insul-theme-js"></script>
+    <script src="{{ public_asset('js/insul/assets/js/skip-link-focus-fix.min.js?ver=1.0.4') }}" id="insul-skip-link-focus-fix-js"></script>
+    <script src="{{ public_asset('js/insul/assets/js/frontend/search-popup.js?ver=1.0.4') }}" id="insul-search-popup-js"></script>
+    <script src="{{ public_asset('js/insul/assets/js/frontend/text-editor.js?ver=1.0.4') }}" id="insul-text-editor-js"></script>
+    <script src="{{ public_asset('js/insul/assets/js/frontend/nav-mobile.js?ver=1.0.4') }}" id="insul-nav-mobile-js"></script>
+    <script src="{{ public_asset('js/insul/inc/megamenu/assets/js/frontend.js?ver=1.0.4') }}" id="insul-megamenu-frontend-js"></script>
+    <script src="{{ public_asset('js/insul/assets/js/frontend/login.js?ver=1.0.4') }}" id="insul-ajax-login-js"></script>
+    <script src="{{ public_asset('js/insul/assets/js/libs/TweenMax.min.js?ver=1.11.1') }}" id="tweenmax-js"></script>
+    <script src="{{ public_asset('js/insul/assets/js/libs/jquery-parallax.js?ver=1.0.4') }}" id="parallaxmouse-js"></script>
+    <script src="{{ public_asset('js/insul/assets/js/libs/jquery.magnific-popup.min.js?ver=1.0.4') }}" id="magnific-popup-js"></script>
+    <script defer src="{{ public_asset('js/mailchimp/assets/js/forms.js?ver=4.9.19') }}" id="mc4wp-forms-api-js"></script>
+    <script src="{{ public_asset('js/elementor/assets/js/webpack.runtime.min.js?ver=3.25.11') }}" id="elementor-webpack-runtime-js"></script>
+    <script src="{{ public_asset('js/elementor/assets/js/frontend-modules.min.js?ver=3.25.11') }}" id="elementor-frontend-modules-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-ui@1.13.3/dist/jquery-ui.min.js" id="jquery-ui-core-js"></script>
     <script id="elementor-frontend-js-before">
     var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close","a11yCarouselWrapperAriaLabel":"Carousel | Horizontal scrolling: Arrow Left & Right","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":true},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":true},"laptop":{"label":"Laptop","value":1440,"default_value":1366,"direction":"max","is_enabled":true},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}},"hasCustomBreakpoints":true},"version":"3.25.11","is_static":false,"experimentalFeatures":{"additional_custom_breakpoints":true,"container":true,"e_swiper_latest":true,"e_nested_atomic_repeaters":true,"e_optimized_control_loading":true,"e_onboarding":true,"e_css_smooth_scroll":true,"home_screen":true,"landing-pages":true,"nested-elements":true,"editor_v2":true,"link-in-bio":true,"floating-buttons":true},"urls":{"assets":"\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"\/wp-admin\/admin-ajax.php","uploadUrl":"\/wp-content\/uploads"},"nonces":{"floatingButtonsClickTracking":"e44bf9c3ae"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_mobile_extra","viewport_tablet","viewport_tablet_extra","viewport_laptop"],"body_background_background":"classic","viewport_laptop":1440,"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":104,"title":"About%20Us","excerpt":"","featuredImage":false}};
     </script>
-    <script src="/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.25.11" id="elementor-frontend-js"></script>
-    <script src="/wp-content/themes/insul/assets/js/elementor/accordion.js?ver=1.0.4" id="insul-elementor-accordion-js"></script>
-    <script src="/wp-content/themes/insul/assets/js/elementor/animated-headline.js?ver=1.0.4" id="insul-elementor-animated-headline-js"></script>
-    <script src="/wp-content/themes/insul/assets/js/elementor/brand.js?ver=1.0.4" id="insul-elementor-brand-js"></script>
-    <script src="/wp-content/themes/insul/assets/js/elementor/our-project.js?ver=1.0.4" id="insul-elementor-our-project-js"></script>
-    <script src="/wp-content/themes/insul/assets/js/elementor/our-service.js?ver=1.0.4" id="insul-elementor-our-service-js"></script>
-    <script src="/wp-content/themes/insul/assets/js/elementor/posts-grid.js?ver=1.0.4" id="insul-elementor-posts-grid-js"></script>
-    <script src="/wp-content/themes/insul/assets/js/elementor/slider-scrolling.js?ver=1.0.4" id="insul-elementor-slider-scrolling-js"></script>
-    <script src="/wp-content/themes/insul/assets/js/elementor/testimonial.js?ver=1.0.4" id="insul-elementor-testimonial-js"></script>
-    <script src="/wp-content/themes/insul/assets/js/elementor/team-box.js?ver=1.0.4" id="insul-elementor-team-box-js"></script>
-    <script src="/wp-content/themes/insul/assets/js/elementor-frontend.js?ver=1.0.4" id="insul-elementor-frontend-js"></script>
-    <script src="/wp-content/themes/insul/assets/js/frontend/jquery-sticky.js?ver=1.0.4" id="elementor-sticky-js"></script>
-    <script src="/wp-content/themes/insul/assets/js/libs/sticky.js?ver=1.0.4" id="insul-elementor-sticky-js"></script>
+    <script src="{{ public_asset('js/elementor/assets/js/frontend.min.js?ver=3.25.11') }}" id="elementor-frontend-js"></script>
+    <script src="{{ public_asset('js/insul/assets/js/elementor/accordion.js?ver=1.0.4') }}" id="insul-elementor-accordion-js"></script>
+    <script src="{{ public_asset('js/insul/assets/js/elementor/animated-headline.js?ver=1.0.4') }}" id="insul-elementor-animated-headline-js"></script>
+    <script src="{{ public_asset('js/insul/assets/js/elementor/brand.js?ver=1.0.4') }}" id="insul-elementor-brand-js"></script>
+    <script src="{{ public_asset('js/insul/assets/js/elementor/our-project.js?ver=1.0.4') }}" id="insul-elementor-our-project-js"></script>
+    <script src="{{ public_asset('js/insul/assets/js/elementor/our-service.js?ver=1.0.4') }}" id="insul-elementor-our-service-js"></script>
+    <script src="{{ public_asset('js/insul/assets/js/elementor/posts-grid.js?ver=1.0.4') }}" id="insul-elementor-posts-grid-js"></script>
+    <script src="{{ public_asset('js/insul/assets/js/elementor/slider-scrolling.js?ver=1.0.4') }}" id="insul-elementor-slider-scrolling-js"></script>
+    <script src="{{ public_asset('js/insul/assets/js/elementor/testimonial.js?ver=1.0.4') }}" id="insul-elementor-testimonial-js"></script>
+    <script src="{{ public_asset('js/insul/assets/js/elementor/team-box.js?ver=1.0.4') }}" id="insul-elementor-team-box-js"></script>
+    <script src="{{ public_asset('js/insul/assets/js/elementor-frontend.js?ver=1.0.4') }}" id="insul-elementor-frontend-js"></script>
+    <script src="{{ public_asset('js/insul/assets/js/frontend/jquery-sticky.js?ver=1.0.4') }}" id="elementor-sticky-js"></script>
+    <script src="{{ public_asset('js/insul/assets/js/libs/sticky.js?ver=1.0.4') }}" id="insul-elementor-sticky-js"></script>
     @include('partials.whatsapp-float')
 </body>
 </html>
