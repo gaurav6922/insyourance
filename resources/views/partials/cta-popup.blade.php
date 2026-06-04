@@ -9,21 +9,20 @@
     $bigVariants = $ctaConfig['big_variants'] ?? [];
     $waNumber = $ctaConfig['whatsapp']['number'] ?? '919711043285';
     $waDefault = $ctaConfig['whatsapp']['default_message'] ?? 'Hi, I would like to know more about your insurance services.';
+    $popupData = [
+        'smallVariants' => $smallVariants,
+        'bigVariants' => $bigVariants,
+        'whatsapp' => ['number' => $waNumber, 'default' => $waDefault],
+        'scheduler' => [
+            'initial' => $ctaConfig['initial_delay_ms'] ?? 0,
+            'intervalMin' => $ctaConfig['interval_min_ms'] ?? 20000,
+            'intervalMax' => $ctaConfig['interval_max_ms'] ?? 45000,
+        ],
+    ];
 @endphp
 <link rel="stylesheet" href="{{ local_public_asset('css/cta-popup.css') }}">
 
-<script type="application/json" id="cta-popup-data">
-@json([
-    'smallVariants' => $smallVariants,
-    'bigVariants' => $bigVariants,
-    'whatsapp' => ['number' => $waNumber, 'default' => $waDefault],
-    'scheduler' => [
-        'initial' => $ctaConfig['initial_delay_ms'] ?? 0,
-        'intervalMin' => $ctaConfig['interval_min_ms'] ?? 20000,
-        'intervalMax' => $ctaConfig['interval_max_ms'] ?? 45000,
-    ],
-])
-</script>
+<script type="application/json" id="cta-popup-data">{!! json_encode($popupData, JSON_HEX_TAG | JSON_HEX_APOS | JSON_HEX_AMP | JSON_HEX_QUOT) !!}</script>
 
 <div
     id="cta-popup-small"
