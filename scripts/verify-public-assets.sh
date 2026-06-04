@@ -32,7 +32,8 @@ done
 for f in \
   js/insul/assets/js/frontend/main.js \
   js/elementor/assets/js/frontend.min.js \
-  js/whatsapp-float.js
+  js/whatsapp-float.js \
+  js/cta-popup.js
 do
   check "public/$f"
 done

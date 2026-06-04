@@ -48,6 +48,13 @@ if (! function_exists('public_asset')) {
         }
 
         $path = ltrim($path, '/');
+
+        // Prefer files deployed on the server so new assets work before CDN sync.
+        $local = public_path($path);
+        if (is_file($local)) {
+            return asset($path).$query;
+        }
+
         $cdn = public_asset_prefix();
 
         if ($cdn !== '') {
@@ -59,16 +66,36 @@ if (! function_exists('public_asset')) {
             return $cdn.'/'.$path.$query;
         }
 
-        $local = public_path($path);
-        if (is_file($local)) {
-            return asset($path).$query;
-        }
-
         $fallback = rtrim((string) config('app.asset_cdn'), '/');
         if ($fallback !== '') {
             return $fallback.'/'.$path.$query;
         }
 
         return asset($path).$query;
+    }
+}
+
+if (! function_exists('local_public_asset')) {
+    /**
+     * Same-origin URL for a public/ file (never uses jsDelivr).
+     * Use for features that must match the deployed HTML (e.g. CTA popups).
+     */
+    function local_public_asset(string $path): string
+    {
+        $extraQuery = '';
+        if (str_contains($path, '?')) {
+            [$path, $extraQuery] = explode('?', $path, 2);
+            $extraQuery = '?'.$extraQuery;
+        }
+
+        $path = ltrim($path, '/');
+        $url = asset($path);
+        $file = public_path($path);
+
+        if (is_file($file) && ! str_contains($url, 'v=')) {
+            $url .= (str_contains($url, '?') ? '&' : '?').'v='.filemtime($file);
+        }
+
+        return $url.$extraQuery;
     }
 }

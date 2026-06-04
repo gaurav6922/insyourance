@@ -15,26 +15,31 @@
         return list[randomInt(0, list.length - 1)];
     }
 
-    function parseJsonAttr(el, attr) {
-        if (!el) {
-            return [];
-        }
+    function readPopupData() {
+        var el = document.getElementById('cta-popup-data');
 
-        var raw = el.getAttribute(attr);
-
-        if (!raw) {
-            return [];
+        if (!el || !el.textContent) {
+            return null;
         }
 
         try {
-            var parsed = JSON.parse(raw);
-            return Array.isArray(parsed) ? parsed : [];
+            return JSON.parse(el.textContent);
         } catch (error) {
-            return [];
+            return null;
         }
     }
 
-    function getSchedulerConfig() {
+    function getSchedulerConfig(data) {
+        var scheduler = data && data.scheduler;
+
+        if (scheduler) {
+            return {
+                initial: parseInt(scheduler.initial, 10) || 0,
+                intervalMin: parseInt(scheduler.intervalMin, 10) || 20000,
+                intervalMax: parseInt(scheduler.intervalMax, 10) || 45000
+            };
+        }
+
         var el = document.getElementById('cta-popup-scheduler');
 
         if (!el) {
@@ -86,11 +91,16 @@
             return;
         }
 
-        var config = getSchedulerConfig();
-        var smallVariants = parseJsonAttr(popupSmall, 'data-cta-small-variants');
-        var bigVariants = parseJsonAttr(popupBig, 'data-cta-big-variants');
-        var waNumber = popupSmall ? popupSmall.getAttribute('data-cta-whatsapp-number') : '';
-        var waDefault = popupSmall ? popupSmall.getAttribute('data-cta-whatsapp-default') : '';
+        var data = readPopupData();
+        var config = getSchedulerConfig(data);
+        var smallVariants = data && Array.isArray(data.smallVariants) ? data.smallVariants : [];
+        var bigVariants = data && Array.isArray(data.bigVariants) ? data.bigVariants : [];
+        var waNumber = data && data.whatsapp ? data.whatsapp.number : '';
+        var waDefault = data && data.whatsapp ? data.whatsapp.default : '';
+
+        if (!smallVariants.length && !bigVariants.length) {
+            return;
+        }
 
         var smallFomo = document.getElementById('cta-popup-small-fomo');
         var smallTitle = document.getElementById('cta-popup-small-title');
@@ -260,7 +270,9 @@
 
         function showSmallPopup() {
             if (!popupSmall || !smallVariants.length) {
-                showBigPopup();
+                if (popupBig && bigVariants.length) {
+                    showBigPopup();
+                }
                 return;
             }
 
@@ -271,7 +283,9 @@
 
         function showBigPopup() {
             if (!popupBig || !bigVariants.length) {
-                showSmallPopup();
+                if (popupSmall && smallVariants.length) {
+                    showSmallPopup();
+                }
                 return;
             }
 
@@ -282,13 +296,20 @@
         }
 
         function showNextPopup() {
-            if (smallVariants.length && bigVariants.length) {
+            var hasSmall = popupSmall && smallVariants.length;
+            var hasBig = popupBig && bigVariants.length;
+
+            if (!hasSmall && !hasBig) {
+                return;
+            }
+
+            if (hasSmall && hasBig) {
                 if (Math.random() < 0.5) {
                     showSmallPopup();
                 } else {
                     showBigPopup();
                 }
-            } else if (smallVariants.length) {
+            } else if (hasSmall) {
                 showSmallPopup();
             } else {
                 showBigPopup();
@@ -386,9 +407,19 @@
         }
     }
 
+    function boot() {
+        try {
+            init();
+        } catch (error) {
+            if (typeof console !== 'undefined' && console.error) {
+                console.error('CTA popup failed to initialize', error);
+            }
+        }
+    }
+
     if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', init);
+        document.addEventListener('DOMContentLoaded', boot);
     } else {
-        init();
+        boot();
     }
 })();

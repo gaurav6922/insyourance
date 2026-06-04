@@ -66,7 +66,7 @@ return [
     | Bust jsDelivr / browser cache when CSS or images under public/ change.
     | Bump this after deploy (e.g. date or git short SHA).
     */
-    'asset_cdn_version' => env('ASSET_CDN_VERSION', '20260531'),
+    'asset_cdn_version' => env('ASSET_CDN_VERSION', '20260604'),
 
     /*
     |--------------------------------------------------------------------------

@@ -1,13 +1,29 @@
 @php
     $formspreeId = config('services.formspree.form_id');
     $ctaConfig = config('cta-popups');
+    if (! is_array($ctaConfig) || $ctaConfig === []) {
+        $ctaConfigPath = config_path('cta-popups.php');
+        $ctaConfig = is_file($ctaConfigPath) ? require $ctaConfigPath : [];
+    }
     $smallVariants = $ctaConfig['small_variants'] ?? [];
     $bigVariants = $ctaConfig['big_variants'] ?? [];
     $waNumber = $ctaConfig['whatsapp']['number'] ?? '919711043285';
     $waDefault = $ctaConfig['whatsapp']['default_message'] ?? 'Hi, I would like to know more about your insurance services.';
-    $jsonFlags = JSON_HEX_TAG | JSON_HEX_APOS | JSON_HEX_AMP | JSON_HEX_QUOT;
 @endphp
-<link rel="stylesheet" href="{{ public_asset('css/cta-popup.css') }}">
+<link rel="stylesheet" href="{{ local_public_asset('css/cta-popup.css') }}">
+
+<script type="application/json" id="cta-popup-data">
+@json([
+    'smallVariants' => $smallVariants,
+    'bigVariants' => $bigVariants,
+    'whatsapp' => ['number' => $waNumber, 'default' => $waDefault],
+    'scheduler' => [
+        'initial' => $ctaConfig['initial_delay_ms'] ?? 0,
+        'intervalMin' => $ctaConfig['interval_min_ms'] ?? 20000,
+        'intervalMax' => $ctaConfig['interval_max_ms'] ?? 45000,
+    ],
+])
+</script>
 
 <div
     id="cta-popup-small"
@@ -16,9 +32,6 @@
     aria-modal="false"
     aria-labelledby="cta-popup-small-title"
     aria-hidden="true"
-    data-cta-whatsapp-number="{{ $waNumber }}"
-    data-cta-whatsapp-default="{{ $waDefault }}"
-    data-cta-small-variants="{{ json_encode($smallVariants, $jsonFlags) }}"
 >
     <div class="cta-popup__panel cta-popup__panel--small">
         <button type="button" class="cta-popup__close" aria-label="Close" data-cta-close>&times;</button>
@@ -45,7 +58,6 @@
     aria-modal="true"
     aria-labelledby="cta-popup-big-title"
     aria-hidden="true"
-    data-cta-big-variants="{{ json_encode($bigVariants, $jsonFlags) }}"
 >
     <div class="cta-popup__overlay" data-cta-close></div>
     <div class="cta-popup__panel cta-popup__panel--big">
@@ -157,4 +169,4 @@
     data-cta-interval-max="{{ $ctaConfig['interval_max_ms'] ?? 45000 }}"
 ></div>
 
-<script src="{{ public_asset('js/cta-popup.js') }}" defer></script>
+<script src="{{ local_public_asset('js/cta-popup.js') }}" defer></script>
