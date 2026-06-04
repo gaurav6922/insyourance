@@ -3439,6 +3439,7 @@
         }
     };
     </script>
+@include('partials.elementor-urls-patch')
     <script src="{{ public_asset('js/insul/assets/js/elementor-frontend.js?ver=1.0.4') }}"
         id="insul-elementor-frontend-js"></script>
     <script

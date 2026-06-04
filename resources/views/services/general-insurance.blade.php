@@ -2519,6 +2519,7 @@
             }
         };
     </script>
+@include('partials.elementor-urls-patch')
     <script src="{{ public_asset('js/elementor/assets/js/frontend.min.js?ver=3.25.11') }}"
         id="elementor-frontend-js"></script>
     <script

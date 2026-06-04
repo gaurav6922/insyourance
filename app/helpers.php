@@ -83,6 +83,29 @@ if (! function_exists('public_asset')) {
     }
 }
 
+if (! function_exists('elementor_assets_base_url')) {
+    /**
+     * Base URL for Elementor lazy-loaded widget chunks (must end with /).
+     * Derived from webpack.runtime so chunk URLs match script tags (no ?cdn-v on base).
+     */
+    function elementor_assets_base_url(): string
+    {
+        $reference = public_asset('js/elementor/assets/js/webpack.runtime.min.js?ver=3.25.11');
+        $parsed = parse_url($reference);
+        $path = preg_replace('#/js/webpack\.runtime\.min\.js$#', '/', $parsed['path'] ?? '');
+
+        $origin = '';
+        if (isset($parsed['scheme'], $parsed['host'])) {
+            $origin = $parsed['scheme'].'://'.$parsed['host'];
+            if (isset($parsed['port'])) {
+                $origin .= ':'.$parsed['port'];
+            }
+        }
+
+        return $origin.$path;
+    }
+}
+
 if (! function_exists('local_public_asset')) {
     /**
      * @deprecated Use public_asset(); kept as an alias for existing templates.
