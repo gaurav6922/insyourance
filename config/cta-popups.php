@@ -4,6 +4,8 @@ return [
     'initial_delay_ms' => 0,
     'interval_min_ms' => 20000,
     'interval_max_ms' => 45000,
+    /** Chance (0–100) each scheduled popup is the big form modal; remainder are small WhatsApp. */
+    'big_popup_weight' => 75,
 
     'whatsapp' => [
         'number' => '919711043285',

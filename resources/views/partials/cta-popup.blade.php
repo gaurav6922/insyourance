@@ -17,6 +17,7 @@
             'initial' => $ctaConfig['initial_delay_ms'] ?? 0,
             'intervalMin' => $ctaConfig['interval_min_ms'] ?? 20000,
             'intervalMax' => $ctaConfig['interval_max_ms'] ?? 45000,
+            'bigWeight' => $ctaConfig['big_popup_weight'] ?? 75,
         ],
     ];
 @endphp
@@ -166,6 +167,7 @@
     data-cta-initial-delay="{{ $ctaConfig['initial_delay_ms'] ?? 0 }}"
     data-cta-interval-min="{{ $ctaConfig['interval_min_ms'] ?? 20000 }}"
     data-cta-interval-max="{{ $ctaConfig['interval_max_ms'] ?? 45000 }}"
+    data-cta-big-weight="{{ $ctaConfig['big_popup_weight'] ?? 75 }}"
 ></div>
 
 @php

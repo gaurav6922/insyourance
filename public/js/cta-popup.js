@@ -33,23 +33,37 @@
         var scheduler = data && data.scheduler;
 
         if (scheduler) {
+            var bigWeight = parseInt(scheduler.bigWeight, 10);
+            if (isNaN(bigWeight)) {
+                bigWeight = 75;
+            }
+            bigWeight = Math.min(100, Math.max(0, bigWeight));
+
             return {
                 initial: parseInt(scheduler.initial, 10) || 0,
                 intervalMin: parseInt(scheduler.intervalMin, 10) || 20000,
-                intervalMax: parseInt(scheduler.intervalMax, 10) || 45000
+                intervalMax: parseInt(scheduler.intervalMax, 10) || 45000,
+                bigWeight: bigWeight
             };
         }
 
         var el = document.getElementById('cta-popup-scheduler');
 
         if (!el) {
-            return { initial: 0, intervalMin: 20000, intervalMax: 45000 };
+            return { initial: 0, intervalMin: 20000, intervalMax: 45000, bigWeight: 75 };
         }
+
+        var bigWeight = parseInt(el.getAttribute('data-cta-big-weight'), 10);
+        if (isNaN(bigWeight)) {
+            bigWeight = 75;
+        }
+        bigWeight = Math.min(100, Math.max(0, bigWeight));
 
         return {
             initial: parseInt(el.getAttribute('data-cta-initial-delay'), 10) || 0,
             intervalMin: parseInt(el.getAttribute('data-cta-interval-min'), 10) || 20000,
-            intervalMax: parseInt(el.getAttribute('data-cta-interval-max'), 10) || 45000
+            intervalMax: parseInt(el.getAttribute('data-cta-interval-max'), 10) || 45000,
+            bigWeight: bigWeight
         };
     }
 
@@ -311,10 +325,10 @@
             }
 
             if (hasSmall && hasBig) {
-                if (Math.random() < 0.5) {
-                    showSmallPopup();
-                } else {
+                if (Math.random() * 100 < config.bigWeight) {
                     showBigPopup();
+                } else {
+                    showSmallPopup();
                 }
             } else if (hasSmall) {
                 showSmallPopup();
