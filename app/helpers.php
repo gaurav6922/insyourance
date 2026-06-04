@@ -37,7 +37,8 @@ if (! function_exists('public_asset_prefix')) {
 if (! function_exists('public_asset')) {
     /**
      * URL for a file in public/.
-     * Production uses GitHub/jsDelivr CDN until public/ is fully deployed on the server.
+     * On production hosts, serves from jsDelivr unless ASSET_PREFER_LOCAL=true
+     * (set that only when public/ is the web document root and files are HTTP-accessible).
      */
     function public_asset(string $path): string
     {
@@ -48,14 +49,12 @@ if (! function_exists('public_asset')) {
         }
 
         $path = ltrim($path, '/');
+        $cdn = public_asset_prefix();
+        $preferLocal = filter_var(env('ASSET_PREFER_LOCAL', false), FILTER_VALIDATE_BOOLEAN);
 
-        // Prefer files deployed on the server so new assets work before CDN sync.
-        $local = public_path($path);
-        if (is_file($local)) {
+        if ($preferLocal && is_file(public_path($path))) {
             return asset($path).$query;
         }
-
-        $cdn = public_asset_prefix();
 
         if ($cdn !== '') {
             $version = (string) config('app.asset_cdn_version', '');
@@ -66,8 +65,17 @@ if (! function_exists('public_asset')) {
             return $cdn.'/'.$path.$query;
         }
 
+        if (is_file(public_path($path))) {
+            return asset($path).$query;
+        }
+
         $fallback = rtrim((string) config('app.asset_cdn'), '/');
         if ($fallback !== '') {
+            $version = (string) config('app.asset_cdn_version', '');
+            if ($version !== '' && ! str_contains($query, 'cdn-v=')) {
+                $query .= ($query === '' ? '?' : '&').'cdn-v='.$version;
+            }
+
             return $fallback.'/'.$path.$query;
         }
 
@@ -77,25 +85,10 @@ if (! function_exists('public_asset')) {
 
 if (! function_exists('local_public_asset')) {
     /**
-     * Same-origin URL for a public/ file (never uses jsDelivr).
-     * Use for features that must match the deployed HTML (e.g. CTA popups).
+     * @deprecated Use public_asset(); kept as an alias for existing templates.
      */
     function local_public_asset(string $path): string
     {
-        $extraQuery = '';
-        if (str_contains($path, '?')) {
-            [$path, $extraQuery] = explode('?', $path, 2);
-            $extraQuery = '?'.$extraQuery;
-        }
-
-        $path = ltrim($path, '/');
-        $url = asset($path);
-        $file = public_path($path);
-
-        if (is_file($file) && ! str_contains($url, 'v=')) {
-            $url .= (str_contains($url, '?') ? '&' : '?').'v='.filemtime($file);
-        }
-
-        return $url.$extraQuery;
+        return public_asset($path);
     }
 }

@@ -20,7 +20,7 @@
         ],
     ];
 @endphp
-<link rel="stylesheet" href="{{ local_public_asset('css/cta-popup.css') }}">
+<link rel="stylesheet" href="{{ public_asset('css/cta-popup.css') }}">
 
 <script type="application/json" id="cta-popup-data">{!! json_encode($popupData, JSON_HEX_TAG | JSON_HEX_APOS | JSON_HEX_AMP | JSON_HEX_QUOT) !!}</script>
 
@@ -168,4 +168,4 @@
     data-cta-interval-max="{{ $ctaConfig['interval_max_ms'] ?? 45000 }}"
 ></div>
 
-<script src="{{ local_public_asset('js/cta-popup.js') }}" defer></script>
+<script src="{{ public_asset('js/cta-popup.js') }}" defer></script>
