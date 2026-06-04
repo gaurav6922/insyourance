@@ -245,4 +245,3 @@
         </div>
     </div>
 </footer>
-@include('partials.cta-popup')

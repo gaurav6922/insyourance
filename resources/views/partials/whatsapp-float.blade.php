@@ -41,3 +41,4 @@
 </a>
 
 <script src="{{ public_asset('js/whatsapp-float.js') }}" defer></script>
+@include('partials.cta-popup')

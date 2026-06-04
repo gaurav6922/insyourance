@@ -1,6 +1,6 @@
 .cta-popup {
     position: fixed;
-    z-index: 100000;
+    z-index: 99999999;
     opacity: 0;
     visibility: hidden;
     pointer-events: none;

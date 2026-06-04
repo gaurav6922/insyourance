@@ -168,4 +168,4 @@
     data-cta-interval-max="{{ $ctaConfig['interval_max_ms'] ?? 45000 }}"
 ></div>
 
-<script src="{{ public_asset('js/cta-popup.js') }}" defer></script>
+<script src="{{ public_asset('js/cta-popup.js') }}"></script>

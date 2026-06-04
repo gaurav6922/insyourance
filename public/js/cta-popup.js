@@ -78,12 +78,19 @@
         }
     }
 
-    function scheduleNext(delayMs) {
-        clearScheduled();
-        schedulerTimer = window.setTimeout(showNextPopup, delayMs);
+    function mountPopupsOnBody() {
+        ['cta-popup-small', 'cta-popup-big', 'cta-popup-scheduler'].forEach(function (id) {
+            var el = document.getElementById(id);
+
+            if (el && el.parentNode !== document.body) {
+                document.body.appendChild(el);
+            }
+        });
     }
 
     function init() {
+        mountPopupsOnBody();
+
         var popupSmall = document.getElementById('cta-popup-small');
         var popupBig = document.getElementById('cta-popup-big');
 
@@ -314,6 +321,11 @@
             } else {
                 showBigPopup();
             }
+        }
+
+        function scheduleNext(delayMs) {
+            clearScheduled();
+            schedulerTimer = window.setTimeout(showNextPopup, delayMs);
         }
 
         function onPopupClosed() {
