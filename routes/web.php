@@ -65,3 +65,7 @@ Route::get('/swp-calculator', function () {
 Route::get('/sip-delay-cost-calculator', function () {
     return view('sip-delay-cost-calculator');
 });
+
+Route::get('/term-insurance-calculator', function () {
+    return view('term-insurance-calculator');
+});

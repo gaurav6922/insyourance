@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <link rel="profile" href="//gmpg.org/xfn/11">
-    <title>SIP Planner &#8211; Witan Finsure</title>
+    <title>Term Insurance Calculator &#8211; Witan Finsure</title>
     <link rel="icon" type="image/png" href="{{ asset('images/witantitle.png') }}">
     @include('partials.site-fonts')
 <meta name='robots' content='max-image-preview:large' />
@@ -92,7 +92,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 !function($){"use strict";$(document).ready(function(){$(this).scrollTop()>100&&$(".hfe-scroll-to-top-wrap").removeClass("hfe-scroll-to-top-hide"),$(window).scroll(function(){$(this).scrollTop()<100?$(".hfe-scroll-to-top-wrap").fadeOut(300):$(".hfe-scroll-to-top-wrap").fadeIn(300)}),$(".hfe-scroll-to-top-wrap").on("click",function(){$("html, body").animate({scrollTop:0},300);return!1})})}(jQuery);
 </script>
 <script src="{{ public_asset('js/insul/assets/js/libs/jarallax.js?ver=6.7.1') }}" id="jarallax-js"></script>
-<link rel="canonical" href="{{ url('/sip-planner') }}" />
+<link rel="canonical" href="{{ url('/term-insurance-calculator') }}" />
 <link rel='shortlink' href='/?p=127' />
 <meta name="generator" content="Elementor 3.25.11; features: additional_custom_breakpoints, e_optimized_control_loading; settings: css_print_method-external, google_font-enabled, font_display-swap">
 			<style>
@@ -282,10 +282,10 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 </li>
 <li id="menu-item-calculators" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-calculators"><a href="#"><span class="menu-title">Calculators</span></a>
 <ul class="sub-menu">
-	<li id="menu-item-sip-planner" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item current_page_item menu-item-sip"><a href="/sip-planner"><span class="menu-title">SIP Planner</span></a></li>
+	<li id="menu-item-sip-planner" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-sip"><a href="/sip-planner"><span class="menu-title">SIP Planner</span></a></li>
 	<li id="menu-item-sip-delay-cost" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-sip-delay"><a href="/sip-delay-cost-calculator"><span class="menu-title">SIP Delay Cost</span></a></li>
 	<li id="menu-item-swp-calculator" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-swp"><a href="/swp-calculator"><span class="menu-title">SWP Calculator</span></a></li>
-	<li id="menu-item-term-insurance-calc" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-term-ins"><a href="/term-insurance-calculator"><span class="menu-title">Term Insurance Calculator</span></a></li>
+	<li id="menu-item-term-insurance-calc" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item current_page_item menu-item-term-ins"><a href="/term-insurance-calculator"><span class="menu-title">Term Insurance Calculator</span></a></li>
 </ul>
 </li>
 <li id="menu-item-133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a href="/contact-01"><span class="menu-title">Contact</span></a></li>
@@ -316,375 +316,17 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 				</header>
 
 	@include('partials.calculator-hero', [
-		'title' => 'SIP Planner',
-		'url' => url('/sip-planner'),
-		'image' => public_asset('wp-content/uploads/2026/05/sip-planner-hero.jpg'),
+		'title' => 'Term Insurance Calculator',
+		'url' => url('/term-insurance-calculator'),
+		'image' => public_asset('wp-content/uploads/2026/05/life-insurance-hero.jpg'),
 	])
     
     <div id="content" class="site-content" tabindex="-1">
         <div class="col-full">
 
 
-			<style>
-				.sip-planner-wrap { max-width: 900px; margin: 0 auto 3rem; padding: 0 1rem; }
-				.sip-planner-card {
-					background: #fff;
-					border-radius: 12px;
-					box-shadow: 0 4px 24px rgba(15, 23, 42, 0.08);
-					border: 1px solid rgba(19, 81, 216, 0.12);
-					overflow: hidden;
-				}
-				.sip-planner-tabs {
-					display: flex;
-					border-bottom: 1px solid #e8ecf4;
-				}
-				.sip-planner-tab {
-					flex: 1;
-					padding: 14px 16px;
-					font-family: "DM Sans", Sora, sans-serif;
-					font-size: 15px;
-					font-weight: 600;
-					color: #64748b;
-					background: #f8fafc;
-					border: none;
-					cursor: pointer;
-					transition: background .2s, color .2s;
-				}
-				.sip-planner-tab.is-active {
-					background: #fff;
-					color: #1351d8;
-					box-shadow: inset 0 -2px 0 #1351d8;
-				}
-				.sip-planner-body { padding: 28px 24px 32px; }
-				.sip-planner-field { margin-bottom: 22px; }
-				.sip-planner-field label {
-					display: block;
-					font-size: 13px;
-					font-weight: 600;
-					color: #334155;
-					margin-bottom: 8px;
-					font-family: "DM Sans", Sora, sans-serif;
-				}
-				.sip-planner-input-wrap {
-					display: flex;
-					align-items: center;
-					border: 1px solid #cbd5e1;
-					border-radius: 8px;
-					overflow: hidden;
-					background: #fff;
-				}
-				.sip-planner-input-wrap:focus-within { border-color: #1351d8; box-shadow: 0 0 0 3px rgba(19, 81, 216, 0.15); }
-				.sip-planner-prefix, .sip-planner-suffix {
-					padding: 12px 14px;
-					background: #f1f5f9;
-					color: #475569;
-					font-size: 14px;
-					font-weight: 600;
-				}
-				.sip-planner-input-wrap input {
-					flex: 1;
-					border: none;
-					padding: 12px 14px;
-					font-size: 16px;
-					font-family: inherit;
-					min-width: 0;
-				}
-				.sip-planner-input-wrap input:focus { outline: none; }
-				.sip-planner-results {
-					margin-top: 8px;
-					padding-top: 20px;
-					border-top: 1px solid #e8ecf4;
-				}
-				.sip-planner-results-layout {
-					display: flex;
-					flex-direction: column;
-					align-items: center;
-					gap: 8px;
-				}
-				@media (min-width: 640px) {
-					.sip-planner-results-layout {
-						flex-direction: row;
-						align-items: flex-start;
-						justify-content: space-between;
-						gap: 32px;
-					}
-					.sip-planner-chart-block { flex: 1; min-width: 0; max-width: 320px; }
-					.sip-planner-figures-block { flex: 1; min-width: 200px; }
-				}
-				.sip-donut-legend {
-					display: flex;
-					flex-wrap: wrap;
-					justify-content: center;
-					gap: 20px 28px;
-					margin-bottom: 20px;
-					font-family: "DM Sans", Sora, sans-serif;
-					font-size: 14px;
-					font-weight: 500;
-					color: #475569;
-				}
-				.sip-donut-legend-item {
-					display: inline-flex;
-					align-items: center;
-					gap: 10px;
-				}
-				.sip-donut-legend-swatch {
-					width: 36px;
-					height: 10px;
-					border-radius: 999px;
-					flex-shrink: 0;
-				}
-				.sip-donut-legend-swatch--inv { background: #e8ecff; }
-				.sip-donut-legend-swatch--ret { background: #5367ff; }
-				.sip-donut-wrap {
-					position: relative;
-					width: min(240px, 80vw);
-					height: min(240px, 80vw);
-					margin: 0 auto;
-				}
-				.sip-donut-ring {
-					position: relative;
-					z-index: 0;
-					width: 100%;
-					height: 100%;
-					border-radius: 50%;
-					background: #e2e8f0;
-					transition: background 0.35s ease;
-				}
-				.sip-donut-ring.is-empty {
-					background: #e2e8f0 !important;
-				}
-				.sip-donut-hole {
-					position: absolute;
-					z-index: 1;
-					inset: 28%;
-					background: #fff;
-					border-radius: 50%;
-					display: flex;
-					flex-direction: column;
-					align-items: center;
-					justify-content: center;
-					text-align: center;
-					padding: 8px;
-					box-shadow: inset 0 0 0 1px rgba(15, 23, 42, 0.04);
-				}
-				.sip-donut-hole-label {
-					font-size: 11px;
-					font-weight: 600;
-					color: #94a3b8;
-					text-transform: uppercase;
-					letter-spacing: 0.06em;
-					font-family: "DM Sans", Sora, sans-serif;
-				}
-				.sip-donut-hole-value {
-					font-size: clamp(13px, 3.5vw, 16px);
-					font-weight: 700;
-					color: #0f172a;
-					font-variant-numeric: tabular-nums;
-					line-height: 1.25;
-					margin-top: 4px;
-					font-family: "DM Sans", Sora, sans-serif;
-				}
-				.sip-planner-result-row {
-					display: flex;
-					justify-content: space-between;
-					align-items: baseline;
-					padding: 10px 0;
-					font-family: "DM Sans", Sora, sans-serif;
-					font-size: 15px;
-				}
-				.sip-planner-result-row span:first-child { color: #64748b; }
-				.sip-planner-result-row strong { color: #0f172a; font-variant-numeric: tabular-nums; }
-				.sip-planner-result-total {
-					margin-top: 8px;
-					padding-top: 16px;
-					border-top: 1px dashed #cbd5e1;
-				}
-				.sip-planner-result-total strong { font-size: 1.25rem; color: #1351d8; }
-				.sip-planner-note {
-					margin-top: 24px;
-					font-size: 13px;
-					line-height: 1.6;
-					color: #64748b;
-					font-family: "DM Sans", Sora, sans-serif;
-				}
-				.sip-planner-intro {
-					text-align: center;
-					margin-bottom: 2rem;
-				}
-				.sip-planner-intro .sub-title { color: #1351d8; letter-spacing: 0.08em; font-size: 12px; font-weight: 700; text-transform: uppercase; }
-				.sip-planner-intro h2 { margin: 12px 0 8px; font-size: clamp(1.5rem, 4vw, 2rem); color: #0f172a; }
-				.sip-planner-intro p { color: #64748b; max-width: 520px; margin: 0 auto; font-size: 15px; line-height: 1.6; }
-				@media (max-width: 600px) {
-					.sip-planner-body { padding: 20px 16px 24px; }
-				}
-			</style>
-			<div class="elementor-element e-flex e-con-boxed e-con e-parent">
-				<div class="e-con-inner">
-					<div class="sip-planner-intro">
-						<div class="elementor-heading-wrapper-inner"><div class="elementor-sub-title"><span class="sub-title">UTILITIES</span></div></div>
-						<h2>SIP planner</h2>
-						<p>Estimate maturity value for monthly SIPs or one-time lump sum investments using the same compounding approach used by standard SIP calculators. Figures are illustrative only.</p>
-					</div>
-					<div class="sip-planner-wrap">
-						<div class="sip-planner-card">
-							<div class="sip-planner-tabs" role="tablist">
-								<button type="button" class="sip-planner-tab is-active" id="sip-tab-sip" role="tab" aria-selected="true" data-mode="sip">SIP</button>
-								<button type="button" class="sip-planner-tab" id="sip-tab-lumpsum" role="tab" aria-selected="false" data-mode="lumpsum">Lumpsum</button>
-							</div>
-							<div class="sip-planner-body">
-								<div id="sip-panel-sip">
-									<div class="sip-planner-field">
-										<label for="sip-monthly">Monthly investment</label>
-										<div class="sip-planner-input-wrap">
-											<span class="sip-planner-prefix">₹</span>
-											<input type="number" id="sip-monthly" min="0" step="100" value="5000" inputmode="decimal" />
-										</div>
-									</div>
-									<div class="sip-planner-field">
-										<label for="sip-rate">Expected return rate (p.a.)</label>
-										<div class="sip-planner-input-wrap">
-											<input type="number" id="sip-rate" min="0" max="100" step="0.1" value="12" inputmode="decimal" />
-											<span class="sip-planner-suffix">%</span>
-										</div>
-									</div>
-									<div class="sip-planner-field">
-										<label for="sip-years">Time period</label>
-										<div class="sip-planner-input-wrap">
-											<input type="number" id="sip-years" min="1" max="60" step="1" value="10" inputmode="numeric" />
-											<span class="sip-planner-suffix">Yr</span>
-										</div>
-									</div>
-								</div>
-								<div id="sip-panel-lumpsum" hidden>
-									<div class="sip-planner-field">
-										<label for="sip-lump-amount">Total investment</label>
-										<div class="sip-planner-input-wrap">
-											<span class="sip-planner-prefix">₹</span>
-											<input type="number" id="sip-lump-amount" min="0" step="1000" value="100000" inputmode="decimal" />
-										</div>
-									</div>
-									<div class="sip-planner-field">
-										<label for="sip-lump-rate">Expected return rate (p.a.)</label>
-										<div class="sip-planner-input-wrap">
-											<input type="number" id="sip-lump-rate" min="0" max="100" step="0.1" value="12" inputmode="decimal" />
-											<span class="sip-planner-suffix">%</span>
-										</div>
-									</div>
-									<div class="sip-planner-field">
-										<label for="sip-lump-years">Time period</label>
-										<div class="sip-planner-input-wrap">
-											<input type="number" id="sip-lump-years" min="1" max="60" step="1" value="10" inputmode="numeric" />
-											<span class="sip-planner-suffix">Yr</span>
-										</div>
-									</div>
-								</div>
-								<div class="sip-planner-results" aria-live="polite">
-									<div class="sip-planner-results-layout">
-										<div class="sip-planner-chart-block">
-											<div class="sip-donut-legend" aria-hidden="true">
-												<span class="sip-donut-legend-item"><span class="sip-donut-legend-swatch sip-donut-legend-swatch--inv"></span>Invested amount</span>
-												<span class="sip-donut-legend-item"><span class="sip-donut-legend-swatch sip-donut-legend-swatch--ret"></span>Est. returns</span>
-											</div>
-											<div class="sip-donut-wrap" aria-hidden="true">
-												<div class="sip-donut-ring" id="sip-donut-ring"></div>
-												<div class="sip-donut-hole">
-													<span class="sip-donut-hole-label">Total value</span>
-													<span class="sip-donut-hole-value" id="sip-donut-center-total">—</span>
-												</div>
-											</div>
-										</div>
-										<div class="sip-planner-figures-block">
-											<div class="sip-planner-result-row"><span>Invested amount</span><strong id="sip-out-invested">—</strong></div>
-											<div class="sip-planner-result-row"><span>Est. returns</span><strong id="sip-out-returns">—</strong></div>
-											<div class="sip-planner-result-row sip-planner-result-total"><span>Total value</span><strong id="sip-out-total">—</strong></div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<p class="sip-planner-note">Monthly return is derived as (1 + annual)<sup>1/12</sup> − 1 so that compounding matches your stated annual rate. This does not account for taxes, loads, or expense ratios.</p>
-					</div>
-				</div>
-			</div>
-			<script>
-			(function () {
-				function formatINR(n) {
-					if (!isFinite(n)) return "—";
-					return "₹ " + Math.round(n).toLocaleString("en-IN");
-				}
-				function sipMaturity(P, annualPct, years) {
-					var r = annualPct / 100;
-					var i = Math.pow(1 + r, 1 / 12) - 1;
-					var n = Math.round(years * 12);
-					if (n <= 0 || P <= 0) return { total: 0, invested: 0 };
-					if (i <= 0) return { total: P * n, invested: P * n };
-					var total = P * ((Math.pow(1 + i, n) - 1) / i) * (1 + i);
-					return { total: total, invested: P * n };
-				}
-				function lumpsumFV(pv, annualPct, years) {
-					var r = annualPct / 100;
-					return pv * Math.pow(1 + r, years);
-				}
-				var mode = "sip";
-				var tabSip = document.getElementById("sip-tab-sip");
-				var tabLump = document.getElementById("sip-tab-lumpsum");
-				var panelSip = document.getElementById("sip-panel-sip");
-				var panelLump = document.getElementById("sip-panel-lumpsum");
-				function setMode(m) {
-					mode = m;
-					var isSip = m === "sip";
-					tabSip.classList.toggle("is-active", isSip);
-					tabLump.classList.toggle("is-active", !isSip);
-					tabSip.setAttribute("aria-selected", isSip);
-					tabLump.setAttribute("aria-selected", !isSip);
-					panelSip.hidden = !isSip;
-					panelLump.hidden = isSip;
-					calc();
-				}
-				tabSip.addEventListener("click", function () { setMode("sip"); });
-				tabLump.addEventListener("click", function () { setMode("lumpsum"); });
-				function calc() {
-					var invested, total, returns;
-					if (mode === "sip") {
-						var P = parseFloat(document.getElementById("sip-monthly").value) || 0;
-						var rate = parseFloat(document.getElementById("sip-rate").value) || 0;
-						var y = parseFloat(document.getElementById("sip-years").value) || 0;
-						var res = sipMaturity(P, rate, y);
-						invested = res.invested;
-						total = res.total;
-					} else {
-						var pv = parseFloat(document.getElementById("sip-lump-amount").value) || 0;
-						var lr = parseFloat(document.getElementById("sip-lump-rate").value) || 0;
-						var ly = parseFloat(document.getElementById("sip-lump-years").value) || 0;
-						invested = pv;
-						total = lumpsumFV(pv, lr, ly);
-					}
-					returns = total - invested;
-					document.getElementById("sip-out-invested").textContent = formatINR(invested);
-					document.getElementById("sip-out-returns").textContent = formatINR(returns);
-					document.getElementById("sip-out-total").textContent = formatINR(total);
-					var ring = document.getElementById("sip-donut-ring");
-					var center = document.getElementById("sip-donut-center-total");
-					if (center) center.textContent = formatINR(total);
-					if (ring) {
-						if (!isFinite(total) || total <= 0) {
-							ring.classList.add("is-empty");
-							ring.style.background = "";
-						} else {
-							ring.classList.remove("is-empty");
-							var invDeg = Math.min(360, Math.max(0, (invested / total) * 360));
-							ring.style.background =
-								"conic-gradient(from -90deg, #e8ecff 0deg, #e8ecff " + invDeg + "deg, #5367ff " + invDeg + "deg, #5367ff 360deg)";
-						}
-					}
-				}
-				["sip-monthly", "sip-rate", "sip-years", "sip-lump-amount", "sip-lump-rate", "sip-lump-years"].forEach(function (id) {
-					var el = document.getElementById(id);
-					if (el) el.addEventListener("input", calc);
-				});
-				calc();
-			})();
-			</script>
+			@include('partials.term-insurance-calculator-full')
+
 		</div><!-- .col-full -->
 	</div><!-- #content -->
 
@@ -780,7 +422,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
                         <li id="menu-item-calculators" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-calculators">
                             <a href="#">Calculators</a>
                             <ul class="sub-menu">
-                                <li id="menu-item-sip-planner" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item current_page_item menu-item-sip">
+                                <li id="menu-item-sip-planner" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-sip">
                                     <a href="/sip-planner">SIP Planner</a>
                                 </li>
                                 <li id="menu-item-sip-delay-cost" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-sip-delay">
@@ -788,6 +430,9 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
                                 </li>
                                 <li id="menu-item-swp-calculator" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-swp">
                                     <a href="/swp-calculator">SWP Calculator</a>
+                                </li>
+                                <li id="menu-item-term-insurance-calc" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item current_page_item menu-item-term-ins">
+                                    <a href="/term-insurance-calculator">Term Insurance Calculator</a>
                                 </li>
                             </ul>
                         </li>
@@ -804,13 +449,10 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 <li class="page_item page-item-134"><a href="/contact-01/">Contact 01</a></li>
 <li class="page_item page-item-136"><a href="/contact-02/">Contact 02</a></li>
 <li class="page_item page-item-127"><a href="/faqs-page">FAQs Page</a></li>
-<li class="page_item page-item-sip-planner current_page_item"><a href="/sip-planner" aria-current="page">SIP Planner</a></li>
+<li class="page_item page-item-sip-planner"><a href="/sip-planner">SIP Planner</a></li>
 <li class="page_item page-item-sip-delay-cost"><a href="/sip-delay-cost-calculator">SIP Delay Cost</a></li>
 <li class="page_item page-item-swp-calculator"><a href="/swp-calculator">SWP Calculator</a></li>
-                                <li id="menu-item-term-insurance-calc" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-term-ins">
-                                    <a href="/term-insurance-calculator">Term Insurance Calculator</a></li>
-                                <li id="menu-item-term-insurance-calc" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-term-ins">
-                                    <a href="/term-insurance-calculator">Term Insurance Calculator</a></li>
+<li class="page_item page-item-term-insurance-calc current_page_item"><a href="/term-insurance-calculator" aria-current="page">Term Insurance Calculator</a></li>
 <li class="page_item page-item-100"><a href="/home-2/">Home 2</a></li>
 <li class="page_item page-item-102"><a href="/home-3/">Home 3</a></li>
 <li class="page_item page-item-131"><a href="/icons/">Icons</a></li>

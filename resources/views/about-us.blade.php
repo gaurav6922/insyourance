@@ -810,6 +810,7 @@
 	<li id="menu-item-sip-planner" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-sip"><a href="/sip-planner"><span class="menu-title">SIP Planner</span></a></li>
 	<li id="menu-item-sip-delay-cost" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-sip-delay"><a href="/sip-delay-cost-calculator"><span class="menu-title">SIP Delay Cost</span></a></li>
 	<li id="menu-item-swp-calculator" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-swp"><a href="/swp-calculator"><span class="menu-title">SWP Calculator</span></a></li>
+	<li id="menu-item-term-insurance-calc" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-term-ins"><a href="/term-insurance-calculator"><span class="menu-title">Term Insurance Calculator</span></a></li>
 </ul>
 </li>
 <li id="menu-item-133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a href="/contact-01"><span class="menu-title">Contact</span></a></li>

@@ -1,0 +1,230 @@
+.hlv-sidebar {
+    width: 100%;
+    margin-bottom: 0;
+    font-family: "DM Sans", Sora, sans-serif;
+}
+
+.hlv-sidebar__card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(15, 23, 42, 0.08);
+    border: 1px solid rgba(19, 81, 216, 0.12);
+    overflow: hidden;
+}
+
+.hlv-sidebar__card + .hlv-sidebar__card {
+    margin-top: 16px;
+}
+
+.hlv-sidebar__head {
+    padding: 16px 18px 12px;
+    border-bottom: 1px solid #e8ecf4;
+}
+
+.hlv-sidebar__head-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.hlv-sidebar__head h3 {
+    margin: 0 0 4px;
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #0f172a;
+    line-height: 1.3;
+}
+
+.hlv-sidebar__head p {
+    margin: 0;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #64748b;
+}
+
+.hlv-sidebar__label {
+    display: block;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #64748b;
+    margin-bottom: 8px;
+}
+
+.hlv-sidebar__label--inline {
+    margin-bottom: 0;
+}
+
+.hlv-sidebar__badge,
+.hlv-sidebar__mode {
+    flex-shrink: 0;
+    font-size: 11px;
+    font-weight: 600;
+    color: #1351d8;
+    padding: 4px 10px;
+    border-radius: 999px;
+    background: rgba(19, 81, 216, 0.08);
+    border: 1px solid rgba(19, 81, 216, 0.15);
+    white-space: nowrap;
+}
+
+.hlv-sidebar__body {
+    padding: 16px 18px 18px;
+}
+
+.hlv-sidebar__amount {
+    margin: 0 0 12px;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.1;
+    color: #1351d8;
+    font-variant-numeric: tabular-nums;
+}
+
+.hlv-sidebar__warn {
+    display: flex;
+    align-items: flex-start;
+    gap: 6px;
+    margin: 0 0 12px;
+    padding: 10px 12px;
+    font-size: 12px;
+    line-height: 1.45;
+    color: #b45309;
+    background: #fffbeb;
+    border: 1px solid #fde68a;
+    border-radius: 8px;
+}
+
+.hlv-sidebar__warn svg {
+    flex-shrink: 0;
+    width: 14px;
+    height: 14px;
+    margin-top: 1px;
+    color: #d97706;
+}
+
+.hlv-sidebar__cover-desc {
+    margin: 0;
+    font-size: 12px;
+    line-height: 1.55;
+    color: #64748b;
+}
+
+.hlv-sidebar__field {
+    margin-bottom: 14px;
+}
+
+.hlv-sidebar__field:last-of-type {
+    margin-bottom: 0;
+}
+
+.hlv-sidebar__field-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.hlv-sidebar__field-row label {
+    font-size: 12px;
+    font-weight: 600;
+    color: #334155;
+}
+
+.hlv-sidebar__field-value {
+    font-size: 13px;
+    font-weight: 600;
+    color: #1351d8;
+    font-variant-numeric: tabular-nums;
+}
+
+.hlv-sidebar__range {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 6px;
+    border-radius: 999px;
+    background: #e2e8f0;
+    outline: none;
+    cursor: pointer;
+}
+
+.hlv-sidebar__range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #1351d8;
+    border: 2px solid #fff;
+    box-shadow: 0 0 0 3px rgba(19, 81, 216, 0.2);
+    cursor: pointer;
+}
+
+.hlv-sidebar__range::-moz-range-thumb {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #1351d8;
+    border: 2px solid #fff;
+    box-shadow: 0 0 0 3px rgba(19, 81, 216, 0.2);
+    cursor: pointer;
+}
+
+.hlv-sidebar__metrics {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 16px;
+    padding-top: 14px;
+    border-top: 1px solid #e8ecf4;
+}
+
+.hlv-sidebar__metric {
+    padding: 12px;
+    background: #f8fafc;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+}
+
+.hlv-sidebar__metric-label {
+    display: block;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #64748b;
+    margin-bottom: 4px;
+}
+
+.hlv-sidebar__metric-value {
+    font-size: 15px;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.hlv-sidebar__link {
+    display: block;
+    margin-top: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #1351d8;
+    text-decoration: none;
+}
+
+.hlv-sidebar__link:hover {
+    text-decoration: underline;
+}
+
+.hlv-sidebar--mobile {
+    display: none;
+    margin: 0 0 2rem;
+}
+
+@media screen and (max-width: 880px) {
+    .hlv-sidebar--mobile {
+        display: block;
+    }
+}

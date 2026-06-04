@@ -1982,6 +1982,12 @@
                                                                     <span class="menu-title">SWP Calculator</span>
                                                                 </a>
                                                             </li>
+                                                            <li id="menu-item-term-insurance-calc"
+                                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-term-ins">
+                                                                <a href="/term-insurance-calculator">
+                                                                    <span class="menu-title">Term Insurance Calculator</span>
+                                                                </a>
+                                                            </li>
                                                         </ul>
                                                     </li>
                                                     <li id="menu-item-196"
@@ -2805,6 +2811,12 @@
                                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-swp">
                                     <a href="/swp-calculator">
                                         <span class="menu-title">SWP Calculator</span>
+                                    </a>
+                                </li>
+                                <li id="menu-item-term-insurance-calc-2"
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-term-ins">
+                                    <a href="/term-insurance-calculator">
+                                        <span class="menu-title">Term Insurance Calculator</span>
                                     </a>
                                 </li>
                             </ul>

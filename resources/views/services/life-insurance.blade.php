@@ -118,7 +118,7 @@
 	            max-width: 100% !important;
 	        }
 
-	        /* Services page: Our Partners row (above "Our Popular Services") */
+	        /* Services page: Our Partners row */
 	        .insy-partners {
 	            margin: 0 0 24px;
 	            text-align: center;
@@ -210,6 +210,29 @@
 	            .insy-partners__logos img.insy-partners__logo--icici {
 	                height: 111px !important;
 	                max-height: 111px !important;
+	            }
+	        }
+
+	        /* Sidebar: HLV calculator above service links */
+	        .elementor-element[data-id="b76d180"] {
+	            flex-direction: column !important;
+	            align-items: stretch !important;
+	        }
+	        .elementor-element[data-id="li-hlv-widget"] {
+	            width: 100% !important;
+	            flex-shrink: 0;
+	        }
+	        .elementor-element[data-id="ce52b84"] {
+	            margin-top: 28px !important;
+	            width: 100% !important;
+	        }
+	        .hlv-sidebar--mobile {
+	            display: none;
+	            margin: 0 0 2rem;
+	        }
+	        @media screen and (max-width: 880px) {
+	            .hlv-sidebar--mobile {
+	                display: block;
 	            }
 	        }
 	    </style>
@@ -1112,6 +1135,11 @@
                                                                     <a href="/swp-calculator"><span
                                                                             class="menu-title">SWP Calculator</span></a>
                                                                 </li>
+                                                                <li id="menu-item-term-insurance-calc"
+                                                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-term-ins">
+                                                                    <a href="/term-insurance-calculator"><span
+                                                                            class="menu-title">Term Insurance Calculator</span></a>
+                                                                </li>
                                                             </ul>
                                                         </li>
                                                         <li id="menu-item-133"
@@ -1338,6 +1366,20 @@
                                         Our focus on clarity, consistency, and accountability allows clients to make
                                         confident decisions while knowing their insurance coverage is actively guided,
                                         reviewed, and supported consistently over time. </div>
+                                </div>
+                                <div class="elementor-element elementor-element-li-hlv-mobile elementor-widget"
+                                    data-id="li-hlv-mobile" data-element_type="widget">
+                                    <div class="elementor-widget-container">
+                                        <div class="hlv-sidebar--mobile">
+                                            @include('partials.hlv-calculator-sidebar', ['idPrefix' => 'li-hlv-mobile'])
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-li-term-plans elementor-widget"
+                                    data-id="li-term-plans" data-element_type="widget">
+                                    <div class="elementor-widget-container">
+                                        @include('partials.term-insurance-plans')
+                                    </div>
                                 </div>
                                 <div class="elementor-element elementor-element-85b1115 subtitle-position-above elementor-widget elementor-widget-heading"
                                     data-id="85b1115" data-element_type="widget" data-widget_type="heading.default">
@@ -1587,6 +1629,12 @@
                             </div>
                             <div class="elementor-element elementor-element-b76d180 e-con-full elementor-hidden-mobile_extra elementor-hidden-mobile e-flex e-con e-child"
                                 data-id="b76d180" data-element_type="container">
+                                <div class="elementor-element elementor-element-li-hlv-widget elementor-widget"
+                                    data-id="li-hlv-widget" data-element_type="widget">
+                                    <div class="elementor-widget-container">
+                                        @include('partials.hlv-calculator-sidebar', ['idPrefix' => 'li-hlv-sidebar'])
+                                    </div>
+                                </div>
                                 <div class="elementor-element elementor-element-ce52b84 elementor-widget elementor-widget-insul-our-service"
                                     data-id="ce52b84" data-element_type="widget"
                                     data-widget_type="insul-our-service.default">
@@ -1821,112 +1869,6 @@
 		                                    </div>
 		                                </div>
 		                            </div>
-	                            <div class="elementor-element elementor-element-a4c4e5a heading-effects-yes subtitle-position-above elementor-widget elementor-widget-heading"
-	                                data-id="a4c4e5a" data-element_type="widget" data-widget_type="heading.default">
-	                                <div class="elementor-widget-container">
-	                                    <div class="elementor-heading-wrapper-inner">
-	                                        <div class="elementor-sub-title">
-	                                            <span class="sub-title">OUR SERVICES</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="elementor-element elementor-element-ba75723 insul-elementor-headline--style-highlight elementor-widget elementor-widget-insul-animated-headline"
-                                data-id="ba75723" data-element_type="widget"
-                                data-settings="{&quot;marker&quot;:&quot;underline&quot;,&quot;highlighted_text&quot;:&quot;Services&quot;,&quot;headline_style&quot;:&quot;highlight&quot;,&quot;loop&quot;:&quot;yes&quot;,&quot;highlight_animation_duration&quot;:1200,&quot;highlight_iteration_delay&quot;:8000}"
-                                data-widget_type="insul-animated-headline.default">
-                                <div class="elementor-widget-container">
-                                    <h3 class="elementor-headline">
-                                        <span
-                                            class="insul-elementor-headline-plain-text insul-elementor-headline-text-wrapper">Our
-                                            Popular</span>
-                                        <span
-                                            class="insul-elementor-headline-dynamic-wrapper insul-elementor-headline-text-wrapper">
-                                            <span
-                                                class="insul-elementor-headline-dynamic-text insul-elementor-headline-text-active">Services</span>
-                                        </span>
-                                    </h3>
-                                </div>
-                            </div>
-                            <div class="elementor-element elementor-element-b434db5 elementor-widget elementor-widget-insul-our-service"
-                                data-id="b434db5" data-element_type="widget"
-                                data-widget_type="insul-our-service.default">
-                                <div class="elementor-widget-container">
-
-                                    <div class="insul_service-wrapper service-default">
-                                        <div>
-                                            <div class="service-layout-4">
-
-                                                <div class="elementor-service-item elementor-repeater-item-785e495">
-                                                    <div class="service-inner">
-                                                        <div class="service-post-thumbnail">
-                                                            <img loading="lazy" decoding="async" width="1410"
-                                                                height="740"
-                                                                src="{{ public_asset('wp-content/uploads/2024/04/project-2.jpg') }}"
-                                                                class="attachment-insul-post-grid size-insul-post-grid wp-post-image"
-                                                                alt=""
-                                                                srcset="{{ public_asset('wp-content/uploads/2024/04/project-2.jpg') }} 1410w, {{ public_asset('wp-content/uploads/2024/04/project-2-300x157.jpg') }} 300w, {{ public_asset('wp-content/uploads/2024/04/project-2-1024x537.jpg') }} 1024w, {{ public_asset('wp-content/uploads/2024/04/project-2-768x403.jpg') }} 768w"
-                                                                sizes="(max-width: 1410px) 100vw, 1410px" />
-                                                        </div>
-                                                        <div class="service-content">
-                                                            <span class="sub-title">Corporate & Individual</span>
-                                                            <h2 class="entry-title">
-                                                                <a
-                                                                    href="{{ url('/services/general-insurance') }}">
-                                                                    General Insurance </a>
-                                                            </h2>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="elementor-service-item elementor-repeater-item-c1d14e5">
-                                                    <div class="service-inner">
-                                                        <div class="service-post-thumbnail">
-                                                            <img loading="lazy" decoding="async" width="1410"
-                                                                height="740"
-                                                                src="{{ public_asset('wp-content/uploads/2024/04/project-6.jpg') }}"
-                                                                class="attachment-insul-post-grid size-insul-post-grid wp-post-image"
-                                                                alt=""
-                                                                srcset="{{ public_asset('wp-content/uploads/2024/04/project-6.jpg') }} 1410w, {{ public_asset('wp-content/uploads/2024/04/project-6-300x157.jpg') }} 300w, {{ public_asset('wp-content/uploads/2024/04/project-6-1024x537.jpg') }} 1024w, {{ public_asset('wp-content/uploads/2024/04/project-6-768x403.jpg') }} 768w"
-                                                                sizes="(max-width: 1410px) 100vw, 1410px" />
-                                                        </div>
-                                                        <div class="service-content">
-                                                            <span class="sub-title">Individual & Family</span>
-                                                            <h2 class="entry-title">
-                                                                <a
-                                                                    href="{{ url('/services/life-insurance') }}">
-                                                                    Life Insurance </a>
-                                                            </h2>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="elementor-service-item elementor-repeater-item-91f9ac2">
-                                                    <div class="service-inner">
-                                                        <div class="service-post-thumbnail">
-                                                            <img loading="lazy" decoding="async" width="1410"
-                                                                height="740"
-                                                                src="{{ public_asset('wp-content/uploads/2024/04/project-4.jpg') }}"
-                                                                class="attachment-insul-post-grid size-insul-post-grid wp-post-image"
-                                                                alt=""
-                                                                srcset="{{ public_asset('wp-content/uploads/2024/04/project-4.jpg') }} 1410w, {{ public_asset('wp-content/uploads/2024/04/project-4-300x157.jpg') }} 300w, {{ public_asset('wp-content/uploads/2024/04/project-4-1024x537.jpg') }} 1024w, {{ public_asset('wp-content/uploads/2024/04/project-4-768x403.jpg') }} 768w"
-                                                                sizes="(max-width: 1410px) 100vw, 1410px" />
-                                                        </div>
-                                                        <div class="service-content">
-                                                            <span class="sub-title">Personal & Corporate</span>
-                                                            <h2 class="entry-title">
-                                                                <a
-                                                                    href="{{ url('/services/mutual-funds') }}">
-                                                                    Mutual Fund </a>
-                                                            </h2>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -2044,6 +1986,9 @@
                                 </li>
                                 <li id="menu-item-swp-calculator" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-swp">
                                     <a href="/swp-calculator">SWP Calculator</a>
+                                </li>
+                                <li id="menu-item-term-insurance-calc" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-term-ins">
+                                    <a href="/term-insurance-calculator">Term Insurance Calculator</a>
                                 </li>
                             </ul>
                         </li>

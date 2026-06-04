@@ -224,6 +224,7 @@
                     <li><a href="{{ url('/sip-planner') }}">SIP Planner</a></li>
                     <li><a href="{{ url('/swp-calculator') }}">SWP Calculator</a></li>
                     <li><a href="{{ url('/sip-delay-cost-calculator') }}">SIP Delay Calculator</a></li>
+                    <li><a href="{{ url('/term-insurance-calculator') }}">Term Insurance Calculator</a></li>
                 </ul>
             </div>
             <div class="home-footer__col">
@@ -244,3 +245,4 @@
         </div>
     </div>
 </footer>
+@include('partials.cta-popup')

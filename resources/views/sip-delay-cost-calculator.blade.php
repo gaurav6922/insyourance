@@ -285,6 +285,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 	<li id="menu-item-sip-planner" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-sip"><a href="/sip-planner"><span class="menu-title">SIP Planner</span></a></li>
 	<li id="menu-item-sip-delay-cost" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item current_page_item menu-item-sip-delay"><a href="/sip-delay-cost-calculator"><span class="menu-title">SIP Delay Cost</span></a></li>
 	<li id="menu-item-swp-calculator" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-swp"><a href="/swp-calculator"><span class="menu-title">SWP Calculator</span></a></li>
+	<li id="menu-item-term-insurance-calc" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-term-ins"><a href="/term-insurance-calculator"><span class="menu-title">Term Insurance Calculator</span></a></li>
 </ul>
 </li>
 <li id="menu-item-133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a href="/contact-01"><span class="menu-title">Contact</span></a></li>
@@ -715,6 +716,10 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 <li class="page_item page-item-sip-planner"><a href="/sip-planner">SIP Planner</a></li>
 <li class="page_item page-item-sip-delay-cost current_page_item"><a href="/sip-delay-cost-calculator" aria-current="page">SIP Delay Cost</a></li>
 <li class="page_item page-item-swp-calculator"><a href="/swp-calculator">SWP Calculator</a></li>
+                                <li id="menu-item-term-insurance-calc" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-term-ins">
+                                    <a href="/term-insurance-calculator">Term Insurance Calculator</a></li>
+                                <li id="menu-item-term-insurance-calc" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-term-ins">
+                                    <a href="/term-insurance-calculator">Term Insurance Calculator</a></li>
 <li class="page_item page-item-100"><a href="/home-2/">Home 2</a></li>
 <li class="page_item page-item-102"><a href="/home-3/">Home 3</a></li>
 <li class="page_item page-item-131"><a href="/icons/">Icons</a></li>
