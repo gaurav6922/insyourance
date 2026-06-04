@@ -168,4 +168,11 @@
     data-cta-interval-max="{{ $ctaConfig['interval_max_ms'] ?? 45000 }}"
 ></div>
 
+@php
+    $ctaPopupScriptPath = public_path('js/cta-popup.js');
+@endphp
+@if (is_file($ctaPopupScriptPath))
+<script>{!! file_get_contents($ctaPopupScriptPath) !!}</script>
+@else
 <script src="{{ public_asset('js/cta-popup.js') }}"></script>
+@endif

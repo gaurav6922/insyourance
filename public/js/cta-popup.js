@@ -419,7 +419,15 @@
         }
     }
 
+    var booted = false;
+
     function boot() {
+        if (booted) {
+            return;
+        }
+
+        booted = true;
+
         try {
             init();
         } catch (error) {
@@ -429,9 +437,10 @@
         }
     }
 
-    if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', boot);
-    } else {
+    document.addEventListener('DOMContentLoaded', boot);
+    window.addEventListener('load', boot);
+
+    if (document.readyState !== 'loading') {
         boot();
     }
 })();

@@ -41,4 +41,11 @@
 </a>
 
 <script src="{{ public_asset('js/whatsapp-float.js') }}" defer></script>
+<script>
+(function () {
+    try {
+        sessionStorage.setItem('whatsapp_popup_dismissed', '1');
+    } catch (e) {}
+})();
+</script>
 @include('partials.cta-popup')

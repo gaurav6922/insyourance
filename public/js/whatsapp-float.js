@@ -32,7 +32,7 @@
             closeBtn.addEventListener('click', hidePopup);
         }
 
-        window.setTimeout(showPopup, DELAY_MS);
+        // WhatsApp card popup disabled — CTA popups (cta-popup.js) handle timed prompts.
     }
 
     if (document.readyState === 'loading') {
